@@ -130,6 +130,10 @@ reader = csv.DictReader(fobj.read().decode('utf-8').split('\n'))
 for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     row.pop('')
+    # clear and set the source fields to 'geoBoundaries'
+    # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-1'] = 'geoBoundaries'
+    row['boundarySource-2'] = ''
     # overwrite the gb apiURL with direct link to github
     iso = row['boundaryISO']
     lvl = row['boundaryType']
