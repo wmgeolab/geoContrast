@@ -2,6 +2,7 @@
 import os
 import json
 import csv
+import urllib.request
 
 #Initialize workspace
 ws = {}
@@ -123,6 +124,22 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         #print(meta)
         writer.writerow(meta)
 
+#Add in csv entries based on the github geoBoundaries metadata file
+fobj = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesOpen-meta.csv')
+reader = csv.DictReader(fobj.read().decode('utf-8').split('\n'))
+for row in reader:
+    # drop any additional 'blank' field values beyond fieldnames
+    row.pop('')
+    # overwrite the gb apiURL with direct link to github
+    iso = row['boundaryISO']
+    lvl = row['boundaryType']
+    apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+    row['apiURL'] = apiURL
+    print(apiURL)
+    # write ro row
+    writer.writerow(row)
+
+#Close up shop
 fobj.close()
     
 
