@@ -27,8 +27,8 @@ except:
 
 #Create output csv file with headers
 fieldnames = "boundaryID,Country,boundaryISO,boundaryYear,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM".split(',')
-fobj = open(gbContrastCSV, 'w', newline='')
-writer = csv.DictWriter(fobj, fieldnames=fieldnames)
+wfob = open(gbContrastCSV, 'w', newline='')
+writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
 #Loop all metadata json files in releaseData
@@ -125,8 +125,8 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         writer.writerow(meta)
 
 #Add in csv entries based on the github geoBoundaries metadata file
-fobj = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesOpen-meta.csv')
-reader = csv.DictReader(fobj.read().decode('utf-8').split('\n'))
+rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesOpen-meta.csv')
+reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
 for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     row.pop('')
@@ -144,6 +144,6 @@ for row in reader:
     writer.writerow(row)
 
 #Close up shop
-fobj.close()
+wfob.close()
     
 

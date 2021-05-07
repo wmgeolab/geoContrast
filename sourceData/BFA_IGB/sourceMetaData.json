@@ -1,0 +1,14 @@
+{
+            "boundaryYear": 2020,
+            "boundaryISO": "BFA",
+            "boundaryType": null,
+            "boundaryCanonical": null,
+            "boundarySource-1": "Institut Géographique du Burkina",
+            "boundarySource-2": "OCHA Burkina",
+            "boundaryLicense": "?",
+            "licenseDetail": "?",
+            "licenseSource": "https://data.humdata.org/about/license",
+            "boundarySourceURL": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
+            "downloadURL": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
+            "sourceDataUpdateDate": "23 March 2020"
+}

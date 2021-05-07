@@ -1,0 +1,14 @@
+{
+            "boundaryYear": 2018,
+            "boundaryISO": "CIV",
+            "boundaryType": "ADM3",
+            "boundaryCanonical": null,
+            "boundarySource-1": "Comité National de Télédétection et d'Information Géographique (CNTIG)",
+            "boundarySource-2": "OCHA ROWCA",
+            "boundaryLicense": "?",
+            "licenseDetail": "?",
+            "licenseSource": "https://data.humdata.org/about/license",
+            "boundarySourceURL": "https://data.humdata.org/dataset/cote-d-ivoire-administrative-level-0-3-boundaries-and-points",
+            "downloadURL": "https://data.humdata.org/dataset/cote-d-ivoire-administrative-level-0-3-boundaries-and-points",
+            "sourceDataUpdateDate": "6 July 2018"
+}
