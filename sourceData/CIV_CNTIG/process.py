@@ -13,7 +13,7 @@ from zipfile import ZipFile
 #########
 
 # autoset some params
-SOURCE_NAME = 'CIV_CNTIG'
+SOURCE_NAME = os.path.split(os.path.abspath(''))[-1] # use name of current folder
 SOURCE_FILES = ['civ_admbnda_adm0_cntig_20180706.zip/civ_admbnda_adm0_cntig_20180706.shp',
                 'civ_admbnda_adm1_cntig_ocha_itos_20180706.zip/civ_admbnda_adm1_cntig_ocha_itos_20180706.shp',
                 'civ_admbnda_adm2_cntig_ocha_itos_20180706.zip/civ_admbnda_adm2_cntig_ocha_itos_20180706.shp',

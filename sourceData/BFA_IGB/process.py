@@ -13,7 +13,7 @@ from zipfile import ZipFile
 #########
 
 # autoset some params
-SOURCE_NAME = 'BFA_IGB'
+SOURCE_NAME = os.path.split(os.path.abspath(''))[-1] # use name of current folder
 SOURCE_FILES = ['bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm0_igb_20200323.shp',
                 'bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm1_igb_20200323.shp',
                 'bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm2_igb_20200323.shp',
@@ -30,7 +30,11 @@ def get_level(filename):
 def get_adm_type(feat):
     return None
 
-# standard procedures
+#######################
+
+# begin
+
+# define standard procedures
 def load_feats(path):
     # for now must be path to a shapefile within a zipfile
     zpath,shapefile = os.path.split(path)
@@ -42,8 +46,6 @@ def load_feats(path):
     dbf = archive.open(shapefile+'.dbf')
     reader = pyshp.Reader(shp=shp, shx=shx, dbf=dbf)
     return reader.__geo_interface__['features']
-
-# begin
 
 # read source metadata
 with open('sourceMetaData.json') as fobj:
