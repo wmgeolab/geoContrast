@@ -48,7 +48,7 @@ def load_feats(path):
     return reader.__geo_interface__['features']
 
 # read source metadata
-with open('sourceMetaData.json') as fobj:
+with open('sourceMetaData.json', encoding='utf8') as fobj:
     meta = json.load(fobj)
 
 # make dir
@@ -78,7 +78,7 @@ for SOURCE_FILE in SOURCE_FILES:
 
     # write topojson to file
     dst = '{root}/{source}/{iso}/{lvl}/{source}-{iso}-{lvl}.topojson'.format(root=OUT_DIR, source=OUT_SOURCE_NAME, iso=iso, lvl=lvl)
-    with open(dst, 'w') as fobj:
+    with open(dst, 'w', encoding='utf8') as fobj:
         fobj.write(topodata)
 
     # get dynamic metadata
@@ -93,7 +93,7 @@ for SOURCE_FILE in SOURCE_FILES:
 
     # write metadata to file
     dst = '{root}/{source}/{iso}/{lvl}/{source}-{iso}-{lvl}-metaData.json'.format(root=OUT_DIR, source=OUT_SOURCE_NAME, iso=iso, lvl=lvl)
-    with open(dst, 'w') as fobj:
+    with open(dst, 'w', encoding='utf8') as fobj:
         json.dump(meta, fobj)
 
 

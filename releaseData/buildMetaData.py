@@ -16,7 +16,7 @@ except:
 os.chdir(ws['working'])
 
 #Load in the ISO lookup table
-isoDetails = list(csv.DictReader(open("../buildData/iso_3166_1_alpha_3.csv")))
+isoDetails = list(csv.DictReader(open("../buildData/iso_3166_1_alpha_3.csv", encoding="utf8")))
 
 #Remove any old CSVs
 gbContrastCSV = "geoContrast-meta.csv"
@@ -27,7 +27,7 @@ except:
 
 #Create output csv file with headers
 fieldnames = "boundaryID,Country,boundaryISO,boundaryYear,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM".split(',')
-wfob = open(gbContrastCSV, 'w', newline='')
+wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
@@ -129,7 +129,8 @@ rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBou
 reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
 for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
-    row.pop('')
+    if '' in row.keys(): row.pop('')
+    if None in row.keys(): row.pop(None)
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-1'] = 'geoBoundaries'
@@ -145,5 +146,5 @@ for row in reader:
 
 #Close up shop
 wfob.close()
-    
+
 

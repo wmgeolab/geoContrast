@@ -18,13 +18,13 @@ OUT_DIR = '../../releaseData'
 OUT_SOURCE_NAME = SOURCE_NAME
 
 # read source metadata
-with open('sourceMetaData.json') as fobj:
+with open('sourceMetaData.json', encoding='utf8') as fobj:
     meta = json.load(fobj)
 
 # procedures
 def iter_country_level_feats():
     for fil in os.listdir('countryfiles'):
-        iso = fil.replace('.zip','')        
+        iso = fil.replace('.zip','')
         archive = ZipFile('countryfiles/'+fil, 'r')
         shapefiles = [os.path.splitext(subfil)[0] # root shapefile names
                       for subfil in archive.namelist()
@@ -70,7 +70,7 @@ for iso,lvl,feats in iter_country_level_feats():
 
     # write topojson to file
     dst = '{root}/{source}/{iso}/{lvl}/{source}-{iso}-{lvl}.topojson'.format(root=OUT_DIR, source=OUT_SOURCE_NAME, iso=iso, lvl=lvl)
-    with open(dst, 'w') as fobj:
+    with open(dst, 'w', encoding='utf8') as fobj:
         fobj.write(topodata)
 
     # get dynamic metadata
@@ -86,7 +86,7 @@ for iso,lvl,feats in iter_country_level_feats():
 
     # write metadata to file
     dst = '{root}/{source}/{iso}/{lvl}/{source}-{iso}-{lvl}-metaData.json'.format(root=OUT_DIR, source=OUT_SOURCE_NAME, iso=iso, lvl=lvl)
-    with open(dst, 'w') as fobj:
+    with open(dst, 'w', encoding='utf8') as fobj:
         json.dump(meta, fobj)
 
 
