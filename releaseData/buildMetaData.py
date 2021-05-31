@@ -40,7 +40,7 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         print(metaSearch)
 
         #Init row from file metadata.json
-        with open(path + "/" + metaSearch[0], "r") as j:
+        with open(path + "/" + metaSearch[0], "r", encoding='utf8') as j:
             meta = json.load(j)
 
         #Drop unwanted entries
@@ -72,6 +72,7 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
 
         #Calculate geometry statistics
+        #(Commented geometry/stats code below is old, needs to be updated)
 ##        #We'll use the geoJSON here, as the statistics (i.e., vertices) will be most comparable
 ##        #to other cases.
 ####        geojsonSearch = [x for x in filenames if re.search('.geojson', x)]
@@ -133,7 +134,7 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
-    row['boundarySource-1'] = 'geoBoundaries'
+    row['boundarySource-1'] = 'geoBoundaries (Open)'
     row['boundarySource-2'] = ''
     # overwrite the gb apiURL with direct link to github
     iso = row['boundaryISO']
@@ -141,6 +142,9 @@ for row in reader:
     apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
     row['apiURL'] = apiURL
     print(apiURL)
+    # fix gb url bugs
+    row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
+    row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
     # write ro row
     writer.writerow(row)
 
