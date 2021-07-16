@@ -26,13 +26,13 @@ except:
     pass
 
 #Create output csv file with headers
-fieldnames = "boundaryID,Country,boundaryISO,boundaryYear,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM".split(',')
+fieldnames = "boundaryID,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM".split(',')
 wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
 #Loop all metadata json files in releaseData
-for (path, dirname, filenames) in os.walk(ws["working"]):
+for x in []: #(path, dirname, filenames) in os.walk(ws["working"]):
 
     #Look for file metadata.json
     metaSearch = [x for x in filenames if x.endswith('metaData.json')]
@@ -125,7 +125,7 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         #print(meta)
         writer.writerow(meta)
 
-#Add in csv entries based on the github geoBoundaries metadata file
+#Add in csv entries based on the github geoBoundaries (Open) metadata file
 rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesOpen-meta.csv')
 reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
 for row in reader:
@@ -140,6 +140,52 @@ for row in reader:
     iso = row['boundaryISO']
     lvl = row['boundaryType']
     apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+    row['apiURL'] = apiURL
+    print(apiURL)
+    # fix gb url bugs
+    row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
+    row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+    # write ro row
+    writer.writerow(row)
+
+#Add in csv entries based on the github geoBoundaries (Humanitarian) metadata file
+rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesHumanitarian-meta.csv')
+reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
+for row in reader:
+    # drop any additional 'blank' field values beyond fieldnames
+    if '' in row.keys(): row.pop('')
+    if None in row.keys(): row.pop(None)
+    # clear and set the source fields to 'geoBoundaries'
+    # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-1'] = 'geoBoundaries (Humanitarian)'
+    row['boundarySource-2'] = ''
+    # overwrite the gb apiURL with direct link to github
+    iso = row['boundaryISO']
+    lvl = row['boundaryType']
+    apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+    row['apiURL'] = apiURL
+    print(apiURL)
+    # fix gb url bugs
+    row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
+    row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+    # write ro row
+    writer.writerow(row)
+
+#Add in csv entries based on the github geoBoundaries (Authoritative) metadata file
+rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesAuthoritative-meta.csv')
+reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
+for row in reader:
+    # drop any additional 'blank' field values beyond fieldnames
+    if '' in row.keys(): row.pop('')
+    if None in row.keys(): row.pop(None)
+    # clear and set the source fields to 'geoBoundaries'
+    # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-1'] = 'geoBoundaries (Authoritative)'
+    row['boundarySource-2'] = ''
+    # overwrite the gb apiURL with direct link to github
+    iso = row['boundaryISO']
+    lvl = row['boundaryType']
+    apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
     row['apiURL'] = apiURL
     print(apiURL)
     # fix gb url bugs
