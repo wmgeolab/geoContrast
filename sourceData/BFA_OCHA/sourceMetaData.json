@@ -1,10 +1,10 @@
 {
-            "boundaryYear": 2020,
+            "boundaryYearRepresented": 2020,
             "boundaryISO": "BFA",
             "boundaryType": null,
             "boundaryCanonical": null,
-            "boundarySource-1": "Institut Géographique du Burkina",
-            "boundarySource-2": "OCHA Burkina",
+            "boundarySource-1": "OCHA Burkina",
+            "boundarySource-2": "Institut Géographique du Burkina",
             "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
             "licenseDetail": "Creative Commons Attribution for Intergovernmental Organisations",
             "licenseSource": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
