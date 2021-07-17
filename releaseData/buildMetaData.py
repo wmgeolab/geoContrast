@@ -32,7 +32,7 @@ writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
 #Loop all metadata json files in releaseData
-for x in []: #(path, dirname, filenames) in os.walk(ws["working"]):
+for (path, dirname, filenames) in os.walk(ws["working"]):
 
     #Look for file metadata.json
     metaSearch = [x for x in filenames if x.endswith('metaData.json')]
@@ -62,6 +62,9 @@ for x in []: #(path, dirname, filenames) in os.walk(ws["working"]):
         #Add in country context
         for k in 'Country,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup'.split(','):
             meta[k] = isoMeta[k]
+
+        #Fix Country renamed to boundaryName
+        meta['boundaryName'] = meta.pop('Country') 
 
         #Add in apiURL
         #githubRoot = 'https://raw.githubusercontent.com/wmgeolab/geoContrast/main' # normal github files
