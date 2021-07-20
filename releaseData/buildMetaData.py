@@ -137,8 +137,8 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-2'] = row['boundarySource-1']
     row['boundarySource-1'] = 'geoBoundaries (Open)'
-    row['boundarySource-2'] = ''
     # overwrite the gb apiURL with direct link to github
     iso = row['boundaryISO']
     lvl = row['boundaryType']
@@ -160,8 +160,8 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-2'] = row['boundarySource-1']
     row['boundarySource-1'] = 'geoBoundaries (Humanitarian)'
-    row['boundarySource-2'] = ''
     # overwrite the gb apiURL with direct link to github
     iso = row['boundaryISO']
     lvl = row['boundaryType']
@@ -183,8 +183,8 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-2'] = row['boundarySource-1']
     row['boundarySource-1'] = 'geoBoundaries (Authoritative)'
-    row['boundarySource-2'] = ''
     # overwrite the gb apiURL with direct link to github
     iso = row['boundaryISO']
     lvl = row['boundaryType']
