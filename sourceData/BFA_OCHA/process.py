@@ -74,12 +74,12 @@ for SOURCE_FILE in SOURCE_FILES:
 
     # create topojson
     feats = list(feats)
-    #topodata = tp.Topology(feats, prequantize=False).to_json()
+    topodata = tp.Topology(feats, prequantize=False).to_json()
 
     # write topojson to file
-    #dst = '{root}/{source}/{iso}/{lvl}/{source}-{iso}-{lvl}.topojson'.format(root=OUT_DIR, source=OUT_SOURCE_NAME, iso=iso, lvl=lvl)
-    #with open(dst, 'w', encoding='utf8') as fobj:
-    #    fobj.write(topodata)
+    dst = '{root}/{source}/{iso}/{lvl}/{source}-{iso}-{lvl}.topojson'.format(root=OUT_DIR, source=OUT_SOURCE_NAME, iso=iso, lvl=lvl)
+    with open(dst, 'w', encoding='utf8') as fobj:
+        fobj.write(topodata)
 
     # get dynamic metadata
     typ = get_adm_type(feats[0]) # just doing the first one for now, although there may be multiple...
