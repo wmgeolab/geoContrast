@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "CAN",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "UN SALB Data License",
+    "nameField": "ADM2NM",
+    "licenseDetail": null,
+    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "boundarySourceURL": "https://www.unsalb.org/data/can",
+    "downloadURL": "https://www.unsalb.org/data/can",
+    "sourceDataUpdateDate": "2018-05-23",
+    "boundarySource-1": "UN SALB"
+}

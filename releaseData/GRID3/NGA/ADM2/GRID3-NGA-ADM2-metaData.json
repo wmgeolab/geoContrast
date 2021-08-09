@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "NGA",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Local Government Area (LGA)",
+    "boundaryLicense": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "nameField": "lga_code",
+    "licenseDetail": null,
+    "licenseSource": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-local-government-area-boundaries/about",
+    "boundarySourceURL": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-local-government-area-boundaries/about",
+    "downloadURL": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-local-government-area-boundaries/about",
+    "sourceDataUpdateDate": "10 December 2020",
+    "boundarySource-1": "GRID3"
+}

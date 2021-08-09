@@ -1,0 +1,31 @@
+
+{
+"input":[
+    {"path":"dza_admbnda_unhcr2020_shp.zip/dza_admbnda_adm0_unhcr_20200120.shp",
+    "level":0,
+    "type_field":null,
+    "name_field":"ADM0_EN"
+    },
+    {"path":"dza_admbnda_unhcr2020_shp.zip/dza_admbnda_adm1_unhcr_20200120.shp",
+    "level":1,
+    "type_field":null,
+    "name_field":"ADM1_EN"
+    },
+    {"path":"dza_admbnda_unhcr2020_shp.zip/dza_admbnda_adm2_unhcr_20200120.shp",
+    "level":2,
+    "type_field":null,
+    "name_field":"ADM2_EN"
+    }
+],
+
+"iso":"DZA",
+"year":2021,
+
+"source":["OCHA ROMENA","GAUL"],
+"source_updated":"26 Jan 2021",
+"source_url":"https://data.humdata.org/dataset/algeria-administrative-boundaries-levels-1-2-populated-places",
+"download_url":"https://data.humdata.org/dataset/algeria-administrative-boundaries-levels-1-2-populated-places",
+"license":"Creative Commons Attribution for Intergovernmental Organisations",
+"license_detail":null,
+"license_url":"https://data.humdata.org/dataset/algeria-administrative-boundaries-levels-1-2-populated-places"
+}

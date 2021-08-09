@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "NGA",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Ward",
+    "boundaryLicense": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "nameField": "ward_code",
+    "licenseDetail": null,
+    "licenseSource": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-ward-boundaries/about",
+    "boundarySourceURL": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-ward-boundaries/about",
+    "downloadURL": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-ward-boundaries/about",
+    "sourceDataUpdateDate": "9 December 2020",
+    "boundarySource-1": "GRID3"
+}

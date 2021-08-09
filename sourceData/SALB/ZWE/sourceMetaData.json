@@ -1,0 +1,17 @@
+{
+    "input": "ZWE_2000_01_01_SALB.zip/ZWE_SALB_2002/SHP/BNDA_ZWE.shp",
+    "iso": "ZWE",
+    "year": 2004,
+    "level": 2,
+    "type_field": null,
+    "name_field": "ADM2NM",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "2004-01-01",
+    "source_url": "https://www.unsalb.org/data/zwe",
+    "download_url": "https://www.unsalb.org/data/zwe",
+    "license": "UN SALB Data License",
+    "license_detail": null,
+    "license_url": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf"
+}
