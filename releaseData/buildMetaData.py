@@ -26,7 +26,7 @@ except:
     pass
 
 #Create output csv file with headers
-fieldnames = "boundaryID,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM".split(',')
+fieldnames = "boundaryID,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM,nameField".split(',')
 wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
@@ -135,6 +135,8 @@ for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     if '' in row.keys(): row.pop('')
     if None in row.keys(): row.pop(None)
+    # set the nameField
+    row['nameField'] = 'shapeName'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -158,6 +160,8 @@ for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     if '' in row.keys(): row.pop('')
     if None in row.keys(): row.pop(None)
+    # set the nameField
+    row['nameField'] = 'shapeName'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -181,6 +185,8 @@ for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     if '' in row.keys(): row.pop('')
     if None in row.keys(): row.pop(None)
+    # set the nameField
+    row['nameField'] = 'shapeName'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']

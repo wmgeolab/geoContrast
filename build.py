@@ -5,8 +5,8 @@ import json
 import warnings
 
 # params
-sources = ['GRID3']
-metadata_only = True
+sources = []
+metadata_only = False
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):
@@ -18,6 +18,8 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         # determine the dataset name from the folder below sourceData
         reldirpath = os.path.relpath(dirpath, 'sourceData')
         data_name = reldirpath.split('/')[0].split('\\')[0] # topmost folder
+
+        # only process if data_name is in the list of sources to be processed
         if sources and data_name not in sources:
             continue
         print('processing', dirpath)
@@ -26,7 +28,8 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         output_dir = 'releaseData'
 
         # add final entries to kwargs
-        kwargs.update(data_name=data_name,
+        kwargs.update(input_dir=dirpath,
+                      data_name=data_name,
                       output_dir=output_dir,
                       metadata_only=metadata_only)
 
@@ -59,6 +62,5 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
                 _kwargs = kwargs.copy()
                 _kwargs.update(input_kwargs)
                 _kwargs['input_path'] = _kwargs.pop('path') # rename path arg
-                _kwargs['input_path'] = os.path.join(dirpath, _kwargs['input_path']) # build full path from folder
-                #print(_kwargs)
+                print(_kwargs)
                 iotools.import_data(**_kwargs)

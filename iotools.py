@@ -41,6 +41,7 @@ import topojson as tp
 import itertools
 import os
 import json
+import re
 
 import shapefile as pyshp
 from zipfile import ZipFile
@@ -77,7 +78,8 @@ def inspect_data(path):
             if i >= 2:
                 break
 
-def import_data(input_path,
+def import_data(input_dir,
+                input_path,
                 output_dir,
                 data_name,
                 
@@ -109,20 +111,40 @@ def import_data(input_path,
 
     # define standard procedures
     
-    def iter_paths(input_path):
+    def iter_paths(input_dir, input_path):
+        # NOTE: input_path is relative to input_dir
+        # this function returns the absolute path by joining them
+        # ... 
         # path can be a single path, a path with regex wildcards, or list of paths
         if isinstance(input_path, str):
             if '*' in input_path:
                 # regex
-                raise NotImplementedError()
+                pattern = input_path.replace('\\', '/')
+                pattern = pattern.replace('*', '[^/]*')
+                zip_pattern = 'countryfiles' #pattern.split('.zip')[0] + '.zip'
+                #print('regex', zip_pattern, pattern)
+                for dirpath,dirnames,filenames in os.walk(os.path.abspath(input_dir)):
+                    for filename in filenames:
+                        zpath = os.path.join(dirpath, filename)
+                        zpath = zpath.replace('\\', '/')
+                        #print(zpath)
+                        if re.search(zip_pattern, zpath):
+                            #print('ZIPFILE MATCH')
+                            archive = ZipFile(zpath, 'r')
+                            for zmember in archive.namelist():
+                                pth = os.path.join(zpath, zmember)
+                                pth = pth.replace('\\', '/')
+                                if re.search(pattern, pth):
+                                    #print('ZIPFILE MEMBER MATCH')
+                                    yield pth
             else:
                 # single path
-                yield input_path
+                yield os.path.join(input_dir, input_path)
                 
         elif isinstance(input_path, list):
             # list of paths
             for pth in input_path:
-                yield pth
+                yield os.path.join(input_dir, pth)
 
     def iter_country_level_feats(reader, path,
                                  iso=None, iso_field=None, iso_path=None,
@@ -144,6 +166,9 @@ def import_data(input_path,
 
         # define how to iterate isos
         if iso is not None:
+            if len(iso) != 3 or not iso.isalpha():
+                raise Exception("Country iso value must consist of 3 alphabetic characters, not '{}'.".format(iso))
+
             def iter_country_recs():
                 yield iso, reader.records()
         else:
@@ -168,6 +193,9 @@ def import_data(input_path,
                 # more efficient
                 key = lambda rec: rec[iso_field]
                 for iso,countryrecs in itertools.groupby(sorted(reader.records(), key=key), key=key):
+                    if len(iso) != 3 or not iso.isalpha():
+                        warnings.warn("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
+                        continue
                     yield iso, list(countryrecs)
 
         for iso, countryrecs in iter_country_recs():
@@ -238,7 +266,14 @@ def import_data(input_path,
     except: pass
 
     # loop source files
-    for path in iter_paths(input_path):
+    iter_kwargs = {'iso':iso,
+                   'iso_field':iso_field,
+                   'iso_path':iso_path,
+                   'level':level,
+                   'level_field':level_field,
+                   'level_path':level_path,
+                   'attributes_only':metadata_only}
+    for path in iter_paths(input_dir, input_path):
         print(path)
 
         # load shapefile
@@ -246,9 +281,7 @@ def import_data(input_path,
 
         # iter country-levels
         for iso,level,feats in iter_country_level_feats(reader, path,
-                                                        iso, iso_field, iso_path,
-                                                        level, level_field, level_path,
-                                                        attributes_only=metadata_only):
+                                                        **iter_kwargs):
             print('{}-ADM{}:'.format(iso, level), len(feats), 'admin units')
 
             # make sure iso folder exist
@@ -263,15 +296,15 @@ def import_data(input_path,
             if type is None:
                 if type_field:
                     type = feats[0]['properties'][type_field] # for now just use the type of the first feature
-                else:
-                    type = 'Unknown'
+            if not type:
+                type = 'Unknown'
 
             # get year info
             if year is None:
                 if year_field:
                     year = feats[0]['properties'][year_field] # for now just use the year of the first feature
-                else:
-                    year = 'Unknown'
+            if not year:
+                year = 'Unknown'
 
             # dissolve if specified
             if dissolve_field:
