@@ -106,7 +106,9 @@ def import_data(input_dir,
                 dissolve_field=None,
                 keep_fields=None,
 
-                metadata_only=False,
+                write_meta=True,
+                write_stats=True,
+                write_data=True,
                 ):
 
     # define standard procedures
@@ -149,7 +151,7 @@ def import_data(input_dir,
     def iter_country_level_feats(reader, path,
                                  iso=None, iso_field=None, iso_path=None,
                                  level=None, level_field=None, level_path=None,
-                                 attributes_only=False):
+                                 load_geometries=True):
         # determine static iso
         if iso is None and iso_path:
             # need to determine iso
@@ -225,10 +227,10 @@ def import_data(input_dir,
                 countrylevelfeats = []
                 for rec in levelrecs:
                     props = rec.as_dict(date_strings=True)
-                    if attributes_only is True:
-                        geoj = None
-                    else:
+                    if load_geometries is True:
                         geoj = reader.shape(rec.oid).__geo_interface__
+                    else:
+                        geoj = None
                     feat = {'type':'Feature', 'properties':props, 'geometry':geoj}
                     countrylevelfeats.append(feat)
                 yield iso, level, countrylevelfeats
@@ -272,8 +274,9 @@ def import_data(input_dir,
                    'level':level,
                    'level_field':level_field,
                    'level_path':level_path,
-                   'attributes_only':metadata_only}
+                   'load_geometries':write_data or write_stats}
     for path in iter_paths(input_dir, input_path):
+        print('')
         print(path)
 
         # load shapefile
@@ -282,6 +285,7 @@ def import_data(input_dir,
         # iter country-levels
         for iso,level,feats in iter_country_level_feats(reader, path,
                                                         **iter_kwargs):
+            print('')
             print('{}-ADM{}:'.format(iso, level), len(feats), 'admin units')
 
             # make sure iso folder exist
@@ -319,7 +323,9 @@ def import_data(input_dir,
                     raise Exception("name_field arg '{}' is not a valid field; must be one of: {}".format(name_field, fields))
 
             # write data
-            if metadata_only is not True:
+            if write_data:
+                print('writing data')
+                
                 # create topojson
                 topodata = tp.Topology(feats, prequantize=False).to_json()
 
@@ -347,11 +353,64 @@ def import_data(input_dir,
                 meta['boundarySource-{}'.format(i+1)] = source
 
             # write metadata to file
-            dst = '{output}/{dataset}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-metaData.json'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level)
-            with open(dst, 'w', encoding='utf8') as fobj:
-                json.dump(meta, fobj, indent=4)
+            if write_meta is True:
+                print('writing meta', meta)
+                dst = '{output}/{dataset}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-metaData.json'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level)
+                with open(dst, 'w', encoding='utf8') as fobj:
+                    json.dump(meta, fobj, indent=4)
 
+            # calc and output boundary stats
+            if write_stats is True:
+                stats = calc_stats(feats, meta)
+                print('writing stats', stats)
+                dst = '{output}/{dataset}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-stats.json'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level)
+                with open(dst, 'w', encoding='utf8') as fobj:
+                    json.dump(stats, fobj, indent=4)
 
+def calc_stats(feats, meta):
+    stats = {}
+    # unit count
+    stats['boundaryCount'] = len(feats)
+    # source year lag
+    yr = meta['boundaryYearRepresented']
+    updated = meta['sourceDataUpdateDate']
+    updated_year_match = re.search('([0-9]{4})', updated)
+    if yr == 'Unknown' or updated_year_match is None:
+        stats['boundaryYearSourceLag'] = None
+    else:
+        stats['boundaryYearSourceLag'] = int(float(updated_year_match.group())) - yr
+    # vertices, area, and perimiter
+    from shapely.geometry import asShape
+    from pyproj import Geod
+    geod = Geod(ellps="WGS84")
+    area = 0
+    perim = 0
+    verts = 0
+    for feat in feats:
+        # geodesy
+        geom = asShape(feat['geometry'])
+        _area, _perim = geod.geometry_area_perimeter(geom)
+        area += _area
+        perim += _perim
+        # verts
+        _verts = 0
+        if feat['geometry']['type'] == 'MultiPolygon':
+            polys = feat['geometry']['coordinates']
+        elif feat['geometry']['type'] == 'Polygon':
+            polys = [feat['geometry']['coordinates']]
+        for poly in polys:
+            for ring in poly:
+                _verts += len(ring)
+        verts += _verts
+    area = abs(area / 1000000) # convert m2 to km2 + fix pyproj which treats ccw as positive area (opposite of geojson)
+    perim = perim / 1000 # convert m to km
+    stats['statsArea'] = area
+    stats['statsPerimeter'] = perim
+    stats['statsVertices'] = verts
+    # line resolution
+    stats['statsLineResolution'] = (perim * 1000) / verts # meters between vertices
+    stats['statsVertexDensity'] = verts / perim # vertices per km
+    return stats
 
 
 

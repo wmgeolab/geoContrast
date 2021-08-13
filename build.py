@@ -5,8 +5,10 @@ import json
 import warnings
 
 # params
-sources = []
-metadata_only = False
+sources = ['GRID3','OCHA','Natural_Earth','GADM']
+write_meta = False
+write_stats = True
+write_data = False
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):
@@ -31,7 +33,9 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         kwargs.update(input_dir=dirpath,
                       data_name=data_name,
                       output_dir=output_dir,
-                      metadata_only=metadata_only)
+                      write_meta=write_meta,
+                      write_stats=write_stats,
+                      write_data=write_data)
 
         # decide whether to import or not
         # this should be determined based on whether the output_dir+dataset+ISO
@@ -44,8 +48,10 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         else:
             exists = os.path.lexists(os.path.join(output_dir, data_name))
 
-        if (not exists) or metadata_only is True:
-            print('should import...')
+        if (not exists) or write_meta is True or write_stats is True:
+            print('')
+            print('='*30)
+            print('reading sourceMetaData.json')
             # nest multiple inputs
             if 'input' not in kwargs:
                 warnings.warn("metadata file doesn't have correct format, skipping")
@@ -62,5 +68,7 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
                 _kwargs = kwargs.copy()
                 _kwargs.update(input_kwargs)
                 _kwargs['input_path'] = _kwargs.pop('path') # rename path arg
-                print(_kwargs)
+                print('')
+                print('-'*30)
+                print('import args', _kwargs)
                 iotools.import_data(**_kwargs)

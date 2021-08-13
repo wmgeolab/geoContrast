@@ -3,6 +3,10 @@ import os
 import json
 import csv
 import urllib.request
+import sys
+sys.path.append('..')
+import iotools
+import re
 
 #Initialize workspace
 ws = {}
@@ -26,7 +30,7 @@ except:
     pass
 
 #Create output csv file with headers
-fieldnames = "boundaryID,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,admUnitCount,meanVertices,minVertices,maxVertices,meanPerimeterLengthKM,minPerimeterLengthKM,maxPerimeterLengthKM,meanAreaSqKM,minAreaSqKM,maxAreaSqKM,nameField".split(',')
+fieldnames = "boundaryID,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimiter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
 wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
@@ -74,56 +78,20 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         relTopoPath = topoPath[topoPath.find('releaseData'):]
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
 
-        #Calculate geometry statistics
-        #(Commented geometry/stats code below is old, needs to be updated)
-##        #We'll use the geoJSON here, as the statistics (i.e., vertices) will be most comparable
-##        #to other cases.
-####        geojsonSearch = [x for x in filenames if re.search('.geojson', x)]
-####        with open(path + "/" + geojsonSearch[0], "r") as g:
-####            geom = geopandas.read_file(g)
-####        
-####        admCount = len(geom)
-####        
-####        vertices=[]
-####        for i, row in geom.iterrows():
-####            n = 0
-####            
-####            if(row.geometry.type.startswith("Multi")):
-####                for seg in row.geometry:
-####                    n += len(seg.exterior.coords)
-####            else:
-####                n = len(row.geometry.exterior.coords)
-####            
-####            vertices.append(n) ###
-##
-##        admCount = ''
-##        stat1 = '' #round(sum(vertices)/len(vertices),0)
-##        stat2 = '' #min(vertices)
-##        stat3 = '' #max(vertices)
-##        
-##        metaLine = metaLine + str(admCount) + '","' + str(stat1) + '","' + str(stat2) + '","' + str(stat3) + '","'
-##
-##        #Perimeter Using WGS 84 / World Equidistant Cylindrical (EPSG 4087)
-####        lengthGeom = geom.copy()
-####        lengthGeom = lengthGeom.to_crs(epsg=4087)
-####        lengthGeom["length"] = lengthGeom["geometry"].length / 1000 #km
-##
-##        stat1 = '' #lengthGeom["length"].mean()
-##        stat2 = '' #lengthGeom["length"].min()
-##        stat3 = '' #lengthGeom["length"].max()
-##        metaLine = metaLine + str(stat1) + '","' + str(stat2) + '","' + str(stat3) + '","'
-##
-##        #Area #mean min max Using WGS 84 / EASE-GRID 2 (EPSG 6933)
-####        areaGeom = geom.copy()
-####        areaGeom = areaGeom.to_crs(epsg=6933)
-####        areaGeom["area"] = areaGeom['geometry'].area / 10**6 #sqkm
-##
-##        stat1 = '' #areaGeom['area'].mean()
-##        stat2 = '' #areaGeom['area'].min()
-##        stat3 = '' #areaGeom['area'].max()
-##        
-##        metaLine = metaLine + str(stat1) + '","' + str(stat2) + '","' + str(stat3) + '","'
+        #Add in geometry statistics
+        with open(path + "/" + metaSearch[0].replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
+            stats = json.load(j)
+            meta.update(stats)
 
+        #Override erroneous boundaryYearSourceLag
+        yr = meta['boundaryYearRepresented']
+        updated = meta['sourceDataUpdateDate']
+        updated_year_match = re.search('([0-9]{4})', updated)
+        if yr == 'Unknown' or updated_year_match is None:
+            meta['boundaryYearSourceLag'] = None
+        else:
+            meta['boundaryYearSourceLag'] = int(updated_year_match.group()) - yr
+    
         # write row
         #print(meta)
         writer.writerow(meta)
@@ -137,6 +105,8 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # set the nameField
     row['nameField'] = 'shapeName'
+    # force the year field to int
+    row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -150,6 +120,23 @@ for row in reader:
     # fix gb url bugs
     row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
     row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+    # remove the old gb stats fields
+    oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
+    for field in oldfields:
+        del row[field]
+    # calculate geometry stats on-the-fly
+    resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+    try:
+        geoj = json.loads(resp.read())
+    except:
+        # lfs github files
+        apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+        print('LFS', apiURL)
+        row['apiURL'] = apiURL
+        resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+        geoj = json.loads(resp.read())
+    stats = iotools.calc_stats(geoj['features'], row)
+    row.update(stats)
     # write ro row
     writer.writerow(row)
 
@@ -162,6 +149,8 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # set the nameField
     row['nameField'] = 'shapeName'
+    # force the year field to int
+    row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -175,6 +164,23 @@ for row in reader:
     # fix gb url bugs
     row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
     row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+    # remove the old gb stats fields
+    oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
+    for field in oldfields:
+        del row[field]
+    # calculate geometry stats on-the-fly
+    resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+    try:
+        geoj = json.loads(resp.read())
+    except:
+        # lfs github files
+        apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+        print('LFS', apiURL)
+        row['apiURL'] = apiURL
+        resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+        geoj = json.loads(resp.read())
+    stats = iotools.calc_stats(geoj['features'], row)
+    row.update(stats)
     # write ro row
     writer.writerow(row)
 
@@ -187,6 +193,8 @@ for row in reader:
     if None in row.keys(): row.pop(None)
     # set the nameField
     row['nameField'] = 'shapeName'
+    # force the year field to int
+    row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -200,6 +208,23 @@ for row in reader:
     # fix gb url bugs
     row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
     row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+    # remove the old gb stats fields
+    oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
+    for field in oldfields:
+        del row[field]
+    # calculate geometry stats on-the-fly
+    resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+    try:
+        geoj = json.loads(resp.read())
+    except:
+        # lfs github files
+        apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+        print('LFS', apiURL)
+        row['apiURL'] = apiURL
+        resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+        geoj = json.loads(resp.read())
+    stats = iotools.calc_stats(geoj['features'], row)
+    row.update(stats)
     # write ro row
     writer.writerow(row)
 
