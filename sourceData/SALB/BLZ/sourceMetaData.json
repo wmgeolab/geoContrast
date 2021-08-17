@@ -1,9 +1,9 @@
 {
     "source_url": "https://www.arcgis.com/home/item.html?id=ae95f0223d09466099fdd77a46778adf",
     "iso": "BLZ",
-    "level": 2,
+    "level": 1,
     "type": null,
-    "name_field": "ADM2_NAME",
+    "name_field": "ADM1_NAME",
     "year": 2010,
     "source": [
         "UN SALB"

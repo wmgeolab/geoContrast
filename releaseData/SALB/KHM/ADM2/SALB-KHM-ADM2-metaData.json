@@ -1,14 +1,14 @@
 {
-    "boundaryYearRepresented": 2006,
+    "boundaryYearRepresented": 2008,
     "boundaryISO": "KHM",
     "boundaryType": "ADM2",
     "boundaryCanonical": "Unknown",
-    "boundaryLicense": "UN SALB Data License",
-    "nameField": "ADM2NM",
+    "boundaryLicense": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "nameField": "ADM2_NAME",
     "licenseDetail": null,
-    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
-    "boundarySourceURL": "https://www.unsalb.org/data/khm",
-    "downloadURL": "https://www.unsalb.org/data/khm",
-    "sourceDataUpdateDate": "2006-01-01",
+    "licenseSource": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "boundarySourceURL": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "downloadURL": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "sourceDataUpdateDate": "Sep 30, 2011",
     "boundarySource-1": "UN SALB"
 }

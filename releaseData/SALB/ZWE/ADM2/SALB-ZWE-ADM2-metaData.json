@@ -1,14 +1,14 @@
 {
-    "boundaryYearRepresented": 2004,
+    "boundaryYearRepresented": 2010,
     "boundaryISO": "ZWE",
     "boundaryType": "ADM2",
     "boundaryCanonical": "Unknown",
-    "boundaryLicense": "UN SALB Data License",
-    "nameField": "ADM2NM",
+    "boundaryLicense": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "nameField": "ADM2_NAME",
     "licenseDetail": null,
-    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
-    "boundarySourceURL": "https://www.unsalb.org/data/zwe",
-    "downloadURL": "https://www.unsalb.org/data/zwe",
-    "sourceDataUpdateDate": "2004-01-01",
+    "licenseSource": "https://www.arcgis.com/home/item.html?id=94a2e0a058074061930b7b53c1f84be7",
+    "boundarySourceURL": "https://www.arcgis.com/home/item.html?id=94a2e0a058074061930b7b53c1f84be7",
+    "downloadURL": "https://www.arcgis.com/home/item.html?id=94a2e0a058074061930b7b53c1f84be7",
+    "sourceDataUpdateDate": "Sep 30, 2011",
     "boundarySource-1": "UN SALB"
 }

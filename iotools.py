@@ -46,7 +46,7 @@ import re
 import shapefile as pyshp
 from zipfile import ZipFile
 
-def get_reader(path):
+def get_reader(path, encoding='utf8'):
     # for now must be path to a shapefile within a zipfile
     zpath,shapefile = path[:path.find('.zip')+4], path[path.find('.zip')+4+1:]
     archive = ZipFile(zpath, 'r')
@@ -55,7 +55,7 @@ def get_reader(path):
     shp = archive.open(shapefile+'.shp')
     shx = archive.open(shapefile+'.shx')
     dbf = archive.open(shapefile+'.dbf')
-    reader = pyshp.Reader(shp=shp, shx=shx, dbf=dbf)
+    reader = pyshp.Reader(shp=shp, shx=shx, dbf=dbf, encoding=encoding)
     return reader
 
 def inspect_data(path):
@@ -105,6 +105,8 @@ def import_data(input_dir,
                 
                 dissolve_field=None,
                 keep_fields=None,
+
+                encoding='utf8',
 
                 write_meta=True,
                 write_stats=True,
@@ -280,7 +282,7 @@ def import_data(input_dir,
         print(path)
 
         # load shapefile
-        reader = get_reader(path)
+        reader = get_reader(path, encoding)
 
         # iter country-levels
         for iso,level,feats in iter_country_level_feats(reader, path,
