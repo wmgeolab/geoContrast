@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "year": "2008",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "input": "download.zip/data/khm_jun00-apr08/khm_jun00-apr08.shp"
+}

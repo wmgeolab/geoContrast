@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=9ae2af13070d4b80ac99d6b630730ebd",
+    "year": "2000",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=9ae2af13070d4b80ac99d6b630730ebd",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=9ae2af13070d4b80ac99d6b630730ebd",
+    "input": "download.zip/data/zaf_salb_jan00/zaf_salb_jan00.shp"
+}

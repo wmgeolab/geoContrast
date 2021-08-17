@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=9dcbc7392eee40639e106213ae570526",
+    "year": "2000",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=9dcbc7392eee40639e106213ae570526",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=9dcbc7392eee40639e106213ae570526",
+    "input": "download.zip/data/mlt_salb_jan00-mar00/mlt_salb_jan00-mar00.shp"
+}

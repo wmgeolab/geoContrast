@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=c74303471dc845d698bf1e6b4814da7c",
+    "year": "2006",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=c74303471dc845d698bf1e6b4814da7c",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=c74303471dc845d698bf1e6b4814da7c",
+    "input": "download.zip/data/gab_salb_jan00_jan06/gab_salb_jan00_jan06.shp"
+}

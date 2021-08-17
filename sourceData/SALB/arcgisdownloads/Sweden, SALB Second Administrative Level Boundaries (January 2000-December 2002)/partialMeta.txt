@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=76326497fe4a45a2b23713b0c1b593f0",
+    "year": "2002",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=76326497fe4a45a2b23713b0c1b593f0",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=76326497fe4a45a2b23713b0c1b593f0",
+    "input": "download.zip/data/swe_salb_jan00-dec02/swe_salb_jan00-dec02.shp"
+}

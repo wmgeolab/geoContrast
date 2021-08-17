@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=165eb9589c274248a8d7e67cea2dfbbf",
+    "year": "2008",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=165eb9589c274248a8d7e67cea2dfbbf",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=165eb9589c274248a8d7e67cea2dfbbf",
+    "input": "download.zip/data/kna_salb_jan00_apr08/kna_salb_jan00_apr08.shp"
+}

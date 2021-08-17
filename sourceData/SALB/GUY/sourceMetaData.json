@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=b259acbec47e4b768b5b28154d1cec05",
+    "iso": "GUY",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2010,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=b259acbec47e4b768b5b28154d1cec05",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=b259acbec47e4b768b5b28154d1cec05",
+    "input": "download.zip/data/guy_salb_jan00-apr10/guy_salb_jan00-apr10.shp"
+}

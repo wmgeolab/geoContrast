@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=a695a18e430e45c682d1feac83f273a6",
+    "iso": "MDV",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2010,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=a695a18e430e45c682d1feac83f273a6",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=a695a18e430e45c682d1feac83f273a6",
+    "input": "download.zip/data/mdv_salb_jan00-may10/mdv_salb_jan00-may10.shp"
+}

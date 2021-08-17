@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=03e7766bac59493a991795e50ee881f3",
+    "iso": "IRN",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2009,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=03e7766bac59493a991795e50ee881f3",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=03e7766bac59493a991795e50ee881f3",
+    "input": "download.zip/data/IRN_SALB_12_11_2008-01_03_2009/IRN_SALB_12_11_2008-01_03_2009.shp"
+}

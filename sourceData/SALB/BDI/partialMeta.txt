@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=b43475b2be0742d99d5be71339734b70",
+    "iso": "BDI",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2009,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=b43475b2be0742d99d5be71339734b70",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=b43475b2be0742d99d5be71339734b70",
+    "input": "download.zip/data/BDI_SALB_jul01_aug09/BDI_SALB_jul01_aug09.shp"
+}

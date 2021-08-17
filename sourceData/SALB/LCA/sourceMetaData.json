@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=708498abcaeb4b4492d3dd58b2316e48",
+    "iso": "LCA",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2010,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=708498abcaeb4b4492d3dd58b2316e48",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=708498abcaeb4b4492d3dd58b2316e48",
+    "input": "download.zip/data/lca_salb_jan00_apr10/lca_salb_jan00_apr10.shp"
+}

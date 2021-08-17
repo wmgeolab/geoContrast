@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=465b4f6ec5b34230abfc9961bc565de4",
+    "iso": "FIN",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2009,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=465b4f6ec5b34230abfc9961bc565de4",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=465b4f6ec5b34230abfc9961bc565de4",
+    "input": "download.zip/data/fin_salb_jan07-feb09/fin_salb_jan07-feb09.shp"
+}

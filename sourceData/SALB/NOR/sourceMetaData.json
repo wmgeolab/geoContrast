@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=ba9864ffbc9b4d48b33136fd6c893ea3",
+    "iso": "NOR",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2010,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=ba9864ffbc9b4d48b33136fd6c893ea3",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=ba9864ffbc9b4d48b33136fd6c893ea3",
+    "input": "download.zip/data/NOR_01_01_2008-10_02_2010/NOR_01_01_2008-10_02_2010.shp"
+}

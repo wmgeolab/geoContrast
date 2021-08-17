@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=f75808ddf5f343fa84b75a292fa83e2e",
+    "year": "2008",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=f75808ddf5f343fa84b75a292fa83e2e",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=f75808ddf5f343fa84b75a292fa83e2e",
+    "input": "download.zip/data/IRN_SALB_21_10_2008-08_11_2008/IRN_SALB_21_10_2008-08_11_2008.shp"
+}

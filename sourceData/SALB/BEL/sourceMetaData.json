@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=ac30e8ea4b844f7586faa8f10c8e24bc",
+    "iso": "BEL",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2010,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=ac30e8ea4b844f7586faa8f10c8e24bc",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=ac30e8ea4b844f7586faa8f10c8e24bc",
+    "input": "download.zip/data/bel_salb_jan00_mar10/bel_salb_jan00_mar10.shp"
+}

@@ -5,7 +5,7 @@ import json
 import warnings
 
 # params
-sources = ['GRID3','OCHA','Natural_Earth','GADM']
+sources = ['GRID3']
 write_meta = False
 write_stats = True
 write_data = False

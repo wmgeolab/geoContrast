@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=9f20f8471284452ab683e91ed62d2aa5",
+    "iso": "USA",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2007,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=9f20f8471284452ab683e91ed62d2aa5",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=9f20f8471284452ab683e91ed62d2aa5",
+    "input": "download.zip/data/usa_2adm_jun07-jun07/usa_2adm_jun07-jun07.shp"
+}

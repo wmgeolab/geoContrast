@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=f1ecfd2d62764859878d1f9aa7c1827e",
+    "iso": "AUS",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2000,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=f1ecfd2d62764859878d1f9aa7c1827e",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=f1ecfd2d62764859878d1f9aa7c1827e",
+    "input": "download.zip/data/aus_salb_jan00/aus_salb_jan00.shp"
+}

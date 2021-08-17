@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=6af090360dc0454ba2381f9a94d77fa9",
+    "year": "2010",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=6af090360dc0454ba2381f9a94d77fa9",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=6af090360dc0454ba2381f9a94d77fa9",
+    "input": "download.zip/data/zmb_jan00-mar10/zmb_jan00-mar10.shp"
+}

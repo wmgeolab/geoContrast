@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=2416ff0aef844f6eba519f71c65362e1",
+    "iso": "SLE",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2010,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=2416ff0aef844f6eba519f71c65362e1",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=2416ff0aef844f6eba519f71c65362e1",
+    "input": "download.zip/data/sle_salb_jan00-jul10/sle_salb_jan00-jul10.shp"
+}

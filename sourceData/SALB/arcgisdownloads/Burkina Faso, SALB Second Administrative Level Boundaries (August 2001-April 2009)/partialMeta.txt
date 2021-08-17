@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=628605a2662d4c30877a536ce072991e",
+    "year": "2009",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=628605a2662d4c30877a536ce072991e",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=628605a2662d4c30877a536ce072991e",
+    "input": "download.zip/data/bfa_aug01-apr09/bfa_aug01-apr09.shp"
+}

@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=858ef92714c945519b42c72b6dfd981d",
+    "year": "2001",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=858ef92714c945519b42c72b6dfd981d",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=858ef92714c945519b42c72b6dfd981d",
+    "input": "download.zip/data/usa_salb_jan00_jun01/usa_salb_jan00_jun01.shp"
+}

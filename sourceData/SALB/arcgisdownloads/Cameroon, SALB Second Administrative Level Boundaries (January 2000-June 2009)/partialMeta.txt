@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=d311798f50de41b5b1485ee4bdc05d2e",
+    "year": "2009",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=d311798f50de41b5b1485ee4bdc05d2e",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=d311798f50de41b5b1485ee4bdc05d2e",
+    "input": "download.zip/data/cmr_salb_jan00_jun09/cmr_salb_jan00_jun09.shp"
+}

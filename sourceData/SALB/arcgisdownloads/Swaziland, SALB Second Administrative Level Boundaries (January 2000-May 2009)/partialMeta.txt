@@ -1,0 +1,13 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=ee6b14056352440fa18d05adbd9bd491",
+    "year": "2009",
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=ee6b14056352440fa18d05adbd9bd491",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=ee6b14056352440fa18d05adbd9bd491",
+    "input": "download.zip/data/SWZ_SALB_jan00-may09/SWZ_SALB_jan00-may09.shp"
+}

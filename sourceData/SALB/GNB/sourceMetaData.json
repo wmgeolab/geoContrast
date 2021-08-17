@@ -1,0 +1,17 @@
+{
+    "source_url": "https://www.arcgis.com/home/item.html?id=541ca05ae5aa4fcfb777c3b1273476c6",
+    "iso": "GNB",
+    "level": 2,
+    "type": null,
+    "name_field": "ADM2_NAME",
+    "year": 2009,
+    "source": [
+        "UN SALB"
+    ],
+    "source_updated": "Sep 30, 2011",
+    "download_url": "https://www.arcgis.com/home/item.html?id=541ca05ae5aa4fcfb777c3b1273476c6",
+    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "license_detail": null,
+    "license_url": "https://www.arcgis.com/home/item.html?id=541ca05ae5aa4fcfb777c3b1273476c6",
+    "input": "download.zip/data/gnb_salb_jan00_aug09/gnb_salb_jan00_aug09.shp"
+}
