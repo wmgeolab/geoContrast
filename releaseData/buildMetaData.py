@@ -30,13 +30,13 @@ except:
     pass
 
 #Create output csv file with headers
-fieldnames = "boundaryID,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimiter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
+fieldnames = "boundaryCollection,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimeter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
 wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
 #Loop all metadata json files in releaseData
-for (path, dirname, filenames) in os.walk(ws["working"]):
+for (dirpath, dirname, filenames) in os.walk(ws["working"]):
 
     #Look for file metadata.json
     metaSearch = [x for x in filenames if x.endswith('metaData.json')]
@@ -44,8 +44,13 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         print(metaSearch)
 
         #Init row from file metadata.json
-        with open(path + "/" + metaSearch[0], "r", encoding='utf8') as j:
+        with open(dirpath + "/" + metaSearch[0], "r", encoding='utf8') as j:
             meta = json.load(j)
+
+        #Add in boundary collection (ie the folder name that the boundary is organized into)
+        reldirpath = dirpath.split('releaseData')[-1].strip('/').strip('\\')
+        collection = reldirpath.split('/')[0].split('\\')[0] # topmost folder
+        meta['boundaryCollection'] = collection
 
         #Drop unwanted entries
         meta.pop('downloadURL')
@@ -73,13 +78,13 @@ for (path, dirname, filenames) in os.walk(ws["working"]):
         #Add in apiURL
         #githubRoot = 'https://raw.githubusercontent.com/wmgeolab/geoContrast/main' # normal github files
         githubRoot = 'https://media.githubusercontent.com/media/wmgeolab/geoContrast/main' # lfs github files
-        topoPath = path + "/" + metaSearch[0].replace('-metaData.json', '.topojson')
+        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson')
         topoPath = topoPath.replace('\\','/')
         relTopoPath = topoPath[topoPath.find('releaseData'):]
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
 
         #Add in geometry statistics
-        with open(path + "/" + metaSearch[0].replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
+        with open(dirpath + "/" + metaSearch[0].replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
             stats = json.load(j)
             meta.update(stats)
 
@@ -103,10 +108,13 @@ for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     if '' in row.keys(): row.pop('')
     if None in row.keys(): row.pop(None)
+    row.pop('boundaryID')
     # set the nameField
     row['nameField'] = 'shapeName'
     # force the year field to int
     row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
+    # add in collection name
+    row['boundaryCollection'] = 'geoBoundaries (Open)'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -147,10 +155,13 @@ for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     if '' in row.keys(): row.pop('')
     if None in row.keys(): row.pop(None)
+    row.pop('boundaryID')
     # set the nameField
     row['nameField'] = 'shapeName'
     # force the year field to int
     row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
+    # add in collection name
+    row['boundaryCollection'] = 'geoBoundaries (Humanitarian)'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
@@ -191,10 +202,13 @@ for row in reader:
     # drop any additional 'blank' field values beyond fieldnames
     if '' in row.keys(): row.pop('')
     if None in row.keys(): row.pop(None)
+    row.pop('boundaryID')
     # set the nameField
     row['nameField'] = 'shapeName'
     # force the year field to int
     row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
+    # add in collection name
+    row['boundaryCollection'] = 'geoBoundaries (Authoritative)'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
     row['boundarySource-2'] = row['boundarySource-1']
