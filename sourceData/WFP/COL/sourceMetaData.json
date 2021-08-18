@@ -1,0 +1,32 @@
+{
+    "input":[
+        {"path":"col_first_level_admin_boundaries.zip/col_first_level_admin_boundaries.shp",
+        "level":1,
+        "type":"Department",
+        "name_field":"DPTO_CNM_1",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-colombia-first-level-admin-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-colombia-first-level-admin-boundaries"
+        },
+        {"path":"col_second_level_admin_boundaries.zip/col_second_level_admin_boundaries.shp",
+        "level":2,
+        "type":null,
+        "name_field":"MPIO_CNM_1",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-colombia-second-level-admin-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-colombia-second-level-admin-boundaries"
+        },
+        {"path":"col_third_level_admin_boundaries.zip/col_third_level_admin_boundaries.shp",
+        "level":3,
+        "type_field":"CPOB_TIPO",
+        "name_field":"CPOB_CNM_1",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-colombia-third-level-admin-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-colombia-third-level-admin-boundaries"
+        }
+    ],
+    
+    "iso":"COL",
+    "year":2017,
+    
+    "source":["World Food Programme","National Administrative Department of Statistics"],
+    "source_updated":"27 January 2020",
+    "license":"Creative Commons Attribution International"
+}

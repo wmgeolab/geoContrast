@@ -1,0 +1,25 @@
+{
+    "input":[
+        {"path":"cod_admbnda_adm1_rgc_20170711.zip/cod_admbnda_adm1_rgc_20170711.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"ADM1_FR",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-drc-first-level-administrative-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-drc-first-level-administrative-boundaries"
+        },
+        {"path":"cod_admbnda_adm2_rgc_20170711.zip/cod_admbnda_adm2_rgc_20170711.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"ADM2_FR",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-drc-second-level-administrative-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-drc-second-level-administrative-boundaries"
+        }
+    ],
+    
+    "iso":"COD",
+    "year":2017,
+    
+    "source":["World Food Programme","Inter-Agency Information Management Working Group"],
+    "source_updated":"27 January 2020",
+    "license":"Creative Commons Attribution International"
+}

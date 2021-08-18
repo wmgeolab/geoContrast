@@ -1,0 +1,31 @@
+{
+    "input":[
+        {"path":"yem_adm0_polygon.zip/yem_adm0_polygon.shp",
+        "level":0,
+        "type":null,
+        "name_field":"adm0_name",
+        "source_url":"https://geonode.wfp.org/layers/geonode%3Ayem_adm0_polygon"
+        },
+        {"path":"yem_adm1_polygon.zip/yem_adm1_polygon.shp",
+        "level":1,
+        "type":"Governate",
+        "name_field":"adm1_name",
+        "source_url":"https://geonode.wfp.org/layers/geonode%3Ayem_adm1_polygon"
+        },
+        {"path":"yem_adm2_polygon.zip/yem_adm2_polygon.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"adm2_name",
+        "source_url":"https://geonode.wfp.org/layers/geonode%3Ayem_adm2_polygon"
+        }
+    ],
+    
+    "iso":"YEM",
+    "year":2019,
+    
+    "source":["World Food Programme","Geoenabler"],
+    "source_updated":"28 March 2019",
+    "license":null,
+    "license_detail":null,
+    "license_url":null
+}

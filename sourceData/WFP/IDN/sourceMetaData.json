@@ -1,0 +1,18 @@
+{
+    "input":[
+        {"path":"idn_bnd_adm4_2017_bps_a.zip/idn_bnd_adm4_2017_bps_a.shp",
+        "level":4,
+        "type":"Village",
+        "name_field":"A4N_BPS"
+        }
+    ],
+    
+    "iso":"IDN",
+    "year":2017,
+    
+    "source":["World Food Programme","Badan Pusat Statistik (BPS - Statistics Indonesia) standard and Sistem Informasi Administrasi Kependudukan (SIAK - Population Administration Information System) standard from Kemendagri (Ministry of Home Affairs)"],
+    "source_url":"https://data.humdata.org/dataset/wfp-geonode-indonesia-adminboundary",
+    "source_updated":"27 January 2020",
+    "license":"Creative Commons Attribution International",
+    "license_url":"https://data.humdata.org/dataset/wfp-geonode-indonesia-adminboundary"
+}

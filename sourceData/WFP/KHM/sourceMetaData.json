@@ -1,0 +1,32 @@
+{
+    "input":[
+        {"path":"khm_adm1_un.zip/khm_adm1_un.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"adm1_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-cambodia-admin-boundaries-level-1-provinces",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-cambodia-admin-boundaries-level-1-provinces"
+        },
+        {"path":"khm_adm2_un.zip/khm_adm2_un.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"adm2_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-cambodia-admin-boundaries-level-2-districts",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-cambodia-admin-boundaries-level-2-districts"
+        },
+        {"path":"khm_adm3_un.zip/khm_adm3_un.shp",
+        "level":3,
+        "type":"Commune",
+        "name_field":"adm3_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-cambodia-admin-boundaries-level-3-communes",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-cambodia-admin-boundaries-level-3-communes"
+        }
+    ],
+    
+    "iso":"KHM",
+    "year":2019,
+    
+    "source":["World Food Programme","Department of Geography of the Ministry of Land Management, Urban Planning and Construction and WFP GeoEnabler Project"],
+    "source_updated":"27 January 2020",
+    "license":"Creative Commons Attribution International"
+}

@@ -5,12 +5,12 @@ import json
 import warnings
 
 # params
-sources = ['SALB']
-isos = []
-replace = False
+collections = ['WFP']
+isos = ['YEM']
+replace = True
 write_meta = True
-write_stats = False
-write_data = False
+write_stats = True
+write_data = True
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):
@@ -21,10 +21,10 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
 
         # determine the dataset name from the folder below sourceData
         reldirpath = os.path.relpath(dirpath, 'sourceData')
-        data_name = reldirpath.split('/')[0].split('\\')[0] # topmost folder
+        collection = reldirpath.split('/')[0].split('\\')[0] # topmost folder
 
-        # only process if data_name is in the list of sources to be processed
-        if sources and data_name not in sources:
+        # only process if collection is in the list of collections to be processed
+        if collections and collection not in collections:
             continue
 
         # only process if iso is in the list isos to be processed
@@ -43,7 +43,7 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
 
         # add final entries to kwargs
         kwargs.update(input_dir=dirpath,
-                      data_name=data_name,
+                      collection=collection,
                       output_dir=output_dir,
                       write_meta=write_meta,
                       write_stats=write_stats,
@@ -54,9 +54,9 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         # and the output_dir+dataset for global sources ('iso_field' or 'iso_path')
         # ...
         if 'iso' in kwargs:
-            exists = os.path.lexists(os.path.join(output_dir, data_name, kwargs['iso']))
+            exists = os.path.lexists(os.path.join(output_dir, collection, kwargs['iso']))
         else:
-            exists = os.path.lexists(os.path.join(output_dir, data_name))
+            exists = os.path.lexists(os.path.join(output_dir, collection))
 
         # only process if output folder doesn't already exist or if replace == True
         if exists and replace == False:

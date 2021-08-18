@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "COL",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Department",
+    "boundaryLicense": "Creative Commons Attribution International",
+    "nameField": "DPTO_CNM_1",
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/wfp-geonode-colombia-first-level-admin-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/wfp-geonode-colombia-first-level-admin-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "27 January 2020",
+    "boundarySource-1": "World Food Programme",
+    "boundarySource-2": "National Administrative Department of Statistics"
+}

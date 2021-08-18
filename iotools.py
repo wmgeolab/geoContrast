@@ -81,7 +81,7 @@ def inspect_data(path):
 def import_data(input_dir,
                 input_path,
                 output_dir,
-                data_name,
+                collection,
                 
                 iso=None,
                 iso_field=None,
@@ -226,6 +226,7 @@ def import_data(input_dir,
 
             # loop each level and return relevant features as geojson
             for level,levelrecs in iter_level_recs():
+                print('loading data') # this will be the most time consuming part (loading geometries)
                 countrylevelfeats = []
                 for rec in levelrecs:
                     props = rec.as_dict(date_strings=True)
@@ -266,7 +267,7 @@ def import_data(input_dir,
         return newfeats
 
     # make dir
-    try: os.mkdir('{output}/{dataset}'.format(output=output_dir, dataset=data_name))
+    try: os.mkdir('{output}/{dataset}'.format(output=output_dir, dataset=collection))
     except: pass
 
     # loop source files
@@ -291,11 +292,11 @@ def import_data(input_dir,
             print('{}-ADM{}:'.format(iso, level), len(feats), 'admin units')
 
             # make sure iso folder exist
-            try: os.mkdir('{output}/{dataset}/{iso}'.format(output=output_dir, dataset=data_name, iso=iso))
+            try: os.mkdir('{output}/{collection}/{iso}'.format(output=output_dir, collection=collection, iso=iso))
             except: pass
 
             # make sure admin level folder exist
-            try: os.mkdir('{output}/{dataset}/{iso}/ADM{lvl}'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level))
+            try: os.mkdir('{output}/{collection}/{iso}/ADM{lvl}'.format(output=output_dir, collection=collection, iso=iso, lvl=level))
             except: pass
 
             # get type info
@@ -324,6 +325,12 @@ def import_data(input_dir,
                 if name_field not in fields:
                     raise Exception("name_field arg '{}' is not a valid field; must be one of: {}".format(name_field, fields))
 
+            # determine dataset name, in case multiple datasets (folders) inside ISO folder
+            dataset = collection
+            parent = os.path.basename(input_dir)
+            if parent != iso:
+                dataset += '_' + parent
+
             # write data
             if write_data:
                 print('writing data')
@@ -332,7 +339,7 @@ def import_data(input_dir,
                 topodata = tp.Topology(feats, prequantize=False).to_json()
 
                 # write topojson to file
-                dst = '{output}/{dataset}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level)
+                dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
                 with open(dst, 'w', encoding='utf8') as fobj:
                     fobj.write(topodata)
 
@@ -357,17 +364,51 @@ def import_data(input_dir,
             # write metadata to file
             if write_meta is True:
                 print('writing meta', meta)
-                dst = '{output}/{dataset}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-metaData.json'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level)
+                dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-metaData.json'.format(output=output_dir, collection=collection, dataset=dataset, iso=iso, lvl=level)
                 with open(dst, 'w', encoding='utf8') as fobj:
                     json.dump(meta, fobj, indent=4)
 
             # calc and output boundary stats
             if write_stats is True:
+                print('writing stats')
                 stats = calc_stats(feats, meta)
-                print('writing stats', stats)
-                dst = '{output}/{dataset}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-stats.json'.format(output=output_dir, dataset=data_name, iso=iso, lvl=level)
+                print(stats)
+                dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-stats.json'.format(output=output_dir, collection=collection, dataset=dataset, iso=iso, lvl=level)
                 with open(dst, 'w', encoding='utf8') as fobj:
                     json.dump(stats, fobj, indent=4)
+
+_geod = None
+
+def get_pyproj_geod():
+    global _geod
+    if _geod is None:
+        # only create the geod once in case of overhead
+        from pyproj import Geod
+        _geod = Geod(ellps="WGS84")
+    return _geod
+
+def geojson_area_perimeter(geoj):
+    # area may be negative if incorrect orientation
+    # but the abs(area) will be correct as long as ext and holes
+    # have opposite orientation
+    import numpy as np
+    geod = get_pyproj_geod()
+    
+    if geoj['type'] == 'MultiPolygon':
+        polys = geoj['coordinates']
+    elif geoj['type'] == 'Polygon':
+        polys = [geoj['coordinates']]
+        
+    area = 0
+    perim = 0
+    for poly in polys:
+        for ring in poly:
+            coords = np.array(ring)
+            lons,lats = coords[:,0],coords[:,1]
+            _area,_perim = geod.polygon_area_perimeter(lons, lats)
+            area += _area
+            perim += _perim
+    return area, perim
 
 def calc_stats(feats, meta):
     stats = {}
@@ -382,18 +423,32 @@ def calc_stats(feats, meta):
     else:
         stats['boundaryYearSourceLag'] = int(float(updated_year_match.group())) - yr
     # vertices, area, and perimiter
-    from shapely.geometry import asShape
-    from pyproj import Geod
-    geod = Geod(ellps="WGS84")
+    #from shapely.geometry import asShape
     area = 0
     perim = 0
     verts = 0
     for feat in feats:
         # geodesy
-        geom = asShape(feat['geometry'])
-        _area, _perim = geod.geometry_area_perimeter(geom)
+
+        # pyproj
+        # pyproj shapely version
+        #geom = asShape(feat['geometry'])
+        #geod = get_pyproj_geod()
+        #_area, _perim = geod.geometry_area_perimeter(geom)
+        # pyproj geojson version, much faster
+        _area, _perim = geojson_area_perimeter(feat['geometry'])
+
+        # some faster alternatives that avoids pyproj? 
+        # https://stackoverflow.com/questions/6656475/python-speeding-up-geographic-comparison
+        # https://github.com/geospace-code/pymap3d
+        # https://github.com/actushumanus/nphaversine
+        # https://github.com/qyliu-hkust/fasthaversine
+        # https://github.com/yandex/mapsapi-area
+        # https://github.com/Turfjs/turf/blob/master/packages/turf-area/index.ts
+
         area += _area
         perim += _perim
+        
         # verts
         _verts = 0
         if feat['geometry']['type'] == 'MultiPolygon':
@@ -404,7 +459,7 @@ def calc_stats(feats, meta):
             for ring in poly:
                 _verts += len(ring)
         verts += _verts
-    area = abs(area / 1000000) # convert m2 to km2 + fix pyproj which treats ccw as positive area (opposite of geojson)
+    area = abs(area) / 1000000 # convert m2 to km2 + fix pyproj which treats ccw as positive area (opposite of geojson)
     perim = perim / 1000 # convert m to km
     stats['statsArea'] = area
     stats['statsPerimeter'] = perim

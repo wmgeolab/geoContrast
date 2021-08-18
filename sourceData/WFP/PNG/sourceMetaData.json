@@ -1,0 +1,25 @@
+{
+    "input":[
+        {"path":"png_adm1_un.zip/png_adm1_un.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"adm1_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-papua-new-guinea-admin-boundaries-level-1-provinces",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-papua-new-guinea-admin-boundaries-level-1-provinces"
+        },
+        {"path":"png_adm2_un.zip/png_adm2_un.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"adm2_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-papua-new-guinea-admin-boundaries-level-2-districts",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-papua-new-guinea-admin-boundaries-level-2-districts"
+        }
+    ],
+    
+    "iso":"PNG",
+    "year":2019,
+    
+    "source":["World Food Programme","Geoenabler"],
+    "source_updated":"17 April 2020",
+    "license":"Creative Commons Attribution International"
+}

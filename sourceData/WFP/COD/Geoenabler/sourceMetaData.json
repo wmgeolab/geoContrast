@@ -1,0 +1,25 @@
+{
+    "input":[
+        {"path":"cod_adm1_un.zip/cod_adm1_un.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"adm1_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-drc-admin-boundaries-level-1",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-drc-admin-boundaries-level-1"
+        },
+        {"path":"cod_adm2_un.zip/cod_adm2_un.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"adm2_name",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-drc-admin-boundaries-level-2",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-drc-admin-boundaries-level-2"
+        }
+    ],
+    
+    "iso":"COD",
+    "year":2019,
+    
+    "source":["World Food Programme","Geoenabler"],
+    "source_updated":"27 January 2020",
+    "license":"Creative Commons Attribution International"
+}

@@ -1,0 +1,25 @@
+{
+    "input":[
+        {"path":"mwi_bnd_admin1.zip/mwi_bnd_admin1.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"NAME_1",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-ica-malawi-first-level-administrative-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-ica-malawi-first-level-administrative-boundaries"
+        },
+        {"path":"mwi_bnd_admin2.zip/mwi_bnd_admin2.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"NAME_2",
+        "source_url":"https://data.humdata.org/dataset/wfp-geonode-ica-malawi-second-level-administrative-boundaries",
+        "license_url":"https://data.humdata.org/dataset/wfp-geonode-ica-malawi-second-level-administrative-boundaries"
+        }
+    ],
+    
+    "iso":"MWI",
+    "year":2014,
+    
+    "source":["World Food Programme","ICA Malawi"],
+    "source_updated":"27 January 2020",
+    "license":"Creative Commons Attribution International"
+}
