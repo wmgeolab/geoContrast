@@ -7,6 +7,9 @@ import sys
 sys.path.append('..')
 import iotools
 import re
+from time import time()
+
+start = time()
 
 #Initialize workspace
 ws = {}
@@ -239,10 +242,11 @@ for row in reader:
         geoj = json.loads(resp.read())
     stats = iotools.calc_stats(geoj['features'], row)
     row.update(stats)
-    # write ro row
+    # write to row
     writer.writerow(row)
 
 #Close up shop
 wfob.close()
 
+print('finished! build took {} seconds'.format(time()-start))
 

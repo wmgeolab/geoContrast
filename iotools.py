@@ -83,6 +83,8 @@ def import_data(input_dir,
                 output_dir,
                 collection,
                 
+                collection_subset=None,
+                
                 iso=None,
                 iso_field=None,
                 iso_path=None,
@@ -125,6 +127,8 @@ def import_data(input_dir,
                 # regex
                 pattern = input_path.replace('\\', '/')
                 pattern = pattern.replace('*', '[^/]*')
+                raise Exception('Need to generalize this manual hardcoding for gadm...') # see next line
+            
                 zip_pattern = 'countryfiles' #pattern.split('.zip')[0] + '.zip'
                 #print('regex', zip_pattern, pattern)
                 for dirpath,dirnames,filenames in os.walk(os.path.abspath(input_dir)):
@@ -325,11 +329,10 @@ def import_data(input_dir,
                 if name_field not in fields:
                     raise Exception("name_field arg '{}' is not a valid field; must be one of: {}".format(name_field, fields))
 
-            # determine dataset name, in case multiple datasets (folders) inside ISO folder
+            # determine dataset name, in case multiple datasets (folders) inside folder
             dataset = collection
-            parent = os.path.basename(input_dir)
-            if parent != iso:
-                dataset += '_' + parent
+            if collection_subset:
+                dataset += '_' + collection_subset
 
             # write data
             if write_data:

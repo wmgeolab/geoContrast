@@ -6,11 +6,11 @@ import warnings
 
 # params
 collections = ['WFP']
-isos = ['YEM']
+isos = []
 replace = True
 write_meta = True
-write_stats = True
-write_data = True
+write_stats = False
+write_data = False
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):

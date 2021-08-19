@@ -18,6 +18,7 @@
     
     "iso":"COD",
     "year":2019,
+    "collection_subset":"Geoenabler",
     
     "source":["World Food Programme","Geoenabler"],
     "source_updated":"27 January 2020",
