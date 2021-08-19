@@ -1,0 +1,27 @@
+
+{
+    "input":[
+        {"path":"bu-politicalboundary.zip/bu-politicalboundary.shp",
+        "level":0,
+        "type":null,
+        "name_field":null
+        },
+        {"path":"bu-adm.zip/bu-adm.shp",
+        "level":3,
+        "type":"Commune",
+        "name_field":"COMMUNE"
+        }
+    ],
+    
+    "iso":"BDI",
+    "year":null,
+
+    "collection_subset":"Africover",
+    
+    "source":["UN FAO","Africover","National Focal Point Institution (NFPI)"],
+    "source_updated":"4 April 2002",
+    "source_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/6b5ef015-c129-4a93-bdaa-8a940949d69f",
+    "license":"Other",
+    "license_detail":"The data remains full property of the owners. It can be accessed, reproduced and distributed given that the owner information is explicitly acknowledged and displayed in the copyright information (I.E. Produced by FAO - Africover). The Authors do not assume any responsibilities for improper use of the data.",
+    "license_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/6b5ef015-c129-4a93-bdaa-8a940949d69f"
+}

@@ -1,0 +1,31 @@
+
+{
+    "input":[
+        {"path":"ORGANIZACION TERRITORIAL PROVINCIAL 2019.zip/ORGANIZACION TERRITORIAL PROVINCIAL 2019.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"DPA_DESPRO",
+        "source_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/77d3e9c4-5363-4e93-8064-44be77f15081",
+        "license":"Other",
+        "license_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/77d3e9c4-5363-4e93-8064-44be77f15081",
+        "license_detail":"None. Cite source of information: TERRITORIAL LIMITS OF THE INTERPROVINCIAL AND INTERCANTONAL STATE TERRITORIAL ORGANIZATION, APPROVED BY THE BOARD OF DIRECTORS OF CONALIEN REGULAR SESSION OF MAY 15, 2018."    
+        },
+        {"path":"ORGANIZACION TERRITORIAL CANTONAL 2019_ECU.zip/ORGANIZACION TERRITORIAL CANTONAL 2019.shp",
+        "level":2,
+        "type":"Canton",
+        "name_field":"DPA_DESCAN",
+        "source_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/d804840d-cc58-49d8-aa23-d90d58ab1a91",
+        "license":"Other",
+        "license_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/d804840d-cc58-49d8-aa23-d90d58ab1a91",
+        "license_detail":"None. Cite source of information: TERRITORIAL LIMITS OF THE INTERPROVINCIAL AND INTERCANTONAL STATE TERRITORIAL ORGANIZATION, APPROVED BY THE BOARD OF DIRECTORS OF CONALIEN REGULAR SESSION OF MAY 15, 2018."    
+        }
+    ],
+    
+    "iso":"ECU",
+    "year":2019,
+
+    "collection_subset":"CONALI",
+    
+    "source":["Comité Nacional De Límites Internos (Conali)"],
+    "source_updated":"15 May 2018"
+}

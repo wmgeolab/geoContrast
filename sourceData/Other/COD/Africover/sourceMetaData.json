@@ -1,0 +1,27 @@
+
+{
+    "input":[
+        {"path":"drc_politicalbound.zip/drc-political-boundary.shp",
+        "level":0,
+        "type":null,
+        "name_field":"COUNTRY"
+        },
+        {"path":"drc-adm.zip/drc-adm.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"DISTRICT"
+        }
+    ],
+    
+    "iso":"COD",
+    "year":null,
+
+    "collection_subset":"Africover",
+    
+    "source":["UN FAO","Africover","Digital Chart of the World"],
+    "source_updated":"1 October 2003",
+    "source_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/1df748b7-9dbd-41ba-a842-d49f5ab2eb82",
+    "license":"Other",
+    "license_detail":"The data remains full property of the owners. It can be accessed, reproduced and distributed given that the owner information is explicitly acknowledged and displayed in the copyright information (I.E. Produced by FAO - Africover). The Authors do not assume any responsibilities for improper use of the data.",
+    "license_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/1df748b7-9dbd-41ba-a842-d49f5ab2eb82"
+}

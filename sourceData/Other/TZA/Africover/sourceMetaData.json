@@ -1,0 +1,27 @@
+
+{
+    "input":[
+        {"path":"tz-politicalboundary.zip/tz-politicalboundary.shp",
+        "level":0,
+        "type":null,
+        "name_field":null
+        },
+        {"path":"tz-adm.zip/tz-adm.shp",
+        "level":2,
+        "type":"District",
+        "name_field":"DISTRICT"
+        }
+    ],
+    
+    "iso":"TZA",
+    "year":null,
+
+    "collection_subset":"Africover",
+    
+    "source":["UN FAO","Africover","National Focal Point Institution (NFPI)"],
+    "source_updated":"4 April 2002",
+    "source_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/9db0198e-7e74-4d30-ac72-a0b7436e831b",
+    "license":"Other",
+    "license_detail":"The data remains full property of the owners. It can be accessed, reproduced and distributed given that the owner information is explicitly acknowledged and displayed in the copyright information (I.E. Produced by FAO - Africover). The Authors do not assume any responsibilities for improper use of the data.",
+    "license_url":"https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/9db0198e-7e74-4d30-ac72-a0b7436e831b"
+}

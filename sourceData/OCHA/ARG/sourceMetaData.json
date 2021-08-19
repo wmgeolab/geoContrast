@@ -1,0 +1,30 @@
+
+{
+    "input":[
+        {"path":"arg_adm_unhcr2017_shp.zip/arg_admbnda_adm0_unhcr2017.shp",
+        "level":0,
+        "type":null,
+        "name_field":"ADM0_ES"
+        },
+        {"path":"arg_adm_unhcr2017_shp.zip/arg_admbnda_adm1_unhcr2017.shp",
+        "level":1,
+        "type":"Province",
+        "name_field":"ADM1_ES"
+        },
+        {"path":"arg_adm_unhcr2017_shp.zip/arg_admbnda_adm2_unhcr2017.shp",
+        "level":2,
+        "type":"Department",
+        "name_field":"ADM2_ES"
+        }
+    ],
+    
+    "iso":"ARG",
+    "year":2020,
+    
+    "source":["OCHA ROLAC","Instituto Geografico Nacional and UNHCR"],
+    "source_updated":"4 May 2020",
+    "source_url":"https://data.humdata.org/dataset/argentina-administrative-level-0-boundaries",
+    "license":"Creative Commons Attribution for Intergovernmental Organisations",
+    "license_detail":null,
+    "license_url":"https://data.humdata.org/dataset/argentina-administrative-level-0-boundaries"
+}

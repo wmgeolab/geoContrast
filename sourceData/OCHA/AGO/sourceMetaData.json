@@ -1,0 +1,30 @@
+
+{
+    "input":[
+        {"path":"ago_adm_gadm_ine_ocha_20180904_shp.zip/ago_admbnda_adm0_gadm_ine_ocha_20180904.shp",
+        "level":0,
+        "type":null,
+        "name_field":"ADM0_EN"
+        },
+        {"path":"ago_adm_gadm_ine_ocha_20180904_shp.zip/ago_admbnda_adm2_gadm_ine_ocha_20180904.shp",
+        "level":2,
+        "type":"Municipality",
+        "name_field":"ADM2_EN"
+        },
+        {"path":"ago_adm_gadm_ine_ocha_20180904_shp.zip/ago_admbnda_adm3_gadm_ine_ocha_20180904.shp",
+        "level":3,
+        "type":"Commune",
+        "name_field":"ADM3_EN"
+        }
+    ],
+    
+    "iso":"AGO",
+    "year":2021,
+    
+    "source":["OCHA ROSEA","Instituto Nacional de Estatística (INE)","GADM"],
+    "source_updated":"20 February 2020",
+    "source_url":"https://data.humdata.org/dataset/angola-administrative-levels-0-3",
+    "license":"Creative Commons Attribution for Intergovernmental Organisations",
+    "license_detail":null,
+    "license_url":"https://data.humdata.org/dataset/angola-administrative-levels-0-3"
+}
