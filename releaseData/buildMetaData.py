@@ -120,6 +120,7 @@ for row in reader:
     row['boundaryCollection'] = 'geoBoundaries (Open)'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-3'] = row['boundarySource-2']
     row['boundarySource-2'] = row['boundarySource-1']
     row['boundarySource-1'] = 'geoBoundaries (Open)'
     # overwrite the gb apiURL with direct link to github
@@ -182,6 +183,7 @@ for row in reader:
     row['boundaryCollection'] = 'geoBoundaries (Humanitarian)'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-3'] = row['boundarySource-2']
     row['boundarySource-2'] = row['boundarySource-1']
     row['boundarySource-1'] = 'geoBoundaries (Humanitarian)'
     # overwrite the gb apiURL with direct link to github
@@ -244,6 +246,7 @@ for row in reader:
     row['boundaryCollection'] = 'geoBoundaries (Authoritative)'
     # clear and set the source fields to 'geoBoundaries'
     # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+    row['boundarySource-3'] = row['boundarySource-2']
     row['boundarySource-2'] = row['boundarySource-1']
     row['boundarySource-1'] = 'geoBoundaries (Authoritative)'
     # overwrite the gb apiURL with direct link to github

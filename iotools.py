@@ -310,7 +310,10 @@ def import_data(input_dir,
     try: os.mkdir('{output}/{dataset}'.format(output=output_dir, dataset=collection))
     except: pass
 
-    # loop source files
+    # prep source list
+    sources = source if isinstance(source, list) else [source]
+
+    # loop input files
     iter_kwargs = {'iso':iso,
                    'iso_field':iso_field,
                    'iso_path':iso_path,
@@ -354,7 +357,7 @@ def import_data(input_dir,
                 year = 'Unknown'
 
             # dissolve if specified
-            if dissolve:
+            if (write_data is True or write_stats is True) and dissolve:
                 feats = dissolve_by(feats, dissolve, keep_fields, drop_fields)
                 print('dissolved to', len(feats), 'admin units')
 
@@ -395,7 +398,6 @@ def import_data(input_dir,
                     "downloadURL": download_url,
                     "sourceDataUpdateDate": source_updated,
                     }
-            sources = source if isinstance(source, list) else [source]
             for i,source in enumerate(sources):
                 meta['boundarySource-{}'.format(i+1)] = source
 

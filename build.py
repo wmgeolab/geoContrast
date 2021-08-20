@@ -3,14 +3,15 @@ import iotools
 import os
 import json
 import warnings
+import traceback
 
 # params
-collections = ['Other']
+collections = ['ESRI']
 isos = []
-replace = False
+replace = True
 write_meta = True
-write_stats = True
-write_data = True
+write_stats = False
+write_data = False
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):
@@ -88,4 +89,4 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
             try:
                 iotools.import_data(**_kwargs)
             except Exception as err:
-                warnings.warn('Error importing data: {}'.format(err))
+                warnings.warn('Error importing data: {}'.format(traceback.format_exc()))
