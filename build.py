@@ -5,12 +5,12 @@ import json
 import warnings
 
 # params
-collections = ['WFP']
+collections = ['ESRI']
 isos = []
 replace = True
 write_meta = True
-write_stats = False
-write_data = False
+write_stats = True
+write_data = True
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):

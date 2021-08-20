@@ -1,0 +1,34 @@
+{
+    "input":[
+        {"path":"World_Countries.zip/World_Countries.shp",
+        "iso_field":"ISO_3DIGIT",
+        "level":0,
+        "type_field":null,
+        "name_field":"NAME",
+        "dissolve":"ISO_3DIGIT",
+        "drop_fields":["COLORMAP","LAND_RANK","LAND_TYPE","Shape_Area","Shape_Leng"],
+        "source_updated":"14 May 2021",
+        "source_url":"https://www.arcgis.com/home/item.html?id=d974d9c6bc924ae0a2ffea0a46d71e3d",
+        "license":"ESRI License",
+        "license_detail":"See license url",
+        "license_url":"https://www.esri.com/en-us/legal/redistribution-rights"
+        },
+        {"path":"World_Administrative_Divisions.zip/World_Administrative_Divisions.shp",
+        "iso_field":"ISO_CC",
+        "level":1,
+        "type_field":"ADMINTYPE",
+        "name_field":"NAME",
+        "dissolve":"ISO_SUB",
+        "drop_fields":["COLORMAP","LAND_RANK","LAND_TYPE","Shape_Area","Shape_Leng"],
+        "source_updated":"14 May 2021",
+        "source_url":"https://www.arcgis.com/home/item.html?id=9bc93fabc8d94747a22e811642ca426d",
+        "license":"ESRI License",
+        "license_detail":"See license url",
+        "license_url":"https://www.esri.com/en-us/legal/redistribution-rights"
+        }
+    ],
+    
+    "year":2020,
+    "source":["ESRI","Garmin International, Inc. (formerly DeLorme Publishing Company, Inc.), U.S. Central Intelligence Agency (The World Factbook)"],
+    "encoding":"latin"
+}

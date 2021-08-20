@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "MWI",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "ESRI License",
+    "nameField": "NAME",
+    "licenseDetail": "See license url",
+    "licenseSource": "https://www.esri.com/en-us/legal/redistribution-rights",
+    "boundarySourceURL": "https://www.arcgis.com/home/item.html?id=d974d9c6bc924ae0a2ffea0a46d71e3d",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "14 May 2021",
+    "boundarySource-1": "Garmin International, Inc. (formerly DeLorme Publishing Company, Inc.), U.S. Central Intelligence Agency (The World Factbook)"
+}

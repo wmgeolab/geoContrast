@@ -42,9 +42,20 @@ import itertools
 import os
 import json
 import re
+import csv
+import warnings
 
 import shapefile as pyshp
 from zipfile import ZipFile
+
+# create iso lookup dict
+iso2_to_3 = {}
+with open('buildData/countries_codes_and_coordinates.csv', encoding='utf8', newline='') as f:
+    csvreader = csv.DictReader(f)
+    for row in csvreader:
+        iso2 = row['Alpha-2 code'].strip().strip('"')
+        iso3 = row['Alpha-3 code'].strip().strip('"')
+        iso2_to_3[iso2] = iso3
 
 def get_reader(path, encoding='utf8'):
     # for now must be path to a shapefile within a zipfile
@@ -58,7 +69,7 @@ def get_reader(path, encoding='utf8'):
     reader = pyshp.Reader(shp=shp, shx=shx, dbf=dbf, encoding=encoding)
     return reader
 
-def inspect_data(path):
+def inspect_data(path, numrows=3):
     if path.endswith('.zip'):
         # inspect all shapefiles inside zipfile
         archive = ZipFile(path, 'r')
@@ -75,7 +86,7 @@ def inspect_data(path):
         reader = get_reader(path)
         for i,rec in enumerate(reader.iterRecords()):
             print(json.dumps(rec.as_dict(date_strings=True), sort_keys=True, indent=4))
-            if i >= 2:
+            if i >= (numrows-1):
                 break
 
 def import_data(input_dir,
@@ -105,8 +116,9 @@ def import_data(input_dir,
                 license_detail=None,
                 license_url=None,
                 
-                dissolve_field=None,
+                dissolve=False,
                 keep_fields=None,
+                drop_fields=None,
 
                 encoding='utf8',
 
@@ -174,6 +186,12 @@ def import_data(input_dir,
 
         # define how to iterate isos
         if iso is not None:
+            if len(iso) == 2:
+                if iso in iso2_to_3:
+                    iso = iso2_to_3[iso]
+                else:
+                    raise Exception("Unable to lookup 2-digit iso code '{}'.".format(iso))
+                
             if len(iso) != 3 or not iso.isalpha():
                 raise Exception("Country iso value must consist of 3 alphabetic characters, not '{}'.".format(iso))
 
@@ -201,6 +219,12 @@ def import_data(input_dir,
                 # more efficient
                 key = lambda rec: rec[iso_field]
                 for iso,countryrecs in itertools.groupby(sorted(reader.records(), key=key), key=key):
+                    if len(iso) == 2:
+                        if iso in iso2_to_3:
+                            iso = iso2_to_3[iso]
+                        else:
+                            warnings.warn("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
+                            continue
                     if len(iso) != 3 or not iso.isalpha():
                         warnings.warn("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
                         continue
@@ -243,28 +267,33 @@ def import_data(input_dir,
                 yield iso, level, countrylevelfeats
 
 
-    def dissolve_by(feats, dissolve_field, keep_fields):
+    def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None):
         from shapely.geometry import asShape
         from shapely.ops import cascaded_union
         key = lambda f: f['properties'][dissolve_field] if dissolve_field else 'dummy'
         newfeats = []
         for val,group in itertools.groupby(sorted(feats, key=key), key=key):
             group = list(group)
-            print(val,len(group))
+            print('dissolving',val,len(group))
             # dissolve into one geometry
             if len(group) > 1:
                 geoms = [asShape(feat['geometry']) for feat in group]
                 dissolved = cascaded_union(geoms)
+                # attempt to fix invalid result
+                if not dissolved.is_valid:
+                    dissolved = dissolved.buffer(0)
                 dissolved_geoj = dissolved.__geo_interface__
             else:
                 dissolved_geoj = group[0]['geometry']
-                dissolved = asShape(dissolved_geoj)
-            # attempt to fix invalid result
-            if not dissolved.is_valid:
-                dissolved_geoj = dissolved.buffer(0).__geo_interface__
+            
             # which properties to keep
             allprops = group[0]['properties']
-            newprops = dict([(field,allprops[field]) for field in keep_fields])
+            if drop_fields:
+                keep_fields = [field for field in allprops.keys() if field not in drop_fields]
+            if keep_fields:
+                newprops = dict([(field,allprops[field]) for field in keep_fields])
+            else:
+                newprops = allprops
             # create and add feat
             feat = {'type':'Feature', 'properties':newprops, 'geometry':dissolved_geoj}
             newfeats.append(feat)
@@ -318,10 +347,9 @@ def import_data(input_dir,
                 year = 'Unknown'
 
             # dissolve if specified
-            if dissolve_field:
-                #feats = dissolve_by(feats, dissolve_field, keep_fields)
-                #print('dissolved to', len(feats), 'units')
-                raise NotImplementedError()
+            if dissolve:
+                feats = dissolve_by(feats, dissolve, keep_fields, drop_fields)
+                print('dissolved to', len(feats), 'admin units')
 
             # check that name_field is correct
             if name_field is not None:
