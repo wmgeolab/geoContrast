@@ -4,12 +4,14 @@
         {"path":"rw_politicalbound.zip/rw-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":"COUNTRY"
+        "name_field":"COUNTRY",
+        "dissolve":true
         },
         {"path":"rw_admin.zip/rw-adm.shp",
         "level":1,
         "type":"Province",
-        "name_field":"PROVINCE"
+        "name_field":"PROVINCE",
+        "dissolve":"PROVINCE"
         }
     ],
     

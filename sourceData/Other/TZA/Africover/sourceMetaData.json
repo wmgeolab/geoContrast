@@ -4,12 +4,14 @@
         {"path":"tz-politicalboundary.zip/tz-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":null
+        "name_field":null,
+        "dissolve":true
         },
         {"path":"tz-adm.zip/tz-adm.shp",
         "level":2,
         "type":"District",
-        "name_field":"DISTRICT"
+        "name_field":"DISTRICT",
+        "dissolve":["REGION","DISTRICT"]
         }
     ],
     

@@ -50,7 +50,8 @@ from zipfile import ZipFile
 
 # create iso lookup dict
 iso2_to_3 = {}
-with open('buildData/countries_codes_and_coordinates.csv', encoding='utf8', newline='') as f:
+filedir = os.path.dirname(__file__)
+with open(os.path.join(filedir, 'buildData/countries_codes_and_coordinates.csv'), encoding='utf8', newline='') as f:
     csvreader = csv.DictReader(f)
     for row in csvreader:
         iso2 = row['Alpha-2 code'].strip().strip('"')
@@ -270,7 +271,12 @@ def import_data(input_dir,
     def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None):
         from shapely.geometry import asShape
         from shapely.ops import cascaded_union
-        key = lambda f: f['properties'][dissolve_field] if dissolve_field else 'dummy'
+        if isinstance(dissolve_field, str):
+            key = lambda f: f['properties'][dissolve_field]
+        elif isinstance(dissolve_field, list):
+            key = lambda f: [f['properties'][subkey] for subkey in dissolve_field]
+        elif dissolve_field:
+            key = lambda f: 'dummy'
         newfeats = []
         for val,group in itertools.groupby(sorted(feats, key=key), key=key):
             group = list(group)
@@ -278,6 +284,7 @@ def import_data(input_dir,
             # dissolve into one geometry
             if len(group) > 1:
                 geoms = [asShape(feat['geometry']) for feat in group]
+                geoms = [geom.buffer(1e-7) for geom in geoms] # fill in gaps of approx 10mm, topology will later snap together overlaps when quantizing to 100mm
                 dissolved = cascaded_union(geoms)
                 # attempt to fix invalid result
                 if not dissolved.is_valid:

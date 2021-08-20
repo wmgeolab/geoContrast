@@ -4,12 +4,14 @@
         {"path":"sm_nat_bnd.zip/sm-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":"COUNTRY"
+        "name_field":"COUNTRY",
+        "dissolve":true
         },
         {"path":"admin.zip/sm-adm.shp",
         "level":1,
         "type":"Province",
-        "name_field":"PROV"
+        "name_field":"PROV",
+        "dissolve":"PROV"
         }
     ],
     

@@ -4,12 +4,14 @@
         {"path":"bu-politicalboundary.zip/bu-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":null
+        "name_field":null,
+        "dissolve":true
         },
         {"path":"bu-adm.zip/bu-adm.shp",
         "level":3,
         "type":"Commune",
-        "name_field":"COMMUNE"
+        "name_field":"COMMUNE",
+        "dissolve":["PROVINCE","DISTRICT","COMMUNE"]
         }
     ],
     

@@ -1,15 +1,11 @@
 
 {
     "input":[
-        {"path":"eg_politicalboundary.zip/eg-politicalboundary.shp",
-        "level":0,
-        "type":null,
-        "name_field":null
-        },
         {"path":"eg_adm.zip/eg-adm.shp",
         "level":1,
         "type":"Province",
-        "name_field":"PROVINCE"
+        "name_field":"PROVINCE",
+        "dissolve":"PROVINCE"
         }
     ],
     

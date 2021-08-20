@@ -5,9 +5,9 @@ import json
 import warnings
 
 # params
-collections = ['ESRI']
+collections = ['Other']
 isos = []
-replace = True
+replace = False
 write_meta = True
 write_stats = True
 write_data = True

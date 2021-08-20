@@ -4,12 +4,14 @@
         {"path":"ke_politicalbound.zip/ke-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":"COUNTRY"
+        "name_field":"COUNTRY",
+        "dissolve":true
         },
         {"path":"ke_adm.zip/ke-adm.shp",
         "level":2,
         "type":"District",
-        "name_field":"DISTRICT"
+        "name_field":"DISTRICT",
+        "dissolve":["PROVINCE","DISTRICT"]
         }
     ],
     

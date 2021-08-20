@@ -4,12 +4,14 @@
         {"path":"ug-politicalboundary.zip/ug-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":"UG"
+        "name_field":"UG",
+        "dissolve":true
         },
         {"path":"ug-adm.zip/ug-adm.shp",
         "level":3,
         "type":"County",
-        "name_field":"COUNTY"
+        "name_field":"COUNTY",
+        "dissolve":["PROVINCE","DISTRICT","COUNTY"]
         }
     ],
     

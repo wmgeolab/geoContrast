@@ -4,12 +4,14 @@
         {"path":"drc_politicalbound.zip/drc-political-boundary.shp",
         "level":0,
         "type":null,
-        "name_field":"COUNTRY"
+        "name_field":"COUNTRY",
+        "dissolve":true
         },
         {"path":"drc-adm.zip/drc-adm.shp",
         "level":2,
         "type":"District",
-        "name_field":"DISTRICT"
+        "name_field":"DISTRICT",
+        "dissolve":["PROVINCE","DISTRICT"]
         }
     ],
     

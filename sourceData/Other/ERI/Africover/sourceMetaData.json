@@ -4,12 +4,14 @@
         {"path":"er_politicalbound.zip/er-politicalboundary.shp",
         "level":0,
         "type":null,
-        "name_field":"COUNTRY"
+        "name_field":"COUNTRY",
+        "dissolve":true
         },
         {"path":"er_adm.zip/er-adm.shp",
         "level":2,
         "type":null,
-        "name_field":"SUBZOBA"
+        "name_field":"SUBZOBA",
+        "dissolve":["ZOBA","SUBZOBA"]
         }
     ],
     

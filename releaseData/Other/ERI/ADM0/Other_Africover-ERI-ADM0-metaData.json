@@ -1,0 +1,16 @@
+{
+    "boundaryYearRepresented": "Unknown",
+    "boundaryISO": "ERI",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Other",
+    "nameField": "COUNTRY",
+    "licenseDetail": "The data remains full property of the owners. It can be accessed, reproduced and distributed given that the owner information is explicitly acknowledged and displayed in the copyright information (I.E. Produced by FAO - Africover). The Authors do not assume any responsibilities for improper use of the data.",
+    "licenseSource": "https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/abe2642c-0476-4de6-865f-5190684e5fdf",
+    "boundarySourceURL": "https://data.apps.fao.org/map/catalog/srv/eng/catalog.search#/metadata/abe2642c-0476-4de6-865f-5190684e5fdf",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "4 April 2002",
+    "boundarySource-1": "UN FAO",
+    "boundarySource-2": "Africover",
+    "boundarySource-3": "National Focal Point Institution (NFPI)"
+}

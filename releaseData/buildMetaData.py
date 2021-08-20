@@ -7,7 +7,7 @@ import sys
 sys.path.append('..')
 import iotools
 import re
-from time import time()
+from time import time
 
 start = time()
 
@@ -33,7 +33,7 @@ except:
     pass
 
 #Create output csv file with headers
-fieldnames = "boundaryCollection,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimeter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
+fieldnames = "boundaryCollection,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundarySource-3,boundarySource-4,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimeter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
 wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
@@ -136,17 +136,32 @@ for row in reader:
     for field in oldfields:
         del row[field]
     # calculate geometry stats on-the-fly
-    resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+    from topojson import geometry # this is the local topology.py file
+    resp = urllib.request.urlopen(apiURL)
     try:
-        geoj = json.loads(resp.read())
+        topo = json.loads(resp.read())
     except:
         # lfs github files
         apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
         print('LFS', apiURL)
         row['apiURL'] = apiURL
-        resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
-        geoj = json.loads(resp.read())
-    stats = iotools.calc_stats(geoj['features'], row)
+        resp = urllib.request.urlopen(apiURL)
+        topo = json.loads(resp.read())
+    lyr = list(topo['objects'].keys())[0]
+    print('serializing')
+    objects = topo['objects'][lyr]['geometries']
+    arcs = topo['arcs']
+    transform = topo['transform']
+    features = []
+    for obj in objects:
+        try:
+            geoj = geometry(obj, arcs, **transform)
+            features.append({'type':'Feature', 'geometry':geoj})
+        except Exception as err:
+            print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
+            continue
+    print('calculating stats')
+    stats = iotools.calc_stats(features, row)
     row.update(stats)
     # write ro row
     writer.writerow(row)
@@ -183,17 +198,32 @@ for row in reader:
     for field in oldfields:
         del row[field]
     # calculate geometry stats on-the-fly
-    resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+    from topojson import geometry # this is the local topology.py file
+    resp = urllib.request.urlopen(apiURL)
     try:
-        geoj = json.loads(resp.read())
+        topo = json.loads(resp.read())
     except:
         # lfs github files
         apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
         print('LFS', apiURL)
         row['apiURL'] = apiURL
-        resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
-        geoj = json.loads(resp.read())
-    stats = iotools.calc_stats(geoj['features'], row)
+        resp = urllib.request.urlopen(apiURL)
+        topo = json.loads(resp.read())
+    lyr = list(topo['objects'].keys())[0]
+    print('serializing')
+    objects = topo['objects'][lyr]['geometries']
+    arcs = topo['arcs']
+    transform = topo['transform']
+    features = []
+    for obj in objects:
+        try:
+            geoj = geometry(obj, arcs, **transform)
+            features.append({'type':'Feature', 'geometry':geoj})
+        except Exception as err:
+            print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
+            continue
+    print('calculating stats')
+    stats = iotools.calc_stats(features, row)
     row.update(stats)
     # write ro row
     writer.writerow(row)
@@ -230,17 +260,32 @@ for row in reader:
     for field in oldfields:
         del row[field]
     # calculate geometry stats on-the-fly
-    resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
+    from topojson import geometry # this is the local topology.py file
+    resp = urllib.request.urlopen(apiURL)
     try:
-        geoj = json.loads(resp.read())
+        topo = json.loads(resp.read())
     except:
         # lfs github files
         apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
         print('LFS', apiURL)
         row['apiURL'] = apiURL
-        resp = urllib.request.urlopen(apiURL.replace('.topojson', '.geojson'))
-        geoj = json.loads(resp.read())
-    stats = iotools.calc_stats(geoj['features'], row)
+        resp = urllib.request.urlopen(apiURL)
+        topo = json.loads(resp.read())
+    lyr = list(topo['objects'].keys())[0]
+    print('serializing')
+    objects = topo['objects'][lyr]['geometries']
+    arcs = topo['arcs']
+    transform = topo['transform']
+    features = []
+    for obj in objects:
+        try:
+            geoj = geometry(obj, arcs, **transform)
+            features.append({'type':'Feature', 'geometry':geoj})
+        except Exception as err:
+            print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
+            continue
+    print('calculating stats')
+    stats = iotools.calc_stats(features, row)
     row.update(stats)
     # write to row
     writer.writerow(row)
