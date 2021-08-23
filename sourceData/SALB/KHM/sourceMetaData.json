@@ -1,17 +1,16 @@
 {
-    "source_url": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
+    "source_url": "https://www.unsalb.org/data/khm",
     "iso": "KHM",
     "level": 2,
     "type": null,
-    "name_field": "ADM2_NAME",
-    "year": 2008,
+    "name_field": "ADM2NM",
+    "year": 2006,
     "source": [
         "UN SALB"
     ],
-    "source_updated": "Sep 30, 2011",
-    "download_url": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
-    "license": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
+    "source_updated": "2006-01-01",
+    "license": "UN SALB Data License",
     "license_detail": null,
-    "license_url": "https://www.arcgis.com/home/item.html?id=70373afea2174cc5a28b9e6709c3774f",
-    "input": "download.zip/data/khm_jun00-apr08/khm_jun00-apr08.shp"
+    "license_url": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "input": "KHM_1998_01_01_SALB.zip/KHM_SALB_1998/SHP/BNDA_KHM.shp"
 }
