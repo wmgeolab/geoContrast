@@ -6,12 +6,12 @@ import warnings
 import traceback
 
 # params
-collections = ['ESRI']
+collections = ['SALB']
 isos = []
-replace = True
+replace = False
 write_meta = True
-write_stats = False
-write_data = False
+write_stats = True
+write_data = True
 
 # begin
 for dirpath,dirnames,filenames in os.walk('sourceData'):
@@ -69,7 +69,7 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
 
         # nest multiple inputs
         if 'input' not in kwargs:
-            warnings.warn("metadata file doesn't have correct format, skipping")
+            warnings.warn("metadata file for '{}' doesn't have correct format, skipping".format(dirpath))
             continue
         input_arg = kwargs.pop('input')
         if isinstance(input_arg, str):
@@ -89,4 +89,4 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
             try:
                 iotools.import_data(**_kwargs)
             except Exception as err:
-                warnings.warn('Error importing data: {}'.format(traceback.format_exc()))
+                warnings.warn("Error importing data for '{}': {}".format(dirpath, traceback.format_exc()))

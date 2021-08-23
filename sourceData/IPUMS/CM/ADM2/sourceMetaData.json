@@ -1,0 +1,16 @@
+{
+    "iso": "CM",
+    "year": 2005,
+    "level": 2,
+    "type": "Department",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_cm2005.zip/geo2_cm2005.shp",
+    "encoding": "latin"
+}

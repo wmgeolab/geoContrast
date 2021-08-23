@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2000,
+    "boundaryISO": "THA",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Province",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-05-23",
+    "boundarySource-1": "IPUMS"
+}

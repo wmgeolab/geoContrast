@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2013,
+    "boundaryISO": "SEN",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Commune, arrondissement, or village",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_3rd.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-08-10",
+    "boundarySource-1": "IPUMS"
+}

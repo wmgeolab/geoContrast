@@ -1,0 +1,16 @@
+{
+    "iso": "ID",
+    "year": 2010,
+    "level": 2,
+    "type": "Regency",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_id2010.zip/geo2_id2010.shp",
+    "encoding": "latin"
+}

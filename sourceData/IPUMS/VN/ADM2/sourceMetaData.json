@@ -1,0 +1,16 @@
+{
+    "iso": "VN",
+    "year": 2009,
+    "level": 2,
+    "type": "District",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_vn2009.zip/geo2_vn2009.shp",
+    "encoding": "latin"
+}

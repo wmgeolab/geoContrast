@@ -1,0 +1,16 @@
+{
+    "iso": "NG",
+    "year": 2010,
+    "level": 2,
+    "type": "Local government areas",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2020-08-25",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_ng2010.zip/geo2_ng2010.shp",
+    "encoding": "latin"
+}

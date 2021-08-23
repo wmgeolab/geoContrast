@@ -1,9 +1,9 @@
 {
-    "boundaryCount": 187,
-    "boundaryYearSourceLag": 3,
-    "statsArea": 181473.6855857241,
-    "statsPerimeter": 29372.12286682975,
-    "statsVertices": 144077,
-    "statsLineResolution": 203.8640648183246,
-    "statsVertexDensity": 4.905229378660528
+    "boundaryCount": 186,
+    "boundaryYearSourceLag": 0,
+    "statsArea": 181421.7754815664,
+    "statsPerimeter": 29653.664665121138,
+    "statsVertices": 145855,
+    "statsLineResolution": 203.3092089069359,
+    "statsVertexDensity": 4.91861635474538
 }

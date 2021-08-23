@@ -1,14 +1,14 @@
 {
-    "boundaryYearRepresented": 2009,
+    "boundaryYearRepresented": 2003,
     "boundaryISO": "MLI",
     "boundaryType": "ADM2",
     "boundaryCanonical": "Unknown",
-    "boundaryLicense": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0 Unported License",
-    "nameField": "ADM2_NAME",
+    "boundaryLicense": "UN SALB Data License",
+    "nameField": "ADM2NM",
     "licenseDetail": null,
-    "licenseSource": "https://www.arcgis.com/home/item.html?id=ecfbc1e908f24d708c5324eb45d7ebae",
-    "boundarySourceURL": "https://www.arcgis.com/home/item.html?id=ecfbc1e908f24d708c5324eb45d7ebae",
-    "downloadURL": "https://www.arcgis.com/home/item.html?id=ecfbc1e908f24d708c5324eb45d7ebae",
-    "sourceDataUpdateDate": "Sep 30, 2011",
+    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "boundarySourceURL": "https://www.unsalb.org/data/mli",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2003-12-08",
     "boundarySource-1": "UN SALB"
 }

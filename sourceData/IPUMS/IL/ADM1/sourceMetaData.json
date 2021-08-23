@@ -1,0 +1,16 @@
+{
+    "iso": "IL",
+    "year": 1995,
+    "level": 1,
+    "type": "District",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo1_il1995.zip/geo1_il1995.shp",
+    "encoding": "latin"
+}

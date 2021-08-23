@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "ZAF",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Local municipality",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_3rd.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-08-10",
+    "boundarySource-1": "IPUMS"
+}

@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2014,
+    "boundaryISO": "FJI",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Province",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-07-12",
+    "boundarySource-1": "IPUMS"
+}

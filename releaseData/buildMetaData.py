@@ -104,194 +104,213 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
         #print(meta)
         writer.writerow(meta)
 
-#Add in csv entries based on the github geoBoundaries (Open) metadata file
-rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesOpen-meta.csv')
-reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
-for row in reader:
-    # drop any additional 'blank' field values beyond fieldnames
-    if '' in row.keys(): row.pop('')
-    if None in row.keys(): row.pop(None)
-    row.pop('boundaryID')
-    # set the nameField
-    row['nameField'] = 'shapeName'
-    # force the year field to int
-    row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
-    # add in collection name
-    row['boundaryCollection'] = 'geoBoundaries (Open)'
-    # clear and set the source fields to 'geoBoundaries'
-    # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
-    row['boundarySource-3'] = row['boundarySource-2']
-    row['boundarySource-2'] = row['boundarySource-1']
-    row['boundarySource-1'] = 'geoBoundaries (Open)'
-    # overwrite the gb apiURL with direct link to github
-    iso = row['boundaryISO']
-    lvl = row['boundaryType']
-    apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
-    row['apiURL'] = apiURL
-    print(apiURL)
-    # fix gb url bugs
-    row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
-    row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
-    # remove the old gb stats fields
-    oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
-    for field in oldfields:
-        del row[field]
-    # calculate geometry stats on-the-fly
-    from topojson import geometry # this is the local topology.py file
-    resp = urllib.request.urlopen(apiURL)
-    try:
-        topo = json.loads(resp.read())
-    except:
-        # lfs github files
-        apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
-        print('LFS', apiURL)
-        row['apiURL'] = apiURL
-        resp = urllib.request.urlopen(apiURL)
-        topo = json.loads(resp.read())
-    lyr = list(topo['objects'].keys())[0]
-    print('serializing')
-    objects = topo['objects'][lyr]['geometries']
-    arcs = topo['arcs']
-    transform = topo['transform']
-    features = []
-    for obj in objects:
-        try:
-            geoj = geometry(obj, arcs, **transform)
-            features.append({'type':'Feature', 'geometry':geoj})
-        except Exception as err:
-            print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
-            continue
-    print('calculating stats')
-    stats = iotools.calc_stats(features, row)
-    row.update(stats)
-    # write ro row
-    writer.writerow(row)
 
-#Add in csv entries based on the github geoBoundaries (Humanitarian) metadata file
-rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesHumanitarian-meta.csv')
-reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
-for row in reader:
-    # drop any additional 'blank' field values beyond fieldnames
-    if '' in row.keys(): row.pop('')
-    if None in row.keys(): row.pop(None)
-    row.pop('boundaryID')
-    # set the nameField
-    row['nameField'] = 'shapeName'
-    # force the year field to int
-    row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
-    # add in collection name
-    row['boundaryCollection'] = 'geoBoundaries (Humanitarian)'
-    # clear and set the source fields to 'geoBoundaries'
-    # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
-    row['boundarySource-3'] = row['boundarySource-2']
-    row['boundarySource-2'] = row['boundarySource-1']
-    row['boundarySource-1'] = 'geoBoundaries (Humanitarian)'
-    # overwrite the gb apiURL with direct link to github
-    iso = row['boundaryISO']
-    lvl = row['boundaryType']
-    apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
-    row['apiURL'] = apiURL
-    print(apiURL)
-    # fix gb url bugs
-    row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
-    row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
-    # remove the old gb stats fields
-    oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
-    for field in oldfields:
-        del row[field]
-    # calculate geometry stats on-the-fly
-    from topojson import geometry # this is the local topology.py file
-    resp = urllib.request.urlopen(apiURL)
-    try:
-        topo = json.loads(resp.read())
-    except:
-        # lfs github files
-        apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
-        print('LFS', apiURL)
-        row['apiURL'] = apiURL
-        resp = urllib.request.urlopen(apiURL)
-        topo = json.loads(resp.read())
-    lyr = list(topo['objects'].keys())[0]
-    print('serializing')
-    objects = topo['objects'][lyr]['geometries']
-    arcs = topo['arcs']
-    transform = topo['transform']
-    features = []
-    for obj in objects:
-        try:
-            geoj = geometry(obj, arcs, **transform)
-            features.append({'type':'Feature', 'geometry':geoj})
-        except Exception as err:
-            print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
-            continue
-    print('calculating stats')
-    stats = iotools.calc_stats(features, row)
-    row.update(stats)
-    # write ro row
-    writer.writerow(row)
+##### Calc stats for geoBoundaries in separate csv
 
-#Add in csv entries based on the github geoBoundaries (Authoritative) metadata file
-rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesAuthoritative-meta.csv')
-reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
-for row in reader:
-    # drop any additional 'blank' field values beyond fieldnames
-    if '' in row.keys(): row.pop('')
-    if None in row.keys(): row.pop(None)
-    row.pop('boundaryID')
-    # set the nameField
-    row['nameField'] = 'shapeName'
-    # force the year field to int
-    row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
-    # add in collection name
-    row['boundaryCollection'] = 'geoBoundaries (Authoritative)'
-    # clear and set the source fields to 'geoBoundaries'
-    # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
-    row['boundarySource-3'] = row['boundarySource-2']
-    row['boundarySource-2'] = row['boundarySource-1']
-    row['boundarySource-1'] = 'geoBoundaries (Authoritative)'
-    # overwrite the gb apiURL with direct link to github
-    iso = row['boundaryISO']
-    lvl = row['boundaryType']
-    apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
-    row['apiURL'] = apiURL
-    print(apiURL)
-    # fix gb url bugs
-    row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
-    row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
-    # remove the old gb stats fields
-    oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
-    for field in oldfields:
-        del row[field]
-    # calculate geometry stats on-the-fly
-    from topojson import geometry # this is the local topology.py file
-    resp = urllib.request.urlopen(apiURL)
-    try:
-        topo = json.loads(resp.read())
-    except:
-        # lfs github files
-        apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
-        print('LFS', apiURL)
+if 0:
+
+    gbWfob = open('geoContrast-gbMeta.csv', 'w', newline='', encoding='utf8')
+    gbWriter = csv.DictWriter(gbWfob, fieldnames=fieldnames)
+    gbWriter.writeheader()
+
+    #Add in csv entries based on the github geoBoundaries (Open) metadata file
+    rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesOpen-meta.csv')
+    reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
+    for row in reader:
+        # drop any additional 'blank' field values beyond fieldnames
+        if '' in row.keys(): row.pop('')
+        if None in row.keys(): row.pop(None)
+        row.pop('boundaryID')
+        # set the nameField
+        row['nameField'] = 'shapeName'
+        # force the year field to int
+        row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
+        # add in collection name
+        row['boundaryCollection'] = 'geoBoundaries (Open)'
+        # clear and set the source fields to 'geoBoundaries'
+        # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+        row['boundarySource-3'] = row['boundarySource-2']
+        row['boundarySource-2'] = row['boundarySource-1']
+        row['boundarySource-1'] = 'geoBoundaries (Open)'
+        # overwrite the gb apiURL with direct link to github
+        iso = row['boundaryISO']
+        lvl = row['boundaryType']
+        apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
         row['apiURL'] = apiURL
+        print(apiURL)
+        # fix gb url bugs
+        row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
+        row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+        # remove the old gb stats fields
+        oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
+        for field in oldfields:
+            del row[field]
+        # calculate geometry stats on-the-fly
+        from topojson import geometry # this is the local topology.py file
         resp = urllib.request.urlopen(apiURL)
-        topo = json.loads(resp.read())
-    lyr = list(topo['objects'].keys())[0]
-    print('serializing')
-    objects = topo['objects'][lyr]['geometries']
-    arcs = topo['arcs']
-    transform = topo['transform']
-    features = []
-    for obj in objects:
         try:
-            geoj = geometry(obj, arcs, **transform)
-            features.append({'type':'Feature', 'geometry':geoj})
-        except Exception as err:
-            print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
-            continue
-    print('calculating stats')
-    stats = iotools.calc_stats(features, row)
-    row.update(stats)
-    # write to row
-    writer.writerow(row)
+            topo = json.loads(resp.read())
+        except:
+            # lfs github files
+            apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbOpen/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+            print('LFS', apiURL)
+            row['apiURL'] = apiURL
+            resp = urllib.request.urlopen(apiURL)
+            topo = json.loads(resp.read())
+        lyr = list(topo['objects'].keys())[0]
+        print('serializing')
+        objects = topo['objects'][lyr]['geometries']
+        arcs = topo['arcs']
+        transform = topo['transform']
+        features = []
+        for obj in objects:
+            try:
+                geoj = geometry(obj, arcs, **transform)
+                features.append({'type':'Feature', 'geometry':geoj})
+            except Exception as err:
+                print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
+                continue
+        print('calculating stats')
+        stats = iotools.calc_stats(features, row)
+        row.update(stats)
+        # write ro row
+        gbWriter.writerow(row)
+
+    #Add in csv entries based on the github geoBoundaries (Humanitarian) metadata file
+    rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesHumanitarian-meta.csv')
+    reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
+    for row in reader:
+        # drop any additional 'blank' field values beyond fieldnames
+        if '' in row.keys(): row.pop('')
+        if None in row.keys(): row.pop(None)
+        row.pop('boundaryID')
+        # set the nameField
+        row['nameField'] = 'shapeName'
+        # force the year field to int
+        row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
+        # add in collection name
+        row['boundaryCollection'] = 'geoBoundaries (Humanitarian)'
+        # clear and set the source fields to 'geoBoundaries'
+        # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+        row['boundarySource-3'] = row['boundarySource-2']
+        row['boundarySource-2'] = row['boundarySource-1']
+        row['boundarySource-1'] = 'geoBoundaries (Humanitarian)'
+        # overwrite the gb apiURL with direct link to github
+        iso = row['boundaryISO']
+        lvl = row['boundaryType']
+        apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+        row['apiURL'] = apiURL
+        print(apiURL)
+        # fix gb url bugs
+        row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
+        row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+        # remove the old gb stats fields
+        oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
+        for field in oldfields:
+            del row[field]
+        # calculate geometry stats on-the-fly
+        from topojson import geometry # this is the local topology.py file
+        resp = urllib.request.urlopen(apiURL)
+        try:
+            topo = json.loads(resp.read())
+        except:
+            # lfs github files
+            apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbHumanitarian/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+            print('LFS', apiURL)
+            row['apiURL'] = apiURL
+            resp = urllib.request.urlopen(apiURL)
+            topo = json.loads(resp.read())
+        lyr = list(topo['objects'].keys())[0]
+        print('serializing')
+        objects = topo['objects'][lyr]['geometries']
+        arcs = topo['arcs']
+        transform = topo['transform']
+        features = []
+        for obj in objects:
+            try:
+                geoj = geometry(obj, arcs, **transform)
+                features.append({'type':'Feature', 'geometry':geoj})
+            except Exception as err:
+                print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
+                continue
+        print('calculating stats')
+        stats = iotools.calc_stats(features, row)
+        row.update(stats)
+        # write ro row
+        gbWriter.writerow(row)
+
+    #Add in csv entries based on the github geoBoundaries (Authoritative) metadata file
+    rfob = urllib.request.urlopen('https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/geoBoundariesAuthoritative-meta.csv')
+    reader = csv.DictReader(rfob.read().decode('utf-8').split('\n'))
+    for row in reader:
+        # drop any additional 'blank' field values beyond fieldnames
+        if '' in row.keys(): row.pop('')
+        if None in row.keys(): row.pop(None)
+        row.pop('boundaryID')
+        # set the nameField
+        row['nameField'] = 'shapeName'
+        # force the year field to int
+        row['boundaryYearRepresented'] = int(float(row['boundaryYearRepresented']))
+        # add in collection name
+        row['boundaryCollection'] = 'geoBoundaries (Authoritative)'
+        # clear and set the source fields to 'geoBoundaries'
+        # TODO: maybe the better way is to include an extra field that says the geoContrast source dataset
+        row['boundarySource-3'] = row['boundarySource-2']
+        row['boundarySource-2'] = row['boundarySource-1']
+        row['boundarySource-1'] = 'geoBoundaries (Authoritative)'
+        # overwrite the gb apiURL with direct link to github
+        iso = row['boundaryISO']
+        lvl = row['boundaryType']
+        apiURL = 'https://raw.githubusercontent.com/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+        row['apiURL'] = apiURL
+        print(apiURL)
+        # fix gb url bugs
+        row['licenseSource'] = row['licenseSource'].replace('https//','https://').replace('http//','http://')
+        row['boundarySourceURL'] = row['boundarySourceURL'].replace('https//','https://').replace('http//','http://')
+        # remove the old gb stats fields
+        oldfields = ['meanPerimeterLengthKM', 'minAreaSqKM', 'maxVertices', 'maxAreaSqKM', 'meanVertices', 'maxPerimeterLengthKM', 'admUnitCount', 'meanAreaSqKM', 'minVertices', 'minPerimeterLengthKM']
+        for field in oldfields:
+            del row[field]
+        # calculate geometry stats on-the-fly
+        from topojson import geometry # this is the local topology.py file
+        resp = urllib.request.urlopen(apiURL)
+        try:
+            topo = json.loads(resp.read())
+        except:
+            # lfs github files
+            apiURL = 'https://media.githubusercontent.com/media/wmgeolab/geoBoundaries/main/releaseData/gbAuthoritative/{iso}/{lvl}/geoBoundaries-{iso}-{lvl}.topojson'.format(iso=iso, lvl=lvl)
+            print('LFS', apiURL)
+            row['apiURL'] = apiURL
+            resp = urllib.request.urlopen(apiURL)
+            topo = json.loads(resp.read())
+        lyr = list(topo['objects'].keys())[0]
+        print('serializing')
+        objects = topo['objects'][lyr]['geometries']
+        arcs = topo['arcs']
+        transform = topo['transform']
+        features = []
+        for obj in objects:
+            try:
+                geoj = geometry(obj, arcs, **transform)
+                features.append({'type':'Feature', 'geometry':geoj})
+            except Exception as err:
+                print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
+                continue
+        print('calculating stats')
+        stats = iotools.calc_stats(features, row)
+        row.update(stats)
+        # write to row
+        gbWriter.writerow(row)
+
+        #Close up shop
+        gbWfob.close()
+
+##### Add in geoBoundaries from csv
+
+with open('geoContrast-gbMeta.csv', newline='', encoding='utf8') as gbRfob:
+    gbReader = csv.DictReader(gbRfob)
+    for row in gbReader:
+        writer.writerow(row)
 
 #Close up shop
 wfob.close()

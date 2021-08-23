@@ -1,0 +1,16 @@
+{
+    "iso": "UG",
+    "year": 2014,
+    "level": 2,
+    "type": "County",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2020-08-25",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_ug2014.zip/geo2_ug2014.shp",
+    "encoding": "latin"
+}

@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2006,
+    "boundaryISO": "EGY",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "District",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-09-11",
+    "boundarySource-1": "IPUMS"
+}

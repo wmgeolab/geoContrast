@@ -1,0 +1,16 @@
+{
+    "iso": "PT",
+    "year": 2011,
+    "level": 1,
+    "type": "Subregion",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo1_pt2011.zip/geo1_pt2011.shp",
+    "encoding": "latin"
+}

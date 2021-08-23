@@ -1,0 +1,16 @@
+{
+    "iso": "DO",
+    "year": 2010,
+    "level": 2,
+    "type": "Municipality",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_do2010.zip/geo2_do2010.shp",
+    "encoding": "latin"
+}

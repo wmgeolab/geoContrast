@@ -1,0 +1,16 @@
+{
+    "iso": "GT",
+    "year": 2002,
+    "level": 2,
+    "type": "Municipality",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-07-24",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_gt2002.zip/geo2_gt2002.shp",
+    "encoding": "latin"
+}

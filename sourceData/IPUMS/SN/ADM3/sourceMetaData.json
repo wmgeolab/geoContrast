@@ -1,0 +1,16 @@
+{
+    "iso": "SN",
+    "year": 2013,
+    "level": 3,
+    "type": "Commune, arrondissement, or village",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_3rd.shtml",
+    "source_updated": "2020-08-10",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo3_sn2013.zip/geo3_sn2013.shp",
+    "encoding": "latin"
+}

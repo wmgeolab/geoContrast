@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2011,
+    "boundaryISO": "MUS",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "District",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-08-24",
+    "boundarySource-1": "IPUMS"
+}

@@ -1,0 +1,16 @@
+{
+    "iso": "ZA",
+    "year": 2016,
+    "level": 2,
+    "type": "District council",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2020-08-25",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_za2016.zip/geo2_za2016.shp",
+    "encoding": "latin"
+}

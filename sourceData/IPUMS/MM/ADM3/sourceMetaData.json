@@ -1,0 +1,16 @@
+{
+    "iso": "MM",
+    "year": 2014,
+    "level": 3,
+    "type": "Township",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_3rd.shtml",
+    "source_updated": "2019-09-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo3_mm2014.zip/geo3_mm2014.shp",
+    "encoding": "latin"
+}

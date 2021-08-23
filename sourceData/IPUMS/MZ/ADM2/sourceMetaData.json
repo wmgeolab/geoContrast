@@ -1,0 +1,16 @@
+{
+    "iso": "MZ",
+    "year": 2007,
+    "level": 2,
+    "type": "District",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_mz2007.zip/geo2_mz2007.shp",
+    "encoding": "latin"
+}

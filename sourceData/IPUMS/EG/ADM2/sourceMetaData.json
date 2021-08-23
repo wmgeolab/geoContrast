@@ -1,0 +1,16 @@
+{
+    "iso": "EG",
+    "year": 2006,
+    "level": 2,
+    "type": "District",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "source_updated": "2019-09-11",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo2_eg2006.zip/geo2_eg2006.shp",
+    "encoding": "latin"
+}

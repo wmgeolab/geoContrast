@@ -1,0 +1,16 @@
+{
+    "iso": "LC",
+    "year": 1991,
+    "level": 1,
+    "type": "District",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "source_updated": "2019-05-23",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo1_lc1991.zip/geo1_lc1991.shp",
+    "encoding": "latin"
+}

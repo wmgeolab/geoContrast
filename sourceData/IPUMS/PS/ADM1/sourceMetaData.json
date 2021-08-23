@@ -1,0 +1,16 @@
+{
+    "iso": "PS",
+    "year": 2017,
+    "level": 1,
+    "type": "Governorate",
+    "source": [
+        "IPUMS"
+    ],
+    "source_url": "https://international.ipums.org/international/gis_yrspecific_1st.shtml",
+    "source_updated": "2017-06-12",
+    "license": "IPUMS Data License",
+    "license_detail": null,
+    "license_url": "https://international.ipums.org/international/citation.shtml",
+    "input": "geo1_ps2017.zip/geo1_ps2017.shp",
+    "encoding": "latin"
+}

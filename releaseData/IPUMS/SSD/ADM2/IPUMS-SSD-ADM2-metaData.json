@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2008,
+    "boundaryISO": "SSD",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "County",
+    "boundaryLicense": "IPUMS Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://international.ipums.org/international/citation.shtml",
+    "boundarySourceURL": "https://international.ipums.org/international/gis_yrspecific_2nd.shtml",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-05-23",
+    "boundarySource-1": "IPUMS"
+}

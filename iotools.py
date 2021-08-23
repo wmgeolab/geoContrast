@@ -261,6 +261,9 @@ def import_data(input_dir,
                     props = rec.as_dict(date_strings=True)
                     if load_geometries is True:
                         geoj = reader.shape(rec.oid).__geo_interface__
+                        if geoj is None or not geoj['coordinates']:
+                            # skip over null geometries or geometries with zero coords
+                            continue
                     else:
                         geoj = None
                     feat = {'type':'Feature', 'properties':props, 'geometry':geoj}
