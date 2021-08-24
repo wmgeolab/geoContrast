@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "cog_adm_gaul_20190617_shp.zip/cog_admbnda_adm0_gaul_20190617.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cog_adm_gaul_20190617_shp.zip/cog_admbnda_adm1_gaul_20190617.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cog_adm_gaul_20190617_shp.zip/cog_admbnda_adm2_gaul_20190617.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "COG",
+    "year": 2017,
+    "source": [
+        "OCHA ROWCA",
+        "Global Administrative Unit Layers (GAUL)"
+    ],
+    "source_updated": "2019-06-17",
+    "source_url": "https://data.humdata.org/dataset/congo-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/congo-administrative-boundaries"
+}

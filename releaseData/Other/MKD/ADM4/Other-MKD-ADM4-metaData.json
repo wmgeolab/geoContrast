@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "MKD",
+    "boundaryType": "ADM4",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes",
+    "boundarySourceURL": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "12 May 2016",
+    "boundarySource-1": "Regional IM Working Group - Europe",
+    "boundarySource-2": "EuroGeographics and NTES (Nomenclature of Territorial Units for Statistics - Republic of Macedonia State Statistical Office)"
+}

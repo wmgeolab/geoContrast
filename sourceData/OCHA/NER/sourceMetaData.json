@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "ner_adm00_feb2018.zip/NER_adm00_feb2018.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ner_adm01_feb2018.zip/NER_adm01_feb2018.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ner_adm02_feb2018.zip/NER_adm02_feb2018.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ner_adm03_feb2018.zip/NER_adm03_feb2018.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "NER",
+    "year": 2006,
+    "source": [
+        "OCHA Niger",
+        "IGNN (as of 2006) and  OCHA/ROWCA ( 2014/ 2015)"
+    ],
+    "source_updated": "2019-09-12",
+    "source_url": "https://data.humdata.org/dataset/niger-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/niger-administrative-boundaries"
+}

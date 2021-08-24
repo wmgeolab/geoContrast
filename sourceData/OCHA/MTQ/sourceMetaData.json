@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mtq_adm_2016_ignf_shp.zip/mtq_admbnda_adm0_2016_ignf.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mtq_adm_2016_ignf_shp.zip/mtq_admbnda_adm1_2016_ignf.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mtq_adm_2016_ignf_shp.zip/mtq_admbnda_adm2_2016_ignf.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MTQ",
+    "year": 2017,
+    "source": [
+        "OCHA FISS",
+        "Institut national de l\u2019information g\u00e9ographique et foresti\u00e8re (IGN)"
+    ],
+    "source_updated": "2020-02-17",
+    "source_url": "https://data.humdata.org/dataset/martinique-administrative-level-0-nation-level-1-arrondissement-and-level-2-commune-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/martinique-administrative-level-0-nation-level-1-arrondissement-and-level-2-commune-boundaries"
+}

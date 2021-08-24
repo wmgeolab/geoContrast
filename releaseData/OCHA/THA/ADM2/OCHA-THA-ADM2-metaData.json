@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2019,
+    "boundaryISO": "THA",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/thailand-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/thailand-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-02-21",
+    "boundarySource-1": "OCHA ROAP ",
+    "boundarySource-2": "Royal Thai Survey Department"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2011,
+    "boundaryISO": "NAM",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/namibia-admin-level-1-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/namibia-admin-level-1-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-01-09",
+    "boundarySource-1": "OCHA ROSA",
+    "boundarySource-2": "Namibia Statistics Agency (NSA)"
+}

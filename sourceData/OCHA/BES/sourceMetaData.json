@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "bes_adm0.zip/BES_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bes_adm1.zip/bes_adm1/BES_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BES",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "13 November 2020",
+    "source_url": "https://data.humdata.org/dataset/caribbean-netherlands-bonaire-sint-eustatius-and-saba",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/caribbean-netherlands-bonaire-sint-eustatius-and-saba"
+}

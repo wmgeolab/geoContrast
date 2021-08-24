@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "cmr_admbnda_inc_20180104_shp.zip/cmr_admbnda_inc_20180104_SHP/cmr_admbnda_adm0_inc_20180104.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cmr_admbnda_inc_20180104_shp.zip/cmr_admbnda_inc_20180104_SHP/cmr_admbnda_adm1_inc_20180104.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cmr_admbnda_inc_20180104_shp.zip/cmr_admbnda_inc_20180104_SHP/cmr_admbnda_adm2_inc_20180104.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cmr_admbnda_inc_20180104_shp.zip/cmr_admbnda_inc_20180104_SHP/cmr_admbnda_adm3_inc_20180104.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "CMR",
+    "year": 2018,
+    "source": [
+        "OCHA Cameroon",
+        "Institut National de Cartographie (INC) provided by OSM"
+    ],
+    "source_updated": "2019-01-04",
+    "source_url": "https://data.humdata.org/dataset/cameroon-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/cameroon-administrative-boundaries"
+}

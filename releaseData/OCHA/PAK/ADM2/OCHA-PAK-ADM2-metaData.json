@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "PAK",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places",
+    "boundarySourceURL": "https://data.humdata.org/dataset/pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2018-12-18",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "Pakistan Census Office (PCO)"
+}

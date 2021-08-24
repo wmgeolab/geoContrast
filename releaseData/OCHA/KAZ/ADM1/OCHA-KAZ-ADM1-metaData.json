@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2019,
+    "boundaryISO": "KAZ",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/kazakhstan-administrative-boundaries-taxonomy",
+    "boundarySourceURL": "https://data.humdata.org/dataset/kazakhstan-administrative-boundaries-taxonomy",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-09-10",
+    "boundarySource-1": "OCHA ROCCA",
+    "boundarySource-2": "Committee on Statistics (Kazakhstan Ministry of National Economy)"
+}

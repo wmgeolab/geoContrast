@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "hnd_adm_sinit_20161005_shp.zip/hnd_adm_sinit_20161005_SHP/hnd_admbnda_adm0_sinit_20161005.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "hnd_adm_sinit_20161005_shp.zip/hnd_adm_sinit_20161005_SHP/hnd_admbnda_adm1_sinit_20161005.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "hnd_adm_sinit_20161005_shp.zip/hnd_adm_sinit_20161005_SHP/hnd_admbnda_adm2_sinit_20161005.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "hnd_admbnda_adm3_sinit_20161005.zip/hnd_admbnda_adm3_sinit_20161005.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "HND",
+    "year": 2015,
+    "source": [
+        "OCHA ROLAC",
+        "Sistema Nacional de Informaci\u00f3n Territorial (SINIT), Secretaria T\u00e9cnica de Planificaci\u00f3n y Cooperaci\u00f3n Externa (SEPLAN), 2010"
+    ],
+    "source_updated": "2016-10-05",
+    "source_url": "https://data.humdata.org/dataset/honduras-admin-level-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/honduras-admin-level-1-boundaries"
+}

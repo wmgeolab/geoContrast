@@ -1,0 +1,31 @@
+{
+    "input": [
+        {
+            "path": "uzb_admbnda_adm0_2018b.zip/uzb_admbnda_adm0_2018b.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "uzb_admbnda_adm1_2018b.zip/uzb_admbnda_adm1_2018b.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "uzb_admbnda_adm2_2018b.zip/uzb_admbnda_adm2_2018b.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "UZB",
+    "year": 2018,
+    "source": [
+        "OCHA ROCCA"
+    ],
+    "source_updated": "2020-05-27",
+    "source_url": "https://data.humdata.org/dataset/ubbekistan-update",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/ubbekistan-update"
+}

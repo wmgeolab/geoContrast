@@ -1,0 +1,17 @@
+{
+    "input": [
+        {
+            "path": "maf_adm0.zip/MAF_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MAF",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "10 November 2020",
+    "source_url": "https://data.humdata.org/dataset/saint-martin-administrative-level-0-nation-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/saint-martin-administrative-level-0-nation-boundaries"
+}

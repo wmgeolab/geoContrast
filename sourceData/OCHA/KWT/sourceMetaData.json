@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "kwt_adm0.zip/KWT_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "kwt_adm1.zip/KWT_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "KWT",
+    "year": 2015,
+    "source": ["OCHA ROMENA","GADM"],
+    "source_updated": "29 March 2017",
+    "source_url": "https://data.humdata.org/dataset/kuwait-administrative-boundaries-levels-1-2-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/kuwait-administrative-boundaries-levels-1-2-populated-places"
+}

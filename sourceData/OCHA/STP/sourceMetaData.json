@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "stp_adm_gadm_2020_shp.zip/stp_admbnda_adm0_gadm_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "stp_adm_gadm_2020_shp.zip/stp_admbnda_adm1_gadm_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "stp_adm_gadm_2020_shp.zip/stp_admbnda_adm2_gadm_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "STP",
+    "year": 2020,
+    "source": ["OCHA ROWCA","GADM"],
+    "source_updated": "17 August 2020",
+    "source_url": "https://data.humdata.org/dataset/sao-tome-and-principe-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/sao-tome-and-principe-administrative-boundaries"
+}

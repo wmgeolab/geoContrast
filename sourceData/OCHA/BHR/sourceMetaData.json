@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "boundaries_bahrain_0_gaul.zip/Boundaries_Bahrain_0_GAUL.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "boundaries_bahrain_1_gaul.zip/Boundaries_Bahrain_1_GAUL.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BHR",
+    "year": 2008,
+    "source": ["OCHA ROMENA","FAO GAUL DATA 2008_WFP"],
+    "source_updated": "13 November 2020",
+    "source_url": "https://data.humdata.org/dataset/bahrain-administrative-boundaries-levels-1-2-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/bahrain-administrative-boundaries-levels-1-2-populated-places"
+}

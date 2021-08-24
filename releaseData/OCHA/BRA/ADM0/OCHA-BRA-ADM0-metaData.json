@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "BRA",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/brazil-administrative-level-0-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/brazil-administrative-level-0-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-09-30",
+    "boundarySource-1": "OCHA ROLAC",
+    "boundarySource-2": "Instituto Brasileiro de Geografia e Estat\u00edstica (IBGE)"
+}

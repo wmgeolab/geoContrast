@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "MTQ",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/martinique-administrative-level-0-nation-level-1-arrondissement-and-level-2-commune-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/martinique-administrative-level-0-nation-level-1-arrondissement-and-level-2-commune-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-02-17",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "Institut national de l\u2019information g\u00e9ographique et foresti\u00e8re (IGN)"
+}

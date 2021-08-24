@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2019,
+    "boundaryISO": "MOZ",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/mozambique-administrative-levels-0-3",
+    "boundarySourceURL": "https://data.humdata.org/dataset/mozambique-administrative-levels-0-3",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-06-07",
+    "boundarySource-1": "OCHA ROSEA",
+    "boundarySource-2": "Mozambique INE (Instituto Nacional de Estatistica)   http://www.ine.gov.mz/  Census 2007 data from  WFP Geonode,  cleaned by UN OCHA ROSEA.  Maputo City districts added from SALB boundaries by OCHA. "
+}

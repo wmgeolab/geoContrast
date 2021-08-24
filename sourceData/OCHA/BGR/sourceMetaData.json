@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "bgr_adm_unicef_2019_shp.zip/bgr_admbnda_adm0_UNICEF_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bgr_adm_unicef_2019_shp.zip/bgr_admbnda_adm1_UNICEF_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bgr_adm_unicef_2019_shp.zip/bgr_admbnda_adm2_UNICEF_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BGR",
+    "year": 2019,
+    "source": [
+        "OCHA FISS",
+        "UNICEF"
+    ],
+    "source_updated": "2019-09-16",
+    "source_url": "https://data.humdata.org/dataset/bulgaria-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/bulgaria-administrative-level-0-2-boundaries"
+}

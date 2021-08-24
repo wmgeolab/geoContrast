@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mng-administrative-divisions-shapefiles.zip/mng_admbnda_adm0_nso_20201019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mng-administrative-divisions-shapefiles.zip/mng_admbnda_adm1_nso_20201019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mng-administrative-divisions-shapefiles.zip/mng_admbnda_adm2_nso_20201019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MNG",
+    "year": 2016,
+    "source": [
+        "OCHA ROAP",
+        "National Statistical Office of Mongolia"
+    ],
+    "source_updated": "2020-10-19",
+    "source_url": "https://data.humdata.org/dataset/mongolia-administrative-boundaries-polygon-polyline",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/mongolia-administrative-boundaries-polygon-polyline"
+}

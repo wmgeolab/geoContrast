@@ -1,0 +1,31 @@
+{
+    "input": [
+        {
+            "path": "col-administrative-divisions-shapefiles.zip/col_admbnda_adm0_mgn_itos_20200416.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "col-administrative-divisions-shapefiles.zip/col_admbnda_adm1_mgn_20200416.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "col-administrative-divisions-shapefiles.zip/col_admbnda_adm2_mgn_20200416.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "COL",
+    "year": 2018,
+    "source": [
+        "OCHA ROLAC"
+    ],
+    "source_updated": "2020-04-16",
+    "source_url": "https://data.humdata.org/dataset/colombia-administrative-boundaries-levels-0-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/colombia-administrative-boundaries-levels-0-3"
+}

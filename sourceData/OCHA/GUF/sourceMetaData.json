@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "guf_adm_ign_shp.zip/guf_admbnda_adm0_ign.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "guf_adm_ign_shp.zip/guf_admbnda_adm1_ign.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "guf_adm_ign_shp.zip/guf_admbnda_adm2_ign.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GUF",
+    "year": 2020,
+    "source": [
+        "OCHA FISS",
+        "Institut national de l\u2019information g\u00e9ographique et foresti\u00e8re (IGN)"
+    ],
+    "source_updated": "2020-02-12",
+    "source_url": "https://data.humdata.org/dataset/french-guiana-administrative-level-0-1-and-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/french-guiana-administrative-level-0-1-and-2-boundaries"
+}

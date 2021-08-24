@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "irq-administrative-divisions-shapefiles.zip/irq_admbnda_adm0_cso_itos_20190603.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "irq-administrative-divisions-shapefiles.zip/irq_admbnda_adm1_cso_20190603.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "irq-administrative-divisions-shapefiles.zip/irq_admbnda_adm2_cso_20190603.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "irq-administrative-divisions-shapefiles.zip/irq_admbnda_adm3_cso_20190603.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "IRQ",
+    "year": 2019,
+    "source": [
+        "OCHA Iraq",
+        "Iraq Central Statistics Office"
+    ],
+    "source_updated": "2019-06-03",
+    "source_url": "https://data.humdata.org/dataset/iraq-admin-level-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/iraq-admin-level-1-boundaries"
+}

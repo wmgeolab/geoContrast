@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "ARE",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/uae-administrative-boundaries-populated-places",
+    "boundarySourceURL": "https://data.humdata.org/dataset/uae-administrative-boundaries-populated-places",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "12 June 2020",
+    "boundarySource-1": "OCHA ROMENA",
+    "boundarySource-2": "GADM"
+}

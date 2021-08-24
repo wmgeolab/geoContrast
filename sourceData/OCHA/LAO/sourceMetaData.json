@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "lao_adm_ngd_20191112_shp.zip/lao_adm_ngd_20191112_SHP/lao_admbnda_adm0_ngd_20191112.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lao_adm_ngd_20191112_shp.zip/lao_adm_ngd_20191112_SHP/lao_admbnda_adm1_ngd_20191112.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lao_adm_ngd_20191112_shp.zip/lao_adm_ngd_20191112_SHP/lao_admbnda_adm2_ngd_20191112.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LAO",
+    "year": 2016,
+    "source": [
+        "OCHA ROAP",
+        "National Geographic Department (NGD)"
+    ],
+    "source_updated": "2019-11-12",
+    "source_url": "https://data.humdata.org/dataset/lao-admin-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/lao-admin-boundaries"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "DMA",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/dominica-administrative-level-0-national-and-level-1-boundaries-form-gadm",
+    "boundarySourceURL": "https://data.humdata.org/dataset/dominica-administrative-level-0-national-and-level-1-boundaries-form-gadm",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-11-10",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "(Source to be clarified.)"
+}

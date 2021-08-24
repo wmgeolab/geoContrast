@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "sle_admbnda_adm1_1m_gov_ocha_20161017.shp.zip/sle_admbnda_adm1_1m_gov_ocha_20161017.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sle_admbnda_adm2_1m_gov_ocha.zip/sle_admbnda_adm2_1m_gov_ocha_20161017.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sle_admbnda_adm3_1m_gov_ocha_20161017.zip/sle_admbnda_adm3_1m_gov_ocha_20161017.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sle_admbnda_adm4_1m_gov_ocha.zip/sle_admbnda_adm4_1m_gov_ocha_20170228.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sle_admbnda_adm0_1m_gov_ocha_20161017.zip/sle_admbnda_adm0_1m_gov_ocha_20161017.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SLE",
+    "year": 2016,
+    "source": [
+        "OCHA ROWCA",
+        "Government of Sierra Leone"
+    ],
+    "source_updated": "2017-08-16",
+    "source_url": "https://data.humdata.org/dataset/sierra-leone-all-ad-min-level-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/sierra-leone-all-ad-min-level-boundaries"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "com_adm_cosep_ocha_20191205_shp.zip/com_admbnda_adm0_cosep_ocha_20191205.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "com_adm_cosep_ocha_20191205_shp.zip/com_admbnda_adm1_cosep_ocha_20191205.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "com_adm_cosep_ocha_20191205_shp.zip/com_admbnda_adm2_cosep_ocha_20191205.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "com_adm_cosep_ocha_20191205_shp.zip/com_admbnda_adm3_cosep_ocha_20191205.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "COM",
+    "year": 2018,
+    "source": [
+        "OCHA ROSEA",
+        "Comoros National Disaster Management Agency (COSEP-Centre des secours et de la protection civil)"
+    ],
+    "source_updated": "2019-12-05",
+    "source_url": "https://data.humdata.org/dataset/comoros-administrative-level-0-3-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/comoros-administrative-level-0-3-boundaries"
+}

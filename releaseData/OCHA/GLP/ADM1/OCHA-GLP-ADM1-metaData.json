@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "GLP",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/guadalupe-administrative-level-0-1-and-2-boundaries-from-gadm",
+    "boundarySourceURL": "https://data.humdata.org/dataset/guadalupe-administrative-level-0-1-and-2-boundaries-from-gadm",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "10 December 2019",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

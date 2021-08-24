@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "MNG",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/mongolia-administrative-boundaries-polygon-polyline",
+    "boundarySourceURL": "https://data.humdata.org/dataset/mongolia-administrative-boundaries-polygon-polyline",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-10-19",
+    "boundarySource-1": "OCHA ROAP",
+    "boundarySource-2": "National Statistical Office of Mongolia"
+}

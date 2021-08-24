@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "ECU",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/ecuador-admin-level-2-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/ecuador-admin-level-2-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-07-24",
+    "boundarySource-1": "OCHA ROLAC",
+    "boundarySource-2": "INEC - Instituto Nacional de Estad\u00edstica y Censos"
+}

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "blr_adm_2019_shp.zip/blr_admbnda_adm0_UNICEF.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "blr_adm_2019_shp.zip/blr_admbnda_adm1_UNICEF.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "blr_adm_2019_shp.zip/blr_admbnda_adm2_UNICEF.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BLR",
+    "year": 2015,
+    "source": [
+        "OCHA FISS",
+        "UNICEF"
+    ],
+    "source_updated": "2017-07-07",
+    "source_url": "https://data.humdata.org/dataset/belarus-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/belarus-administrative-level-0-2-boundaries"
+}

@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "sur_adm_2017_shp.zip/sur_admbnda_adm0_2017.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sur_adm_2017_shp.zip/sur_admbnda_adm1_2017.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sur_adm_2017_shp.zip/sur_admbnda_adm2_2017.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SUR",
+    "year": 2019,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "24 October 2019",
+    "source_url": "https://data.humdata.org/dataset/suriname-administrative-level-0-1-and-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/suriname-administrative-level-0-1-and-2-boundaries"
+}

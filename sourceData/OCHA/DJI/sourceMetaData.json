@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "dji_adm_fews_shp.zip/dji_admbnda_adm0_fews.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dji_adm_fews_shp.zip/dji_admbnda_adm1_fews.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dji_adm_fews_shp.zip/dji_admbnda_adm2_fews.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "DJI",
+    "year": 2018,
+    "source": [
+        "OCHA FISS",
+        "FEWS"
+    ],
+    "source_updated": "2020-02-20",
+    "source_url": "https://data.humdata.org/dataset/djibouti-administrative-levels-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/djibouti-administrative-levels-0-2-boundaries"
+}

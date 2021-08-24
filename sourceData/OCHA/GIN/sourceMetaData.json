@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "gin_admbnda_ocha_fis.zip/gin_admbnda_adm0_ocha.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gin_admbnda_ocha_fis.zip/gin_admbnda_adm1_ocha.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gin_admbnda_ocha_fis.zip/gin_admbnda_adm2_ocha.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gin_admbnda_ocha_fis.zip/gin_admbnda_adm3_ocha.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gin_admbnda_adm4_2021_ocha.zip/gin_admbnda_adm4_2021_ocha.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GIN",
+    "year": 2016,
+    "source": [
+        "OCHA ROWCA",
+        "World Food Programme"
+    ],
+    "source_updated": "2016-03-04",
+    "source_url": "https://data.humdata.org/dataset/guinea-geodatabase",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/guinea-geodatabase"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "SLE",
+    "boundaryType": "ADM4",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/sierra-leone-all-ad-min-level-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/sierra-leone-all-ad-min-level-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2017-08-16",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Government of Sierra Leone"
+}

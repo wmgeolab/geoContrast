@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "nam_adm_nsa_ocha_20200109_shp.zip/nam_admbnda_adm0_nsa_ocha_20200109.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nam_adm_nsa_ocha_20200109_shp.zip/nam_admbnda_adm1_nsa_ocha_20200109.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nam_adm_nsa_ocha_20200109_shp.zip/nam_admbnda_adm2_nsa_ocha_20200109.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "NAM",
+    "year": 2011,
+    "source": [
+        "OCHA ROSA",
+        "Namibia Statistics Agency (NSA)"
+    ],
+    "source_updated": "2020-01-09",
+    "source_url": "https://data.humdata.org/dataset/namibia-admin-level-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/namibia-admin-level-1-boundaries"
+}

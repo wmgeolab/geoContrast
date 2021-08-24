@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "BGD",
+    "boundaryType": "ADM4",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/administrative-boundaries-of-bangladesh-as-of-2015",
+    "boundarySourceURL": "https://data.humdata.org/dataset/administrative-boundaries-of-bangladesh-as-of-2015",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-11-13",
+    "boundarySource-1": "OCHA ROAP",
+    "boundarySource-2": "Bangladesh Bureau of Statistics (BBS)"
+}

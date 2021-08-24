@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "prk_adm_wfp_20190624_shp.zip/prk_admbnda_adm0_wfp_20190624.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "prk_adm_wfp_20190624_shp.zip/prk_admbnda_adm1_wfp_20190624.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "prk_adm_wfp_20190624_shp.zip/prk_admbnda_adm2_wfp_20190624.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PRK",
+    "year": 2013,
+    "source": [
+        "OCHA ROAP",
+        "World Food Programme"
+    ],
+    "source_updated": "2019-06-24",
+    "source_url": "https://data.humdata.org/dataset/dpr-korea-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/dpr-korea-administrative-boundaries"
+}

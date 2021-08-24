@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mex_admbnda_govmex_20210618_shp.zip/mex_admbnda_govmex_20210618_SHP/mex_admbnda_adm0_govmex_20210618.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mex_admbnda_govmex_20210618_shp.zip/mex_admbnda_govmex_20210618_SHP/mex_admbnda_adm1_govmex_20210618.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mex_admbnda_govmex_20210618_shp.zip/mex_admbnda_govmex_20210618_SHP/mex_admbnda_adm2_govmex_20210618.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MEX",
+    "year": 2020,
+    "source": [
+        "OCHA ROLAC",
+        "Instituto Nacional de Estad\u00edstica y Geograf\u00eda (INEGI)"
+    ],
+    "source_updated": "2021-06-18",
+    "source_url": "https://data.humdata.org/dataset/mexican-administrative-level-0-country-1-estado-and-2-municipio-boundary-polygons",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/mexican-administrative-level-0-country-1-estado-and-2-municipio-boundary-polygons"
+}

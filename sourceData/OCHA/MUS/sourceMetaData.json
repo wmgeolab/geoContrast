@@ -1,0 +1,26 @@
+{
+    "input": [
+        {
+            "path": "mus_adm_2020_v2_shp.zip/mus_admbnda_adm0_2020_v2.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mus_adm_2020_v2_shp.zip/mus_admbnda_adm1_2020_v2.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MUS",
+    "year": 2020,
+    "source": [
+        "OCHA ROLAC",
+        "Statistics Mauritius"
+    ],
+    "source_updated": "2020-08-09",
+    "source_url": "https://data.humdata.org/dataset/mauritius-administrative-level-0-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/mauritius-administrative-level-0-1-boundaries"
+}

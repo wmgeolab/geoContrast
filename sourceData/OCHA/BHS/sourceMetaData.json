@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "bhs_adm0_gdams_2009.zip/BHS_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bhs_adm1_gdams_2009.zip/BHS_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BHS",
+    "year": 2009,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "13 November 2020",
+    "source_url": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1"
+}

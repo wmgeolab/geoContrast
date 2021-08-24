@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "bol_adm_gb2014_shp.zip/bol_admbnda_adm0_gov_itos_2020514.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bol_adm_gb2014_shp.zip/bol_admbnda_adm1_gov_2020514.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bol_adm_gb2014_shp.zip/bol_admbnda_adm2_gov_2020514.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bol_adm_gb2014_shp.zip/bol_admbnda_adm3_gov_2020514.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BOL",
+    "year": 2018,
+    "source": [
+        "OCHA ROLAC",
+        "GeoBolivia: la Infraestructura de Datos Espaciales del Estado Plurinacional de Bolivia"
+    ],
+    "source_updated": "2020-05-14",
+    "source_url": "https://data.humdata.org/dataset/bolivia-administrative-level-0-3-boundary-polygons",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/bolivia-administrative-level-0-3-boundary-polygons"
+}

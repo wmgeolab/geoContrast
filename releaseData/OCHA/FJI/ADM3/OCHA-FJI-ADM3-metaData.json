@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "FJI",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/fiji-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/fiji-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-12-30",
+    "boundarySource-1": "OCHA ROAP",
+    "boundarySource-2": "POPGIS, Fiji Islands Bureau of Statistics, Pacific Catastrophe Risk Assessment and Financing Initiative (PCRAFI)"
+}

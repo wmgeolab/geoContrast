@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "CMR",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/cameroon-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/cameroon-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-01-04",
+    "boundarySource-1": "OCHA Cameroon",
+    "boundarySource-2": "Institut National de Cartographie (INC) provided by OSM"
+}

@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.zip/caf_admbnda_adm0_200k_sigcaf_reach_itos_v2.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.zip/caf_admbnda_adm1_200k_sigcaf_reach_itos_v2.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.zip/caf_admbnda_adm2_200k_sigcaf_reach_itos_v2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.zip/caf_admbnda_adm3_200k_sigcaf_reach_itos_v2.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "caf_admbnda_adm4_reach_ocha_v2.zip/caf_admbnda_adm4_reach_ocha_v2.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "CAF",
+    "year": 2015,
+    "source": [
+        "OCHA Central African Republic",
+        "Agency for Technical Cooperation and Development(ACTED)"
+    ],
+    "source_updated": "2015-06-15",
+    "source_url": "https://data.humdata.org/dataset/central-african-republic-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/central-african-republic-administrative-boundaries"
+}

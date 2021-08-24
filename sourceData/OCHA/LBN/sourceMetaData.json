@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "lbn_adm_cdr_20200810.zip/lbn_admbnda_adm0_cdr_20200810.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lbn_adm_cdr_20200810.zip/lbn_admbnda_adm1_cdr_20200810.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lbn_adm_cdr_20200810.zip/lbn_admbnda_adm2_cdr_20200810.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lbn_adm_cdr_20200810.zip/lbn_admbnda_adm3_cdr_20200810.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lbn_beirut_adm4_mapaction_pcoded.zip/lbn_beirut_adm4_MapAction_Pcoded.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LBN",
+    "year": 2015,
+    "source": [
+        "OCHA Lebanon",
+        "Central Administration of Statistics Lebanon"
+    ],
+    "source_updated": "2016-08-22",
+    "source_url": "https://data.humdata.org/dataset/lebanon-administrative-boundaries-levels-0-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/lebanon-administrative-boundaries-levels-0-3"
+}

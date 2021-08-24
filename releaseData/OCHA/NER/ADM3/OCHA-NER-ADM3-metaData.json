@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2006,
+    "boundaryISO": "NER",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/niger-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/niger-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-09-12",
+    "boundarySource-1": "OCHA Niger",
+    "boundarySource-2": "IGNN (as of 2006) and  OCHA/ROWCA ( 2014/ 2015)"
+}

@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "ury_adm_2020_shp.zip/ury_admbnda_adm0_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ury_adm_2020_shp.zip/ury_admbnda_adm1_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ury_adm_2020_shp.zip/ury_admbnda_adm2_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "URY",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "27 July 2020",
+    "source_url": "https://data.humdata.org/dataset/uruguay-administrative-level-0-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/uruguay-administrative-level-0-boundaries"
+}

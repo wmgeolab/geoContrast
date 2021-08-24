@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mar_adm_unhcr2020_shp.zip/mar_admbnda_adm0_unhcr_20201203.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mar_adm_unhcr2020_shp.zip/mar_admbnda_adm1_unhcr_20201203.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mar_adm_unhcr2020_shp.zip/mar_admbnda_adm2_unhcr_20201203.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MAR",
+    "year": 2020,
+    "source": [
+        "OCHA ROMENA",
+        "UNHCR (from GAUL)"
+    ],
+    "source_updated": "2020-12-03",
+    "source_url": "https://data.humdata.org/dataset/morocco-administrative-boundaries-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/morocco-administrative-boundaries-populated-places"
+}

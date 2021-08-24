@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "bwa_adm_2011_shp.zip/bwa_admbnda_adm0_2011.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bwa_adm_2011_shp.zip/bwa_admbnda_adm1_2011.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bwa_adm_2011_shp.zip/bwa_admbnda_adm2_2011.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bwa_adm_2011_shp.zip/bwa_admbnda_adm3_2011.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BWA",
+    "year": 2021,
+    "source": [
+        "OCHA FISS",
+        "UNFPA"
+    ],
+    "source_updated": "2021-05-18",
+    "source_url": "https://data.humdata.org/dataset/botswana-subnational-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/botswana-subnational-administrative-boundaries"
+}

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "cri_adm_2020_shp.zip/cri_admbnda_adm0_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cri_adm_2020_shp.zip/cri_admbnda_adm1_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cri_adm_2020_shp.zip/cri_admbnda_adm2_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "CRI",
+    "year": 2020,
+    "source": [
+        "OCHA ROLAC",
+        "Portal de Datos Abiertos \"Daticos\""
+    ],
+    "source_updated": "2020-08-06",
+    "source_url": "https://data.humdata.org/dataset/costa-rica-subnational-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/costa-rica-subnational-administrative-boundaries"
+}

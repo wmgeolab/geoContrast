@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "gmb_admbnda_admint_wfp_ocha.zip/gmb_admbnda_admint_wfp_ocha.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gmb_admbnda_adm1_lga_1m_wfp_ocha.zip/gmb_admbnda_adm1_lga_1m_wfp_ocha.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gmb_admbnda_adm2_district_1m_wfp_ocha.zip/gmb_admbnda_adm2_district_1m_wfp_ocha.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GMB",
+    "year": 2017,
+    "source": [
+        "OCHA ROWCA",
+        "WFP"
+    ],
+    "source_updated": "2018-08-09",
+    "source_url": "https://data.humdata.org/dataset/gambia-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/gambia-administrative-boundaries"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "per_adm_ign_20200714_shp.zip/per_admbnda_adm0_ign_20200714.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "per_adm_ign_20200714_shp.zip/per_admbnda_adm1_ign_20200714.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "per_adm_ign_20200714_shp.zip/per_admbnda_adm2_ign_20200714.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "per_adm_ign_20200714_shp.zip/per_admbnda_adm3_ign_20200714.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PER",
+    "year": 2015,
+    "source": [
+        "OCHA ROLAC",
+        "Instituto Geogr\u00e1fico Nacional - IGN"
+    ],
+    "source_updated": "2020-07-14",
+    "source_url": "https://data.humdata.org/dataset/limites-de-peru",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/limites-de-peru"
+}

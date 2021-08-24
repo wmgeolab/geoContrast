@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mhl_admbnda_adm0.zip/mhl_admbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mhl_admbnda_adm1_atolls.zip/mhl_admbnda_adm1_atolls.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mhl_admbnda_adm2_ea.zip/mhl_admbnda_adm2_EA.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MHL",
+    "year": 2018,
+    "source": [
+        "OCHA ROAP",
+        "Secretariat of the Pacific Community, Statistics for Development Division"
+    ],
+    "source_updated": "2018-07-18",
+    "source_url": "https://data.humdata.org/dataset/marshall-islands-administrative-levels-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/marshall-islands-administrative-levels-0-2-boundaries"
+}

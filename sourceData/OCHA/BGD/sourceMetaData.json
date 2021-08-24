@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "bgd_adm_bbs_20201113_shp.zip/bgd_adm_bbs_20201113_SHP/bgd_admbnda_adm0_bbs_20201113.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bgd_adm_bbs_20201113_shp.zip/bgd_adm_bbs_20201113_SHP/bgd_admbnda_adm1_bbs_20201113.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bgd_adm_bbs_20201113_shp.zip/bgd_adm_bbs_20201113_SHP/bgd_admbnda_adm2_bbs_20201113.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bgd_adm_bbs_20201113_shp.zip/bgd_adm_bbs_20201113_SHP/bgd_admbnda_adm3_bbs_20201113.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bgd_adm_bbs_20201113_shp.zip/bgd_adm_bbs_20201113_SHP/bgd_admbnda_adm4_bbs_20201113.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BGD",
+    "year": 2015,
+    "source": [
+        "OCHA ROAP",
+        "Bangladesh Bureau of Statistics (BBS)"
+    ],
+    "source_updated": "2020-11-13",
+    "source_url": "https://data.humdata.org/dataset/administrative-boundaries-of-bangladesh-as-of-2015",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/administrative-boundaries-of-bangladesh-as-of-2015"
+}

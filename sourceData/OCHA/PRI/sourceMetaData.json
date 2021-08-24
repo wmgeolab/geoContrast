@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "pri_adm_2019_shp.zip/pri_admbnda_adm0_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pri_adm_2019_shp.zip/pri_admbnda_adm1_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PRI",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "8 November 2019",
+    "source_url": "https://data.humdata.org/dataset/peurto-rico-admin0-and-admin1",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/peurto-rico-admin0-and-admin1"
+}

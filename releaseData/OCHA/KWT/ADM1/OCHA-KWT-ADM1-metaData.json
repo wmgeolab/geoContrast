@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "KWT",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/kuwait-administrative-boundaries-levels-1-2-populated-places",
+    "boundarySourceURL": "https://data.humdata.org/dataset/kuwait-administrative-boundaries-levels-1-2-populated-places",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "29 March 2017",
+    "boundarySource-1": "OCHA ROMENA",
+    "boundarySource-2": "GADM"
+}

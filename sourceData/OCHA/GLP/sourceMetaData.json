@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "glp_adm_2019_shp.zip/glp_admbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "glp_adm_2019_shp.zip/glp_admbnda_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "glp_adm_2019_shp.zip/glp_admbnda_adm2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GLP",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "10 December 2019",
+    "source_url": "https://data.humdata.org/dataset/guadalupe-administrative-level-0-1-and-2-boundaries-from-gadm",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/guadalupe-administrative-level-0-1-and-2-boundaries-from-gadm"
+}

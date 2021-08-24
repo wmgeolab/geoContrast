@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "fji_polbnda_adm0_country.zip/fji_polbnda_adm0_country.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "fji_polbnda_adm1_district.zip/fji_polbnda_adm1_district.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "fji_polbnda_adm2_province.zip/fji_polbnda_adm2_province.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "fji_polbnda_adm3_tikina.zip/fji_polbnda_adm3_tikina.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "FJI",
+    "year": 2018,
+    "source": [
+        "OCHA ROAP",
+        "POPGIS, Fiji Islands Bureau of Statistics, Pacific Catastrophe Risk Assessment and Financing Initiative (PCRAFI)"
+    ],
+    "source_updated": "2019-12-30",
+    "source_url": "https://data.humdata.org/dataset/fiji-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/fiji-administrative-boundaries"
+}

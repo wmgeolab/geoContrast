@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "fsm_admbnda_shp.zip/fsm_admbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "fsm_admbnda_shp.zip/fsm_admbnda_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "fsm_admbnda_shp.zip/fsm_admbnda_adm2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "FSM",
+    "year": 2019,
+    "source": [
+        "OCHA ROP",
+        "Federated States of Micronesia Division of Statistics,  2010 Census of Population and Housing and Secretariat of the Pacific Community, Statistics for Development Division"
+    ],
+    "source_updated": "2019-06-17",
+    "source_url": "https://data.humdata.org/dataset/fsm-2010-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/fsm-2010-administrative-level-0-2-boundaries"
+}

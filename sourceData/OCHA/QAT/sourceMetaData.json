@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "qat_adm0.zip/QAT_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "qat_adm1.zip/QAT_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "QAT",
+    "year": 2015,
+    "source": ["OCHA ROMENA","GADM"],
+    "source_updated": "29 March 2017",
+    "source_url": "https://data.humdata.org/dataset/qatar-administrative-boundaries-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/qatar-administrative-boundaries-populated-places"
+}

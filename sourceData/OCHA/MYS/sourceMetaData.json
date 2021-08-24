@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mys_admb_unhcr_20210211_shp.zip/mys_admbnda_adm0_unhcr_20210211.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mys_admb_unhcr_20210211_shp.zip/mys_admbnda_adm1_unhcr_20210211.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mys_admb_unhcr_20210211_shp.zip/mys_admbnda_adm2_unhcr_20210211.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MYS",
+    "year": 2020,
+    "source": [
+        "OCHA ROAP",
+        "UNHCR"
+    ],
+    "source_updated": "2021-02-11",
+    "source_url": "https://data.humdata.org/dataset/malaysia-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/malaysia-administrative-level-0-2-boundaries"
+}

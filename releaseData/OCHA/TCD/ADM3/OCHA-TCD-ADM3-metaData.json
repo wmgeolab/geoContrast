@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "TCD",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/chad-admin-boundaries-admin-1-and-admin-2",
+    "boundarySourceURL": "https://data.humdata.org/dataset/chad-admin-boundaries-admin-1-and-admin-2",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2016-05-09",
+    "boundarySource-1": "OCHA Chad"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "OMN",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/oman-administrative-boundaries-populated-places",
+    "boundarySourceURL": "https://data.humdata.org/dataset/oman-administrative-boundaries-populated-places",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "7 June 2021",
+    "boundarySource-1": "OCHA ROMENA",
+    "boundarySource-2": "GADM"
+}

@@ -1,0 +1,26 @@
+{
+    "input": [
+        {
+            "path": "md_modif.zip/MD_modif/MDA_Admin0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "md_modif.zip/MD_modif/MDA_Admin1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MDA",
+    "year": 2016,
+    "source": [
+        "OCHA FISS",
+        "UNHCR"
+    ],
+    "source_updated": "2017-07-13",
+    "source_url": "https://data.humdata.org/dataset/moldova-administrative-level-0-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/moldova-administrative-level-0-1-boundaries"
+}

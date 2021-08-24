@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "PRI",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/peurto-rico-admin0-and-admin1",
+    "boundarySourceURL": "https://data.humdata.org/dataset/peurto-rico-admin0-and-admin1",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "8 November 2019",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

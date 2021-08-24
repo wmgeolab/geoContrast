@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2019,
+    "boundaryISO": "LKA",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/sri-lanka-administrative-levels-0-4-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/sri-lanka-administrative-levels-0-4-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-03-05",
+    "boundarySource-1": "OCHA ROAP",
+    "boundarySource-2": "Survey Department of Sri Lanka (http://www.survey.gov.lk)"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "DOM",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/dominican-republic-administrative-boundaries-levels-0-6",
+    "boundarySourceURL": "https://data.humdata.org/dataset/dominican-republic-administrative-boundaries-levels-0-6",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2021-06-29",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "Oficina Nacional de Estad\u00edstica"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "zwe_admbnda_adm0_zimstat_ocha_20180911.zip/zwe_admbnda_adm0_zimstat_ocha_20180911.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zwe_admbnda_adm1_zimstat_ocha_20180911.zip/zwe_admbnda_adm1_zimstat_ocha_20180911.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zwe_admbnda_adm2_zimstat_ocha_20180911.zip/zwe_admbnda_adm2_zimstat_ocha_20180911.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zwe_admbnda_adm3_zimstat_ocha_20180911.zip/zwe_admbnda_adm3_zimstat_ocha_20180911.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ZWE",
+    "year": 2018,
+    "source": [
+        "OCHA ROSEA",
+        "Zimbabwe National Statistics Agency (ZIMSTAT  www.zimstat.co.zw) Central Statistics Office"
+    ],
+    "source_updated": "2018-09-11",
+    "source_url": "https://data.humdata.org/dataset/zimbabwe-administrative-levels-0-3-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/zimbabwe-administrative-levels-0-3-boundaries"
+}

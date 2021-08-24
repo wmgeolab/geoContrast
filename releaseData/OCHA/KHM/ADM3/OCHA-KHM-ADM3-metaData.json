@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2014,
+    "boundaryISO": "KHM",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/cambodia-admin-level-0-international-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/cambodia-admin-level-0-international-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2018-10-04",
+    "boundarySource-1": "OCHA ROAP",
+    "boundarySource-2": "Department of Geography of the Ministry of Land Management, Urbanization and Construction in 2008, WFP"
+}

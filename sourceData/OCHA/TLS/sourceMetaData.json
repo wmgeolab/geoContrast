@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "tls_adm_who_ocha_20200911_shp.zip/tls_admbnda_adm0_who_ocha_20200911.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tls_adm_who_ocha_20200911_shp.zip/tls_admbnda_adm1_who_ocha_20200911.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tls_adm_who_ocha_20200911_shp.zip/tls_admbnda_adm2_who_ocha_20200911.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tls_adm_who_ocha_20200911_shp.zip/tls_admbnda_adm3_who_ocha_20200911.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TLS",
+    "year": 2006,
+    "source": [
+        "OCHA ROAP",
+        "WHO"
+    ],
+    "source_updated": "2020-09-11",
+    "source_url": "https://data.humdata.org/dataset/timor-leste-administrative-boundaries-levels-0-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/timor-leste-administrative-boundaries-levels-0-3"
+}

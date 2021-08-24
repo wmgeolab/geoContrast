@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "egy_admbnda_adm0_capmas_itos_20170421.zip/egy_admbnda_adm0_capmas_itos_20170421.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "egy_admbnda_adm1_capmas_20170421.zip/egy_admbnda_adm1_capmas_20170421.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "egy_admbnda_adm2_capmas_20170421.zip/egy_admbnda_adm2_capmas_20170421.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "egy_admbnda_adm3_capmas_20170421.zip/egy_admbnda_adm3_capmas_20170421.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "EGY",
+    "year": 2006,
+    "source": [
+        "OCHA ROMENA",
+        "Central Agency for Public Mobilization and Statistics (CAPMAS)"
+    ],
+    "source_updated": "2017-04-21",
+    "source_url": "https://data.humdata.org/dataset/egypt-administrative-boundaries-levels-0-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/egypt-administrative-boundaries-levels-0-3"
+}

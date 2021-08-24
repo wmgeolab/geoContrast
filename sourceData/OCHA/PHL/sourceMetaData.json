@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "phl_adm_psa_namria_20200529_shp.zip/phl_admbnda_adm0_psa_namria_itos_20200529.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "phl_adm_psa_namria_20200529_shp.zip/phl_admbnda_adm1_psa_namria_20200529.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "phl_adm_psa_namria_20200529_shp.zip/phl_admbnda_adm2_psa_namria_20200529.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "phl_adm_psa_namria_20200529_shp.zip/phl_admbnda_adm3_psa_namria_20200529.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PHL",
+    "year": 2016,
+    "source": [
+        "OCHA Philippines",
+        "National Mapping and Resource Information Authority (NAMRIA), Philippines Statistics Authority (PSA)"
+    ],
+    "source_updated": "2020-05-29",
+    "source_url": "https://data.humdata.org/dataset/philippines-administrative-levels-0-to-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/philippines-administrative-levels-0-to-3"
+}

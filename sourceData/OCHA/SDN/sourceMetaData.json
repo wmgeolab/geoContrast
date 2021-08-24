@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "sdn_adm_cbs_nic_ssa_20200831_shp.zip/sdn_admbnda_adm0_cbs_nic_ssa_20200831.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sdn_adm_cbs_nic_ssa_20200831_shp.zip/sdn_admbnda_adm1_cbs_nic_ssa_20200831.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sdn_adm_cbs_nic_ssa_20200831_shp.zip/sdn_admbnda_adm2_cbs_nic_ssa_20200831.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SDN",
+    "year": 2020,
+    "source": [
+        "OCHA ROSEA",
+        "Information Management Working Group (IMWG), OCHA"
+    ],
+    "source_updated": "2020-08-31",
+    "source_url": "https://data.humdata.org/dataset/sudan-administrative-boundaries-levels-0-2",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/sudan-administrative-boundaries-levels-0-2"
+}

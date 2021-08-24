@@ -6,7 +6,7 @@ import warnings
 import traceback
 
 # params
-collections = ['SALB']
+collections = ['Other']
 isos = []
 replace = False
 write_meta = True

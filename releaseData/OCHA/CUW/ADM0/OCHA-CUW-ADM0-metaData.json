@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "CUW",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/curacao-administrative-level-0-national-boundary",
+    "boundarySourceURL": "https://data.humdata.org/dataset/curacao-administrative-level-0-national-boundary",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "16 December 2019",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

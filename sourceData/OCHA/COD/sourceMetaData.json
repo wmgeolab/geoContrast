@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "cod_admbnda_rgc_itos_20190911_shp.zip/cod_admbnda_adm0_rgc_itos_20190911.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cod_admbnda_rgc_itos_20190911_shp.zip/cod_admbnda_adm1_rgc_itos_20190911.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cod_admbnda_rgc_itos_20190911_shp.zip/cod_admbnda_adm2_rgc_20190911.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "COD",
+    "year": 2019,
+    "source": [
+        "OCHA DR Congo",
+        "Referenciel G\u00e9ographique Commun"
+    ],
+    "source_updated": "2019-09-11",
+    "source_url": "https://data.humdata.org/dataset/drc-administrative-boundaries-levels-0-2",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/drc-administrative-boundaries-levels-0-2"
+}

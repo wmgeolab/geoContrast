@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "npl_admbnda_nd_20201117_shp.zip/npl_admbnda_adm0_nd_20201117.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "npl_admbnda_nd_20201117_shp.zip/npl_admbnda_adm1_nd_20201117.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "npl_admbnda_nd_20201117_shp.zip/npl_admbnda_adm2_nd_20201117.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "NPL",
+    "year": 2018,
+    "source": [
+        "OCHA FISS",
+        "Survey Department of Nepal (http://ngiip.gov.np/index.php),  UN Resident Coordinators Office in Nepal (https://un.org.np/)"
+    ],
+    "source_updated": "2019-04-30",
+    "source_url": "https://data.humdata.org/dataset/administrative-bounadries-of-nepal",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/administrative-bounadries-of-nepal"
+}

@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "mdg_adm_bngrc_ocha_20181031_shp.zip/mdg_admbnda_adm0_BNGRC_OCHA_20181031.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdg_adm_bngrc_ocha_20181031_shp.zip/mdg_admbnda_adm1_BNGRC_OCHA_20181031.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdg_adm_bngrc_ocha_20181031_shp.zip/mdg_admbnda_adm2_BNGRC_OCHA_20181031.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdg_adm_bngrc_ocha_20181031_shp.zip/mdg_admbnda_adm3_BNGRC_OCHA_20181031.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdg_adm_bngrc_ocha_20181031_shp.zip/mdg_admbnda_adm4_BNGRC_OCHA_20181031.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MDG",
+    "year": 2010,
+    "source": [
+        "OCHA ROSA",
+        "Madagascar National Disaster Management Office (BNGRC)"
+    ],
+    "source_updated": "2020-02-20",
+    "source_url": "https://data.humdata.org/dataset/madagascar-administrative-level-0-4-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/madagascar-administrative-level-0-4-boundaries"
+}

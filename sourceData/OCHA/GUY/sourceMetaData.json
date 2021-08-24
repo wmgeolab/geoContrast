@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "guy_admbnd_2021_shp.zip/guy_admbnd_adm0_2021.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "guy_admbnd_2021_shp.zip/guy_admbnd_adm1_2021.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "guy_admbnd_2021_shp.zip/guy_admbnd_adm2_2021.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GUY",
+    "year": 2021,
+    "source": [
+        "OCHA FISS",
+        "DEVInfo LAC project"
+    ],
+    "source_updated": "2021-06-23",
+    "source_url": "https://data.humdata.org/dataset/guyana-administrative-level-0-1-and-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/guyana-administrative-level-0-1-and-2-boundaries"
+}

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "chn_adm_ocha_2020_shp.zip/chn_admbnda_adm0_ocha_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "chn_adm_ocha_2020_shp.zip/chn_admbnda_adm1_ocha_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "chn_adm_ocha_2020_shp.zip/chn_admbnda_adm2_ocha_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "CHN",
+    "year": 2020,
+    "source": [
+        "OCHA ROAP",
+        "publicly available online sources"
+    ],
+    "source_updated": "2020-09-10",
+    "source_url": "https://data.humdata.org/dataset/china-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/china-administrative-boundaries"
+}

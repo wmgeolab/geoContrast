@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "brb_adm_2019_shp.zip/brb_admbnda_adm0_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "brb_adm_2019_shp.zip/brb_admbnda_adm1_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BRB",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "28 November 2019",
+    "source_url": "https://data.humdata.org/dataset/barbados-administrative-boundaries-levels-0-and-1-from-gadm",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/barbados-administrative-boundaries-levels-0-and-1-from-gadm"
+}

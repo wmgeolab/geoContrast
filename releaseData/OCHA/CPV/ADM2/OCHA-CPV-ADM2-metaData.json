@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "CPV",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/cape-verde-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/cape-verde-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2018-05-14",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Second Administrative Level Boundaries (SALB) Project"
+}

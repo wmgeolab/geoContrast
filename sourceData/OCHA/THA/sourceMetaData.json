@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "tha_adm_rtsd_itos_20190221_shp_part_1.zip/tha_adm_rtsd_itos_20190221_SHP_PART_1/tha_admbnda_adm0_rtsd_20190221.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tha_adm_rtsd_itos_20190221_shp_part_1.zip/tha_adm_rtsd_itos_20190221_SHP_PART_1/tha_admbnda_adm1_rtsd_20190221.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tha_adm_rtsd_itos_20190221_shp_part_1.zip/tha_adm_rtsd_itos_20190221_SHP_PART_1/tha_admbnda_adm2_rtsd_20190221.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tha_adm_rtsd_itos_20190221_shp_part_2.zip/tha_adm_rtsd_itos_20190221_SHP_PART_2/tha_admbnda_adm3_rtsd_20190221.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "THA",
+    "year": 2019,
+    "source": [
+        "OCHA ROAP ",
+        "Royal Thai Survey Department"
+    ],
+    "source_updated": "2019-02-21",
+    "source_url": "https://data.humdata.org/dataset/thailand-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/thailand-administrative-boundaries"
+}

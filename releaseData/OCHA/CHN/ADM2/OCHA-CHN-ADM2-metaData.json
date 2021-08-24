@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "CHN",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/china-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/china-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-09-10",
+    "boundarySource-1": "OCHA ROAP",
+    "boundarySource-2": "publicly available online sources"
+}

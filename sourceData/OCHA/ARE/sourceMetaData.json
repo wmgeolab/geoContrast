@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "admin0.zip/Boundaries_UAE_0_GAUL.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "admin1.zip/Boundaries_UAE_1_GAUL.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ARE",
+    "year": 2015,
+    "source": ["OCHA ROMENA","GADM"],
+    "source_updated": "12 June 2020",
+    "source_url": "https://data.humdata.org/dataset/uae-administrative-boundaries-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/uae-administrative-boundaries-populated-places"
+}

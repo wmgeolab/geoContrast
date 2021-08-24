@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "tza_admbnda_adm0_20181019.zip/tza_admbnda_adm0_20181019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tza_admbnda_adm1_20181019.zip/tza_admbnda_adm1_20181019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tza_admbnda_adm2_20181019.zip/tza_admbnda_adm2_20181019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tza_admbnda_adm3_20181019.zip/tza_admbnda_adm3_20181019.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TZA",
+    "year": 2018,
+    "source": [
+        "OCHA ROSA",
+        "Tanzania National Bureau of Statistics / UN OCHA ROSA"
+    ],
+    "source_updated": "2018-10-22",
+    "source_url": "https://data.humdata.org/dataset/tanzania-administrative-boundaries-level-1-to-3-regions-districts-and-wards-with-2012-population",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/tanzania-administrative-boundaries-level-1-to-3-regions-districts-and-wards-with-2012-population"
+}

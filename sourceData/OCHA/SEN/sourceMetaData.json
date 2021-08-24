@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "shapefiles.zip/Shapefiles/sen_admbnda_adm0_1m_gov_ocha_20190426.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "shapefiles.zip/Shapefiles/sen_admbnda_adm1_1m_gov_ocha_20190426.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "shapefiles.zip/Shapefiles/sen_admbnda_adm2_1m_gov_ocha_20190426.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "shapefiles.zip/Shapefiles/sen_admbnda_adm3_1m_gov_ocha_20190426.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SEN",
+    "year": 2017,
+    "source": [
+        "OCHA ROWCA",
+        "Government of Senegal, 2009  (updated by OCHA/ROWCA) 04 august 2018"
+    ],
+    "source_updated": "2019-04-26",
+    "source_url": "https://data.humdata.org/dataset/senegal-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/senegal-administrative-boundaries"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "tgo_adm_inseed_itos_20210107_shp.zip/Shapefiles/tgo_admbnda_adm0_inseed_itos_20210107.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tgo_adm_inseed_itos_20210107_shp.zip/Shapefiles/tgo_admbnda_adm1_inseed_itos_20210107.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tgo_adm_inseed_itos_20210107_shp.zip/Shapefiles/tgo_admbnda_adm2_inseed_itos_20210107.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tgo_adm_inseed_itos_20210107_shp.zip/Shapefiles/tgo_admbnda_adm3_inseed_20210107.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TGO",
+    "year": 2020,
+    "source": [
+        "OCHA ROWCA",
+        "Global Administrative Unit Layers (GAUL)"
+    ],
+    "source_updated": "2021-01-07",
+    "source_url": "https://data.humdata.org/dataset/togo-cod-ab",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/togo-cod-ab"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "GNQ",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/equatorial-guinea-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/equatorial-guinea-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "27 July 2021",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "GADM"
+}

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "ben_adm_1m_salb_2019_shapes.zip/ben_admbnda_adm0_1m_salb_20190816.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ben_adm_1m_salb_2019_shapes.zip/ben_admbnda_adm1_1m_salb_20190816.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ben_adm_1m_salb_2019_shapes.zip/ben_admbnda_adm2_1m_salb_20190816.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BEN",
+    "year": 2015,
+    "source": [
+        "OCHA ROWCA",
+        "Secondary Administrative Level Boundary(SALB) Project"
+    ],
+    "source_updated": "2019-08-16",
+    "source_url": "https://data.humdata.org/dataset/benin-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/benin-administrative-boundaries"
+}

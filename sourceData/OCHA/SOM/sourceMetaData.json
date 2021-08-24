@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "som-administrative-divisions-shapefiles.zip/Som_Admbnda_Adm0_UNDP.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "som-administrative-divisions-shapefiles.zip/Som_Admbnda_Adm1_UNDP.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "som-administrative-divisions-shapefiles.zip/Som_Admbnda_Adm2_UNDP.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SOM",
+    "year": 2014,
+    "source": [
+        "OCHA Somalia",
+        "United National Development Programme (UNDP) 1998"
+    ],
+    "source_updated": "2017-04-05",
+    "source_url": "https://data.humdata.org/dataset/somalia-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/somalia-administrative-boundaries"
+}

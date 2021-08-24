@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "NIC",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/nicaragua-administrative-level-0",
+    "boundarySourceURL": "https://data.humdata.org/dataset/nicaragua-administrative-level-0",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-08-13",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

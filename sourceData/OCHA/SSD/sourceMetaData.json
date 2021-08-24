@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "ssd_admbnda_imwg_nbs_shp.zip/ssd_admbnda_adm0_imwg_nbs_20180817.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ssd_admbnda_imwg_nbs_shp.zip/ssd_admbnda_adm1_imwg_nbs_20180817.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ssd_admbnda_imwg_nbs_shp.zip/ssd_admbnda_adm2_imwg_nbs_20180817.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SSD",
+    "year": 2018,
+    "source": [
+        "OCHA South Sudan ",
+        "South Sudan Information Management Working Group (IMWG), National Bureau of Statistics (NBS), and OCHA"
+    ],
+    "source_updated": "2018-08-17",
+    "source_url": "https://data.humdata.org/dataset/south-sudan-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/south-sudan-administrative-boundaries"
+}

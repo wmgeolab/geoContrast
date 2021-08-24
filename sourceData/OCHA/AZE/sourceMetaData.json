@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "aze_adm_2020_shp.zip/aze_admbnda_adm0_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "aze_adm_2020_shp.zip/aze_admbnda_adm1_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "AZE",
+    "year": 2020,
+    "source": ["OCHA ROCCA","GADM and Open Street Map"],
+    "source_updated": "24 November 2020",
+    "source_url": "https://data.humdata.org/dataset/azerbaijan-administrative-boundaries-taxonomy",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/azerbaijan-administrative-boundaries-taxonomy"
+}

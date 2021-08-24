@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "ken_adm_iebc_20191031_shp.zip/ken_admbnda_adm0_iebc_20191031.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ken_adm_iebc_20191031_shp.zip/ken_admbnda_adm1_iebc_20191031.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ken_adm_iebc_20191031_shp.zip/ken_admbnda_adm2_iebc_20191031.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "KEN",
+    "year": 2017,
+    "source": [
+        "OCHA ROSEA",
+        "IEBC"
+    ],
+    "source_updated": "2019-10-31",
+    "source_url": "https://data.humdata.org/dataset/ken-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/ken-administrative-boundaries"
+}

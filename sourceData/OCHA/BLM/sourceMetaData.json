@@ -1,0 +1,17 @@
+{
+    "input": [
+        {
+            "path": "blm_adm0.zip/BLM_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BLM",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "21 February 2020",
+    "source_url": "https://data.humdata.org/dataset/saint-barthelemy-administrative-level-1-department-boundary",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/saint-barthelemy-administrative-level-1-department-boundary"
+}

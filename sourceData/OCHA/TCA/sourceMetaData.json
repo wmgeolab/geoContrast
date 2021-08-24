@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "tca_admbnda_gadm_shp.zip/tca_admbnda_adm0_gadm.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tca_admbnda_gadm_shp.zip/tca_admbnda_adm1_gadm.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TCA",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "9 February 2021",
+    "source_url": "https://data.humdata.org/dataset/turks-and-caicos-islands-administrative-level-0-nation-and-1-district-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/turks-and-caicos-islands-administrative-level-0-nation-and-1-district-boundaries"
+}

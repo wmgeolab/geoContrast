@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "zaf_adm_sadb_ocha_20201109_shp.zip/zaf_adm_sadb_ocha_20201109_SHP/zaf_admbnda_adm0_sadb_ocha_20201109.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zaf_adm_sadb_ocha_20201109_shp.zip/zaf_adm_sadb_ocha_20201109_SHP/zaf_admbnda_adm1_sadb_ocha_20201109.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zaf_adm_sadb_ocha_20201109_shp.zip/zaf_adm_sadb_ocha_20201109_SHP/zaf_admbnda_adm2_sadb_ocha_20201109.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zaf_adm_sadb_ocha_20201109_shp.zip/zaf_adm_sadb_ocha_20201109_SHP/zaf_admbnda_adm3_sadb_ocha_20201109.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "zaf_adm_sadb_ocha_20201109_shp.zip/zaf_adm_sadb_ocha_20201109_SHP/zaf_admbnda_adm4_sadb_ocha_20201109.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ZAF",
+    "year": 2018,
+    "source": [
+        "OCHA ROSEA",
+        "South African Municipal Demarcation Board"
+    ],
+    "source_updated": "2020-11-09",
+    "source_url": "https://data.humdata.org/dataset/south-africa-admin-level-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/south-africa-admin-level-1-boundaries"
+}

@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "SAU",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/saudi-arabia-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/saudi-arabia-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "27 May 2021",
+    "boundarySource-1": "OCHA ROMENA",
+    "boundarySource-2": "GADM"
+}

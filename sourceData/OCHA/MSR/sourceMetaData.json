@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "msr_adm_gadm_shp.zip/msr_admbnda_adm0_gadm.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "msr_adm_gadm_shp.zip/msr_admbnda_adm1_gadm.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MSR",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "25 February 2020",
+    "source_url": "https://data.humdata.org/dataset/montserrat-administrative-level-0-nation-and-1-parish-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/montserrat-administrative-level-0-nation-and-1-parish-boundaries"
+}

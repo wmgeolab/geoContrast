@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "gtm_adm_ocha_conred_2019_shp.zip/gtm_adm_ocha_conred_2019_SHP/gtm_admbnda_adm0_ocha_conred_20190207.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gtm_adm_ocha_conred_2019_shp.zip/gtm_adm_ocha_conred_2019_SHP/gtm_admbnda_adm1_ocha_conred_20190207.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gtm_adm_ocha_conred_2019_shp.zip/gtm_adm_ocha_conred_2019_SHP/gtm_admbnda_adm2_ocha_conred_20190207.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GTM",
+    "year": 2018,
+    "source": [
+        "OCHA FISS",
+        "Coordinadora Nacional Para La Reducci\u00f3n De Desastres"
+    ],
+    "source_updated": "2019-02-07",
+    "source_url": "https://data.humdata.org/dataset/guatemala-administrative-level-0-national-1-departments-and-2-municipalities",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/guatemala-administrative-level-0-national-1-departments-and-2-municipalities"
+}

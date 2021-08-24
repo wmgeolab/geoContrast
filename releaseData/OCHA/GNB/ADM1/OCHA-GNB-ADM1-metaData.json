@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "GNB",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": "admin1Name",
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/guinea-bissau-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/guinea-bissau-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2021-06-09",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Second Administrative Level Boundaries (SALB)"
+}

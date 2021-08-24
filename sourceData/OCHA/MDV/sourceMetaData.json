@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "mdv_admbnd_gov_20210329_shp.zip/mdv_admbnda_adm0_gov_20210329.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdv_admbnd_gov_20210329_shp.zip/mdv_admbnda_adm1_gov_20210329.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdv_admbnd_gov_20210329_shp.zip/mdv_admbnda_adm2_gov_20210329.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mdv_admbnd_gov_20210329_shp.zip/mdv_admbnda_adm3_gov_20210329.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MDV",
+    "year": 2021,
+    "source": [
+        "OCHA ROAP",
+        "Government of the republic of Maldives"
+    ],
+    "source_updated": "2021-03-29",
+    "source_url": "https://data.humdata.org/dataset/maldives-administrative-boundaries-polygon-polyline",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/maldives-administrative-boundaries-polygon-polyline"
+}

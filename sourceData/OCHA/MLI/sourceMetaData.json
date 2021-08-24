@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "mli_adm_1m_dnct_2019_shp.zip/mli_admbnda_adm0_1m_dnct_20190802.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mli_adm_1m_dnct_2019_shp.zip/mli_admbnda_adm1_1m_dnct_20190802.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mli_adm_1m_dnct_2019_shp.zip/mli_admbnda_adm2_1m_dnct_20190802.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mli_adm_1m_dnct_2019_shp.zip/mli_admbnda_adm3_1m_dnct_20190802.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MLI",
+    "year": 2013,
+    "source": [
+        "OCHA Mali",
+        "DNCT - Direction Nationale des Collectivit\u00e9s Territoriales"
+    ],
+    "source_updated": "2019-08-02",
+    "source_url": "https://data.humdata.org/dataset/administrative-boundaries-cod-mli",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/administrative-boundaries-cod-mli"
+}

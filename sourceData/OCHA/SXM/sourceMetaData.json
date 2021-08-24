@@ -1,0 +1,26 @@
+{
+    "input": [
+        {
+            "path": "sxm_admbnda_adm0.zip/sxm_admbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "sxm_admbnda_adm1.zip/sxm_admbnda_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SXM",
+    "year": 2018,
+    "source": [
+        "OCHA FISS",
+        "Sint Maarten Ministry of Public Housing, Spatial Planning, Environment and Infrastructure (VROMI)"
+    ],
+    "source_updated": "2019-11-10",
+    "source_url": "https://data.humdata.org/dataset/sint-maarten-administrative-level-0-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/sint-maarten-administrative-level-0-1-boundaries"
+}

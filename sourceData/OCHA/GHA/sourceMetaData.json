@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "gha_admbnda_gss_20210308_shp.zip/gha_admbnda_gss_20210308_SHP/gha_admbnda_adm0_gss_20210308.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gha_admbnda_gss_20210308_shp.zip/gha_admbnda_gss_20210308_SHP/gha_admbnda_adm1_gss_20210308.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gha_admbnda_gss_20210308_shp.zip/gha_admbnda_gss_20210308_SHP/gha_admbnda_adm2_gss_20210308.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GHA",
+    "year": 2018,
+    "source": [
+        "OCHA ROWCA",
+        "Ghana Statistical Services (GSS)"
+    ],
+    "source_updated": "2021-02-10",
+    "source_url": "https://data.humdata.org/dataset/ghana-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/ghana-administrative-boundaries"
+}

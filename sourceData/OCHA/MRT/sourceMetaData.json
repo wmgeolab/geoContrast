@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "mrt_adm_gov_itos_20200801_shp.zip/mrt_admbnda_adm0_gov_itos_20200801.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mrt_adm_gov_itos_20200801_shp.zip/mrt_admbnda_adm1_gov_20200801.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mrt_adm_gov_itos_20200801_shp.zip/mrt_admbnda_adm2_gov_20200801.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MRT",
+    "year": 2020,
+    "source": [
+        "OCHA ROWCA",
+        "World Food Programme and OCHA"
+    ],
+    "source_updated": "2020-07-31",
+    "source_url": "https://data.humdata.org/dataset/mauritania-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/mauritania-administrative-boundaries"
+}

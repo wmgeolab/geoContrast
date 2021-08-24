@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "HND",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/honduras-admin-level-1-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/honduras-admin-level-1-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2016-10-05",
+    "boundarySource-1": "OCHA ROLAC",
+    "boundarySource-2": "Sistema Nacional de Informaci\u00f3n Territorial (SINIT), Secretaria T\u00e9cnica de Planificaci\u00f3n y Cooperaci\u00f3n Externa (SEPLAN), 2010"
+}

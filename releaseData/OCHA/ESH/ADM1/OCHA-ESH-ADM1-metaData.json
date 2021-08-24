@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "ESH",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/western-sahara-administrative-boundaries-levels-0-1-populated-places",
+    "boundarySourceURL": "https://data.humdata.org/dataset/western-sahara-administrative-boundaries-levels-0-1-populated-places",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2021-04-05",
+    "boundarySource-1": "OCHA ROMENA",
+    "boundarySource-2": "GADM"
+}

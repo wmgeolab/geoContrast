@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "kir_adm_2020_shp.zip/kir_admbnda_adm0_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "kir_adm_2020_shp.zip/kir_admbnda_adm1_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "kir_adm_2020_shp.zip/kir_admbnda_adm2_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "KIR",
+    "year": 2020,
+    "source": ["OCHA ROP","Secretariat of the Pacific Community, Statistics for Development Division (kiribati.popgis.spc.int)"],
+    "source_updated": "13 January 2020",
+    "source_url": "https://data.humdata.org/dataset/kiribati-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/kiribati-administrative-level-0-2-boundaries"
+}

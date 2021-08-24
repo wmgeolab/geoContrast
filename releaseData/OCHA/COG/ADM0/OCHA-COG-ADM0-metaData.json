@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "COG",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/congo-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/congo-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-06-17",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Global Administrative Unit Layers (GAUL)"
+}

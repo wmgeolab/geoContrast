@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "cpv_admbnda_adm0.zip/cpv_admbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cpv_admbnda_adm1.zip/cpv_admbnda_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "cpv_admbnda_adm2_v2.zip/cpv_admbnda_adm2_v2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "CPV",
+    "year": 2017,
+    "source": [
+        "OCHA ROWCA",
+        "Second Administrative Level Boundaries (SALB) Project"
+    ],
+    "source_updated": "2018-05-14",
+    "source_url": "https://data.humdata.org/dataset/cape-verde-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/cape-verde-administrative-boundaries"
+}

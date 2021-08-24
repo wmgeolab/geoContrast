@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "NGA",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/nga-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/nga-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-04-17",
+    "boundarySource-1": "OCHA Nigeria",
+    "boundarySource-2": "Office for the Surveyor General of the Federation of Nigeria (OSGOF), Ehealth, United Nations Cartographic Section (UNCS)"
+}

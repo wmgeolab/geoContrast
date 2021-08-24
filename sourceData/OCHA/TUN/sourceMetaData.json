@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "tun_adm0.zip/TUN_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tun_adm1.zip/TUN_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tun_adm2.zip/TUN_adm2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TUN",
+    "year": 2015,
+    "source": ["OCHA ROMENA","GADM"],
+    "source_updated": "28 March 2017",
+    "source_url": "https://data.humdata.org/dataset/tunisia-administrative-boundaries-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/tunisia-administrative-boundaries-populated-places"
+}

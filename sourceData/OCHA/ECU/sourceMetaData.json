@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "ecu_adm_inec_20190724_shp.zip/ecu_admbnda_adm0_inec_20190724.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ecu_adm_inec_20190724_shp.zip/ecu_admbnda_adm1_inec_20190724.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ecu_adm_inec_20190724_shp.zip/ecu_admbnda_adm2_inec_20190724.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ecu_adm_inec_20190724_shp.zip/ecu_admbnda_adm3_inec_20190724.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ECU",
+    "year": 2018,
+    "source": [
+        "OCHA ROLAC",
+        "INEC - Instituto Nacional de Estad\u00edstica y Censos"
+    ],
+    "source_updated": "2019-07-24",
+    "source_url": "https://data.humdata.org/dataset/ecuador-admin-level-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/ecuador-admin-level-2-boundaries"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "syr-administrative-divisions-shapefiles.zip/Shapefiles/syr_admbnda_adm0_uncs_unocha_20201217.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "syr-administrative-divisions-shapefiles.zip/Shapefiles/syr_admbnda_adm1_uncs_unocha_20201217.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "syr-administrative-divisions-shapefiles.zip/Shapefiles/syr_admbnda_adm2_uncs_unocha_20201217.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "syr-administrative-divisions-shapefiles.zip/Shapefiles/syr_admbnda_adm3_uncs_unocha_20201217.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SYR",
+    "year": 2017,
+    "source": [
+        "OCHA ROSC",
+        "United Nations Cartographic Section (UNCS) and United Nations Office for the Coordination of Humanitarian Affairs (UNOCHA)"
+    ],
+    "source_updated": "2020-12-17",
+    "source_url": "https://data.humdata.org/dataset/syrian-arab-republic-administrative-boundaries-populated-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/syrian-arab-republic-administrative-boundaries-populated-places"
+}

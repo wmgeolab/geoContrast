@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "geo_adm_geostat_20191018_shp.zip/geo_admbnda_adm0_geostat_20191018.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "geo_adm_geostat_20191018_shp.zip/geo_admbnda_adm1_geostat_20191018.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "geo_adm_geostat_20191018_shp.zip/geo_admbnda_adm2_geostat_20191018.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GEO",
+    "year": 2019,
+    "source": [
+        "OCHA ROCCA",
+        "National Statistics Office of Georgia [Administraciuli erTeulebi] "
+    ],
+    "source_updated": "2019-10-18",
+    "source_url": "https://data.humdata.org/dataset/georgia-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/georgia-administrative-level-0-2-boundaries"
+}

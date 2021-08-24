@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "eth-administrative-divisions-shapefiles.zip/eth_admbnda_adm0_csa_bofed_20201008.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "eth-administrative-divisions-shapefiles.zip/eth_admbnda_adm1_csa_bofed_20201008.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "eth-administrative-divisions-shapefiles.zip/eth_admbnda_adm2_csa_bofed_20201008.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "eth-administrative-divisions-shapefiles.zip/eth_admbnda_adm3_csa_bofed_20201027.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ETH",
+    "year": 2019,
+    "source": [
+        "OCHA Ethiopia",
+        "CSA (Central Statistics Agency) + Regional Bureau of Finance and Economic Development (BoFED)"
+    ],
+    "source_updated": "2020-10-08",
+    "source_url": "https://data.humdata.org/dataset/ethiopia-cod-ab",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/ethiopia-cod-ab"
+}

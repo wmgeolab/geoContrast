@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "BES",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/caribbean-netherlands-bonaire-sint-eustatius-and-saba",
+    "boundarySourceURL": "https://data.humdata.org/dataset/caribbean-netherlands-bonaire-sint-eustatius-and-saba",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "13 November 2020",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

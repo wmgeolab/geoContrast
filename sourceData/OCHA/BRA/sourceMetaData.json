@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "bra_adm_ibge_2020_shp.zip/bra_admbnda_adm0_ibge_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bra_adm_ibge_2020_shp.zip/bra_admbnda_adm1_ibge_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bra_adm_ibge_2020_shp.zip/bra_admbnda_adm2_ibge_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BRA",
+    "year": 2020,
+    "source": [
+        "OCHA ROLAC",
+        "Instituto Brasileiro de Geografia e Estat\u00edstica (IBGE)"
+    ],
+    "source_updated": "2020-09-30",
+    "source_url": "https://data.humdata.org/dataset/brazil-administrative-level-0-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/brazil-administrative-level-0-boundaries"
+}

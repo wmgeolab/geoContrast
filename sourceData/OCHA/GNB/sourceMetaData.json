@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path":"gnb_admbnda_1m_salb_20210609_gdb_shp.zip/gnb_admbnda_adm0_1m_salb_20210609.shp",
+            "level":0,
+            "type":null,
+            "name_field":"admin0Name"
+        },
+        {
+            "path":"gnb_admbnda_1m_salb_20210609_gdb_shp.zip/gnb_admbnda_adm1_1m_salb_20210609.shp",
+            "level":1,
+            "type":null,
+            "name_field":"admin1Name"
+        },
+        {
+            "path":"gnb_admbnda_1m_salb_20210609_gdb_shp.zip/gnb_admbnda_adm2_1m_salb_20210609.shp",
+            "level":2,
+            "type":null,
+            "name_field":"admin2Name"
+        }
+    ],
+    "iso": "GNB",
+    "year": 2021,
+    "source": [
+        "OCHA ROWCA",
+        "Second Administrative Level Boundaries (SALB)"
+    ],
+    "source_updated": "2021-06-09",
+    "source_url": "https://data.humdata.org/dataset/guinea-bissau-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/guinea-bissau-administrative-boundaries"
+}

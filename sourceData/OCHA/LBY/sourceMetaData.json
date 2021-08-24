@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "lby_adm_unosat_lbsc_20180507_shp.zip/lby_adm_unosat_lbsc_20180507_SHP/lby_admbnda_adm0_unosat_lbsc_20180507.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lby_adm_unosat_lbsc_20180507_shp.zip/lby_adm_unosat_lbsc_20180507_SHP/lby_admbnda_adm1_unosat_lbsc_20180507.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lby_adm_unosat_lbsc_20180507_shp.zip/lby_adm_unosat_lbsc_20180507_SHP/lby_admbnda_adm2_unosat_lbsc_20180507.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LBY",
+    "year": 2016,
+    "source": [
+        "OCHA ROMENA",
+        "UNITAR-UNOSAT, Libyan Bureau of Statistics, WFP,  and Global Logistics Cluster, International Organisation for Migration (IOM)"
+    ],
+    "source_updated": "2018-05-07",
+    "source_url": "https://data.humdata.org/dataset/admin-boundaries-villages-libya-cods",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/admin-boundaries-villages-libya-cods"
+}

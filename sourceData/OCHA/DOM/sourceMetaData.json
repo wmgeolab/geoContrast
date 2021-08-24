@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "dom_admbnda_one_20210629_shp.zip/dom_admbnda_adm0_one_20210629.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dom_admbnda_one_20210629_shp.zip/dom_admbnda_adm1_one_20210629.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dom_admbnda_one_20210629_shp.zip/dom_admbnda_adm2_one_20210629.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dom_admbnda_one_20210629_shp.zip/dom_admbnda_adm3_one_20210629.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dom_admbnda_one_20210629_shp.zip/dom_admbnda_adm4_one_20210629.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "DOM",
+    "year": 2017,
+    "source": [
+        "OCHA FISS",
+        "Oficina Nacional de Estad\u00edstica"
+    ],
+    "source_updated": "2021-06-29",
+    "source_url": "https://data.humdata.org/dataset/dominican-republic-administrative-boundaries-levels-0-6",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/dominican-republic-administrative-boundaries-levels-0-6"
+}

@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "bmu_adm_2019_shp.zip/bmu_admbnda_adm0_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bmu_adm_2019_shp.zip/bmu_admbnda_adm1_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bmu_adm_2019_shp.zip/bmu_admbnda_adm2_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BMU",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "4 September 2020",
+    "source_url": "https://data.humdata.org/dataset/bermuda-administrative-level-0-country-and-level-1-parish-or-municipality-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/bermuda-administrative-level-0-country-and-level-1-parish-or-municipality-boundaries"
+}

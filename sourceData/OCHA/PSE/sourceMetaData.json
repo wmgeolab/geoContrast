@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "pse_adm_pamop_20210806_shp.zip/pse_admbnda_adm0_pamop_20210806.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pse_adm_pamop_20210806_shp.zip/pse_admbnda_adm1_pamop_20210806.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pse_adm_pamop_20210806_shp.zip/pse_admbnda_adm2_pamop_20210806.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PSE",
+    "year": 2020,
+    "source": [
+        "OCHA oPt",
+        "Palestinian Authority Ministry of Planning"
+    ],
+    "source_updated": "2020-11-09",
+    "source_url": "https://data.humdata.org/dataset/state-of-palestine-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/state-of-palestine-administrative-boundaries"
+}

@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "lka_adm_slsd_20200305_shp.zip/lka_admbnda_adm0_slsd_20200305.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lka_adm_slsd_20200305_shp.zip/lka_admbnda_adm1_slsd_20200305.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lka_adm_slsd_20200305_shp.zip/lka_admbnda_adm2_slsd_20200305.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lka_adm_slsd_20200305_shp.zip/lka_admbnda_adm3_slsd_20200305.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lka_adm_slsd_20200305_shp.zip/lka_admbnda_adm4_slsd_20200305.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LKA",
+    "year": 2019,
+    "source": [
+        "OCHA ROAP",
+        "Survey Department of Sri Lanka (http://www.survey.gov.lk)"
+    ],
+    "source_updated": "2020-03-05",
+    "source_url": "https://data.humdata.org/dataset/sri-lanka-administrative-levels-0-4-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/sri-lanka-administrative-levels-0-4-boundaries"
+}

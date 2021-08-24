@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "TON",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/tonga-administrative-level-0-1-2-3-boundary-polygons",
+    "boundarySourceURL": "https://data.humdata.org/dataset/tonga-administrative-level-0-1-2-3-boundary-polygons",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2018-02-12",
+    "boundarySource-1": "OCHA ROP",
+    "boundarySource-2": "Secretariat of the Pacific Community, Statistics for Development Division"
+}

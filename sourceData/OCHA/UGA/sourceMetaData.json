@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "uga_admbnda_ubos_20200824_shp.zip/uga_admbnda_adm0_ubos_20200824.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "uga_admbnda_ubos_20200824_shp.zip/uga_admbnda_adm1_ubos_20200824.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "uga_admbnda_ubos_20200824_shp.zip/uga_admbnda_adm2_ubos_20200824.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "uga_admbnda_ubos_20200824_shp.zip/uga_admbnda_adm3_ubos_20200824.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "uga_admbnda_ubos_20200824_shp.zip/uga_admbnda_adm4_ubos_20200824.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "UGA",
+    "year": 2020,
+    "source": [
+        "OCHA ROSEA",
+        "Uganda Bureau of Statistics with support from WHO"
+    ],
+    "source_updated": "2020-08-24",
+    "source_url": "https://data.humdata.org/dataset/uganda-administrative-boundaries-admin-1-admin-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/uganda-administrative-boundaries-admin-1-admin-3"
+}

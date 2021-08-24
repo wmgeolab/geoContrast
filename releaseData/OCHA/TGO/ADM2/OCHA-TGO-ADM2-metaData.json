@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "TGO",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/togo-cod-ab",
+    "boundarySourceURL": "https://data.humdata.org/dataset/togo-cod-ab",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2021-01-07",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Global Administrative Unit Layers (GAUL)"
+}

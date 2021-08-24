@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "lca_admbnda_gov_2019_shp.zip/lca_admbnda_adm0_gov_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lca_admbnda_gov_2019_shp.zip/lca_admbnda_adm1_gov_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lca_admbnda_gov_2019_shp.zip/lca_admbnda_adm2_gov_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LCA",
+    "year": 2019,
+    "source": [
+        "OCHA FISS",
+        "Department of Physical Planning"
+    ],
+    "source_updated": "2019-05-08",
+    "source_url": "https://data.humdata.org/dataset/saint-lucia-administrative-level-0-nation-and-1-quarter-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/saint-lucia-administrative-level-0-nation-and-1-quarter-boundaries"
+}

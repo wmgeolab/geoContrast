@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "MAR",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/morocco-administrative-boundaries-populated-places",
+    "boundarySourceURL": "https://data.humdata.org/dataset/morocco-administrative-boundaries-populated-places",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-12-03",
+    "boundarySource-1": "OCHA ROMENA",
+    "boundarySource-2": "UNHCR (from GAUL)"
+}

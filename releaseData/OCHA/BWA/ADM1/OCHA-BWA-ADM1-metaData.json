@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "BWA",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/botswana-subnational-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/botswana-subnational-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2021-05-18",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "UNFPA"
+}

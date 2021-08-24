@@ -1,0 +1,26 @@
+{
+    "input": [
+        {
+            "path": "dma_admn_adm0_py_s1_dominode_v2.zip/dma_admn_adm0_py_s1_dominode_v2.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "dma_admn_adm1_py_s1_dominode.zip/dma_admn_adm1_py_s1_dominode_v2.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "DMA",
+    "year": 2017,
+    "source": [
+        "OCHA FISS",
+        "(Source to be clarified.)"
+    ],
+    "source_updated": "2019-11-10",
+    "source_url": "https://data.humdata.org/dataset/dominica-administrative-level-0-national-and-level-1-boundaries-form-gadm",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/dominica-administrative-level-0-national-and-level-1-boundaries-form-gadm"
+}

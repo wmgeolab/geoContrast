@@ -1,0 +1,44 @@
+{
+    "input": [
+        {
+            "path": "rwa_adm_2006_nisr_wgs1984_20181002_shp.zip/rwa_adm0_2006_NISR_WGS1984_20181002.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "rwa_adm_2006_nisr_wgs1984_20181002_shp.zip/rwa_adm1_2006_NISR_WGS1984_20181002.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "rwa_adm_2006_nisr_wgs1984_20181002_shp.zip/rwa_adm2_2006_NISR_WGS1984_20181002.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "rwa_adm_2006_nisr_wgs1984_20181002_shp.zip/rwa_adm3_2006_NISR_WGS1984_20181002.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "rwa_adm_2006_nisr_wgs1984_20181002_shp.zip/rwa_adm4_2006_NISR_WGS1984_20181002.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "RWA",
+    "year": 2018,
+    "source": [
+        "OCHA ROSEA",
+        "National Institute of Statistics of Rwanda (NISR)."
+    ],
+    "source_updated": "2020-02-20",
+    "source_url": "https://data.humdata.org/dataset/rwanda-administrative-boundaries-level-1-4",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/rwanda-administrative-boundaries-level-1-4"
+}

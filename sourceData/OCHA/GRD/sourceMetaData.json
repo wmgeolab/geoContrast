@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "grd_adm0.zip/GRD_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "grd_adm1.zip/GRD_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GRD",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "13 May 2020",
+    "source_url": "https://data.humdata.org/dataset/grenada-administrative-level-0-nation-and-1-parish-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/grenada-administrative-level-0-nation-and-1-parish-boundaries"
+}

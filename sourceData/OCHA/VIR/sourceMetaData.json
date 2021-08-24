@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "vir_adm_2019_shp.zip/vir_admbnda_adm0_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vir_adm_2019_shp.zip/vir_admbnda_adm1_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vir_adm_2019_shp.zip/vir_admbnda_adm2_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "VIR",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "4 November 2019",
+    "source_url": "https://data.humdata.org/dataset/united-states-virgin-islands-administrative-level-0-nation-1-district-and-2-subdistrict-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/united-states-virgin-islands-administrative-level-0-nation-1-district-and-2-subdistrict-boundaries"
+}

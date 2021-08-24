@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "turkey_administrativelevels0_1_2.zip/tur_polbnda_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "turkey_administrativelevels0_1_2.zip/tur_polbna_adm2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "turkey_administrativelevels0_1_2.zip/tur_polbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TUR",
+    "year": 2020,
+    "source": [
+        "Regional IM Working Group - Europe",
+        "General Command of Mapping"
+    ],
+    "source_updated": "2020-03-26",
+    "source_url": "https://data.humdata.org/dataset/turkey-administrative-boundaries-levels-0-1-2",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/turkey-administrative-boundaries-levels-0-1-2"
+}

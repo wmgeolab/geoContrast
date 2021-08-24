@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "PHL",
+    "boundaryType": "ADM3",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/philippines-administrative-levels-0-to-3",
+    "boundarySourceURL": "https://data.humdata.org/dataset/philippines-administrative-levels-0-to-3",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-05-29",
+    "boundarySource-1": "OCHA Philippines",
+    "boundarySource-2": "National Mapping and Resource Information Authority (NAMRIA), Philippines Statistics Authority (PSA)"
+}

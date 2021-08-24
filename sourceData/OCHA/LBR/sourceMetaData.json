@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "lbr-administrative-divisions-shapefiles.zip/lbr_adm_ocha_20191104_SHP/lbr_admbnda_adm0_ocha_20191104.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lbr-administrative-divisions-shapefiles.zip/lbr_adm_ocha_20191104_SHP/lbr_admbnda_adm1_ocha_20191104.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lbr-administrative-divisions-shapefiles.zip/lbr_adm_ocha_20191104_SHP/lbr_admbnda_adm2_ocha_20191104.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LBR",
+    "year": 2017,
+    "source": [
+        "OCHA ROWCA",
+        "UNMIL"
+    ],
+    "source_updated": "2019-11-04",
+    "source_url": "https://data.humdata.org/dataset/liberia-admin-level-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/liberia-admin-level-2-boundaries"
+}

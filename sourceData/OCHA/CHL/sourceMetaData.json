@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "chl_admbnda_bcn2021_shp.zip/chl_admbnda_adm0_bcn2021.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "chl_admbnda_bcn2021_shp.zip/chl_admbnda_adm1_bcn2021.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "chl_admbnda_bcn2021_shp.zip/chl_admbnda_adm2_bcn2021.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "chl_admbnda_bcn2021_shp.zip/chl_admbnda_adm3_bcn2021.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "CHL",
+    "year": 2020,
+    "source": [
+        "OCHA ROLAC",
+        "La Biblioteca del Congreso Nacional de Chile (BCN)"
+    ],
+    "source_updated": "2020-05-26",
+    "source_url": "https://data.humdata.org/dataset/chile-administrative-level-0-country-1-region-region",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/chile-administrative-level-0-country-1-region-region"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "nga_adm_osgof_20190417.zip/nga_admbnda_adm0_osgof_20190417.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nga_adm_osgof_20190417.zip/nga_admbnda_adm1_osgof_20190417.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nga_adm_osgof_20190417.zip/nga_admbnda_adm2_osgof_20190417.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nga_adm_osgof_20190417.zip/nga_admbnda_adm3_osgof_eha_20190417.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "NGA",
+    "year": 2017,
+    "source": [
+        "OCHA Nigeria",
+        "Office for the Surveyor General of the Federation of Nigeria (OSGOF), Ehealth, United Nations Cartographic Section (UNCS)"
+    ],
+    "source_updated": "2019-04-17",
+    "source_url": "https://data.humdata.org/dataset/nga-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/nga-administrative-boundaries"
+}

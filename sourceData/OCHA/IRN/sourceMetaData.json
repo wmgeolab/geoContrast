@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "irn_adm_unhcr_20190514_shp.zip/irn_admbnda_adm0_unhcr_20190514.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "irn_adm_unhcr_20190514_shp.zip/irn_admbnda_adm1_unhcr_20190514.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "irn_adm_unhcr_20190514_shp.zip/irn_admbnda_adm2_unhcr_20190514.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "IRN",
+    "year": 2019,
+    "source": [
+        "OCHA ROMENA",
+        "UNHCR"
+    ],
+    "source_updated": "2019-05-14",
+    "source_url": "https://data.humdata.org/dataset/administrative-boundaries-1-2",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/administrative-boundaries-1-2"
+}

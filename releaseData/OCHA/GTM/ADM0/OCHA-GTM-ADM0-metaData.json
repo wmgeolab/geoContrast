@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "GTM",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/guatemala-administrative-level-0-national-1-departments-and-2-municipalities",
+    "boundarySourceURL": "https://data.humdata.org/dataset/guatemala-administrative-level-0-national-1-departments-and-2-municipalities",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-02-07",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "Coordinadora Nacional Para La Reducci\u00f3n De Desastres"
+}

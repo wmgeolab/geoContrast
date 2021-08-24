@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "SSD",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/south-sudan-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/south-sudan-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2018-08-17",
+    "boundarySource-1": "OCHA South Sudan ",
+    "boundarySource-2": "South Sudan Information Management Working Group (IMWG), National Bureau of Statistics (NBS), and OCHA"
+}

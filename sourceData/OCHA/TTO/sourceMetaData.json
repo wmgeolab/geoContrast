@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "tto_adm0.zip/TTO_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tto_adm1_v2.zip/tto_adm1/TTO_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TTO",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "29 May 2019",
+    "source_url": "https://data.humdata.org/dataset/trinidad-and-tobago-administrative-level-0-national-and-1-region-and-municipality-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/trinidad-and-tobago-administrative-level-0-national-and-1-region-and-municipality-boundaries"
+}

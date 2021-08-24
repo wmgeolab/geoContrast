@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "moz_adm_20190607b_shp.zip/moz_admbnda_adm0_ine_20190607.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "moz_adm_20190607b_shp.zip/moz_admbnda_adm1_ine_20190607.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "moz_adm_20190607b_shp.zip/moz_admbnda_adm2_ine_20190607.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "moz_adm_20190607b_shp.zip/moz_admbnda_adm3_ine_20190607.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MOZ",
+    "year": 2019,
+    "source": [
+        "OCHA ROSEA",
+        "Mozambique INE (Instituto Nacional de Estatistica)   http://www.ine.gov.mz/  Census 2007 data from  WFP Geonode,  cleaned by UN OCHA ROSEA.  Maputo City districts added from SALB boundaries by OCHA. "
+    ],
+    "source_updated": "2019-06-07",
+    "source_url": "https://data.humdata.org/dataset/mozambique-administrative-levels-0-3",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/mozambique-administrative-levels-0-3"
+}

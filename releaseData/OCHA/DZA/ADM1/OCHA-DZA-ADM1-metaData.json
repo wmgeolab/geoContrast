@@ -1,15 +1,15 @@
 {
-    "boundaryYearRepresented": 2021,
+    "boundaryYearRepresented": 2014,
     "boundaryISO": "DZA",
     "boundaryType": "ADM1",
     "boundaryCanonical": "Unknown",
     "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
-    "nameField": "ADM1_EN",
+    "nameField": null,
     "licenseDetail": null,
     "licenseSource": "https://data.humdata.org/dataset/algeria-administrative-boundaries-levels-1-2-populated-places",
     "boundarySourceURL": "https://data.humdata.org/dataset/algeria-administrative-boundaries-levels-1-2-populated-places",
-    "downloadURL": "https://data.humdata.org/dataset/algeria-administrative-boundaries-levels-1-2-populated-places",
-    "sourceDataUpdateDate": "26 Jan 2021",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-04-28",
     "boundarySource-1": "OCHA ROMENA",
-    "boundarySource-2": "GAUL"
+    "boundarySource-2": "UNHCR (from GAUL)"
 }

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "pry_adm_dgeec_2020_shp.zip/pry_admbnda_adm0_DGEEC_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pry_adm_dgeec_2020_shp.zip/pry_admbnda_adm1_DGEEC_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pry_adm_dgeec_2020_shp.zip/pry_admbnda_adm2_DGEEC_2020.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PRY",
+    "year": 2017,
+    "source": [
+        "OCHA ROLAC",
+        "Direcci\u00f3n General de Estad\u00edsticas, Encuestas y Censos (DGEEC)"
+    ],
+    "source_updated": "2020-09-16",
+    "source_url": "https://data.humdata.org/dataset/paraguay-administrative-level-0-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/paraguay-administrative-level-0-boundaries"
+}

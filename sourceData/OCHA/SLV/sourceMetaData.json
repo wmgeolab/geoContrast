@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "slv_adm_gadm_2021_shp.zip/slv_admbnda_adm0_gadm_20210204.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "slv_adm_gadm_2021_shp.zip/slv_admbnda_adm1_gadm_20210204.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "slv_adm_gadm_2021_shp.zip/slv_admbnda_adm2_gadm_20210204.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SLV",
+    "year": 2020,
+    "source": [
+        "OCHA ROLAC",
+        "GADM"
+    ],
+    "source_updated": "2021-02-04",
+    "source_url": "https://data.humdata.org/dataset/el-salvador-administrative-level-0-1-and-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/el-salvador-administrative-level-0-1-and-2-boundaries"
+}

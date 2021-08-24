@@ -1,0 +1,31 @@
+{
+    "input": [
+        {
+            "path": "eri_adm_gov_20200427_shp.zip/eri_admbnda_adm0_gov_20200427.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "eri_adm_gov_20200427_shp.zip/eri_admbnda_adm1_gov_20200427.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "eri_adm_gov_20200427_shp.zip/eri_admbnda_adm2_gov_20200427.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ERI",
+    "year": 2017,
+    "source": [
+        "OCHA ROSEA"
+    ],
+    "source_updated": "2020-04-27",
+    "source_url": "https://data.humdata.org/dataset/eritrea-admin-level-1-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/eritrea-admin-level-1-boundaries"
+}

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "gab_admbndp0_1m_salb.zip/gab_admbndp0_1m_salb.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gabadmbndp11msalb.zip/gab_admbndp1_1m_salb.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gabadmbndp21msalb.shp.zip/gab_admbndp2_1m_salb.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GAB",
+    "year": 2015,
+    "source": [
+        "OCHA ROWCA",
+        "Second Administrative Level Boundaries (SALB)"
+    ],
+    "source_updated": "2018-08-15",
+    "source_url": "https://data.humdata.org/dataset/gabon-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/gabon-administrative-boundaries"
+}

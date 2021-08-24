@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "TTO",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/trinidad-and-tobago-administrative-level-0-national-and-1-region-and-municipality-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/trinidad-and-tobago-administrative-level-0-national-and-1-region-and-municipality-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "29 May 2019",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

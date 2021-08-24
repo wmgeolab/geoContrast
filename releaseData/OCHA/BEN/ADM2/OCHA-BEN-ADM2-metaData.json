@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "BEN",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/benin-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/benin-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-08-16",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Secondary Administrative Level Boundary(SALB) Project"
+}

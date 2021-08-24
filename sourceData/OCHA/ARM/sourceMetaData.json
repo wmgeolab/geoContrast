@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "arm_adm_2029_shp.zip/arm_admbnda_adm0_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "arm_adm_2029_shp.zip/arm_admbnda_adm1_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "arm_adm_2029_shp.zip/arm_admbnda_adm2_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "ARM",
+    "year": 2014,
+    "source": ["OCHA ROCCA","Government of Armenia (various agencies - see metadata)"],
+    "source_updated": "28 September 2020",
+    "source_url": "https://data.humdata.org/dataset/armenia-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/armenia-administrative-boundaries"
+}

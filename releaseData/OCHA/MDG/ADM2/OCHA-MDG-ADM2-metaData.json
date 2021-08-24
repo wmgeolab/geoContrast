@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2010,
+    "boundaryISO": "MDG",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/madagascar-administrative-level-0-4-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/madagascar-administrative-level-0-4-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-02-20",
+    "boundarySource-1": "OCHA ROSA",
+    "boundarySource-2": "Madagascar National Disaster Management Office (BNGRC)"
+}

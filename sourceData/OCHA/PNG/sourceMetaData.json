@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "png_adm_nso_20190508_shp.zip/png_admbnda_adm0_nso_20190508.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "png_adm_nso_20190508_shp.zip/png_admbnda_adm1_nso_20190508.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "png_adm_nso_20190508_shp.zip/png_admbnda_adm2_nso_20190508.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "png_adm_nso_20190508_shp.zip/png_admbnda_adm3_nso_20190508.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PNG",
+    "year": 2015,
+    "source": [
+        "OCHA ROAP",
+        "Papua New Guinea National Statistics Office"
+    ],
+    "source_updated": "2019-05-08",
+    "source_url": "https://data.humdata.org/dataset/papua-new-guinea-admin-level-0-international-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/papua-new-guinea-admin-level-0-international-boundaries"
+}

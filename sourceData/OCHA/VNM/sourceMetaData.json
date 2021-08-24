@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "vnm_adm_gov_20201027_shp.zip/vnm_admbnda_adm0_gov_20200103.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vnm_adm_gov_20201027_shp.zip/vnm_admbnda_adm1_gov_20201027.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vnm_adm_gov_20201027_shp.zip/vnm_admbnda_adm2_gov_20201027.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "VNM",
+    "year": 2019,
+    "source": [
+        "OCHA ROAP",
+        "Government of Viet Nam"
+    ],
+    "source_updated": "2020-01-03",
+    "source_url": "https://data.humdata.org/dataset/viet-nam-administrative-boundaries-polygon-polyline",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/viet-nam-administrative-boundaries-polygon-polyline"
+}

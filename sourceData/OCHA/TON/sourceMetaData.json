@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "ton_polbnda_adm0_country.zip/ton_polbnda_adm0_country.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ton_polbnda_adm1_division.zip/ton_polbnda_adm1_division.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ton_polbnda_adm2_district.zip/ton_polbnda_adm2_district.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ton_polbnda_adm3_village.zip/ton_polbnda_adm3_village.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TON",
+    "year": 2018,
+    "source": [
+        "OCHA ROP",
+        "Secretariat of the Pacific Community, Statistics for Development Division"
+    ],
+    "source_updated": "2018-02-12",
+    "source_url": "https://data.humdata.org/dataset/tonga-administrative-level-0-1-2-3-boundary-polygons",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/tonga-administrative-level-0-1-2-3-boundary-polygons"
+}

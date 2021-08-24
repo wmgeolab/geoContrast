@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "hti_adm_cnigs_20181129.zip/hti_adm_cnigs_20181129/hti_admbnda_adm0_cnigs_20181129.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "hti_adm_cnigs_20181129.zip/hti_adm_cnigs_20181129/hti_admbnda_adm1_cnigs_20181129.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "hti_adm_cnigs_20181129.zip/hti_adm_cnigs_20181129/hti_admbnda_adm2_cnigs_20181129.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "hti_adm_cnigs_20181129.zip/hti_adm_cnigs_20181129/hti_admbnda_adm3_cnigs_20181129.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "HTI",
+    "year": 2017,
+    "source": [
+        "OCHA Haiti",
+        "Centre National de l'Information G\u00e9o-Spatiale (CNIGS)"
+    ],
+    "source_updated": "2018-11-29",
+    "source_url": "https://data.humdata.org/dataset/hti-polbndl-adm1-cnigs-zip",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/hti-polbndl-adm1-cnigs-zip"
+}

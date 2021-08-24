@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2015,
+    "boundaryISO": "LBN",
+    "boundaryType": "ADM4",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/lebanon-administrative-boundaries-levels-0-3",
+    "boundarySourceURL": "https://data.humdata.org/dataset/lebanon-administrative-boundaries-levels-0-3",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2016-08-22",
+    "boundarySource-1": "OCHA Lebanon",
+    "boundarySource-2": "Central Administration of Statistics Lebanon"
+}

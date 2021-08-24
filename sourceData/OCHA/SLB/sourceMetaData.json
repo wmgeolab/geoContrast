@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "slb_admbnda_adm0.zip/slb_admbnda_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "slb_admbnda_adm1.zip/slb_admbnda_adm1.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "slb_admbnda_adm2.zip/slb_admbnda_adm2.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "slb_admbnda_adm3.zip/slb_admbnda_adm3.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SLB",
+    "year": 2018,
+    "source": [
+        "OCHA ROAP",
+        "Solomon Islands National Statistics Office (SINSO), 2009 Census of Population and Housing\t"
+    ],
+    "source_updated": "2018-11-01",
+    "source_url": "https://data.humdata.org/dataset/solomon-islands-administrative-level-0-1-2-and-3-boundary-polygons",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/solomon-islands-administrative-level-0-1-2-and-3-boundary-polygons"
+}

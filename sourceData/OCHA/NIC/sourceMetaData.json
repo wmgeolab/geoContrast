@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "nic_admbnda_gadm_20200813_shp.zip/nic_admbnda_adm0_gadm_itos_20200813.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nic_admbnda_gadm_20200813_shp.zip/nic_admbnda_adm1_gadm_20200813.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "nic_admbnda_gadm_20200813_shp.zip/nic_admbnda_adm2_gadm_20200813.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "NIC",
+    "year": 2017,
+    "source": [
+        "OCHA FISS",
+        "GADM"
+    ],
+    "source_updated": "2020-08-13",
+    "source_url": "https://data.humdata.org/dataset/nicaragua-administrative-level-0",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/nicaragua-administrative-level-0"
+}

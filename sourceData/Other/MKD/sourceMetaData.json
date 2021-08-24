@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "mkd_admn_adm_py_eurogeographics-ntes_pp.zip/MKD_admn_adm012_py_EuroGeographics-NTES_pp.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mkd_admn_adm_py_eurogeographics-ntes_pp.zip/MKD_admn_adm3_py_EuroGeographics-NTES_pp.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mkd_admn_adm_py_eurogeographics-ntes_pp.zip/MKD_admn_adm4_py_EuroGeographics-NTES_pp.shp",
+            "level": 4,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MKD",
+    "year": 2016,
+    "source": ["Regional IM Working Group - Europe","EuroGeographics and NTES (Nomenclature of Territorial Units for Statistics - Republic of Macedonia State Statistical Office)"],
+    "source_updated": "12 May 2016",
+    "source_url": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes"
+}

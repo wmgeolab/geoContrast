@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "RWA",
+    "boundaryType": "ADM4",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/rwanda-administrative-boundaries-level-1-4",
+    "boundarySourceURL": "https://data.humdata.org/dataset/rwanda-administrative-boundaries-level-1-4",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-02-20",
+    "boundarySource-1": "OCHA ROSEA",
+    "boundarySource-2": "National Institute of Statistics of Rwanda (NISR)."
+}

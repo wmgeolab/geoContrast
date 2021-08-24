@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "lso_adm_fao_mlgca_2019.zip/lso_admbnda_adm0_FAO_MLGCA_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lso_adm_fao_mlgca_2019.zip/lso_admbnda_adm1_FAO_MLGCA_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "lso_adm_fao_mlgca_2019.zip/lso_admbnda_adm2_FAO_MLGCA_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "LSO",
+    "year": 2019,
+    "source": [
+        "OCHA ROSEA",
+        "FAO and the Ministry of Local Government 2016"
+    ],
+    "source_updated": "2020-02-20",
+    "source_url": "https://data.humdata.org/dataset/lesotho-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/lesotho-administrative-level-0-2-boundaries"
+}

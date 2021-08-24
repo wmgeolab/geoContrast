@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "SEN",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/senegal-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/senegal-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-04-26",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "Government of Senegal, 2009  (updated by OCHA/ROWCA) 04 august 2018"
+}

@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "vut_admbnda_adm0_spc_20180824.zip/vut_admbnda_adm0_spc_20180824.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vut_admbnda_adm1_spc_20180824.zip/vut_admbnda_adm1_spc_20180824.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vut_admbnda_adm2_spc_20180824.zip/vut_admbnda_adm2_spc_20180824.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "VUT",
+    "year": 2017,
+    "source": [
+        "OCHA ROP",
+        "PopGIS2: Secretarial of the Pacific Community (SPC), Statistics for Development Division (http://vanuatu.popgis.spc.int/#l=en;v=map4)"
+    ],
+    "source_updated": "2018-08-24",
+    "source_url": "https://data.humdata.org/dataset/vanuatu-administrative-level-0-1-and-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/vanuatu-administrative-level-0-1-and-2-boundaries"
+}

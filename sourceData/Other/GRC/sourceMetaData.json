@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "gr_bsm_admn_adm_py_eurogeographics_2015_pp.zip/GR_bsm_admn_adm0_py_EuroGeoGraphics_2015_pp.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gr_bsm_admn_adm_py_eurogeographics_2015_pp.zip/GR_bsm_admn_adm1_py_EuroGeoGraphics_2015_pp.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gr_bsm_admn_adm_py_eurogeographics_2015_pp.zip/GR_bsm_admn_adm2_py_EuroGeoGraphics_2015_pp.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GRC",
+    "year": 2016,
+    "source": ["Regional IM Working Group - Europe", "EuroGeoGraphics"],
+    "source_updated": "12 July 2016",
+    "source_url": "https://data.humdata.org/dataset/gree",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/gree"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "ven_adm_ine_20210223_shp.zip/ven_admbnda_adm0_ine_20210223.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ven_adm_ine_20210223_shp.zip/ven_admbnda_adm1_ine_20210223.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ven_adm_ine_20210223_shp.zip/ven_admbnda_adm2_ine_20210223.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "ven_adm_ine_20210223_shp.zip/ven_admbnda_adm3_ine_20210223.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "VEN",
+    "year": 2018,
+    "source": [
+        "OCHA Venezuela",
+        "Instituto Nacional de Estad\u00edstica"
+    ],
+    "source_updated": "2019-11-10",
+    "source_url": "https://data.humdata.org/dataset/venezuela-administrative-level-0-1-and-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/venezuela-administrative-level-0-1-and-2-boundaries"
+}

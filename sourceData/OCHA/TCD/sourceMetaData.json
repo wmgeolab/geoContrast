@@ -1,0 +1,37 @@
+{
+    "input": [
+        {
+            "path": "tcd_admbnda_adm0_ocha.zip/tcd_admbnda_adm0_ocha.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tcd_admbnda_adm1_ocha.zip/tcd_admbnda_adm1_ocha.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tcd_admbnda_adm2_ocha_20170615.zip/tcd_admbnda_adm2_ocha_20170615.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "tcd_a_admbnd_adm3_ocha.zip/tcd_a_admbnd_adm3_ocha.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "TCD",
+    "year": 2016,
+    "source": [
+        "OCHA Chad"
+    ],
+    "source_updated": "2016-05-09",
+    "source_url": "https://data.humdata.org/dataset/chad-admin-boundaries-admin-1-and-admin-2",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/chad-admin-boundaries-admin-1-and-admin-2"
+}

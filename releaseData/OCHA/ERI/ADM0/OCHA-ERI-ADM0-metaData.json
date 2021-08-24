@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "ERI",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/eritrea-admin-level-1-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/eritrea-admin-level-1-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-04-27",
+    "boundarySource-1": "OCHA ROSEA"
+}

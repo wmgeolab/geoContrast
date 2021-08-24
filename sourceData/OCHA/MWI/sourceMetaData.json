@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "mwi_adm_nso_20181016_shp.zip/mwi_admbnda_adm0_nso_20181016.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mwi_adm_nso_20181016_shp.zip/mwi_admbnda_adm1_nso_20181016.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mwi_adm_nso_20181016_shp.zip/mwi_admbnda_adm2_nso_20181016.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "mwi_adm_nso_20181016_shp.zip/mwi_admbnda_adm3_nso_20181016.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "MWI",
+    "year": 2018,
+    "source": [
+        "OCHA ROSEA",
+        "National Statistics Office of Malawi"
+    ],
+    "source_updated": "2018-10-16",
+    "source_url": "https://data.humdata.org/dataset/malawi-administrative-level-0-3-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/malawi-administrative-level-0-3-boundaries"
+}

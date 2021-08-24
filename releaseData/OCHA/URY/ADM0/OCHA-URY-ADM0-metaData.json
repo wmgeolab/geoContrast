@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "URY",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/uruguay-administrative-level-0-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/uruguay-administrative-level-0-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "27 July 2020",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

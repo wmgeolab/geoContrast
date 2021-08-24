@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "kgz-administrative-divisions-shapefiles.zip/kgz_admbnda_adm0_moes_20181119.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "kgz-administrative-divisions-shapefiles.zip/kgz_admbnda_adm1_moes_20181119.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "kgz-administrative-divisions-shapefiles.zip/kgz_admbnda_adm2_moes_20181119.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "kgz-administrative-divisions-shapefiles.zip/kgz_admbnda_adm3_moes_20181119.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "KGZ",
+    "year": 2018,
+    "source": [
+        "OCHA ROCCA",
+        "Ministry of Emergency Situations of the Kyrgyz Republic"
+    ],
+    "source_updated": "2018-11-19",
+    "source_url": "https://data.humdata.org/dataset/kyrgyzstan-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/kyrgyzstan-administrative-boundaries"
+}

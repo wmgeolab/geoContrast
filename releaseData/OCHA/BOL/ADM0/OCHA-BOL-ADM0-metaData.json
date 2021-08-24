@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "BOL",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/bolivia-administrative-level-0-3-boundary-polygons",
+    "boundarySourceURL": "https://data.humdata.org/dataset/bolivia-administrative-level-0-3-boundary-polygons",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-05-14",
+    "boundarySource-1": "OCHA ROLAC",
+    "boundarySource-2": "GeoBolivia: la Infraestructura de Datos Espaciales del Estado Plurinacional de Bolivia"
+}

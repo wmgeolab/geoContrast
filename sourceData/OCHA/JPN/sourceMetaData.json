@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "jpn_adm_2019_shp.zip/jpn_admbnda_adm0_2019.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "jpn_adm_2019_shp.zip/jpn_admbnda_adm1_2019.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "jpn_adm_2019_shp.zip/jpn_admbnda_adm2_2019.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "JPN",
+    "year": 2019,
+    "source": [
+        "OCHA ROAP",
+        "Prefecture governments"
+    ],
+    "source_updated": "2019-12-17",
+    "source_url": "https://data.humdata.org/dataset/japan-administrative-level-0-2-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/japan-administrative-level-0-2-boundaries"
+}

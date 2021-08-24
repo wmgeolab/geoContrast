@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "pak_adm_ocha_pco_gaul_20181218_shp.zip/pak_adm_ocha_pco_gaul_20181218_SHP/pak_admbnda_adm0_ocha_pco_gaul_20181218.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pak_adm_ocha_pco_gaul_20181218_shp.zip/pak_adm_ocha_pco_gaul_20181218_SHP/pak_admbnda_adm1_ocha_pco_gaul_20181218.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pak_adm_ocha_pco_gaul_20181218_shp.zip/pak_adm_ocha_pco_gaul_20181218_SHP/pak_admbnda_adm2_ocha_pco_gaul_20181218.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "pak_adm_ocha_pco_gaul_20181218_shp.zip/pak_adm_ocha_pco_gaul_20181218_SHP/pak_admbnda_adm3_ocha_pco_gaul_20181218.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "PAK",
+    "year": 2018,
+    "source": [
+        "OCHA FISS",
+        "Pakistan Census Office (PCO)"
+    ],
+    "source_updated": "2018-12-18",
+    "source_url": "https://data.humdata.org/dataset/pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/pakistan-administrative-level-0-1-2-and-3-boundary-polygons-lines-and-central-places"
+}

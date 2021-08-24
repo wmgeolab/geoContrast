@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "swz_admbnda_cso2007_shp.zip/swz_admbnda_adm0_CSO_2007.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "swz_admbnda_cso2007_shp.zip/swz_admbnda_adm1_CSO_2007.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "swz_admbnda_cso2007_shp.zip/swz_admbnda_adm2_CSO_2007.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SWZ",
+    "year": 2020,
+    "source": [
+        "OCHA ROSEA",
+        "Central Statistics Office"
+    ],
+    "source_updated": "2021-01-27",
+    "source_url": "https://data.humdata.org/dataset/kingdom-of-eswatini-subnational-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/kingdom-of-eswatini-subnational-administrative-boundaries"
+}

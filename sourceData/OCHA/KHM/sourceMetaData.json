@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "khm_admbnda_adm0_gov_20181004.zip/khm_admbnda_adm0_gov_20181004.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "khm_admbnda_adm1_gov_20181004.zip/khm_admbnda_adm1_gov_20181004.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "khm_admbnda_adm2_gov_20181004.zip/khm_admbnda_adm2_gov_20181004.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "khm_admbnda_adm3_gov_20181004.zip/khm_admbnda_adm3_gov_20181004.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "KHM",
+    "year": 2014,
+    "source": [
+        "OCHA ROAP",
+        "Department of Geography of the Ministry of Land Management, Urbanization and Construction in 2008, WFP"
+    ],
+    "source_updated": "2018-10-04",
+    "source_url": "https://data.humdata.org/dataset/cambodia-admin-level-0-international-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/cambodia-admin-level-0-international-boundaries"
+}

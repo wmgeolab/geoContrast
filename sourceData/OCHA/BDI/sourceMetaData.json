@@ -1,0 +1,32 @@
+{
+    "input": [
+        {
+            "path": "bdi_adm_igebu_ocha_20171103_shp.zip/bdi_admbnda_adm0_igebu_ocha_itos_20171103.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bdi_adm_igebu_ocha_20171103_shp.zip/bdi_admbnda_adm1_igebu_ocha_20171103.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "bdi_adm_igebu_ocha_20171103_shp.zip/bdi_admbnda_adm2_igebu_ocha_20171103.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "BDI",
+    "year": 2017,
+    "source": [
+        "OCHA FISS",
+        "IGEBU and OCHA Burundi"
+    ],
+    "source_updated": "2017-11-03",
+    "source_url": "https://data.humdata.org/dataset/burundi-administrative-level-0-1-and-2-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/burundi-administrative-level-0-1-and-2-administrative-boundaries"
+}

@@ -1,0 +1,23 @@
+{
+    "input": [
+        {
+            "path": "vgb_adm_2020_shp.zip/vgb_admbnda_adm0_2020.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "vgb_adm_2020_shp.zip/vgb_admbnda_adm1_2020.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "VGB",
+    "year": 2017,
+    "source": ["OCHA FISS","GADM"],
+    "source_updated": "1 April 2020",
+    "source_url": "https://data.humdata.org/dataset/british-virgin-islands-administrative-level-0-nation-and-1-district-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/british-virgin-islands-administrative-level-0-nation-and-1-district-boundaries"
+}

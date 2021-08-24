@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2018,
+    "boundaryISO": "VEN",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/venezuela-administrative-level-0-1-and-2-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/venezuela-administrative-level-0-1-and-2-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2019-11-10",
+    "boundarySource-1": "OCHA Venezuela",
+    "boundarySource-2": "Instituto Nacional de Estad\u00edstica"
+}

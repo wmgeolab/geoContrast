@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2016,
+    "boundaryISO": "MDA",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/moldova-administrative-level-0-1-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/moldova-administrative-level-0-1-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2017-07-13",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "UNHCR"
+}

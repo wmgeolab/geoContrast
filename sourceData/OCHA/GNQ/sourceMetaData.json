@@ -1,0 +1,29 @@
+{
+    "input": [
+        {
+            "path": "gnq_admbnda_gadm_20210715_shp.zip/gnq_admbnda_adm0_gadm_20210715.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gnq_admbnda_gadm_20210715_shp.zip/gnq_admbnda_adm1_gadm_20210715.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "gnq_admbnda_gadm_20210715_shp.zip/gnq_admbnda_adm2_gadm_20210715.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "GNQ",
+    "year": 2021,
+    "source": ["OCHA ROWCA","GADM"],
+    "source_updated": "27 July 2021",
+    "source_url": "https://data.humdata.org/dataset/equatorial-guinea-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/equatorial-guinea-administrative-boundaries"
+}

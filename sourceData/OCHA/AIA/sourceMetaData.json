@@ -1,0 +1,17 @@
+{
+    "input": [
+        {
+            "path": "aia_adm0.zip/AIA_adm0.shp",
+            "level": 0,
+            "type": null,
+            "name_field": "NAME_ENGLI"
+        }
+    ],
+    "iso": "AIA",
+    "year": 2017,
+    "source": ["OCHA FISS", "GADM"],
+    "source_updated": "10 November 2019",
+    "source_url": "https://data.humdata.org/dataset/anguilla-administrative-level-0-national-boundary",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/anguilla-administrative-level-0-national-boundary"
+}

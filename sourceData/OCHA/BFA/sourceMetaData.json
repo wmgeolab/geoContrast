@@ -1,36 +1,38 @@
-
 {
-    "input":[
-        {"path":"bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm0_igb_20200323.shp",
-        "level":0,
-        "type_field":null,
-        "name_field":"ADM0_FR"
+    "input": [
+        {
+            "path": "bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm0_igb_20200323.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
         },
-        {"path":"bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm1_igb_20200323.shp",
-        "level":1,
-        "type_field":null,
-        "name_field":"ADM1_FR"
+        {
+            "path": "bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm1_igb_20200323.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
         },
-        {"path":"bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm2_igb_20200323.shp",
-        "level":2,
-        "type_field":null,
-        "name_field":"ADM2_FR"
+        {
+            "path": "bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm2_igb_20200323.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
         },
-        {"path":"bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm3_igb_20200323.shp",
-        "level":3,
-        "type_field":null,
-        "name_field":"ADM3_FR"
+        {
+            "path": "bfa_adm_igb_20200323_shp.zip/bfa_admbnda_adm3_igb_20200323.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
         }
     ],
-    
-    "iso":"BFA",
-    "year":2020,
-    
-    "source":["OCHA Burkina","Institut Géographique du Burkina"],
-    "source_updated":"23 March 2020",
-    "source_url":"https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
-    "download_url":"https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
-    "license":"Creative Commons Attribution for Intergovernmental Organisations",
-    "license_detail":null,
-    "license_url":"https://data.humdata.org/dataset/burkina-faso-administrative-boundaries"
+    "iso": "BFA",
+    "year": 2020,
+    "source": [
+        "OCHA Burkina",
+        "Institut G\u00e9ographique du Burkina"
+    ],
+    "source_updated": "2020-03-23",
+    "source_url": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries"
 }

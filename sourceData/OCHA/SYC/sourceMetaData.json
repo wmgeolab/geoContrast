@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "syc_adm_nbs2010_shp.zip/syc_admbnda_adm0_nbs2010.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "syc_adm_nbs2010_shp.zip/syc_admbnda_adm1_nbs2010.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "syc_adm_nbs2010_shp.zip/syc_admbnda_adm2_nbs2010.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "syc_adm_nbs2010_shp.zip/syc_admbnda_adm3_nbs2010.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "SYC",
+    "year": 2020,
+    "source": [
+        "OCHA ROSEA",
+        "Seychelles National Bureau of Statistics"
+    ],
+    "source_updated": "2020-05-28",
+    "source_url": "https://data.humdata.org/dataset/seychelles-subnational-administrative-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/seychelles-subnational-administrative-boundaries"
+}

@@ -1,0 +1,38 @@
+{
+    "input": [
+        {
+            "path": "yem-administrative-divisions-shapefiles.zip/yem_admbnda_adm2_govyem_cso_20191002.shp",
+            "level": 2,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "yem-administrative-divisions-shapefiles.zip/yem_admbnda_adm1_govyem_cso_20191002.shp",
+            "level": 1,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "yem-administrative-divisions-shapefiles.zip/yem_admbnda_adm0_govyem_cso_20191002.shp",
+            "level": 0,
+            "type": null,
+            "name_field": null
+        },
+        {
+            "path": "yem-administrative-divisions-shapefiles.zip/yem_admbnda_adm3_govyem_cso_20191002.shp",
+            "level": 3,
+            "type": null,
+            "name_field": null
+        }
+    ],
+    "iso": "YEM",
+    "year": 2019,
+    "source": [
+        "OCHA Yemen",
+        "Central Statistical Organization (CSO)"
+    ],
+    "source_updated": "2019-10-02",
+    "source_url": "https://data.humdata.org/dataset/yemen-admin-boundaries",
+    "license": "Creative Commons Attribution for Intergovernmental Organisations",
+    "license_url": "https://data.humdata.org/dataset/yemen-admin-boundaries"
+}

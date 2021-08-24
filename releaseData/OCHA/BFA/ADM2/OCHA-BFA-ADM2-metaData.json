@@ -4,12 +4,12 @@
     "boundaryType": "ADM2",
     "boundaryCanonical": "Unknown",
     "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
-    "nameField": "ADM2_FR",
+    "nameField": null,
     "licenseDetail": null,
     "licenseSource": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
     "boundarySourceURL": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
-    "downloadURL": "https://data.humdata.org/dataset/burkina-faso-administrative-boundaries",
-    "sourceDataUpdateDate": "23 March 2020",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-03-23",
     "boundarySource-1": "OCHA Burkina",
     "boundarySource-2": "Institut G\u00e9ographique du Burkina"
 }

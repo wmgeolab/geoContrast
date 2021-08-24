@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "PAN",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/panama-administrative-level-0-1-2-and-3-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/panama-administrative-level-0-1-2-and-3-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "21 July 2020",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}

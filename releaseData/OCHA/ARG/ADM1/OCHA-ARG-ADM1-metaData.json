@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "ARG",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/argentina-administrative-level-0-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/argentina-administrative-level-0-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2020-05-04",
+    "boundarySource-1": "OCHA ROLAC",
+    "boundarySource-2": "Instituto Geografico Nacional and UNHCR"
+}

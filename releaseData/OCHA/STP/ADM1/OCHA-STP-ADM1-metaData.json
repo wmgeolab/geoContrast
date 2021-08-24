@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "STP",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/sao-tome-and-principe-administrative-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/sao-tome-and-principe-administrative-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "17 August 2020",
+    "boundarySource-1": "OCHA ROWCA",
+    "boundarySource-2": "GADM"
+}

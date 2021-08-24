@@ -16,16 +16,23 @@ def sevenzip_to_zip(path):
         to_archive.writestr(fname, raw)
         from_archive.reset()
 
-def gdb_to_shapefile(path, layer, target):
+def gdb_to_shapefile(path, layer, target, droptypes=None):
     print(fiona.listlayers(path))
     basepath,ext = os.path.splitext(path)
     with fiona.open(path, layer=layer) as src:
-        print(src.schema)
         meta = src.meta
-        print(meta)
+        print('src',meta)
+        if droptypes:
+            dropfields = [f for f,typ in meta['schema']['properties'].items() if typ in droptypes]
+            for drop in dropfields:
+                del meta['schema']['properties'][drop]
         meta['driver'] = 'ESRI Shapefile'
+        print('dst',meta)
         with fiona.open(target, 'w', **meta) as dst:
             for f in src:
+                if droptypes:
+                    for drop in dropfields:
+                        del f['properties'][drop]
                 dst.write(f)
 
 def mpk_to_shapefile(path, subpath, layer):

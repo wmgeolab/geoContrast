@@ -1,0 +1,15 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "GUY",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/guyana-administrative-level-0-1-and-2-boundaries",
+    "boundarySourceURL": "https://data.humdata.org/dataset/guyana-administrative-level-0-1-and-2-boundaries",
+    "downloadURL": null,
+    "sourceDataUpdateDate": "2021-06-23",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "DEVInfo LAC project"
+}
