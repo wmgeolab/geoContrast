@@ -9,6 +9,8 @@ import iotools
 import re
 from time import time
 
+UPDATE_GB = True
+
 start = time()
 
 #Initialize workspace
@@ -107,7 +109,7 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
 
 ##### Calc stats for geoBoundaries in separate csv
 
-if 0:
+if UPDATE_GB:
 
     gbWfob = open('geoContrast-gbMeta.csv', 'w', newline='', encoding='utf8')
     gbWriter = csv.DictWriter(gbWfob, fieldnames=fieldnames)
@@ -302,8 +304,8 @@ if 0:
         # write to row
         gbWriter.writerow(row)
 
-        #Close up shop
-        gbWfob.close()
+    #Close up shop
+    gbWfob.close()
 
 ##### Add in geoBoundaries from csv
 
