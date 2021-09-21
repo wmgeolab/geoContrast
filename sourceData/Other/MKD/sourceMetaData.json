@@ -8,13 +8,13 @@
         },
         {
             "path": "mkd_admn_adm_py_eurogeographics-ntes_pp.zip/MKD_admn_adm3_py_EuroGeographics-NTES_pp.shp",
-            "level": 3,
+            "level": 1,
             "type": null,
             "name_field": null
         },
         {
             "path": "mkd_admn_adm_py_eurogeographics-ntes_pp.zip/MKD_admn_adm4_py_EuroGeographics-NTES_pp.shp",
-            "level": 4,
+            "level": 2,
             "type": null,
             "name_field": null
         }
@@ -25,5 +25,6 @@
     "source_updated": "12 May 2016",
     "source_url": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes",
     "license": "Creative Commons Attribution for Intergovernmental Organisations",
-    "license_url": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes"
+    "license_url": "https://data.humdata.org/dataset/fyrom-administrative-levels-1-4-from-eurogeographics-and-ntes",
+    "notes": "The source is based on a local NTES classification where adm0 is referred to as levels 1 and 2, adm1 as level 3, and adm2 as level 4 (https://www.stat.gov.mk/OblastOpsto_en.aspx?id=1)."
 }
