@@ -2,7 +2,7 @@
     "iso": "US",
     "year": 2015,
     "level": 2,
-    "type": "PUMA",
+    "type": null,
     "source": [
         "IPUMS"
     ],
@@ -12,5 +12,6 @@
     "license_detail": null,
     "license_url": "https://international.ipums.org/international/citation.shtml",
     "input": "geo2_us2015.zip/geo2_us2015.shp",
-    "encoding": "latin"
+    "encoding": "latin",
+    "notes": "According to xml file, this refers to 'PUMA' statistical units rather than administrative level 2 units."
 }
