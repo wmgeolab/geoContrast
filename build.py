@@ -6,8 +6,8 @@ import warnings
 import traceback
 
 # params
-collections = ['Other']
-isos = []
+collections = ['OpenStreetMap']
+isos = ['ALB','ARM']
 replace = False
 write_meta = True
 write_stats = True
