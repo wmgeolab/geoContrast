@@ -46,7 +46,7 @@ import csv
 import warnings
 
 import shapefile as pyshp
-from zipfile import ZipFile
+from zipfile import ZipFile, ZIP_DEFLATED
 
 # create iso lookup dict
 iso2_to_3 = {}
@@ -378,14 +378,23 @@ def import_data(input_dir,
             # write data
             if write_data:
                 print('writing data')
+
+                # write geojson to zipfile
+                zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-geojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                    filename = '{dataset}-{iso}-ADM{lvl}.geojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                    geoj = {'type':'FeatureCollection', 'features':feats}
+                    geoj_string = json.dumps(geoj)
+                    archive.writestr(filename, geoj_string)
                 
                 # create topojson
-                topodata = tp.Topology(feats, prequantize=False).to_json()
+                #topodata = tp.Topology(feats, prequantize=False).to_json()
 
-                # write topojson to file
-                dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                with open(dst, 'w', encoding='utf8') as fobj:
-                    fobj.write(topodata)
+                # write topojson to zipfile
+                #zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                #with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                #    filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                #    archive.writestr(filename, topodata)
 
             # update metadata
             meta = {
@@ -398,7 +407,6 @@ def import_data(input_dir,
                     "licenseDetail": license_detail,
                     "licenseSource": license_url,
                     "boundarySourceURL": source_url,
-                    "downloadURL": download_url,
                     "sourceDataUpdateDate": source_updated,
                     }
             for i,source in enumerate(sources):
@@ -414,7 +422,7 @@ def import_data(input_dir,
             # calc and output boundary stats
             if write_stats is True:
                 print('writing stats')
-                stats = calc_stats(feats, meta)
+                stats = calc_stats(feats)
                 print(stats)
                 dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-stats.json'.format(output=output_dir, collection=collection, dataset=dataset, iso=iso, lvl=level)
                 with open(dst, 'w', encoding='utf8') as fobj:
@@ -453,18 +461,10 @@ def geojson_area_perimeter(geoj):
             perim += _perim
     return area, perim
 
-def calc_stats(feats, meta):
+def calc_stats(feats):
     stats = {}
     # unit count
     stats['boundaryCount'] = len(feats)
-    # source year lag
-    yr = meta['boundaryYearRepresented']
-    updated = meta['sourceDataUpdateDate']
-    updated_year_match = re.search('([0-9]{4})', updated)
-    if yr == 'Unknown' or updated_year_match is None:
-        stats['boundaryYearSourceLag'] = None
-    else:
-        stats['boundaryYearSourceLag'] = int(float(updated_year_match.group())) - yr
     # vertices, area, and perimiter
     #from shapely.geometry import asShape
     area = 0

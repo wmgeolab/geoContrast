@@ -6,9 +6,9 @@ import warnings
 import traceback
 
 # params
-collections = ['OpenStreetMap']
+collections = ['GRID3']
 isos = []
-replace = False
+replace = True
 write_meta = True
 write_stats = True
 write_data = True
