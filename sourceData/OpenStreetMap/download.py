@@ -12,8 +12,9 @@ import shapefile
 import traceback
 
 # params
-api_key = input('Please input your personal api key from osm-boundaries.com (see "API url" under the "Download" window)')
+api_key = input('Please input your personal api key from osm-boundaries.com (see "API url" under the "Download" window):\n >>> ')
 db_date = '2021-07-12' # check osm-boundaries.com for latest build date
+ignore_isos = ['CAN','CHL']
 
 # get all iso osm ids
 print('list of isos:')
@@ -27,6 +28,9 @@ for iso,osmid in osmcodes.items():
     print(iso,osmid)
     if os.path.lexists(iso):
         print('folder already exists, skipping')
+        continue
+    if iso in ignore_isos:
+        print('ignoring iso')
         continue
 
     yr,mn,dy = db_date.split('-')

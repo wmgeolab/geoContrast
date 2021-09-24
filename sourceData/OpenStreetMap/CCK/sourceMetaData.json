@@ -1,0 +1,33 @@
+{
+ "input": [
+  {
+   "path": "CCK.zip/osm_CCK_4.shp",
+   "level": 0,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "CCK.zip/osm_CCK_6.shp",
+   "level": 1,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "CCK.zip/osm_CCK_10.shp",
+   "level": 2,
+   "type": null,
+   "name_field": "name"
+  }
+ ],
+ "year": null,
+ "iso": "CCK",
+ "source": [
+  "OSM-Boundaries",
+  "OpenStreetMap"
+ ],
+ "source_updated": "2021-07-12",
+ "source_url": "https://osm-boundaries.com/",
+ "license": "OpenStreetMap License",
+ "license_detail": "Creative Commons Attribution-ShareAlike 2.0",
+ "license_url": "www.openstreetmap.org/copyright"
+}

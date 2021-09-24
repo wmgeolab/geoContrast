@@ -1,0 +1,45 @@
+{
+ "input": [
+  {
+   "path": "BEL.zip/osm_BEL_2.shp",
+   "level": 0,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "BEL.zip/osm_BEL_4.shp",
+   "level": 1,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "BEL.zip/osm_BEL_6.shp",
+   "level": 2,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "BEL.zip/osm_BEL_7.shp",
+   "level": 3,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "BEL.zip/osm_BEL_8.shp",
+   "level": 4,
+   "type": null,
+   "name_field": "name"
+  }
+ ],
+ "year": null,
+ "iso": "BEL",
+ "source": [
+  "OSM-Boundaries",
+  "OpenStreetMap"
+ ],
+ "source_updated": "2021-07-12",
+ "source_url": "https://osm-boundaries.com/",
+ "license": "OpenStreetMap License",
+ "license_detail": "Creative Commons Attribution-ShareAlike 2.0",
+ "license_url": "www.openstreetmap.org/copyright"
+}
