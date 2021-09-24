@@ -1,0 +1,33 @@
+{
+ "input": [
+  {
+   "path": "ZMB.zip/osm_ZMB_2.shp",
+   "level": 0,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "ZMB.zip/osm_ZMB_4.shp",
+   "level": 1,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "ZMB.zip/osm_ZMB_5.shp",
+   "level": 2,
+   "type": null,
+   "name_field": "name"
+  }
+ ],
+ "year": null,
+ "iso": "ZMB",
+ "source": [
+  "OSM-Boundaries",
+  "OpenStreetMap"
+ ],
+ "source_updated": "2021-07-12",
+ "source_url": "https://osm-boundaries.com/",
+ "license": "OpenStreetMap License",
+ "license_detail": "Creative Commons Attribution-ShareAlike 2.0",
+ "license_url": "www.openstreetmap.org/copyright"
+}

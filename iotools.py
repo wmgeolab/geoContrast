@@ -380,21 +380,21 @@ def import_data(input_dir,
                 print('writing data')
 
                 # write geojson to zipfile
-                zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-geojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
-                    filename = '{dataset}-{iso}-ADM{lvl}.geojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                    geoj = {'type':'FeatureCollection', 'features':feats}
-                    geoj_string = json.dumps(geoj)
-                    archive.writestr(filename, geoj_string)
+                #zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-geojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                #with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                #    filename = '{dataset}-{iso}-ADM{lvl}.geojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                #    geoj = {'type':'FeatureCollection', 'features':feats}
+                #    geoj_string = json.dumps(geoj)
+                #    archive.writestr(filename, geoj_string)
                 
-                # create topojson
-                #topodata = tp.Topology(feats, prequantize=False).to_json()
+                # create topology quantized to 1e6 (10cm) and delta encoded, greatly reduces filesize
+                topodata = tp.Topology(feats, prequantize=1e6, topoquantize=1e6).to_json()
 
                 # write topojson to zipfile
-                #zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                #with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
-                #    filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                #    archive.writestr(filename, topodata)
+                zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                    filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                    archive.writestr(filename, topodata)
 
             # update metadata
             meta = {

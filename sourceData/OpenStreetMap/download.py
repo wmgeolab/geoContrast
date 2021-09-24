@@ -1,7 +1,7 @@
 
 from urllib.request import urlopen, Request
 from urllib.parse import urlencode
-from zipfile import ZipFile
+from zipfile import ZipFile, ZIP_DEFLATED
 import tempfile
 import os
 import io
@@ -14,7 +14,7 @@ import traceback
 # params
 api_key = input('Please input your personal api key from osm-boundaries.com (see "API url" under the "Download" window):\n >>> ')
 db_date = '2021-07-12' # check osm-boundaries.com for latest build date
-ignore_isos = ['CAN','CHL']
+ignore_isos = ['CAN','CHL','FRA','USA']
 
 # get all iso osm ids
 print('list of isos:')
@@ -63,7 +63,7 @@ for iso,osmid in osmcodes.items():
     try: os.mkdir(iso)
     except: pass
     zip_path = '{iso}/{iso}.zip'.format(iso=iso)
-    with ZipFile(zip_path, mode='w') as archive:
+    with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
 
         print('iterating admin levels')
         # AUTO INCR EACH LEVEL AND EXPORT TO SEPARATE SHAPEFILE
@@ -80,12 +80,22 @@ for iso,osmid in osmcodes.items():
             print('# level',osm_lvl,'count',len(feats))
             
             print('converting to shapefile')
+            def calc_charfieldsize(feats, field):
+                size = 0
+                for feat in feats:
+                    val = feat['properties'][field]
+                    if not isinstance(val, str):
+                        val = str(val)
+                    enc = val.encode('utf8')
+                    size = max(size, len(enc))
+                return size
             shapefile_path = os.path.join(tempfile.gettempdir(), 'osm-boundary-converted')
-            with shapefile.Writer(shapefile_path) as writer:
+            with shapefile.Writer(shapefile_path, encoding='utf8') as writer:
                 fields = list(feats[0]['properties'].keys())
                 for field in fields:
-                    #print(field)
-                    writer.field(field)
+                    size = calc_charfieldsize(feats, field)
+                    print(field, size)
+                    writer.field(field, 'C', size)
                 for feat in feats:
                     #print(feat['properties'])
                     writer.record(**feat['properties'])
