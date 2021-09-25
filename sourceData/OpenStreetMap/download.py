@@ -12,9 +12,10 @@ import shapefile
 import traceback
 
 # params
-api_key = input('Please input your personal api key from osm-boundaries.com (see "API url" under the "Download" window):\n >>> ')
+api_key = input('Please input your personal api key from osm-boundaries.com (see "API url" under the "Download" window):\n>>> ')
 db_date = '2021-07-12' # check osm-boundaries.com for latest build date
-ignore_isos = ['CAN','CHL','FRA','USA']
+isos = ['CAN','FRA','USA']
+ignore_isos = []
 
 # get all iso osm ids
 print('list of isos:')
@@ -40,44 +41,49 @@ for iso,osmid in osmcodes.items():
               'osmIds':'-'+osmid,
               'format':'GeoJSON',
               }
-    paramstring = urlencode(params)
-    paramstring += '&recursive&landOnly' #&includeAllTags'
-    url = 'https://osm-boundaries.com/Download/Submit?{}'.format(paramstring)
-    
-    print('downloading from',url)
-    req = Request(url, 
-                headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'},
-                )
-    try:
-        resp = urlopen(req)
-    except:
-        print('ERROR:', traceback.format_exc())
-        continue
-
-    print('extracting from gzip')
-    with gzip.open(resp, 'rb') as f:
-        geoj = json.loads(f.read().decode('utf8'))
-    #print(str(geoj)[:1000])
 
     # make folder and output zipfile
     try: os.mkdir(iso)
     except: pass
     zip_path = '{iso}/{iso}.zip'.format(iso=iso)
     with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
-
+        
         print('iterating admin levels')
-        # AUTO INCR EACH LEVEL AND EXPORT TO SEPARATE SHAPEFILE
-        admin_feats = [feat for feat in geoj['features']
+        inputs = []
+        adm_lvl = 0
+        for osm_lvl in range(2, 13+1):
+            print('# level',osm_lvl)
+            params['minAdminLevel'] = osm_lvl
+            params['maxAdminLevel'] = osm_lvl
+            paramstring = urlencode(params)
+            paramstring += '&recursive&landOnly' #&includeAllTags'
+            url = 'https://osm-boundaries.com/Download/Submit?{}'.format(paramstring)
+            
+            print('downloading from',url)
+            req = Request(url, 
+                        headers={'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'},
+                        )
+            try:
+                resp = urlopen(req)
+            except:
+                print('ERROR:', traceback.format_exc())
+                continue
+
+            print('extracting from gzip')
+            with gzip.open(resp, 'rb') as f:
+                geoj = json.loads(f.read().decode('utf8'))
+            #print(str(geoj)[:1000])
+                
+            if not geoj['features']:
+                continue
+
+            print('filter to only admin boundaries')
+            feats = [feat for feat in geoj['features']
                         if feat['properties']['boundary'] == 'administrative'
                         and feat['properties']['admin_level']
                         and feat['geometry']['coordinates']
                         ]
-        key = lambda feat: feat['properties']['admin_level']
-        inputs = []
-        adm_lvl = 0
-        for osm_lvl,feats in itertools.groupby(sorted(admin_feats, key=key), key=key):
-            feats = list(feats)
-            print('# level',osm_lvl,'count',len(feats))
+            print('found',len(feats),'features')
             
             print('converting to shapefile')
             def calc_charfieldsize(feats, field):

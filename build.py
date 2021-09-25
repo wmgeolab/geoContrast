@@ -7,7 +7,7 @@ import traceback
 
 # params
 collections = ['OpenStreetMap']
-isos = []
+isos = ['NOR','CHL','CAN','FRA','USA']
 replace = False
 write_meta = True
 write_stats = True
