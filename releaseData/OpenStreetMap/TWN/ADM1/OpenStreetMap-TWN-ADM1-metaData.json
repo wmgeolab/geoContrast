@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": "Unknown",
+    "boundaryISO": "TWN",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "OpenStreetMap License",
+    "nameField": "name",
+    "licenseDetail": "Creative Commons Attribution-ShareAlike 2.0",
+    "licenseSource": "www.openstreetmap.org/copyright",
+    "boundarySourceURL": "https://osm-boundaries.com/",
+    "sourceDataUpdateDate": "2021-07-12",
+    "boundarySource-1": "OSM-Boundaries",
+    "boundarySource-2": "OpenStreetMap"
+}

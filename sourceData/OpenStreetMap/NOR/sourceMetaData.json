@@ -11,7 +11,13 @@
    "level": 1,
    "type": null,
    "name_field": "name"
-  }
+  },
+  {
+    "path": "NOR.zip/osm_NOR_7.shp",
+    "level": 2,
+    "type": null,
+    "name_field": "name"
+   }
  ],
  "year": null,
  "iso": "NOR",
