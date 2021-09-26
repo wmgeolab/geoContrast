@@ -37,7 +37,8 @@ Lower admin levels can be derived from higher levels by specifying a list of jso
 file, where each dict specifies a different level, type, dissolve_field, and keep_fields. 
 '''
 
-import topojson as tp
+#import topojson as tp
+import topojson_simple
 import itertools
 import os
 import json
@@ -380,6 +381,7 @@ def import_data(input_dir,
                 print('writing data')
 
                 # write geojson to zipfile
+                # MAYBE ALSO ROUND TO 1e6, SHOULD DECR FILESIZE
                 #zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-geojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
                 #with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
                 #    filename = '{dataset}-{iso}-ADM{lvl}.geojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
@@ -388,9 +390,30 @@ def import_data(input_dir,
                 #    archive.writestr(filename, geoj_string)
                 
                 # create topology quantized to 1e6 (10cm) and delta encoded, greatly reduces filesize
-                topodata = tp.Topology(feats, prequantize=1e6, topoquantize=1e6).to_json()
+                # NOTE: quantization isn't always the same as precision
+                # in some cases like USA (prob due to large extent?), precision degrades 3 decimals
+                # therefore setting to 1e9, which in practice becomes 1e6
+                
+                #if len(feats) == 1:
+                #    print('only 1 object, creating topojson without topology')
+                #    topo = tp.Topology(feats, topology=False, prequantize=1e6)
+                #elif len(feats) > 1:
+                #    try:
+                #        print('> 1 objects, creating topojson with topology')
+                #        topo = tp.Topology(feats, topology=True, prequantize=1e6)
+                #    except:
+                #        print('!!! failed to compute topology, creating topojson without topology')
+                #        topo = tp.Topology(feats, topology=False, prequantize=1e6)
+                print('creating quantized topojson (no topology optimization)')
+                #topo = tp.Topology(feats, topology=False, prequantize=1e6)
+                topo = topojson_simple.encode.topology({'features':feats}, quantization=1e9)
+
+                print('outputting to json')
+                #topodata = topo.to_json()
+                topodata = json.dumps(topo)
 
                 # write topojson to zipfile
+                print('writing to file')
                 zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
                 with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
                     filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)

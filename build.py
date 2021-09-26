@@ -4,16 +4,24 @@ import os
 import json
 import warnings
 import traceback
+import sys
+from datetime import datetime
 
 # params
 collections = ['OpenStreetMap']
 isos = ['NOR','CHL','CAN','FRA','USA']
-replace = False
+replace = True
 write_meta = True
 write_stats = True
 write_data = True
 
+# redirect to logfile
+logger = open('build_log.txt', mode='w', encoding='utf8', buffering=1)
+sys.stdout = logger
+sys.stderr = logger
+
 # begin
+print('start time', datetime.now())
 for dirpath,dirnames,filenames in os.walk('sourceData'):
     if 'sourceMetaData.json' in filenames:
         # load kwargs from meta file
@@ -90,3 +98,7 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
                 iotools.import_data(**_kwargs)
             except Exception as err:
                 warnings.warn("Error importing data for '{}': {}".format(dirpath, traceback.format_exc()))
+                
+print('end time', datetime.now())
+
+logger.close()
