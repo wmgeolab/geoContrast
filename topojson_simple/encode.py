@@ -1,6 +1,4 @@
 
-#import numpy as np
-from ._delta import delta_encode
 
 def arc_bbox(arc):
     xs,ys = zip(*arc)
@@ -10,15 +8,6 @@ def bbox_union(*bboxes):
     xmins,ymins,xmaxs,ymaxs = zip(*bboxes)
     xmin,ymin,xmax,ymax = min(xmins),min(ymins),max(xmaxs),max(ymaxs)
     return xmin,ymin,xmax,ymax
-
-def quantize(arc, kx, ky, xmin, ymin):
-    # OLD/NOT USED
-    quantized = []
-    for x,y in arc:
-        xnorm = int(round((x - xmin) / kx))
-        ynorm = int(round((y - ymin) / ky))
-        quantized.append((xnorm,ynorm))
-    return quantized
 
 def abs2rel(arc, scale=None, translate=None):
     """Yields delta-encoded coordinate tuples from an arc of absolute coordinates.
@@ -39,6 +28,9 @@ def abs2rel(arc, scale=None, translate=None):
             # quantize
             a = int(round( (x-translate[0]) * scale[0] ))
             b = int(round( (y-translate[1]) * scale[1] ))
+            # don't add duplicate points
+            #if (a == aprev and b == bprev):
+            #    continue
             # yield delta from previous
             da = a - aprev
             db = b - bprev
@@ -83,9 +75,23 @@ def process_geometry(geometry, arcs):
     bbox = bbox_union(*bboxes)
     return obj, bbox
 
-def topology(geojson, quantization=1e6):
+def topology(geojson, quantization=1e6, precision=None):
     """
     Convert GeoJSON to TopoJSON.
+
+    Normalization and delta-encoding reduces the number of digits that need to
+    be stored, and can be done in one of two ways.
+
+    Quantization divides the entire area covered by the topology into n discrete
+    grid cells. Each coordinate is snapped to the closest grid cell and 
+    delta-encoded. The quantization can be thought of as the resolution of the grid,
+    and the actual size of the grid cells will depend on the bounds of the topology. 
+    This is the default. 
+
+    If precision is specified, explicitly rounds each coordinate to the specified
+    number of decimals. In contrast to quantization, this is not affected by the 
+    bounds of the topology, and guarantees that decoding the normalized coordinates
+    will retrieve the original number up to the specified decimal precision. 
     """
     layers = {}
     topo = {'type': 'Topology',
@@ -108,18 +114,32 @@ def topology(geojson, quantization=1e6):
     # add bbox
     topo['bbox'] = bbox = list(bbox_union(*bboxes))
 
-    # quantize
-    if quantization > 1:
-        # compute and store quantization params
+    # compute transform
+
+    # from precision
+    if precision is not None:
+        # compute and store transform params
         minx,miny,maxx,maxy = bbox
-        kx = (quantization - 1) / (maxx - minx) #(maxx - minx) / (quantization - 1)
-        ky = (quantization - 1) / (maxy - miny) #(maxy - miny) / (quantization - 1)
+        kx = 10 ** precision
+        ky = 10 ** precision
         topo['transform'] = {
             'scale': [ 1 / kx, 1 / ky ],
             'translate': [ minx, miny ]
         }
 
-        # quantize and delta encode
+    # or from quantization
+    elif quantization > 1:
+        # compute and store transform params
+        minx,miny,maxx,maxy = bbox
+        kx = (quantization - 1) / (maxx - minx) 
+        ky = (quantization - 1) / (maxy - miny) 
+        topo['transform'] = {
+            'scale': [ 1 / kx, 1 / ky ],
+            'translate': [ minx, miny ]
+        }
+
+    # transform and delta encode
+    if 'transform' in topo:
         for i,arc in enumerate(topo['arcs']):
             #quantized = np.int32(np.round((arc - (minx, miny)) / (kx, ky) * quantization))
             #print('c',len(arc),str(arc)[:1000])

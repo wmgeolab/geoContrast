@@ -390,9 +390,10 @@ def import_data(input_dir,
                 #    archive.writestr(filename, geoj_string)
                 
                 # create topology quantized to 1e6 (10cm) and delta encoded, greatly reduces filesize
-                # NOTE: quantization isn't always the same as precision
+                
+                # NOTE: quantization isn't always the same as precision since it depends on the topology bounds
                 # in some cases like USA (prob due to large extent?), precision degrades 3 decimals
-                # therefore setting to 1e9, which in practice becomes 1e6
+                # INSTEAD added a custom precision arg to explicitly set decimal precision
                 
                 #if len(feats) == 1:
                 #    print('only 1 object, creating topojson without topology')
@@ -406,7 +407,7 @@ def import_data(input_dir,
                 #        topo = tp.Topology(feats, topology=False, prequantize=1e6)
                 print('creating quantized topojson (no topology optimization)')
                 #topo = tp.Topology(feats, topology=False, prequantize=1e6)
-                topo = topojson_simple.encode.topology({'features':feats}, quantization=1e9)
+                topo = topojson_simple.encode.topology({'features':feats}, precision=6)
 
                 print('outputting to json')
                 #topodata = topo.to_json()
@@ -414,7 +415,7 @@ def import_data(input_dir,
 
                 # write topojson to zipfile
                 print('writing to file')
-                zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
                 with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
                     filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
                     archive.writestr(filename, topodata)

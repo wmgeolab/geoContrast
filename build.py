@@ -9,8 +9,8 @@ from datetime import datetime
 
 # params
 collections = ['OpenStreetMap']
-isos = ['NOR','CHL','CAN','FRA','USA']
-replace = True
+isos = [] #['NOR','CHL','CAN','FRA','USA']
+replace = False
 write_meta = True
 write_stats = True
 write_data = True
