@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 
 # params
-collections = ['ESRI','IPUMS']
+collections = ['OCHA']
 isos = [] #['NOR','CHL','CAN','FRA','USA']
 replace = False
 write_meta = True

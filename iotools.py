@@ -141,10 +141,9 @@ def import_data(input_dir,
                 # regex
                 pattern = input_path.replace('\\', '/')
                 pattern = pattern.replace('*', '[^/]*')
-                raise Exception('Need to generalize this manual hardcoding for gadm...') # see next line
-            
-                zip_pattern = 'countryfiles' #pattern.split('.zip')[0] + '.zip'
-                #print('regex', zip_pattern, pattern)
+                #raise Exception('Need to generalize this manual hardcoding for gadm...') # see next line
+                zip_pattern = pattern.split('.zip')[0] + '.zip'
+                print('regex', zip_pattern, pattern)
                 for dirpath,dirnames,filenames in os.walk(os.path.abspath(input_dir)):
                     for filename in filenames:
                         zpath = os.path.join(dirpath, filename)
@@ -158,7 +157,9 @@ def import_data(input_dir,
                                 pth = pth.replace('\\', '/')
                                 if re.search(pattern, pth):
                                     #print('ZIPFILE MEMBER MATCH')
-                                    yield pth
+                                    print(pth)
+                                    continue
+                                    #yield pth
             else:
                 # single path
                 yield os.path.join(input_dir, input_path)
