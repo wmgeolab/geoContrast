@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2009,
+    "boundaryISO": "BHS",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution for Intergovernmental Organisations",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1",
+    "boundarySourceURL": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1",
+    "sourceDataUpdateDate": "13 November 2020",
+    "boundarySource-1": "OCHA FISS",
+    "boundarySource-2": "GADM"
+}
