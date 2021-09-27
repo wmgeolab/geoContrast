@@ -9,7 +9,7 @@ import iotools
 import re
 from time import time
 
-UPDATE_GB = True
+UPDATE_GB = False
 
 start = time()
 
@@ -57,9 +57,6 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
         collection = reldirpath.split('/')[0].split('\\')[0] # topmost folder
         meta['boundaryCollection'] = collection
 
-        #Drop unwanted entries
-        meta.pop('downloadURL')
-
         #Handle some standard missing data...?
         if not meta['boundaryCanonical']:
             meta['boundaryCanonical'] = 'Unknown'
@@ -83,7 +80,7 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
         #Add in apiURL
         #githubRoot = 'https://raw.githubusercontent.com/wmgeolab/geoContrast/main' # normal github files
         githubRoot = 'https://media.githubusercontent.com/media/wmgeolab/geoContrast/main' # lfs github files
-        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson')
+        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson.zip')
         topoPath = topoPath.replace('\\','/')
         relTopoPath = topoPath[topoPath.find('releaseData'):]
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
@@ -173,7 +170,7 @@ if UPDATE_GB:
                 print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
                 continue
         print('calculating stats')
-        stats = iotools.calc_stats(features, row)
+        stats = iotools.calc_stats(features)
         row.update(stats)
         # write ro row
         gbWriter.writerow(row)
@@ -236,7 +233,7 @@ if UPDATE_GB:
                 print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
                 continue
         print('calculating stats')
-        stats = iotools.calc_stats(features, row)
+        stats = iotools.calc_stats(features)
         row.update(stats)
         # write ro row
         gbWriter.writerow(row)
@@ -299,7 +296,7 @@ if UPDATE_GB:
                 print('ERROR! Excluding topojson object from spatial stats (could not convert to geojson):', err)
                 continue
         print('calculating stats')
-        stats = iotools.calc_stats(features, row)
+        stats = iotools.calc_stats(features)
         row.update(stats)
         # write to row
         gbWriter.writerow(row)
@@ -312,6 +309,16 @@ if UPDATE_GB:
 with open('geoContrast-gbMeta.csv', newline='', encoding='utf8') as gbRfob:
     gbReader = csv.DictReader(gbRfob)
     for row in gbReader:
+        
+        #Override erroneous boundaryYearSourceLag
+        #yr = row['boundaryYearRepresented']
+        #updated = row['sourceDataUpdateDate']
+        #updated_year_match = re.search('([0-9]{4})', updated)
+        #if yr == 'Unknown' or updated_year_match is None:
+        #    row['boundaryYearSourceLag'] = None
+        #else:
+        #    row['boundaryYearSourceLag'] = int(updated_year_match.group()) - yr
+            
         writer.writerow(row)
 
 #Close up shop
