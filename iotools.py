@@ -157,9 +157,7 @@ def import_data(input_dir,
                                 pth = pth.replace('\\', '/')
                                 if re.search(pattern, pth):
                                     #print('ZIPFILE MEMBER MATCH')
-                                    print(pth)
-                                    continue
-                                    #yield pth
+                                    yield pth
             else:
                 # single path
                 yield os.path.join(input_dir, input_path)
