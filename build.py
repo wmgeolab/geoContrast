@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 
 # params
-collections = ['OpenStreetMap']
+collections = ['Other','GRID3','SALB','WFP','Natural_Earth']
 isos = [] #['NOR','CHL','CAN','FRA','USA']
 replace = False
 write_meta = True
