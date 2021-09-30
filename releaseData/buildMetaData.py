@@ -79,8 +79,8 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
 
         #Add in apiURL
         #githubRoot = 'https://raw.githubusercontent.com/wmgeolab/geoContrast/main' # normal github files
-        githubRoot = 'https://media.githubusercontent.com/media/wmgeolab/geoContrast/main' # lfs github files
-        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson.zip')
+        githubRoot = 'https://media.githubusercontent.com/media/wmgeolab/geoContrast/stable' # lfs github files
+        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson')
         topoPath = topoPath.replace('\\','/')
         relTopoPath = topoPath[topoPath.find('releaseData'):]
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
