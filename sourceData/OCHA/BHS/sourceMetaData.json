@@ -19,5 +19,6 @@
     "source_updated": "13 November 2020",
     "source_url": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1",
     "license": "Creative Commons Attribution for Intergovernmental Organisations",
-    "license_url": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1"
+    "license_url": "https://data.humdata.org/dataset/bahamas-administrative-boundaries-level-0-1",
+    "encoding": "latin"
 }

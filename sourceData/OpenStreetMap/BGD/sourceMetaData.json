@@ -1,0 +1,27 @@
+{
+ "input": [
+  {
+   "path": "BGD.zip/osm_BGD_2.shp",
+   "level": 0,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "BGD.zip/osm_BGD_4.shp",
+   "level": 1,
+   "type": null,
+   "name_field": "name"
+  }
+ ],
+ "year": null,
+ "iso": "BGD",
+ "source": [
+  "OSM-Boundaries",
+  "OpenStreetMap"
+ ],
+ "source_updated": "2021-07-12",
+ "source_url": "https://osm-boundaries.com/",
+ "license": "OpenStreetMap License",
+ "license_detail": "Creative Commons Attribution-ShareAlike 2.0",
+ "license_url": "www.openstreetmap.org/copyright"
+}

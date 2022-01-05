@@ -37,7 +37,8 @@ Lower admin levels can be derived from higher levels by specifying a list of jso
 file, where each dict specifies a different level, type, dissolve_field, and keep_fields. 
 '''
 
-import topojson as tp
+#import topojson as tp
+import topojson_simple
 import itertools
 import os
 import json
@@ -46,7 +47,7 @@ import csv
 import warnings
 
 import shapefile as pyshp
-from zipfile import ZipFile
+from zipfile import ZipFile, ZIP_DEFLATED
 
 # create iso lookup dict
 iso2_to_3 = {}
@@ -140,10 +141,9 @@ def import_data(input_dir,
                 # regex
                 pattern = input_path.replace('\\', '/')
                 pattern = pattern.replace('*', '[^/]*')
-                raise Exception('Need to generalize this manual hardcoding for gadm...') # see next line
-            
-                zip_pattern = 'countryfiles' #pattern.split('.zip')[0] + '.zip'
-                #print('regex', zip_pattern, pattern)
+                #raise Exception('Need to generalize this manual hardcoding for gadm...') # see next line
+                zip_pattern = pattern.split('.zip')[0] + '.zip'
+                print('regex', zip_pattern, pattern)
                 for dirpath,dirnames,filenames in os.walk(os.path.abspath(input_dir)):
                     for filename in filenames:
                         zpath = os.path.join(dirpath, filename)
@@ -378,14 +378,46 @@ def import_data(input_dir,
             # write data
             if write_data:
                 print('writing data')
-                
-                # create topojson
-                topodata = tp.Topology(feats, prequantize=False).to_json()
 
-                # write topojson to file
-                dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                with open(dst, 'w', encoding='utf8') as fobj:
-                    fobj.write(topodata)
+                # write geojson to zipfile
+                # MAYBE ALSO ROUND TO 1e6, SHOULD DECR FILESIZE
+                #zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-geojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                #with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                #    filename = '{dataset}-{iso}-ADM{lvl}.geojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                #    geoj = {'type':'FeatureCollection', 'features':feats}
+                #    geoj_string = json.dumps(geoj)
+                #    archive.writestr(filename, geoj_string)
+                
+                # create topology quantized to 1e6 (10cm) and delta encoded, greatly reduces filesize
+                
+                # NOTE: quantization isn't always the same as precision since it depends on the topology bounds
+                # in some cases like USA (prob due to large extent?), precision degrades 3 decimals
+                # INSTEAD added a custom precision arg to explicitly set decimal precision
+                
+                #if len(feats) == 1:
+                #    print('only 1 object, creating topojson without topology')
+                #    topo = tp.Topology(feats, topology=False, prequantize=1e6)
+                #elif len(feats) > 1:
+                #    try:
+                #        print('> 1 objects, creating topojson with topology')
+                #        topo = tp.Topology(feats, topology=True, prequantize=1e6)
+                #    except:
+                #        print('!!! failed to compute topology, creating topojson without topology')
+                #        topo = tp.Topology(feats, topology=False, prequantize=1e6)
+                print('creating quantized topojson (no topology optimization)')
+                #topo = tp.Topology(feats, topology=False, prequantize=1e6)
+                topo = topojson_simple.encode.topology({'features':feats}, precision=6)
+
+                print('outputting to json')
+                #topodata = topo.to_json()
+                topodata = json.dumps(topo)
+
+                # write topojson to zipfile
+                print('writing to file')
+                zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                    filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                    archive.writestr(filename, topodata)
 
             # update metadata
             meta = {
@@ -398,7 +430,6 @@ def import_data(input_dir,
                     "licenseDetail": license_detail,
                     "licenseSource": license_url,
                     "boundarySourceURL": source_url,
-                    "downloadURL": download_url,
                     "sourceDataUpdateDate": source_updated,
                     }
             for i,source in enumerate(sources):
@@ -414,7 +445,7 @@ def import_data(input_dir,
             # calc and output boundary stats
             if write_stats is True:
                 print('writing stats')
-                stats = calc_stats(feats, meta)
+                stats = calc_stats(feats)
                 print(stats)
                 dst = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}-stats.json'.format(output=output_dir, collection=collection, dataset=dataset, iso=iso, lvl=level)
                 with open(dst, 'w', encoding='utf8') as fobj:
@@ -453,18 +484,10 @@ def geojson_area_perimeter(geoj):
             perim += _perim
     return area, perim
 
-def calc_stats(feats, meta):
+def calc_stats(feats):
     stats = {}
     # unit count
     stats['boundaryCount'] = len(feats)
-    # source year lag
-    yr = meta['boundaryYearRepresented']
-    updated = meta['sourceDataUpdateDate']
-    updated_year_match = re.search('([0-9]{4})', updated)
-    if yr == 'Unknown' or updated_year_match is None:
-        stats['boundaryYearSourceLag'] = None
-    else:
-        stats['boundaryYearSourceLag'] = int(float(updated_year_match.group())) - yr
     # vertices, area, and perimiter
     #from shapely.geometry import asShape
     area = 0
