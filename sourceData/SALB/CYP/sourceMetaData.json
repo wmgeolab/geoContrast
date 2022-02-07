@@ -2,9 +2,9 @@
     "input": "CYP_1960_08_01_SALB.zip/CYP_SALB_2016/SHP/BNDA_CYP.shp",
     "iso": "CYP",
     "year": 2016,
-    "level": 2,
+    "level": 1,
     "type_field": null,
-    "name_field": "ADM2NM",
+    "name_field": "ADM1NM",
     "source": [
         "UN SALB"
     ],
@@ -13,5 +13,6 @@
     "download_url": "https://www.unsalb.org/data/cyp",
     "license": "UN SALB Data License",
     "license_detail": null,
-    "license_url": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf"
+    "license_url": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "note": "Erroneously marked with an ADM2 field that is empty, this is an ADM1 boundary set."
 }
