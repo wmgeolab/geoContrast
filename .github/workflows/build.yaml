@@ -68,25 +68,23 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run build script
-      with: 
-        is_github_action: True
-        collections: ${{ github.event.inputs.collections }}
-        isos: ${{ github.event.inputs.isos }}
-        replace: ${{ github.event.inputs.replace }}
-        write_meta: ${{ github.event.inputs.write_meta }}
-        write_stats: ${{ github.event.inputs.write_stats }}
-        write_data: ${{ github.event.inputs.write_data }}
       run: |
         env
-
         echo "ls root"
         ls
         echo "ls buildData"
         ls buildData
         echo "ls sourceData"
         ls sourceData
-
         python build.py
+      env:
+        INPUT_IS_GITHUB_ACTION: True
+        INPUT_COLLECTION: ${{ github.event.inputs.collections }}
+        INPUT_ISOS: ${{ github.event.inputs.isos }}
+        INPUT_REPLACE: ${{ github.event.inputs.replace }}
+        INPUT_WRITE_METADATA: ${{ github.event.inputs.write_meta }}
+        INPUT_WRITE_STATS: ${{ github.event.inputs.write_stats }}
+        INPUT_WRITE_DATA: ${{ github.event.inputs.write_data }}
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
