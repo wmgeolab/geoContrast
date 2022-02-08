@@ -4,25 +4,22 @@ import json
 import csv
 import urllib.request
 import sys
-sys.path.append('..')
-import iotools
 import re
 from time import time
 
-UPDATE_GB = False
+# init working dir
+os.chdir(os.path.dirname(__file__))
+sys.path.append('..')
+import iotools
 
+# params
+if os.getenv('INPUT_GITHUB_ACTION', None):
+    UPDATE_GB = os.environ['INPUT_UPDATE_GB']
+else:
+    UPDATE_GB = False
+
+#Begin
 start = time()
-
-#Initialize workspace
-ws = {}
-try:
-    fdsfsfdsfsdf
-    ws['working'] = os.environ['GITHUB_WORKSPACE']
-    ws['logPath'] = os.path.expanduser("~") + "/tmp/log.txt"
-except:
-    ws['working'] = os.path.abspath("") # current folder ie releaseData
-    ws['logPath'] = "buildMetaData-log.txt" #os.path.expanduser("~") + "/tmp/log.txt"
-os.chdir(ws['working'])
 
 #Load in the ISO lookup table
 isoDetails = list(csv.DictReader(open("../buildData/iso_3166_1_alpha_3.csv", encoding="utf8")))
@@ -41,7 +38,7 @@ writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
 #Loop all metadata json files in releaseData
-for (dirpath, dirname, filenames) in os.walk(ws["working"]):
+for (dirpath, dirname, filenames) in os.walk(os.path.abspath("")):
 
     #Look for file metadata.json
     metaSearch = [x for x in filenames if x.endswith('metaData.json')]
@@ -51,6 +48,9 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
         #Init row from file metadata.json
         with open(dirpath + "/" + metaSearch[0], "r", encoding='utf8') as j:
             meta = json.load(j)
+
+        #Remove keys not in metadata table
+        meta.pop('note', None)
 
         #Add in boundary collection (ie the folder name that the boundary is organized into)
         reldirpath = dirpath.split('releaseData')[-1].strip('/').strip('\\')
