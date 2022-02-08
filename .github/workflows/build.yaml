@@ -69,7 +69,6 @@ jobs:
 
     - name: Run build script
       run: |
-        env
         echo "ls root"
         ls
         echo "ls buildData"
@@ -79,7 +78,7 @@ jobs:
         python build.py
       env:
         INPUT_IS_GITHUB_ACTION: True
-        INPUT_COLLECTION: ${{ github.event.inputs.collections }}
+        INPUT_COLLECTIONS: ${{ github.event.inputs.collections }}
         INPUT_ISOS: ${{ github.event.inputs.isos }}
         INPUT_REPLACE: ${{ github.event.inputs.replace }}
         INPUT_WRITE_METADATA: ${{ github.event.inputs.write_meta }}
