@@ -81,7 +81,7 @@ jobs:
         INPUT_COLLECTIONS: ${{ github.event.inputs.collections }}
         INPUT_ISOS: ${{ github.event.inputs.isos }}
         INPUT_REPLACE: ${{ github.event.inputs.replace }}
-        INPUT_WRITE_METADATA: ${{ github.event.inputs.write_meta }}
+        INPUT_WRITE_META: ${{ github.event.inputs.write_meta }}
         INPUT_WRITE_STATS: ${{ github.event.inputs.write_stats }}
         INPUT_WRITE_DATA: ${{ github.event.inputs.write_data }}
 
