@@ -35,15 +35,18 @@ else:
 
 # begin
 print('start time', datetime.now())
+print('input args', [collections,isos,replace,write_meta,write_stats,write_data])
 for dirpath,dirnames,filenames in os.walk('sourceData'):
     if 'sourceMetaData.json' in filenames:
         # load kwargs from meta file
         with open(os.path.join(dirpath, 'sourceMetaData.json'), encoding='utf8') as fobj:
             kwargs = json.loads(fobj.read())
+        print(kwargs)
 
         # determine the dataset name from the folder below sourceData
         reldirpath = os.path.relpath(dirpath, 'sourceData')
         collection = reldirpath.split('/')[0].split('\\')[0] # topmost folder
+        print(collection)
 
         # only process if collection is in the list of collections to be processed
         if collections and collection not in collections:
