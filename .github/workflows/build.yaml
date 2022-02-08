@@ -61,6 +61,7 @@ jobs:
         patterns: |
           buildData
           sourceData/${{ github.event.inputs.collections }}
+          releaseData/${{ github.event.inputs.collections }}
           topojson_simple
     
     - name: Sparse checkout action, all collections
@@ -70,6 +71,7 @@ jobs:
         patterns: |
           buildData
           sourceData
+          releaseData
           topojson_simple
 
     - name: Install dependencies
