@@ -17,8 +17,8 @@ on:
         default: ''
         required: false
       replace:
-        description: 'Whether to process and replace previously built boundaries (default is False)'
-        default: 'False'
+        description: 'Whether to process and replace previously built boundaries (default is True)'
+        default: 'True'
         required: false
       write_meta:
         description: 'Whether to write the metadata file (default is True)'
@@ -53,11 +53,6 @@ jobs:
       with:
         python-version: 3.7
 
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-
     - name: Sparse checkout action
       uses: snow-actions/sparse-checkout@v1.1.0
       with: 
@@ -67,6 +62,12 @@ jobs:
           topojson_simple/*
           build.py
           iotools.py
+          requirements.txt
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Run build script
       run: |
