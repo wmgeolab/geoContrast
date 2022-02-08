@@ -99,3 +99,5 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         title: Build script changes
+        delete-branch: true
+        branch-suffix: short-commit-hash

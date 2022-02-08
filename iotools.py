@@ -117,6 +117,7 @@ def import_data(input_dir,
                 license=None,
                 license_detail=None,
                 license_url=None,
+                note=None,
                 
                 dissolve=False,
                 keep_fields=None,
@@ -434,6 +435,8 @@ def import_data(input_dir,
                     }
             for i,source in enumerate(sources):
                 meta['boundarySource-{}'.format(i+1)] = source
+            if note:
+                meta['note'] = note
 
             # write metadata to file
             if write_meta is True:
