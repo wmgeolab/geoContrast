@@ -188,6 +188,7 @@ def import_data(input_dir,
 
         # define how to iterate isos
         if iso is not None:
+            # a single iso
             if len(iso) == 2:
                 if iso in iso2_to_3:
                     iso = iso2_to_3[iso]
@@ -200,6 +201,7 @@ def import_data(input_dir,
             def iter_country_recs():
                 yield iso, reader.records()
         else:
+            # isos defined by a field
             if iso_field is None:
                 raise Exception('Requires either iso, iso_path, or iso_field args')
 
@@ -235,9 +237,11 @@ def import_data(input_dir,
         for iso, countryrecs in iter_country_recs():
             # define how to iterate levels
             if level is not None:
+                # a single level
                 def iter_level_recs():
                     yield level, countryrecs
             else:
+                # levels defined by a field
                 if level_field is None:
                     raise Exception('Requires either level, level_path, or level_field args')
 
