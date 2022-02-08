@@ -10,8 +10,8 @@ from datetime import datetime
 # params
 if os.getenv('INPUT_IS_GITHUB_ACTION', None):
     # args from github actions
-    collections = os.environ['INPUT_COLLECTIONS'].split(',')
-    isos = os.environ['INPUT_ISOS'].split(',')
+    collections = os.environ['INPUT_COLLECTIONS'].split(',') if os.environ['INPUT_COLLECTIONS'] else []
+    isos = os.environ['INPUT_ISOS'].split(',') if os.environ['INPUT_ISOS'] else []
     replace = os.environ['INPUT_REPLACE'].lower() in ('true', '1', 't')
     write_meta = os.environ['INPUT_WRITE_META'].lower() in ('true', '1', 't')
     write_stats = os.environ['INPUT_WRITE_STATS'].lower() in ('true', '1', 't')
@@ -41,12 +41,10 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         # load kwargs from meta file
         with open(os.path.join(dirpath, 'sourceMetaData.json'), encoding='utf8') as fobj:
             kwargs = json.loads(fobj.read())
-        print(kwargs)
 
         # determine the dataset name from the folder below sourceData
         reldirpath = os.path.relpath(dirpath, 'sourceData')
         collection = reldirpath.split('/')[0].split('\\')[0] # topmost folder
-        print(collection)
 
         # only process if collection is in the list of collections to be processed
         if collections and collection not in collections:
