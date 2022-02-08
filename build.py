@@ -8,7 +8,7 @@ import sys
 from datetime import datetime
 
 # params
-try:
+if os.getenv('INPUT_IS_GITHUB_ACTION', None):
     # args from github actions
     collections = os.environ['INPUT_COLLECTIONS'].split(',')
     isos = os.environ['INPUT_ISOS'].split(',')
@@ -19,7 +19,7 @@ try:
 
     # no need for logfile, github action keeps its own log
     logger = None
-except:
+else:
     # locally specified args
     collections = ['GADM']
     isos = [] #['NOR','CHL','CAN','FRA','USA']

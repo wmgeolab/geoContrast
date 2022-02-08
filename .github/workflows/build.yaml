@@ -47,6 +47,7 @@ jobs:
     - name: Inspect initial workspace
       run: |
         ls
+        env
 
     - name: Install Python
       uses: actions/setup-python@v2
@@ -70,8 +71,17 @@ jobs:
         pip install -r requirements.txt
 
     - name: Run build script
+      with: 
+        is_github_action: True
+        collections: ${{ github.event.inputs.collections }}
+        isos: ${{ github.event.inputs.isos }}
+        replace: ${{ github.event.inputs.replace }}
+        write_meta: ${{ github.event.inputs.write_meta }}
+        write_stats: ${{ github.event.inputs.write_stats }}
+        write_data: ${{ github.event.inputs.write_data }}
       run: |
         ls
+        env
         python build.py
         ls
 
