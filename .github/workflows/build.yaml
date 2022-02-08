@@ -1,0 +1,80 @@
+# This is a basic workflow that is manually triggered
+
+name: Build boundary data from source to release
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      collections:
+        description: 'Boundary collections to process, comma separated, no spaces (default is all collections)'
+        default: ''
+        required: false
+      isos:
+        description: 'Country ISO3 codes to process, comma separated, no spaces (default is all countries)'
+        default: ''
+        required: false
+      replace:
+        description: 'Whether to process and replace previously built boundaries (default is False)'
+        default: 'False'
+        required: false
+      write_meta:
+        description: 'Whether to write the metadata file (default is True)'
+        default: 'True'
+        required: false
+      write_stats:
+        description: 'Whether to write the stats file (default is True)'
+        default: 'True'
+        required: false
+      write_data:
+        description: 'Whether to write the boundary data file (default is True)'
+        default: 'True'
+        required: false
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job named "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Each step runs a single command using the runners shell
+    steps:
+
+    - name: Inspect initial workspace
+      run: |
+        ls
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Sparse checkout action
+      uses: snow-actions/sparse-checkout@v1.1.0
+      with: 
+        patterns: |
+          buildData/*
+          sourceData/*
+          topojson_simple/*
+          build.py
+          iotools.py
+
+    - name: Run build script
+      run: |
+        ls
+        python build.py
+        ls
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        title: Build script changes

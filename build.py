@@ -8,17 +8,30 @@ import sys
 from datetime import datetime
 
 # params
-collections = ['GADM']
-isos = [] #['NOR','CHL','CAN','FRA','USA']
-replace = False
-write_meta = True
-write_stats = True
-write_data = True
+try:
+    # args from github actions
+    collections = os.environ['INPUT_COLLECTIONS'].split(',')
+    isos = os.environ['INPUT_ISOS'].split(',')
+    replace = os.environ['INPUT_REPLACE'].lower() in ('true', '1', 't')
+    write_meta = os.environ['INPUT_WRITE_META'].lower() in ('true', '1', 't')
+    write_stats = os.environ['INPUT_WRITE_STATS'].lower() in ('true', '1', 't')
+    write_data = os.environ['INPUT_WRITE_DATA'].lower() in ('true', '1', 't')
 
-# redirect to logfile
-logger = open('build_log.txt', mode='w', encoding='utf8', buffering=1)
-sys.stdout = logger
-sys.stderr = logger
+    # no need for logfile, github action keeps its own log
+    logger = None
+except:
+    # locally specified args
+    collections = ['GADM']
+    isos = [] #['NOR','CHL','CAN','FRA','USA']
+    replace = False
+    write_meta = True
+    write_stats = True
+    write_data = True
+
+    # redirect to logfile
+    logger = open('build_log.txt', mode='w', encoding='utf8', buffering=1)
+    sys.stdout = logger
+    sys.stderr = logger
 
 # begin
 print('start time', datetime.now())
@@ -101,4 +114,5 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
                 
 print('end time', datetime.now())
 
-logger.close()
+if logger:
+    logger.close()
