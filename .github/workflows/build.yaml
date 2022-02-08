@@ -99,5 +99,13 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         title: Build script changes
+        body: |
+          This boundary update was run with the following options:
+          - COLLECTIONS: ${{ github.event.inputs.collections }}
+          - ISOS: ${{ github.event.inputs.isos }}
+          - REPLACE: ${{ github.event.inputs.replace }}
+          - WRITE_META: ${{ github.event.inputs.write_meta }}
+          - WRITE_STATS: ${{ github.event.inputs.write_stats }}
+          - WRITE_DATA: ${{ github.event.inputs.write_data }}
         delete-branch: true
         branch-suffix: short-commit-hash
