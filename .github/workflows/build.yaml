@@ -58,12 +58,9 @@ jobs:
       uses: snow-actions/sparse-checkout@v1.1.0
       with: 
         patterns: |
-          buildData/*
-          sourceData/*
-          topojson_simple/*
-          build.py
-          iotools.py
-          requirements.txt
+          buildData
+          sourceData
+          topojson_simple
 
     - name: Install dependencies
       run: |
@@ -80,10 +77,16 @@ jobs:
         write_stats: ${{ github.event.inputs.write_stats }}
         write_data: ${{ github.event.inputs.write_data }}
       run: |
-        ls
         env
-        python build.py
+
+        echo "ls root"
         ls
+        echo "ls buildData"
+        ls buildData
+        echo "ls sourceData"
+        ls sourceData
+
+        python build.py
 
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
