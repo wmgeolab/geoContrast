@@ -311,7 +311,9 @@ def import_data(input_dir,
         return newfeats
 
     # make dir
-    try: os.mkdir('{output}/{dataset}'.format(output=output_dir, dataset=collection))
+    try: os.mkdir('{output}'.format(output=output_dir))
+    except: pass
+    try: os.mkdir('{output}/{collection}'.format(output=output_dir, collection=collection))
     except: pass
 
     # prep source list
