@@ -69,4 +69,4 @@ jobs:
           This metadata update was run with the following options:
           - **UPDATE_GB**: ${{ github.event.inputs.update_gb }}
         delete-branch: true
-        branch-suffix: short-commit-hash
+        branch-suffix: timestamp
