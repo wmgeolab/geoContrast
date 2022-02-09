@@ -431,7 +431,7 @@ def import_data(input_dir,
                             # compare encoded topojson string with zipfile topojson string
                             # note that python writes json strings as unicode escaped ascii, rather than utf8 encoded
                             topodata_old = fobj.read().decode('ascii')
-                            assert type(topodata) == type(topodata_old)
+                            assert (isinstance(topodata, str) and isinstance(topodata_old, str))
                             if topodata != topodata_old:
                                 has_changed = True
                 else:
