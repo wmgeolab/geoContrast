@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "ECU",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
+    "nameField": "cntry_name",
+    "licenseDetail": null,
+    "licenseSource": "https://icr.ethz.ch/data/cshapes/",
+    "boundarySourceURL": "https://icr.ethz.ch/data/cshapes/",
+    "sourceDataUpdateDate": "7 June 2020",
+    "boundarySource-1": "CShapes 2.0",
+    "note": "ISO codes had to be added manually."
+}
