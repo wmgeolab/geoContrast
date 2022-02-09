@@ -420,11 +420,24 @@ def import_data(input_dir,
                 topodata = json.dumps(topo)
 
                 # write topojson to zipfile
-                print('writing to file')
                 zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
-                    filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                    archive.writestr(filename, topodata)
+                filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                # check if has changed
+                print('checking if data exists and has changed')
+                has_changed = False
+                if os.path.lexists(zip_path):
+                    with ZipFile(zip_path, mode='r') as archive:
+                        with archive.open(filename, mode='r') as fobj:
+                            topodata_old = fobj.read()
+                            if topodata != topodata_old:
+                                has_changed = True
+                else:
+                    has_changed = True
+                # write if changed
+                if has_changed:
+                    print('writing to file')
+                    with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                        archive.writestr(filename, topodata)
 
             # update metadata
             meta = {
