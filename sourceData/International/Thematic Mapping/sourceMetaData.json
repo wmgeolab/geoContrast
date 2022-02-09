@@ -11,6 +11,7 @@
     ],
     
     "year":2008,
+    "collection_subset":"ThematicMapping",
     
     "source":["ThematicMapping.org", "Bjørn Sandvik", "www.mappinghacks.com", "Sean Gillies", "Schuyler Erle"],
     "source_updated":"30 July 2008",
