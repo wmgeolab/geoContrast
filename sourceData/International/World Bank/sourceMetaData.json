@@ -11,6 +11,7 @@
     ],
     
     "year":2020,
+    "collection_subset":"WorldBank",
     
     "source":"World Bank",
     "source_updated":"19 March 2020",
