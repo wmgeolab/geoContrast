@@ -16,5 +16,7 @@
     "source_updated":"30 July 2008",
     "license":"Creative Commons Attribution-Share Alike License",
     "license_detail":null,
-    "license_url":"https://thematicmapping.org/downloads/world_borders.php"
+    "license_url":"https://thematicmapping.org/downloads/world_borders.php",
+    
+    "encoding":"latin"
 }
