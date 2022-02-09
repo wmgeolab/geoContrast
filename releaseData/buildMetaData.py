@@ -42,11 +42,11 @@ for (dirpath, dirname, filenames) in os.walk(os.path.abspath("")):
 
     #Look for file metadata.json
     metaSearch = [x for x in filenames if x.endswith('metaData.json')]
-    if(len(metaSearch)==1):
-        print(metaSearch)
+    for metaFile in metaSearch:
+        print(metaFile)
 
         #Init row from file metadata.json
-        with open(dirpath + "/" + metaSearch[0], "r", encoding='utf8') as j:
+        with open(dirpath + "/" + metaFile, "r", encoding='utf8') as j:
             meta = json.load(j)
 
         #Remove keys not in metadata table
@@ -80,13 +80,13 @@ for (dirpath, dirname, filenames) in os.walk(os.path.abspath("")):
         #Add in apiURL
         #githubRoot = 'https://raw.githubusercontent.com/wmgeolab/geoContrast/main' # normal github files
         githubRoot = 'https://media.githubusercontent.com/media/wmgeolab/geoContrast/stable' # lfs github files
-        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson.zip')
+        topoPath = dirpath + "/" + metaFile.replace('-metaData.json', '.topojson.zip')
         topoPath = topoPath.replace('\\','/')
         relTopoPath = topoPath[topoPath.find('releaseData'):]
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
 
         #Add in geometry statistics
-        with open(dirpath + "/" + metaSearch[0].replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
+        with open(dirpath + "/" + metaFile.replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
             stats = json.load(j)
             meta.update(stats)
 
