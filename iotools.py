@@ -428,7 +428,10 @@ def import_data(input_dir,
                 if os.path.lexists(zip_path):
                     with ZipFile(zip_path, mode='r') as archive:
                         with archive.open(filename, mode='r') as fobj:
-                            topodata_old = fobj.read()
+                            # compare encoded topojson string with zipfile topojson string
+                            # note that python writes json strings as unicode escaped ascii, rather than utf8 encoded
+                            topodata_old = fobj.read().decode('ascii')
+                            assert type(topodata) == type(topodata_old)
                             if topodata != topodata_old:
                                 has_changed = True
                 else:
