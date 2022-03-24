@@ -1,0 +1,680 @@
+downloading:
+
+looping country links from page https://www.unsalb.org/data?page=0
+https://www.unsalb.org/data/afg
+FROM DATE 2008-03-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/alb
+FROM DATE 2000-07-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/dza
+FROM DATE 2016-02-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/and
+FROM DATE 2020-02-28 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/ago
+FROM DATE 2016-10-06 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/atg
+No page downloads, skipping
+https://www.unsalb.org/data/arg
+No page downloads, skipping
+https://www.unsalb.org/data/arm
+FROM DATE 1998-12-15 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/aus
+FROM DATE 2002-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/aut
+No page downloads, skipping
+https://www.unsalb.org/data/aze
+FROM DATE 2019-04-03 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/bhs
+No page downloads, skipping
+https://www.unsalb.org/data/bhr
+No page downloads, skipping
+https://www.unsalb.org/data/bgd
+FROM DATE 2011-12-15 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/brb
+No page downloads, skipping
+https://www.unsalb.org/data/blr
+No page downloads, skipping
+https://www.unsalb.org/data/bel
+No page downloads, skipping
+https://www.unsalb.org/data/blz
+No page downloads, skipping
+https://www.unsalb.org/data/ben
+FROM DATE 2000-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/BEN/2000_01_01/BEN_2000_01_01_SALB.zip
+detected historical excel table "Last updated" field: 2021-09-23
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'BEN_2000_01_01_SALB.zip/BEN_2000_01_01_SALB/BNDA_BEN_2000-01-01_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'BEN_2000_01_01_SALB.zip/BEN_2000_01_01_SALB/BNDA_BEN_2000-01-01_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'BEN_2000_01_01_SALB.zip/BEN_2000_01_01_SALB/BNDA_BEN_2000-01-01_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'BEN', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-09-23', 'source_url': 'https://www.unsalb.org/data/ben', 'download_url': 'https://www.unsalb.org/data/ben', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/btn
+FROM DATE 2010-08-20 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/bol
+No page downloads, skipping
+https://www.unsalb.org/data/bih
+No page downloads, skipping
+https://www.unsalb.org/data/bwa
+No page downloads, skipping
+https://www.unsalb.org/data/bra
+No page downloads, skipping
+https://www.unsalb.org/data/brn
+No page downloads, skipping
+https://www.unsalb.org/data/bgr
+No page downloads, skipping
+https://www.unsalb.org/data/bfa
+FROM DATE 2014-12-31 TO DATE None
+FROM DATE 2001-08-02 TO DATE 2014-12-30
+FROM DATE 1996-04-24 TO DATE 2001-08-01
+No page downloads, skipping
+https://www.unsalb.org/data/bdi
+FROM DATE 2015-03-26 TO DATE None
+FILE https://www.unsalb.org/system/files/BDI/2015_03_26/BDI_2015_03_26_SALB.zip
+FROM DATE 2014-11-28 TO DATE 2015-03-25
+FILE https://www.unsalb.org/system/files/BDI/2014_11_28/BDI_2014_11_28_SALB.zip
+FROM DATE 2001-07-16 TO DATE 2014-11-27
+FILE https://www.unsalb.org/system/files/BDI/2001_07_16/BDI_2001_07_16_SALB.zip
+FROM DATE 2000-01-01 TO DATE 2001-07-15
+FILE https://www.unsalb.org/system/files/BDI/2000_01_01/BDI_2000_01_01_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2015, 3, 26), None, 'https://www.unsalb.org/system/files/BDI/2015_03_26/BDI_2015_03_26_SALB.zip'), (datetime.date(2014, 11, 28), datetime.date(2015, 3, 25), 'https://www.unsalb.org/system/files/BDI/2014_11_28/BDI_2014_11_28_SALB.zip'), (datetime.date(2001, 7, 16), datetime.date(2014, 11, 27), 'https://www.unsalb.org/system/files/BDI/2001_07_16/BDI_2001_07_16_SALB.zip'), (datetime.date(2000, 1, 1), datetime.date(2001, 7, 15), 'https://www.unsalb.org/system/files/BDI/2000_01_01/BDI_2000_01_01_SALB.zip')]
+detected historical excel table "Last updated" field: 2021-09-06
+source_update and year set to historical excel table "Last updated" field
+detected "DATSOR" field in shapefile: 01/05/2015
+{'input': [{'path': 'BDI_2015_03_26_SALB.zip/BNDA_BDI_2015-03-26_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'BDI_2015_03_26_SALB.zip/BNDA_BDI_2015-03-26_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'BDI_2015_03_26_SALB.zip/BNDA_BDI_2015-03-26_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'BDI', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-09-06', 'source_url': 'https://www.unsalb.org/data/bdi', 'download_url': 'https://www.unsalb.org/data/bdi', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/cpv
+No page downloads, skipping
+https://www.unsalb.org/data/khm
+FROM DATE 2014-03-31 TO DATE None
+FROM DATE 1998-01-01 TO DATE 2014-03-30
+FILE https://www.unsalb.org/system/files/KHM/1998_01_01/KHM_1998_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['KHM_SALB_1998/SHP/BNDA_KHM.shp', 'KHM_SALB_1998/SHP/BNDL_KHM.shp']
+source_update and year set to download link's "to" date text
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 01/01/2006
+{'input': [{'path': 'KHM_1998_01_01_SALB.zip/KHM_SALB_1998/SHP/BNDA_KHM.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'KHM_1998_01_01_SALB.zip/KHM_SALB_1998/SHP/BNDA_KHM.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'KHM_1998_01_01_SALB.zip/KHM_SALB_1998/SHP/BNDA_KHM.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'KHM', 'year': 2014, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2014-03-30', 'source_url': 'https://www.unsalb.org/data/khm', 'download_url': 'https://www.unsalb.org/data/khm', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/cmr
+FROM DATE 2000-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/CMR/2000_01_01/CMR_2000_01_01_SALB.zip
+detected historical excel table "Last updated" field: 2021-02-22
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'CMR_2000_01_01_SALB.zip/BNDA_CMR_2000-01-01_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'CMR_2000_01_01_SALB.zip/BNDA_CMR_2000-01-01_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'CMR_2000_01_01_SALB.zip/BNDA_CMR_2000-01-01_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'CMR', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-02-22', 'source_url': 'https://www.unsalb.org/data/cmr', 'download_url': 'https://www.unsalb.org/data/cmr', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/can
+FROM DATE 2016-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/CAN/2016_01_01/CAN_2016_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['2016_CAN_SALB/SHP/BNDA_CAN.shp', '2016_CAN_SALB/SHP/BNDL_CAN.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 23/05/2018
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'CAN_2016_01_01_SALB.zip/2016_CAN_SALB/SHP/BNDA_CAN.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'CAN_2016_01_01_SALB.zip/2016_CAN_SALB/SHP/BNDA_CAN.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'CAN_2016_01_01_SALB.zip/2016_CAN_SALB/SHP/BNDA_CAN.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'CAN', 'year': 2018, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2018-05-23', 'source_url': 'https://www.unsalb.org/data/can', 'download_url': 'https://www.unsalb.org/data/can', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/caf
+FROM DATE 2004-10-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/tcd
+FROM DATE 2020-03-04 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/chl
+No page downloads, skipping
+https://www.unsalb.org/data/chn
+No page downloads, skipping
+https://www.unsalb.org/data/col
+No page downloads, skipping
+https://www.unsalb.org/data/com
+No page downloads, skipping
+https://www.unsalb.org/data/cog
+FROM DATE 2007-10-02 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/cok
+No page downloads, skipping
+https://www.unsalb.org/data/cri
+FROM DATE 2017-04-20 TO DATE None
+FILE https://www.unsalb.org/system/files/CRI/2017_04_20/CRI_2017_04_20_SALB.zip
+FROM DATE 2015-07-06 TO DATE 2017-04-19
+FILE https://www.unsalb.org/system/files/CRI/2015_07_06/CRI_2015_07_06_SALB.zip
+FROM DATE 2010-06-16 TO DATE 2015-07-05
+FILE https://www.unsalb.org/system/files/CRI/2010_06_16/CRI_2010_06_16_SALB.zip
+FROM DATE 1980-09-25 TO DATE 2010-06-15
+FILE https://www.unsalb.org/system/files/CRI/1980_09_25/CRI_1980_09_25_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2017, 4, 20), None, 'https://www.unsalb.org/system/files/CRI/2017_04_20/CRI_2017_04_20_SALB.zip'), (datetime.date(2015, 7, 6), datetime.date(2017, 4, 19), 'https://www.unsalb.org/system/files/CRI/2015_07_06/CRI_2015_07_06_SALB.zip'), (datetime.date(2010, 6, 16), datetime.date(2015, 7, 5), 'https://www.unsalb.org/system/files/CRI/2010_06_16/CRI_2010_06_16_SALB.zip'), (datetime.date(1980, 9, 25), datetime.date(2010, 6, 15), 'https://www.unsalb.org/system/files/CRI/1980_09_25/CRI_1980_09_25_SALB.zip')]
+detected historical excel table "Last updated" field: 2021-10-20 00:00:00
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'CRI_2017_04_20_SALB.zip/BNDA_CRI_2017-04-20_lastupdate/BNDA_CRI_2017-04-20_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'CRI_2017_04_20_SALB.zip/BNDA_CRI_2017-04-20_lastupdate/BNDA_CRI_2017-04-20_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'CRI_2017_04_20_SALB.zip/BNDA_CRI_2017-04-20_lastupdate/BNDA_CRI_2017-04-20_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'CRI', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-10-20', 'source_url': 'https://www.unsalb.org/data/cri', 'download_url': 'https://www.unsalb.org/data/cri', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/civ
+FROM DATE 2012-07-04 TO DATE None
+FILE https://www.unsalb.org/system/files/CIV/2012_07_04/CIV_2012_07_04_SALB.zip
+FROM DATE 2011-09-28 TO DATE 2012-07-03
+FILE https://www.unsalb.org/system/files/CIV/2011_09_28/CIV_2011_09_28_SALB.zip
+FROM DATE 2009-07-27 TO DATE 2011-09-27
+FILE https://www.unsalb.org/system/files/CIV/2009_07_27/CIV_2009_07_27_SALB.zip
+FROM DATE 2009-03-05 TO DATE 2009-07-26
+FILE https://www.unsalb.org/system/files/CIV/2009_03_05/CIV_2009_03_05_SALB.zip
+FROM DATE 2009-02-25 TO DATE 2009-03-04
+FILE https://www.unsalb.org/system/files/CIV/2009_02_25/CIV_2009_02_25_SALB.zip
+FROM DATE 2008-10-08 TO DATE 2009-02-24
+FILE https://www.unsalb.org/system/files/CIV/2008_10_08/CIV_2008_10_08_SALB.zip
+FROM DATE 2008-09-11 TO DATE 2008-10-07
+FROM DATE 2008-08-14 TO DATE 2008-09-10
+FROM DATE 2008-03-05 TO DATE 2008-08-13
+FILE https://www.unsalb.org/system/files/CIV/2008_03_05/CIV_2008_03_05_SALB.zip
+FROM DATE 2006-09-15 TO DATE 2008-03-04
+FILE https://www.unsalb.org/system/files/CIV/2006_09_15/CIV_2006_09_15_SALB.zip
+FROM DATE 2006-06-27 TO DATE 2006-09-14
+FILE https://www.unsalb.org/system/files/CIV/2006_06_27/CIV_2006_06_27_SALB.zip
+FROM DATE 2005-07-07 TO DATE 2006-06-26
+FILE https://www.unsalb.org/system/files/CIV/2005_07_07/CIV_2005_07_07_SALB.zip
+FROM DATE 2005-07-02 TO DATE 2005-07-06
+FILE https://www.unsalb.org/system/files/CIV/2005_07_02/CIV_2005_07_02_SALB.zip
+FROM DATE 2000-07-12 TO DATE 2005-07-01
+FILE https://www.unsalb.org/system/files/CIV/2000_07_12/CIV_2000_07_12_SALB.zip
+FROM DATE 2000-04-20 TO DATE 2000-07-11
+FILE https://www.unsalb.org/system/files/CIV/2000_04_20/CIV_2000_04_20_SALB.zip
+FROM DATE 2000-01-01 TO DATE 2000-04-19
+FILE https://www.unsalb.org/system/files/CIV/2000_01_01/CIV_2000_01_01_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2012, 7, 4), None, 'https://www.unsalb.org/system/files/CIV/2012_07_04/CIV_2012_07_04_SALB.zip'), (datetime.date(2011, 9, 28), datetime.date(2012, 7, 3), 'https://www.unsalb.org/system/files/CIV/2011_09_28/CIV_2011_09_28_SALB.zip'), (datetime.date(2009, 7, 27), datetime.date(2011, 9, 27), 'https://www.unsalb.org/system/files/CIV/2009_07_27/CIV_2009_07_27_SALB.zip'), (datetime.date(2009, 3, 5), datetime.date(2009, 7, 26), 'https://www.unsalb.org/system/files/CIV/2009_03_05/CIV_2009_03_05_SALB.zip'), (datetime.date(2009, 2, 25), datetime.date(2009, 3, 4), 'https://www.unsalb.org/system/files/CIV/2009_02_25/CIV_2009_02_25_SALB.zip'), (datetime.date(2008, 10, 8), datetime.date(2009, 2, 24), 'https://www.unsalb.org/system/files/CIV/2008_10_08/CIV_2008_10_08_SALB.zip'), (datetime.date(2008, 3, 5), datetime.date(2008, 8, 13), 'https://www.unsalb.org/system/files/CIV/2008_03_05/CIV_2008_03_05_SALB.zip'), (datetime.date(2006, 9, 15), datetime.date(2008, 3, 4), 'https://www.unsalb.org/system/files/CIV/2006_09_15/CIV_2006_09_15_SALB.zip'), (datetime.date(2006, 6, 27), datetime.date(2006, 9, 14), 'https://www.unsalb.org/system/files/CIV/2006_06_27/CIV_2006_06_27_SALB.zip'), (datetime.date(2005, 7, 7), datetime.date(2006, 6, 26), 'https://www.unsalb.org/system/files/CIV/2005_07_07/CIV_2005_07_07_SALB.zip'), (datetime.date(2005, 7, 2), datetime.date(2005, 7, 6), 'https://www.unsalb.org/system/files/CIV/2005_07_02/CIV_2005_07_02_SALB.zip'), (datetime.date(2000, 7, 12), datetime.date(2005, 7, 1), 'https://www.unsalb.org/system/files/CIV/2000_07_12/CIV_2000_07_12_SALB.zip'), (datetime.date(2000, 4, 20), datetime.date(2000, 7, 11), 'https://www.unsalb.org/system/files/CIV/2000_04_20/CIV_2000_04_20_SALB.zip'), (datetime.date(2000, 1, 1), datetime.date(2000, 4, 19), 'https://www.unsalb.org/system/files/CIV/2000_01_01/CIV_2000_01_01_SALB.zip')]
+detected historical excel table "Last updated" field: 2022-01-06
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'CIV_2012_07_04_SALB.zip/BNDA_CIV_2012-07-04_lastupdate/BNDA_CIV_2012_07_04__lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'CIV_2012_07_04_SALB.zip/BNDA_CIV_2012-07-04_lastupdate/BNDA_CIV_2012_07_04__lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'CIV_2012_07_04_SALB.zip/BNDA_CIV_2012-07-04_lastupdate/BNDA_CIV_2012_07_04__lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'CIV', 'year': 2022, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2022-01-06', 'source_url': 'https://www.unsalb.org/data/civ', 'download_url': 'https://www.unsalb.org/data/civ', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/hrv
+No page downloads, skipping
+https://www.unsalb.org/data/cub
+FROM DATE 2010-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/CUB/2010_01_01/CUB_2010_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['CUB_SALB_2010/SHP/BNDA_CUB.shp', 'CUB_SALB_2010/SHP/BNDL_CUB.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 29/09/2017
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'CUB_2010_01_01_SALB.zip/CUB_SALB_2010/SHP/BNDA_CUB.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'CUB_2010_01_01_SALB.zip/CUB_SALB_2010/SHP/BNDA_CUB.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'CUB_2010_01_01_SALB.zip/CUB_SALB_2010/SHP/BNDA_CUB.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'CUB', 'year': 2017, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2017-09-29', 'source_url': 'https://www.unsalb.org/data/cub', 'download_url': 'https://www.unsalb.org/data/cub', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/cyp
+FROM DATE 1960-08-01 TO DATE None
+FILE https://www.unsalb.org/system/files/CYP/1960_08_01/CYP_1960_08_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['CYP_SALB_2016/SHP/BNDA_CYP.shp', 'CYP_SALB_2016/SHP/BNDL_CYP.shp']
+detected historical excel table "Last updated" field:  2021-10-27
+source_update and year set to historical excel table "Last updated" field
+detected "DATSOR" field in shapefile: 10/10/2016
+{'input': [{'path': 'CYP_1960_08_01_SALB.zip/CYP_SALB_2016/SHP/BNDA_CYP.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'CYP_1960_08_01_SALB.zip/CYP_SALB_2016/SHP/BNDA_CYP.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}], 'iso': 'CYP', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-10-27', 'source_url': 'https://www.unsalb.org/data/cyp', 'download_url': 'https://www.unsalb.org/data/cyp', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/cze
+No page downloads, skipping
+https://www.unsalb.org/data/prk
+FROM DATE 2019-09-27 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/cod
+FROM DATE 2015-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/dnk
+No page downloads, skipping
+https://www.unsalb.org/data/dji
+No page downloads, skipping
+
+looping country links from page https://www.unsalb.org/data?page=1
+https://www.unsalb.org/data/dma
+No page downloads, skipping
+https://www.unsalb.org/data/dom
+FROM DATE 2014-10-29 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/ecu
+FROM DATE 2013-05-31 TO DATE None
+FILE https://www.unsalb.org/system/files/ECU/2013_05_31/ECU_2013_05_31_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['ECU_SALB_2013/SHP/BNDA_ECU.shp', 'ECU_SALB_2013/SHP/BNDL_ECU.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 20/02/2020
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'ECU_2013_05_31_SALB.zip/ECU_SALB_2013/SHP/BNDA_ECU.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'ECU_2013_05_31_SALB.zip/ECU_SALB_2013/SHP/BNDA_ECU.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'ECU_2013_05_31_SALB.zip/ECU_SALB_2013/SHP/BNDA_ECU.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'ECU', 'year': 2020, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2020-02-20', 'source_url': 'https://www.unsalb.org/data/ecu', 'download_url': 'https://www.unsalb.org/data/ecu', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/egy
+No page downloads, skipping
+https://www.unsalb.org/data/slv
+No page downloads, skipping
+https://www.unsalb.org/data/gnq
+No page downloads, skipping
+https://www.unsalb.org/data/eri
+No page downloads, skipping
+https://www.unsalb.org/data/est
+No page downloads, skipping
+https://www.unsalb.org/data/swz
+FROM DATE 2017-06-01 TO DATE None
+FILE https://www.unsalb.org/system/files/SWZ/2017_06_01/SWZ_2017_06_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['SWZ_SALB_2017/SHP/BNDA_SWZ.shp', 'SWZ_SALB_2017/SHP/BNDL_SWZ.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 13/09/2019
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'SWZ_2017_06_01_SALB.zip/SWZ_SALB_2017/SHP/BNDA_SWZ.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'SWZ_2017_06_01_SALB.zip/SWZ_SALB_2017/SHP/BNDA_SWZ.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'SWZ_2017_06_01_SALB.zip/SWZ_SALB_2017/SHP/BNDA_SWZ.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'SWZ', 'year': 2019, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2019-09-13', 'source_url': 'https://www.unsalb.org/data/swz', 'download_url': 'https://www.unsalb.org/data/swz', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/eth
+FROM DATE 2019-03-18 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/fji
+No page downloads, skipping
+https://www.unsalb.org/data/fin
+No page downloads, skipping
+https://www.unsalb.org/data/fra
+No page downloads, skipping
+https://www.unsalb.org/data/gab
+FROM DATE 2006-04-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/gmb
+No page downloads, skipping
+https://www.unsalb.org/data/geo
+No page downloads, skipping
+https://www.unsalb.org/data/deu
+FROM DATE 2021-07-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/gha
+FROM DATE 2012-06-28 TO DATE None
+FILE https://www.unsalb.org/system/files/GHA/2012_06_28/GHA_2012_06_28_SALB.zip
+FROM DATE 2007-01-01 TO DATE 2012-06-27
+FILE https://www.unsalb.org/system/files/GHA/2007_01_01/GHA_2007_01_01_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2012, 6, 28), None, 'https://www.unsalb.org/system/files/GHA/2012_06_28/GHA_2012_06_28_SALB.zip'), (datetime.date(2007, 1, 1), datetime.date(2012, 6, 27), 'https://www.unsalb.org/system/files/GHA/2007_01_01/GHA_2007_01_01_SALB.zip')]
+WARNING:root:Zipfile contains more than one shapefile: ['GHA_SALB_2018/SHP/BNDA_GHA.shp', 'GHA_SALB_2018/SHP/BNDL_GHA.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 24/01/2020
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'GHA_2012_06_28_SALB.zip/GHA_SALB_2018/SHP/BNDA_GHA.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'GHA_2012_06_28_SALB.zip/GHA_SALB_2018/SHP/BNDA_GHA.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'GHA_2012_06_28_SALB.zip/GHA_SALB_2018/SHP/BNDA_GHA.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'GHA', 'year': 2020, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2020-01-24', 'source_url': 'https://www.unsalb.org/data/gha', 'download_url': 'https://www.unsalb.org/data/gha', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/grc
+No page downloads, skipping
+https://www.unsalb.org/data/grd
+No page downloads, skipping
+https://www.unsalb.org/data/gtm
+FROM DATE 2008-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/gin
+FROM DATE 2002-05-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/gnb
+FROM DATE 2000-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/GNB/2000_01_01/GNB_2000_01_01_SALB.zip
+detected historical excel table "Last updated" field: 2021-05-17
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'GNB_2000_01_01_SALB.zip/BNDA_GNB_2000-01-01_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'GNB_2000_01_01_SALB.zip/BNDA_GNB_2000-01-01_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'GNB_2000_01_01_SALB.zip/BNDA_GNB_2000-01-01_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'GNB', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-05-17', 'source_url': 'https://www.unsalb.org/data/gnb', 'download_url': 'https://www.unsalb.org/data/gnb', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/guy
+No page downloads, skipping
+https://www.unsalb.org/data/hti
+FILE https://www.unsalb.org/system/files/HTI/2014_09_30/HTI_2014_09_30_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['HTI_SALB_2014/SHP/BNDA_HTI.shp', 'HTI_SALB_2014/SHP/BNDL_HTI.shp']
+WARNING:root:could not find historical table download
+WARNING:root:source_update and year set to download link's "from" date text
+{'input': [{'path': 'HTI_2014_09_30_SALB.zip/HTI_SALB_2014/SHP/BNDA_HTI.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'HTI_2014_09_30_SALB.zip/HTI_SALB_2014/SHP/BNDA_HTI.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'HTI_2014_09_30_SALB.zip/HTI_SALB_2014/SHP/BNDA_HTI.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'HTI', 'year': 2014, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2014-09-30', 'source_url': 'https://www.unsalb.org/data/hti', 'download_url': 'https://www.unsalb.org/data/hti', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/vat
+No page downloads, skipping
+https://www.unsalb.org/data/hnd
+No page downloads, skipping
+https://www.unsalb.org/data/hun
+FROM DATE 2020-08-12 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/isl
+FROM DATE 2017-11-08 TO DATE None
+FILE https://www.unsalb.org/system/files/ISL/2017_11_08/ISL_2017_11_08_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['ISL_SALB_2015/SHP/BNDA_ISL.shp', 'ISL_SALB_2015/SHP/BNDL_ISL.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 10/10/2016
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'ISL_2017_11_08_SALB.zip/ISL_SALB_2015/SHP/BNDA_ISL.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'ISL_2017_11_08_SALB.zip/ISL_SALB_2015/SHP/BNDA_ISL.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'ISL_2017_11_08_SALB.zip/ISL_SALB_2015/SHP/BNDA_ISL.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'ISL', 'year': 2016, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2016-10-10', 'source_url': 'https://www.unsalb.org/data/isl', 'download_url': 'https://www.unsalb.org/data/isl', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/ind
+No page downloads, skipping
+https://www.unsalb.org/data/idn
+No page downloads, skipping
+https://www.unsalb.org/data/irn
+No page downloads, skipping
+https://www.unsalb.org/data/irq
+FROM DATE 2019-09-20 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/irl
+No page downloads, skipping
+https://www.unsalb.org/data/isr
+No page downloads, skipping
+https://www.unsalb.org/data/ita
+No page downloads, skipping
+https://www.unsalb.org/data/jam
+No page downloads, skipping
+https://www.unsalb.org/data/jpn
+No page downloads, skipping
+https://www.unsalb.org/data/jor
+FROM DATE 1996-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/kaz
+No page downloads, skipping
+https://www.unsalb.org/data/ken
+No page downloads, skipping
+https://www.unsalb.org/data/kir
+No page downloads, skipping
+https://www.unsalb.org/data/kwt
+No page downloads, skipping
+https://www.unsalb.org/data/kgz
+FROM DATE 2014-03-31 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/lao
+FROM DATE 2014-12-31 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/lva
+No page downloads, skipping
+https://www.unsalb.org/data/lbn
+No page downloads, skipping
+https://www.unsalb.org/data/lso
+FROM DATE 2005-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/LSO/2005_01_01/LSO_2005_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['LSO_SALB_2005/SHP/BNDA_LSO.shp', 'LSO_SALB_2005/SHP/BNDL_LSO.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 30/08/2017
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'LSO_2005_01_01_SALB.zip/LSO_SALB_2005/SHP/BNDA_LSO.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'LSO_2005_01_01_SALB.zip/LSO_SALB_2005/SHP/BNDA_LSO.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'LSO_2005_01_01_SALB.zip/LSO_SALB_2005/SHP/BNDA_LSO.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'LSO', 'year': 2017, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2017-08-30', 'source_url': 'https://www.unsalb.org/data/lso', 'download_url': 'https://www.unsalb.org/data/lso', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/lbr
+No page downloads, skipping
+https://www.unsalb.org/data/lby
+FROM DATE 2012-11-01 TO DATE None
+No page downloads, skipping
+
+looping country links from page https://www.unsalb.org/data?page=2
+https://www.unsalb.org/data/lie
+No page downloads, skipping
+https://www.unsalb.org/data/ltu
+No page downloads, skipping
+https://www.unsalb.org/data/lux
+FROM DATE 2015-10-03 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/mdg
+FROM DATE 2014-09-27 TO DATE None
+FILE https://www.unsalb.org/system/files/MDG/2014_09_27/MDG_2014_09_27_SALB.zip
+detected historical excel table "Last updated" field: 2022-03-23
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'MDG_2014_09_27_SALB.zip/BNDA_MDG_2014-09-27_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'MDG_2014_09_27_SALB.zip/BNDA_MDG_2014-09-27_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'MDG_2014_09_27_SALB.zip/BNDA_MDG_2014-09-27_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'MDG', 'year': 2022, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2022-03-23', 'source_url': 'https://www.unsalb.org/data/mdg', 'download_url': 'https://www.unsalb.org/data/mdg', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/mwi
+FROM DATE 2002-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/mys
+No page downloads, skipping
+https://www.unsalb.org/data/mdv
+No page downloads, skipping
+https://www.unsalb.org/data/mli
+FROM DATE 1993-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/MLI/1993_01_01/MLI_1993_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['MLI_SALB_1993/SHP/BNDA_MLI.shp', 'MLI_SALB_1993/SHP/BNDL_MLI.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 08/12/2003
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'MLI_1993_01_01_SALB.zip/MLI_SALB_1993/SHP/BNDA_MLI.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'MLI_1993_01_01_SALB.zip/MLI_SALB_1993/SHP/BNDA_MLI.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'MLI_1993_01_01_SALB.zip/MLI_SALB_1993/SHP/BNDA_MLI.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'MLI', 'year': 2003, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2003-12-08', 'source_url': 'https://www.unsalb.org/data/mli', 'download_url': 'https://www.unsalb.org/data/mli', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/mlt
+No page downloads, skipping
+https://www.unsalb.org/data/mhl
+No page downloads, skipping
+https://www.unsalb.org/data/mrt
+FROM DATE 2019-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/mus
+No page downloads, skipping
+https://www.unsalb.org/data/mex
+FROM DATE 2018-02-01 TO DATE None
+FILE https://www.unsalb.org/system/files/MEX/2018_02_01/MEX_2018_02_01_SALB.zip
+FROM DATE 2017-06-29 TO DATE 2018-01-31
+FILE https://www.unsalb.org/system/files/MEX/2017_06_29/MEX_2017_06_29_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2018, 2, 1), None, 'https://www.unsalb.org/system/files/MEX/2018_02_01/MEX_2018_02_01_SALB.zip'), (datetime.date(2017, 6, 29), datetime.date(2018, 1, 31), 'https://www.unsalb.org/system/files/MEX/2017_06_29/MEX_2017_06_29_SALB.zip')]
+WARNING:root:Zipfile contains more than one shapefile: ['MEX_SALB_2018/SHP/BNDA_MEX.shp', 'MEX_SALB_2018/SHP/BNDL_MEX.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 01/02/2018
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'MEX_2018_02_01_SALB.zip/MEX_SALB_2018/SHP/BNDA_MEX.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'MEX_2018_02_01_SALB.zip/MEX_SALB_2018/SHP/BNDA_MEX.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1CD', 'ADM1NM']}, {'path': 'MEX_2018_02_01_SALB.zip/MEX_SALB_2018/SHP/BNDA_MEX.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1CD', 'ADM1NM', 'ADM2NM', 'ADM2CD']}], 'iso': 'MEX', 'year': 2018, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2018-02-01', 'source_url': 'https://www.unsalb.org/data/mex', 'download_url': 'https://www.unsalb.org/data/mex', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/fsm
+No page downloads, skipping
+https://www.unsalb.org/data/mco
+No page downloads, skipping
+https://www.unsalb.org/data/mng
+FROM DATE 2002-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/MNG/2002_01_01/MNG_2002_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['MNG_SALB_2002/SHP/BNDA_MNG.shp', 'MNG_SALB_2002/SHP/BNDL_MNG.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 11/03/2019
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'MNG', 'year': 2019, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2019-03-11', 'source_url': 'https://www.unsalb.org/data/mng', 'download_url': 'https://www.unsalb.org/data/mng', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/mne
+No page downloads, skipping
+https://www.unsalb.org/data/mar
+FROM DATE 2015-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/moz
+FROM DATE 2016-05-06 TO DATE None
+FILE https://www.unsalb.org/system/files/MOZ/2016_05_06/MOZ_2016_05_06_SALB.zip
+FROM DATE 2013-12-18 TO DATE 2016-05-05
+FILE https://www.unsalb.org/system/files/MOZ/2013_12_18/MOZ_2013_12_18_SALB.zip
+FROM DATE 2000-01-01 TO DATE 2013-12-17
+FILE https://www.unsalb.org/system/files/MOZ/2000_01_01/MOZ_2000_01_01_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2016, 5, 6), None, 'https://www.unsalb.org/system/files/MOZ/2016_05_06/MOZ_2016_05_06_SALB.zip'), (datetime.date(2013, 12, 18), datetime.date(2016, 5, 5), 'https://www.unsalb.org/system/files/MOZ/2013_12_18/MOZ_2013_12_18_SALB.zip'), (datetime.date(2000, 1, 1), datetime.date(2013, 12, 17), 'https://www.unsalb.org/system/files/MOZ/2000_01_01/MOZ_2000_01_01_SALB.zip')]
+detected historical excel table "Last updated" field: 2022-01-06
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'MOZ_2016_05_06_SALB.zip/BNDA_MOZ_2016-05-06_lastupdate/BNDA_MOZ_2016-05-06_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'MOZ_2016_05_06_SALB.zip/BNDA_MOZ_2016-05-06_lastupdate/BNDA_MOZ_2016-05-06_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'MOZ_2016_05_06_SALB.zip/BNDA_MOZ_2016-05-06_lastupdate/BNDA_MOZ_2016-05-06_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ADM2CD', 'ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD']}], 'iso': 'MOZ', 'year': 2022, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2022-01-06', 'source_url': 'https://www.unsalb.org/data/moz', 'download_url': 'https://www.unsalb.org/data/moz', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/mmr
+No page downloads, skipping
+https://www.unsalb.org/data/nam
+No page downloads, skipping
+https://www.unsalb.org/data/nru
+No page downloads, skipping
+https://www.unsalb.org/data/npl
+FROM DATE 2010-02-03 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/nld
+No page downloads, skipping
+https://www.unsalb.org/data/nzl
+FROM DATE 2015-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/NZL/2015_01_01/NZL_2015_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['NZL_SALB_2015/SHP/BNDA_NZL.shp', 'NZL_SALB_2015/SHP/BNDL_NZL.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 11/01/2015
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'NZL_2015_01_01_SALB.zip/NZL_SALB_2015/SHP/BNDA_NZL.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'NZL_2015_01_01_SALB.zip/NZL_SALB_2015/SHP/BNDA_NZL.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'NZL_2015_01_01_SALB.zip/NZL_SALB_2015/SHP/BNDA_NZL.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'NZL', 'year': 2015, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2015-01-11', 'source_url': 'https://www.unsalb.org/data/nzl', 'download_url': 'https://www.unsalb.org/data/nzl', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/nic
+No page downloads, skipping
+https://www.unsalb.org/data/ner
+FROM DATE 2011-08-08 TO DATE None
+FILE https://www.unsalb.org/system/files/NER/2011_08_08/NER_2011_08_08_SALB.zip
+FROM DATE 1998-09-14 TO DATE 2011-08-07
+FILE https://www.unsalb.org/system/files/NER/1998_09_14/NER_1998_09_14_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2011, 8, 8), None, 'https://www.unsalb.org/system/files/NER/2011_08_08/NER_2011_08_08_SALB.zip'), (datetime.date(1998, 9, 14), datetime.date(2011, 8, 7), 'https://www.unsalb.org/system/files/NER/1998_09_14/NER_1998_09_14_SALB.zip')]
+detected historical excel table "Last updated" field: 2022-01-07
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'NER_2011_08_08_SALB.zip/2011-08-08_tolastupdate/2011-08-08_tolastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'NER_2011_08_08_SALB.zip/2011-08-08_tolastupdate/2011-08-08_tolastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'NER_2011_08_08_SALB.zip/2011-08-08_tolastupdate/2011-08-08_tolastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'NER', 'year': 2022, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2022-01-07', 'source_url': 'https://www.unsalb.org/data/ner', 'download_url': 'https://www.unsalb.org/data/ner', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/nga
+FROM DATE 2000-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/NGA/2000_01_01/NGA_2000_01_01_SALB.zip
+detected historical excel table "Last updated" field: 2021-11-18
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'NGA_2000_01_01_SALB.zip/BNDA_NGA_2000-01-01_lastupdate/BNDA_NGA_2000-01-01_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'NGA_2000_01_01_SALB.zip/BNDA_NGA_2000-01-01_lastupdate/BNDA_NGA_2000-01-01_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'NGA_2000_01_01_SALB.zip/BNDA_NGA_2000-01-01_lastupdate/BNDA_NGA_2000-01-01_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'NGA', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-11-18', 'source_url': 'https://www.unsalb.org/data/nga', 'download_url': 'https://www.unsalb.org/data/nga', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/niu
+No page downloads, skipping
+https://www.unsalb.org/data/mkd
+No page downloads, skipping
+https://www.unsalb.org/data/nor
+No page downloads, skipping
+https://www.unsalb.org/data/omn
+No page downloads, skipping
+https://www.unsalb.org/data/pak
+No page downloads, skipping
+https://www.unsalb.org/data/plw
+No page downloads, skipping
+https://www.unsalb.org/data/pan
+FROM DATE 2014-06-30 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/png
+No page downloads, skipping
+https://www.unsalb.org/data/pry
+No page downloads, skipping
+https://www.unsalb.org/data/per
+No page downloads, skipping
+https://www.unsalb.org/data/phl
+FROM DATE 2013-10-28 TO DATE None
+FILE https://www.unsalb.org/system/files/PHL/2013_10_28/PHL_2013_10_28_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['PHL_SALB_2013/SHP/BNDA_PHL.shp', 'PHL_SALB_2013/SHP/BNDL_PHL.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 13/10/2017
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'PHL_2013_10_28_SALB.zip/PHL_SALB_2013/SHP/BNDA_PHL.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'PHL_2013_10_28_SALB.zip/PHL_SALB_2013/SHP/BNDA_PHL.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'PHL_2013_10_28_SALB.zip/PHL_SALB_2013/SHP/BNDA_PHL.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'PHL', 'year': 2017, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2017-10-13', 'source_url': 'https://www.unsalb.org/data/phl', 'download_url': 'https://www.unsalb.org/data/phl', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/pol
+No page downloads, skipping
+https://www.unsalb.org/data/prt
+No page downloads, skipping
+https://www.unsalb.org/data/qat
+FROM DATE 2011-12-15 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/kor
+No page downloads, skipping
+https://www.unsalb.org/data/mda
+No page downloads, skipping
+https://www.unsalb.org/data/rou
+FROM DATE 2017-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/ROU/2017_01_01/ROU_2017_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['ROU_SALB_2017/SHP/BNDA_ROU.shp', 'ROU_SALB_2017/SHP/BNDL_ROU.shp']
+WARNING:root:could not find historical table download
+WARNING:root:source_update and year set to download link's "from" date text
+{'input': [{'path': 'ROU_2017_01_01_SALB.zip/ROU_SALB_2017/SHP/BNDA_ROU.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'ROU_2017_01_01_SALB.zip/ROU_SALB_2017/SHP/BNDA_ROU.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}], 'iso': 'ROU', 'year': 2017, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2017-01-01', 'source_url': 'https://www.unsalb.org/data/rou', 'download_url': 'https://www.unsalb.org/data/rou', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/rus
+No page downloads, skipping
+https://www.unsalb.org/data/rwa
+No page downloads, skipping
+https://www.unsalb.org/data/kna
+No page downloads, skipping
+https://www.unsalb.org/data/lca
+No page downloads, skipping
+https://www.unsalb.org/data/vct
+No page downloads, skipping
+
+looping country links from page https://www.unsalb.org/data?page=3
+https://www.unsalb.org/data/wsm
+No page downloads, skipping
+https://www.unsalb.org/data/smr
+No page downloads, skipping
+https://www.unsalb.org/data/stp
+No page downloads, skipping
+https://www.unsalb.org/data/sau
+No page downloads, skipping
+https://www.unsalb.org/data/sen
+FROM DATE 2008-07-10 TO DATE None
+FILE https://www.unsalb.org/system/files/SEN/2008_07_10/SEN_2008_07_10_SALB.zip
+FROM DATE 2008-03-18 TO DATE 2008-07-09
+FILE https://www.unsalb.org/system/files/SEN/2008_03_18/SEN_2008_03_18_SALB.zip
+FROM DATE 2006-10-12 TO DATE 2008-03-17
+FILE https://www.unsalb.org/system/files/SEN/2006_10_12/SEN_2006_10_12_SALB.zip
+FROM DATE 2002-02-15 TO DATE 2006-10-11
+FILE https://www.unsalb.org/system/files/SEN/2002_02_15/SEN_2002_02_15_SALB.zip
+FROM DATE 2000-01-01 TO DATE 2002-02-14
+FILE https://www.unsalb.org/system/files/SEN/2000_01_01/SEN_2000_01_01_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2008, 7, 10), None, 'https://www.unsalb.org/system/files/SEN/2008_07_10/SEN_2008_07_10_SALB.zip'), (datetime.date(2008, 3, 18), datetime.date(2008, 7, 9), 'https://www.unsalb.org/system/files/SEN/2008_03_18/SEN_2008_03_18_SALB.zip'), (datetime.date(2006, 10, 12), datetime.date(2008, 3, 17), 'https://www.unsalb.org/system/files/SEN/2006_10_12/SEN_2006_10_12_SALB.zip'), (datetime.date(2002, 2, 15), datetime.date(2006, 10, 11), 'https://www.unsalb.org/system/files/SEN/2002_02_15/SEN_2002_02_15_SALB.zip'), (datetime.date(2000, 1, 1), datetime.date(2002, 2, 14), 'https://www.unsalb.org/system/files/SEN/2000_01_01/SEN_2000_01_01_SALB.zip')]
+detected historical excel table "Last updated" field: 2021-08-17
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'SEN_2008_07_10_SALB.zip/BNDA_SEN_2008-07-10_lastupdate/BNDA_SEN_2008-07-10_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'SEN_2008_07_10_SALB.zip/BNDA_SEN_2008-07-10_lastupdate/BNDA_SEN_2008-07-10_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'SEN_2008_07_10_SALB.zip/BNDA_SEN_2008-07-10_lastupdate/BNDA_SEN_2008-07-10_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'SEN', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-08-17', 'source_url': 'https://www.unsalb.org/data/sen', 'download_url': 'https://www.unsalb.org/data/sen', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/srb
+FROM DATE 2011-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/syc
+No page downloads, skipping
+https://www.unsalb.org/data/sle
+No page downloads, skipping
+https://www.unsalb.org/data/sgp
+No page downloads, skipping
+https://www.unsalb.org/data/svk
+No page downloads, skipping
+https://www.unsalb.org/data/svn
+No page downloads, skipping
+https://www.unsalb.org/data/slb
+No page downloads, skipping
+https://www.unsalb.org/data/som
+No page downloads, skipping
+https://www.unsalb.org/data/zaf
+FROM DATE 2016-01-01 TO DATE None
+FROM DATE 2002-01-01 TO DATE 2015-12-31
+No page downloads, skipping
+https://www.unsalb.org/data/ssd
+No page downloads, skipping
+https://www.unsalb.org/data/esp
+No page downloads, skipping
+https://www.unsalb.org/data/lka
+FROM DATE 2005-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/LKA/2005_01_01/LKA_2005_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['LKA_SALB_2005/SHP/BNDA_LKA.shp', 'LKA_SALB_2005/SHP/BNDL_LKA.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 22/08/2019
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'LKA_2005_01_01_SALB.zip/LKA_SALB_2005/SHP/BNDA_LKA.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'LKA_2005_01_01_SALB.zip/LKA_SALB_2005/SHP/BNDA_LKA.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'LKA_2005_01_01_SALB.zip/LKA_SALB_2005/SHP/BNDA_LKA.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'LKA', 'year': 2019, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2019-08-22', 'source_url': 'https://www.unsalb.org/data/lka', 'download_url': 'https://www.unsalb.org/data/lka', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/pse
+No page downloads, skipping
+https://www.unsalb.org/data/sdn
+No page downloads, skipping
+https://www.unsalb.org/data/sur
+No page downloads, skipping
+https://www.unsalb.org/data/swe
+No page downloads, skipping
+https://www.unsalb.org/data/che
+No page downloads, skipping
+https://www.unsalb.org/data/syr
+No page downloads, skipping
+https://www.unsalb.org/data/tjk
+No page downloads, skipping
+https://www.unsalb.org/data/tha
+No page downloads, skipping
+https://www.unsalb.org/data/tls
+No page downloads, skipping
+https://www.unsalb.org/data/tgo
+FROM DATE 2017-06-29 TO DATE None
+FILE https://www.unsalb.org/system/files/TGO/2017_06_29/TGO_2017_06_29_SALB.zip
+FROM DATE 2016-05-27 TO DATE 2017-06-28
+FILE https://www.unsalb.org/system/files/TGO/2016_05_27/TGO_2016_05_27_SALB.zip
+FROM DATE 2009-12-03 TO DATE 2016-05-26
+FILE https://www.unsalb.org/system/files/TGO/2009_12_03/TGO_2009_12_03_SALB.zip
+FROM DATE 2000-01-01 TO DATE 2009-12-02
+FILE https://www.unsalb.org/system/files/TGO/2000_01_01/TGO_2000_01_01_SALB.zip
+WARNING:root:More than one country page downloads: [(datetime.date(2017, 6, 29), None, 'https://www.unsalb.org/system/files/TGO/2017_06_29/TGO_2017_06_29_SALB.zip'), (datetime.date(2016, 5, 27), datetime.date(2017, 6, 28), 'https://www.unsalb.org/system/files/TGO/2016_05_27/TGO_2016_05_27_SALB.zip'), (datetime.date(2009, 12, 3), datetime.date(2016, 5, 26), 'https://www.unsalb.org/system/files/TGO/2009_12_03/TGO_2009_12_03_SALB.zip'), (datetime.date(2000, 1, 1), datetime.date(2009, 12, 2), 'https://www.unsalb.org/system/files/TGO/2000_01_01/TGO_2000_01_01_SALB.zip')]
+detected historical excel table "Last updated" field: 2021-10-25
+source_update and year set to historical excel table "Last updated" field
+{'input': [{'path': 'TGO_2017_06_29_SALB.zip/BNDA_TGO_2017-06-29_lastupdate.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'TGO_2017_06_29_SALB.zip/BNDA_TGO_2017-06-29_lastupdate.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'TGO_2017_06_29_SALB.zip/BNDA_TGO_2017-06-29_lastupdate.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'TGO', 'year': 2021, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2021-10-25', 'source_url': 'https://www.unsalb.org/data/tgo', 'download_url': 'https://www.unsalb.org/data/tgo', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/ton
+No page downloads, skipping
+https://www.unsalb.org/data/tto
+No page downloads, skipping
+https://www.unsalb.org/data/tun
+No page downloads, skipping
+https://www.unsalb.org/data/tur
+FROM DATE 2011-12-15 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/tkm
+No page downloads, skipping
+https://www.unsalb.org/data/tuv
+No page downloads, skipping
+https://www.unsalb.org/data/uga
+FROM DATE 2014-03-31 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/ukr
+No page downloads, skipping
+https://www.unsalb.org/data/are
+No page downloads, skipping
+https://www.unsalb.org/data/gbr
+No page downloads, skipping
+https://www.unsalb.org/data/tza
+No page downloads, skipping
+https://www.unsalb.org/data/usa
+FROM DATE 2017-01-01 TO DATE None
+No page downloads, skipping
+https://www.unsalb.org/data/ury
+No page downloads, skipping
+https://www.unsalb.org/data/uzb
+No page downloads, skipping
+https://www.unsalb.org/data/vut
+No page downloads, skipping
+https://www.unsalb.org/data/ven
+No page downloads, skipping
+https://www.unsalb.org/data/vnm
+No page downloads, skipping
+https://www.unsalb.org/data/yem
+No page downloads, skipping
+https://www.unsalb.org/data/zmb
+FROM DATE 2017-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/ZMB/2017_01_01/ZMB_2017_01_01_SALB.zip
+WARNING:root:could not find historical table download
+WARNING:root:source_update and year set to download link's "from" date text
+{'input': [{'path': 'ZMB_2017_01_01_SALB.zip/SALB_ZMB_2021/BNDA_ZMB.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'ZMB_2017_01_01_SALB.zip/SALB_ZMB_2021/BNDA_ZMB.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'ZMB_2017_01_01_SALB.zip/SALB_ZMB_2021/BNDA_ZMB.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'ZMB', 'year': 2017, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2017-01-01', 'source_url': 'https://www.unsalb.org/data/zmb', 'download_url': 'https://www.unsalb.org/data/zmb', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+https://www.unsalb.org/data/zwe
+FROM DATE 2000-01-01 TO DATE None
+FILE https://www.unsalb.org/system/files/ZWE/2000_01_01/ZWE_2000_01_01_SALB.zip
+WARNING:root:Zipfile contains more than one shapefile: ['ZWE_SALB_2002/SHP/BNDA_ZWE.shp', 'ZWE_SALB_2002/SHP/BNDL_ZWE.shp']
+WARNING:root:could not find historical table download
+detected "DATSOR" field in shapefile: 01/01/2004
+source_update and year set to shapefile "DATSOR" field
+{'input': [{'path': 'ZWE_2000_01_01_SALB.zip/ZWE_SALB_2002/SHP/BNDA_ZWE.shp', 'level': 0, 'name_field': None, 'dissolve': True, 'keep_fields': ['ISO3CD']}, {'path': 'ZWE_2000_01_01_SALB.zip/ZWE_SALB_2002/SHP/BNDA_ZWE.shp', 'level': 1, 'name_field': 'ADM1NM', 'dissolve': 'ADM1NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM1CD']}, {'path': 'ZWE_2000_01_01_SALB.zip/ZWE_SALB_2002/SHP/BNDA_ZWE.shp', 'level': 2, 'name_field': 'ADM2NM', 'dissolve': 'ADM2NM', 'keep_fields': ['ISO3CD', 'ADM1NM', 'ADM2NM', 'ADM1CD', 'ADM2CD']}], 'iso': 'ZWE', 'year': 2004, 'type_field': None, 'source': ['UN SALB'], 'source_updated': '2004-01-01', 'source_url': 'https://www.unsalb.org/data/zwe', 'download_url': 'https://www.unsalb.org/data/zwe', 'license': 'UN SALB Data License', 'license_detail': None, 'license_url': 'https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf'}
+
+looping country links from page https://www.unsalb.org/data?page=4
