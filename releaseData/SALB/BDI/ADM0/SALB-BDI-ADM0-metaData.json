@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "BDI",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "UN SALB Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "boundarySourceURL": "https://www.unsalb.org/data/bdi",
+    "sourceDataUpdateDate": "2021-09-06",
+    "boundarySource-1": "UN SALB"
+}
