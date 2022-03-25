@@ -3,7 +3,7 @@
         {"path":"countryfiles/*.zip/gadm40_*_0.shp",
         "level":0,
         "type_field":null,
-        "name_field":"NAME_0"
+        "name_field":"COUNTRY"
         },
         {"path":"countryfiles/*.zip/gadm40_*_1.shp",
         "level":1,
