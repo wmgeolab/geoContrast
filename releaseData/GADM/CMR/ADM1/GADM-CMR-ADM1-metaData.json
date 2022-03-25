@@ -2,12 +2,12 @@
     "boundaryYearRepresented": "Unknown",
     "boundaryISO": "CMR",
     "boundaryType": "ADM1",
-    "boundaryCanonical": "Velayat",
+    "boundaryCanonical": "Quarter",
     "boundaryLicense": "GADM License",
     "nameField": "NAME_1",
     "licenseDetail": "Ad hoc license; not recommended for most uses.",
     "licenseSource": "https://gadm.org/license.html",
     "boundarySourceURL": "https://gadm.org",
-    "sourceDataUpdateDate": "21 May 2018",
-    "boundarySource-1": "GADM v3.6"
+    "sourceDataUpdateDate": "25 March 2022",
+    "boundarySource-1": "GADM v4.0.4"
 }
