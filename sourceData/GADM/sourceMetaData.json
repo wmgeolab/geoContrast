@@ -1,31 +1,31 @@
 {
     "input":[
-        {"path":"countryfiles/*.zip/gadm36_*_0.shp",
+        {"path":"countryfiles/*.zip/gadm40_*_0.shp",
         "level":0,
         "type_field":null,
         "name_field":"NAME_0"
         },
-        {"path":"countryfiles/*.zip/gadm36_*_1.shp",
+        {"path":"countryfiles/*.zip/gadm40_*_1.shp",
         "level":1,
         "type_field":"TYPE_1",
         "name_field":"NAME_1"
         },
-        {"path":"countryfiles/*.zip/gadm36_*_2.shp",
+        {"path":"countryfiles/*.zip/gadm40_*_2.shp",
         "level":2,
         "type_field":"TYPE_2",
         "name_field":"NAME_2"
         },
-        {"path":"countryfiles/*.zip/gadm36_*_3.shp",
+        {"path":"countryfiles/*.zip/gadm40_*_3.shp",
         "level":3,
         "type_field":"TYPE_3",
         "name_field":"NAME_3"
         },
-        {"path":"countryfiles/*.zip/gadm36_*_4.shp",
+        {"path":"countryfiles/*.zip/gadm40_*_4.shp",
         "level":4,
         "type_field":"TYPE_4",
         "name_field":"NAME_4"
         },
-        {"path":"countryfiles/*.zip/gadm36_*_5.shp",
+        {"path":"countryfiles/*.zip/gadm40_*_5.shp",
         "level":5,
         "type_field":"TYPE_5",
         "name_field":"NAME_5"
@@ -35,11 +35,11 @@
     "year":null,
     "iso_field":"GID_0",
     
-    "source":"GADM v3.6",
-    "source_updated":"21 May 2018",
+    "source":"GADM v4.0.4",
+    "source_updated":"25 March 2022",
     "source_url":"https://gadm.org",
     "license":"GADM License",
     "license_detail":"Ad hoc license; not recommended for most uses.",
     "license_url":"https://gadm.org/license.html",
-    "download_url":"https://gadm.org/download_country_v3.html"
+    "download_url":"https://gadm.org/download_country.html"
 }
