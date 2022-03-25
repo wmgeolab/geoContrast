@@ -44,7 +44,7 @@ import os
 import json
 import re
 import csv
-import warnings
+import logging
 
 import shapefile as pyshp
 from zipfile import ZipFile, ZIP_DEFLATED
@@ -227,10 +227,10 @@ def import_data(input_dir,
                         if iso in iso2_to_3:
                             iso = iso2_to_3[iso]
                         else:
-                            warnings.warn("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
+                            logging.warning("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
                             continue
                     if len(iso) != 3 or not iso.isalpha():
-                        warnings.warn("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
+                        logging.warning("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
                         continue
                     yield iso, list(countryrecs)
 
