@@ -116,13 +116,13 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
                 iotools.import_data(**_kwargs)
             except Exception as err:
                 error_count += 1
-                logging.warning("Error importing data for '{}': {}".format(dirpath, traceback.format_exc()))
+                logging.warning("error importing data for '{}': {}".format(_kwargs['input_path'], traceback.format_exc()))
                 
 print('end time', datetime.now())
 
 if error_count > 0:
     print('build script encountered a total of {} errors'.format(error_count))
-    raise Exception('build script encountered a total of {} errors'.format(error_count))
+    raise Exception('Build script encountered a total of {} errors'.format(error_count))
 
 if logger:
     logger.close()
