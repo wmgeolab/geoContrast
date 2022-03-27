@@ -21,7 +21,7 @@ if os.getenv('INPUT_IS_GITHUB_ACTION', None):
     logger = None
 else:
     # locally specified args
-    collections = ['GADM']
+    collections = ['Natural_Earth']
     isos = [] #['NOR','CHL','CAN','FRA','USA']
     replace = False
     write_meta = True

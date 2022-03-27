@@ -52,11 +52,11 @@ from zipfile import ZipFile, ZIP_DEFLATED
 # create iso lookup dict
 iso2_to_3 = {}
 filedir = os.path.dirname(__file__)
-with open(os.path.join(filedir, 'buildData/countries_codes_and_coordinates.csv'), encoding='utf8', newline='') as f:
+with open(os.path.join(filedir, 'buildData/ne_countries_iso_codes.csv'), encoding='utf8', newline='') as f:
     csvreader = csv.DictReader(f)
     for row in csvreader:
-        iso2 = row['Alpha-2 code'].strip().strip('"')
-        iso3 = row['Alpha-3 code'].strip().strip('"')
+        iso2 = row['iso2'].strip()
+        iso3 = row['iso3'].strip()
         iso2_to_3[iso2] = iso3
 
 def get_reader(path, encoding='utf8'):
