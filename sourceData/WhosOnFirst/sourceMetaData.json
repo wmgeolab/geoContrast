@@ -1,0 +1,33 @@
+{
+    "input":[
+        {"path":"whosonfirst-data-country-latest.zip/whosonfirst-data-country-latest.shp"
+        },
+        {"path":"whosonfirst-data-dependency-latest.zip/whosonfirst-data-dependency-latest.shp"
+        },
+        {"path":"whosonfirst-data-macroregion-latest.zip/whosonfirst-data-macroregion-latest.shp"
+        },
+        {"path":"whosonfirst-data-region-latest.zip/whosonfirst-data-region-latest.shp"
+        },
+        {"path":"whosonfirst-data-macrocounty-latest.zip/whosonfirst-data-macrocounty-latest.shp"
+        },
+        {"path":"whosonfirst-data-county-latest.zip/whosonfirst-data-county-latest.shp"
+        },
+        {"path":"whosonfirst-data-localadmin-latest.zip/whosonfirst-data-localadmin-latest.shp"
+        }
+    ],
+
+    "level_field":"adm_level",
+    "iso_field":"iso_countr",
+    "type_field":null,
+    "name_field":"wof_name",
+    "source_url":"https://geocode.earth/data/whosonfirst/legacy/",
+    "download_url":"https://geocode.earth/data/whosonfirst/legacy/",
+    
+    "year":null,
+    
+    "source":"Who's On First",
+    "source_updated":"21 March 2022",
+    "license":"See license link",
+    "license_detail":null,
+    "license_url":"https://whosonfirst.org/docs/licenses/"
+}

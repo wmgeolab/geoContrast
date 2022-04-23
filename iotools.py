@@ -251,15 +251,15 @@ def import_data(input_dir,
                     levels = sorted(levels)
 
                     # loop each level and get relevant features
-                    for level in levels:
+                    for _level in levels:
                         levelrecs = []
                         for rec in countryrecs:
-                            if rec[level_field] == level:
+                            if rec[level_field] == _level:
                                 levelrecs.append(rec)
-                        yield level, levelrecs
+                        yield _level, levelrecs
 
             # loop each level and return relevant features as geojson
-            for level,levelrecs in iter_level_recs():
+            for _level,levelrecs in iter_level_recs():
                 print('loading data') # this will be the most time consuming part (loading geometries)
                 countrylevelfeats = []
                 for rec in levelrecs:
@@ -273,7 +273,7 @@ def import_data(input_dir,
                         geoj = None
                     feat = {'type':'Feature', 'properties':props, 'geometry':geoj}
                     countrylevelfeats.append(feat)
-                yield iso, level, countrylevelfeats
+                yield iso, _level, countrylevelfeats
 
 
     def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None):

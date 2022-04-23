@@ -21,9 +21,9 @@ if os.getenv('INPUT_IS_GITHUB_ACTION', None):
     logger = None
 else:
     # locally specified args
-    collections = ['Natural_Earth']
+    collections = ['WhosOnFirst']
     isos = [] #['NOR','CHL','CAN','FRA','USA']
-    replace = False
+    replace = True
     write_meta = True
     write_stats = True
     write_data = True
