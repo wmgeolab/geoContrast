@@ -44,7 +44,7 @@ import os
 import json
 import re
 import csv
-import warnings
+import logging
 
 import shapefile as pyshp
 from zipfile import ZipFile, ZIP_DEFLATED
@@ -52,11 +52,11 @@ from zipfile import ZipFile, ZIP_DEFLATED
 # create iso lookup dict
 iso2_to_3 = {}
 filedir = os.path.dirname(__file__)
-with open(os.path.join(filedir, 'buildData/countries_codes_and_coordinates.csv'), encoding='utf8', newline='') as f:
+with open(os.path.join(filedir, 'buildData/ne_countries_iso_codes.csv'), encoding='utf8', newline='') as f:
     csvreader = csv.DictReader(f)
     for row in csvreader:
-        iso2 = row['Alpha-2 code'].strip().strip('"')
-        iso3 = row['Alpha-3 code'].strip().strip('"')
+        iso2 = row['iso2'].strip()
+        iso3 = row['iso3'].strip()
         iso2_to_3[iso2] = iso3
 
 def get_reader(path, encoding='utf8'):
@@ -227,10 +227,10 @@ def import_data(input_dir,
                         if iso in iso2_to_3:
                             iso = iso2_to_3[iso]
                         else:
-                            warnings.warn("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
+                            logging.warning("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
                             continue
                     if len(iso) != 3 or not iso.isalpha():
-                        warnings.warn("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
+                        logging.warning("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
                         continue
                     yield iso, list(countryrecs)
 

@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": "Unknown",
+    "boundaryISO": "GBR",
+    "boundaryType": "ADM4",
+    "boundaryCanonical": "Desa",
+    "boundaryLicense": "GADM License",
+    "nameField": "NAME_4",
+    "licenseDetail": "Ad hoc license; not recommended for most uses.",
+    "licenseSource": "https://gadm.org/license.html",
+    "boundarySourceURL": "https://gadm.org",
+    "sourceDataUpdateDate": "25 March 2022",
+    "boundarySource-1": "GADM v4.0.4"
+}

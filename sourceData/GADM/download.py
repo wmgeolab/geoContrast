@@ -4,7 +4,7 @@ from zipfile import ZipFile
 import io
 
 # access the gadm country download page
-root = 'https://gadm.org/download_country_v3.html'
+root = 'https://gadm.org/download_country.html'
 raw = urllib.request.urlopen(root).read().decode('utf8')
 
 # hacky parse the html into elements
@@ -28,6 +28,6 @@ while elem != None:
 print('downloading:')
 for iso in isos:
     print(iso)
-    url = 'https://biogeo.ucdavis.edu/data/gadm3.6/shp/gadm36_{}_shp.zip'.format(iso)
+    url = 'https://geodata.ucdavis.edu/gadm/gadm4.0/shp/gadm40_{}_shp.zip'.format(iso)
     dst = 'countryfiles/{}.zip'.format(iso)
     urllib.request.urlretrieve(url, dst)

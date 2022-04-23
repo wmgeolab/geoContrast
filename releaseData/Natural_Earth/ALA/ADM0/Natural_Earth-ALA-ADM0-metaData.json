@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": "Unknown",
+    "boundaryISO": "ALA",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Country",
+    "boundaryLicense": "Public Domain",
+    "nameField": "NAME_LONG",
+    "licenseDetail": null,
+    "licenseSource": "https://www.naturalearthdata.com/about/terms-of-use/",
+    "boundarySourceURL": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-0-countries/",
+    "sourceDataUpdateDate": "17 March 2022",
+    "boundarySource-1": "Natural Earth v5.0.1"
+}
