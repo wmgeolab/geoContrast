@@ -1,10 +1,10 @@
 {
     "boundaryYearRepresented": 2022,
     "boundaryISO": "ZMB",
-    "boundaryType": "ADM2",
-    "boundaryCanonical": "District",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
     "boundaryLicense": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
-    "nameField": "DISTRICT",
+    "nameField": null,
     "licenseDetail": null,
     "licenseSource": "https://data.grid3.org/datasets/GRID3::grid3-zambia-administrative-boundaries-districts-2020/about",
     "boundarySourceURL": "https://data.grid3.org/datasets/GRID3::grid3-zambia-administrative-boundaries-districts-2020/about",
