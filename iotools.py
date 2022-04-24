@@ -277,7 +277,7 @@ def import_data(input_dir,
 
 
     def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None):
-        from shapely.geometry import asShape
+        from shapely.geometry import shape
         from shapely.ops import cascaded_union
         if isinstance(dissolve_field, str):
             key = lambda f: f['properties'][dissolve_field]
@@ -291,7 +291,7 @@ def import_data(input_dir,
             print('dissolving',val,len(group))
             # dissolve into one geometry
             if len(group) > 1:
-                geoms = [asShape(feat['geometry']) for feat in group]
+                geoms = [shape(feat['geometry']) for feat in group]
                 geoms = [geom.buffer(1e-7) for geom in geoms] # fill in gaps of approx 10mm, topology will later snap together overlaps when quantizing to 100mm
                 dissolved = cascaded_union(geoms)
                 # attempt to fix invalid result
@@ -514,7 +514,7 @@ def calc_stats(feats):
     # unit count
     stats['boundaryCount'] = len(feats)
     # vertices, area, and perimiter
-    #from shapely.geometry import asShape
+    #from shapely.geometry import shape
     area = 0
     perim = 0
     verts = 0
@@ -523,7 +523,7 @@ def calc_stats(feats):
 
         # pyproj
         # pyproj shapely version
-        #geom = asShape(feat['geometry'])
+        #geom = shape(feat['geometry'])
         #geod = get_pyproj_geod()
         #_area, _perim = geod.geometry_area_perimeter(geom)
         # pyproj geojson version, much faster
