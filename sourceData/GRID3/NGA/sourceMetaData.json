@@ -1,6 +1,6 @@
 {
     "input":[
-        {"path":"GRID3_Nigeria_-_State_Boundaries-shp.zip/NGA_State_Boundaries.shp",
+        {"path":"GRID3_Nigeria_-_State_Boundaries.zip/NGA_State_Boundaries.shp",
         "level":0,
         "type":null,
         "name_field":null,
@@ -12,7 +12,7 @@
         "dissolve":true,
         "keep_fields":["source"]
         },
-        {"path":"GRID3_Nigeria_-_State_Boundaries-shp.zip/NGA_State_Boundaries.shp",
+        {"path":"GRID3_Nigeria_-_State_Boundaries.zip/NGA_State_Boundaries.shp",
         "level":1,
         "type":"State",
         "name_field":"state_name",
@@ -22,7 +22,7 @@
         "download_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
         "license_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about"
         },
-        {"path":"GRID3_Nigeria_-_Local_Government_Area_Boundaries-shp.zip/GRID3_Nigeria_-_Local_Government_Area_Boundaries.shp",
+        {"path":"GRID3_Nigeria_-_Local_Government_Area_Boundaries.zip/GRID3_Nigeria_-_Local_Government_Area_Boundaries.shp",
         "level":2,
         "type":"Local Government Area (LGA)",
         "name_field":"lga_name_x",

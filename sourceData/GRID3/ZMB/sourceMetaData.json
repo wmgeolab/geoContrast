@@ -6,13 +6,13 @@
             "type":null,
             "dissolve":true,
             "name_field":null,
-            "keep_fields":["PROVINCE"]
+            "keep_fields":["FID"]
         },
         {
             "path":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
             "level":1,
             "type":"Province",
-            "dissolve":"PROVINCE",
+            "dissolve":"PROV_CODE",
             "name_field":"PROVINCE",
             "keep_fields":["PROVINCE"]
         },
@@ -20,9 +20,7 @@
             "path":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
             "level":2,
             "type":"District",
-            "dissolve":"DISTRICT",
-            "name_field":"DISTRICT",
-            "keep_fields":["FEATURE_TY","PROVINCE","DISTRICT"]
+            "name_field":"DISTRICT"
         }
     ],
     
