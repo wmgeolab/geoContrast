@@ -1,19 +1,33 @@
 {
     "input":[
-        {"path":"GRID3_NGA_-_State_Boundaries-shp.zip/NGA_State_Boundaries.shp",
+        {"path":"GRID3_Nigeria_-_State_Boundaries-shp.zip/NGA_State_Boundaries.shp",
+        "level":0,
+        "type":null,
+        "name_field":null,
+        "year":2021,
+        "source_updated":"October 25, 2021",
+        "source_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
+        "download_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
+        "license_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
+        "dissolve":true,
+        "keep_fields":["source"]
+        },
+        {"path":"GRID3_Nigeria_-_State_Boundaries-shp.zip/NGA_State_Boundaries.shp",
         "level":1,
         "type":"State",
         "name_field":"state_name",
-        "source_updated":"9 December 2020",
+        "year":2021,
+        "source_updated":"October 25, 2021",
         "source_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
         "download_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
         "license_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about"
         },
-        {"path":"GRID3_NGA_-_Local_Government_Area_Boundaries-shp.zip/GRID3_NGA_-_Local_Government_Area_Boundaries.shp",
+        {"path":"GRID3_Nigeria_-_Local_Government_Area_Boundaries-shp.zip/GRID3_Nigeria_-_Local_Government_Area_Boundaries.shp",
         "level":2,
         "type":"Local Government Area (LGA)",
-        "name_field":"lga_code",
-        "source_updated":"10 December 2020",
+        "name_field":"lga_name_x",
+        "year":2022,
+        "source_updated":"April 7, 2022",
         "source_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-local-government-area-boundaries/about",
         "download_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-local-government-area-boundaries/about",
         "license_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-local-government-area-boundaries/about"
@@ -21,8 +35,9 @@
         {"path":"GRID3_Nigeria_-_Ward_Boundaries.zip/GRID3_Nigeria_-_Ward_Boundaries.shp",
         "level":3,
         "type":"Ward",
-        "name_field":"ward_code",
-        "source_updated":"9 December 2020",
+        "name_field":"wrd_nm_x",
+        "year":2022,
+        "source_updated":"April 6, 2022",
         "source_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-ward-boundaries/about",
         "download_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-ward-boundaries/about",
         "license_url":"https://data.grid3.org/datasets/GRID3::grid3-nigeria-ward-boundaries/about"
@@ -30,7 +45,6 @@
     ],
     
     "iso":"NGA",
-    "year":2020,
     
     "source":"GRID3",
     "license":"Creative Commons Attribution 4.0 International (CC BY 4.0)",
