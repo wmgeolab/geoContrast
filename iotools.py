@@ -265,7 +265,8 @@ def import_data(input_dir,
                 for rec in levelrecs:
                     props = rec.as_dict(date_strings=True)
                     if load_geometries is True:
-                        geoj = reader.shape(rec.oid).__geo_interface__
+                        shp = reader.shape(rec.oid)
+                        geoj = shp.__geo_interface__ if shp.shapeTypeName != 'NULL' else None
                         if geoj is None or not geoj['coordinates']:
                             # skip over null geometries or geometries with zero coords
                             continue
