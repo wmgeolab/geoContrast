@@ -5,6 +5,7 @@
             "level":0,
             "type":null,
             "dissolve":true,
+            "dissolve_buffer":1e-5,
             "name_field":null,
             "keep_fields":["FID"]
         },
@@ -13,8 +14,9 @@
             "level":1,
             "type":"Province",
             "dissolve":"PROV_CODE",
+            "dissolve_buffer":1e-5,
             "name_field":"PROVINCE",
-            "keep_fields":["PROVINCE"]
+            "keep_fields":["FEATURE_TY","PROVINCE"]
         },
         {
             "path":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
