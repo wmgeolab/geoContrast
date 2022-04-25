@@ -5,6 +5,12 @@
    "level": 0,
    "type": null,
    "name_field": "name"
+  },
+  {
+   "path": "BDI.zip/osm_BDI_4.shp",
+   "level": 1,
+   "type": null,
+   "name_field": "name"
   }
  ],
  "year": null,

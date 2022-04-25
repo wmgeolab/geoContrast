@@ -14,7 +14,7 @@ import os
 import io
 import sys
 import json
-import warnings
+import logging
 import datetime
 
 # import iotools.py
@@ -23,6 +23,11 @@ cur_dir = os.path.abspath('')
 repo_dir = cur_dir.split('sourceData')[0]
 sys.path.append(repo_dir)
 import iotools
+
+# redirect to logfile
+logger = open('download_log.txt', mode='w', encoding='utf8', buffering=1)
+sys.stdout = logger
+sys.stderr = logger
 
 # access the gadm country download page
 root = 'https://www.unsalb.org'
@@ -51,16 +56,67 @@ def iter_country_page_downloads(url):
     # find all zipfile downloads (should contain shapefile)
     for elem in elems:
         if elem.startswith('span class="date-display'):
-            date = next(elems)
-            yr,mn,dy = date.split('/')
+            fromdate,todate = next(elems).split(' to ')
+            # fromdate
+            yr,mn,dy = fromdate.split('/')
             yr,mn,dy = map(int, [yr,mn,dy])
-            date = datetime.date(yr, mn, dy)
-            print('DATE',date)
+            fromdate = datetime.date(yr, mn, dy)
+            # todate
+            todate = todate if todate != 'last update' else None
+            if todate:
+                yr,mn,dy = todate.split('/')
+                yr,mn,dy = map(int, [yr,mn,dy])
+                todate = datetime.date(yr, mn, dy)
+            print('FROM DATE',fromdate,'TO DATE',todate)
         if elem.startswith("a class='file'"):
             url = elem.replace("a class='file' href=", "").strip("'") # the url tag oddly uses single-quotes
             print('FILE',url)
             if url.endswith('.zip'):
-                yield date, url
+                yield fromdate,todate, url
+
+def get_historical_table_download(url):
+    raw = urllib.request.urlopen(url).read().decode('utf8')
+
+    # hacky parse the html into elements
+    elems = raw.replace('>','<').split('<')
+    elems = (elem for elem in elems)
+    elem = next(elems)
+
+    # find all excel downloads
+    downloads = []
+    for elem in elems:
+        elem = elem.replace('"','').replace("'","")
+        if elem.endswith('.xlsx'):
+            _url = elem.split('href=')[-1]
+            downloads.append(_url)
+    if len(downloads) > 1:
+        logging.warning('More than one historical tables, use only the first one')
+
+    # return first download
+    return downloads[0] if downloads else None
+
+def parse_historical_table(url):
+    from openpyxl import load_workbook
+    wb = load_workbook(filename=io.BytesIO(urllib.request.urlopen(url).read()))
+    # get metadata sheet
+    metasheet = None
+    for name in wb.sheetnames:
+        if name.lower().startswith('metadata'):
+            metasheet = wb[name]
+            break
+    # otherwise return early
+    if not metasheet:
+        logging.warning('Historal table had no metadata sheet')
+        return {}
+    # extract values from key-value row entries
+    info = {}
+    for row in metasheet.iter_rows():
+        for i,cell in enumerate(row):
+            if cell.value == 'Last update':
+                updated = row[i+1].value
+                info['updated'] = updated
+    return info
+        
 
 # loop pages and download+unzip each
 print('downloading:')
@@ -91,8 +147,8 @@ while True:
             print('No page downloads, skipping')
             continue
         if len(page_downloads) > 1:
-            warnings.warn('More than one country page downloads: {}'.format(page_downloads))
-        date,ziplink = page_downloads[0]
+            logging.warning('More than one country page downloads: {}'.format(page_downloads))
+        fromdate,todate,ziplink = page_downloads[0] # first one should be the most recent
         
         # create country folder
         iso = countrylink[-3:].upper()
@@ -114,10 +170,10 @@ while True:
                      for name in archive.namelist()
                      if name.endswith('.shp')]
         if len(shapefiles) == 0:
-            warnings.warn('Zipfile does not contain any shapefile: {}'.format(archive.namelist()))
+            logging.warning('Zipfile does not contain any shapefile: {}'.format(archive.namelist()))
             continue
         if len(shapefiles) > 1:
-            warnings.warn('Zipfile contains more than one shapefile: {}'.format(shapefiles))
+            logging.warning('Zipfile contains more than one shapefile: {}'.format(shapefiles))
             # in most cases this appears to be two files 'BNDA_*' and 'BNDL_*'
             # it appears the one we want is 'BNDA_*'
             # sorting should fix it
@@ -126,34 +182,95 @@ while True:
             shapefile_name = shapefiles[0]
         shapefile_path = '{}/{}'.format(zipname, shapefile_name)
 
-        # get info from shapefile
+        # read shapefile info
         reader = iotools.get_reader(os.path.join(iso, shapefile_path))
         fieldnames = [f[0] for f in reader.fields]
-        if 'DATSOR' in fieldnames:
-            for rec in reader.iterRecords():
-                updated = rec['DATSOR']
-                if updated and len(updated.split('/')) == 3:
-                    break
-            if updated:
-                dy,mn,yr = updated.split('/')
+
+        # if present, use download link's "to" date text as basis for source_date and year
+        # in most cases the todate is set to "last update"
+        # but in cases where the shapefile has not been uploaded yet
+        # we can use the todate of a previously uploaded shapefile
+        updated = None
+        year = None
+        if todate:
+            year = todate.year
+            updated = todate.isoformat()
+            print('''source_update and year set to download link's "to" date text''')
+
+        # compare with date info from historical excel table
+        table_download = get_historical_table_download(countrylink)
+        table_updated = None
+        if table_download:
+            table_info = parse_historical_table(table_download)
+            table_updated = table_info.get('updated', None)
+            if table_updated:
+                print('detected historical excel table "Last updated" field: {}'.format(table_updated))
+        else:
+            logging.warning('could not find historical table download')
+
+        # fallback on historical table field if date/year hasn't been found yet
+        if not updated and table_updated:
+            if hasattr(table_updated, 'year'):
+                # already date or datetime value
+                yr,mn,dy = table_updated.year, table_updated.month, table_updated.day
+                updated = datetime.date(yr, mn, dy).isoformat()
+            else:
+                # date string
+                yr,mn,dy = table_updated.split('-')
                 dy,mn,yr = map(int, [dy,mn,yr])
                 updated = datetime.date(yr, mn, dy).isoformat()
-                year = yr
+            year = yr
+            print('source_update and year set to historical excel table "Last updated" field')
+
+        # compare with "DATSOR" field in shapefile
+        datsor = None
+        if 'DATSOR' in fieldnames:
+            for rec in reader.iterRecords():
+                datsor = rec['DATSOR']
+                if datsor and len(datsor.split('/')) == 3:
+                    break
+            if datsor:
+                print('detected "DATSOR" field in shapefile: {}'.format(datsor))
+            
+        # fallback on datsor field if date/year hasn't been found yet
+        if not updated and datsor:
+            dy,mn,yr = datsor.split('/')
+            dy,mn,yr = map(int, [dy,mn,yr])
+            updated = datetime.date(yr, mn, dy).isoformat()
+            year = yr
+            print('source_update and year set to shapefile "DATSOR" field')
+
+        # if nothing else, fallback on download link's "from" date text
+        if not updated:
+            year = fromdate.year
+            updated = fromdate.isoformat()
+            logging.warning('''source_update and year set to download link's "from" date text''')
+
+        # get admin level
+        # all salb files have both ADM1NM and ADM2NM
+        # in rare cases, ADM2NM will be empty, indicating an adm1 boundary
+        rec = reader.record(0)
+        if rec['ADM2NM']:
+            level = 2
         else:
-            warnings.warn('source_update and year could not be determined, must be manually specified')
-            updated = None
-            year = None
+            level = 1
         reader.close()
 
         # create metadata
         meta = {
-            "input":shapefile_path,
+            "input":[
+                    {'path':shapefile_path,
+                    'level':lev,
+                    "name_field":'ADM{}NM'.format(lev) if lev > 0 else None,
+                    "dissolve":'ADM{}NM'.format(lev) if lev > 0 else True,
+                    "keep_fields":[f for f in fieldnames if f=='ISO3CD' or (f.startswith('ADM') and int(f[3]) <= lev) ],
+                    }
+                    for lev in range(level+1)
+                ],
             
             "iso":iso,
             "year":year,
-            "level":2, # is salb always level 2? 
             "type_field":None,
-            "name_field":"ADM2NM",
             
             "source":["UN SALB"],
             "source_updated":updated,

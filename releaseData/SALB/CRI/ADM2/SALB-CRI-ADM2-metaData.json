@@ -1,5 +1,5 @@
 {
-    "boundaryYearRepresented": 2019,
+    "boundaryYearRepresented": 2021,
     "boundaryISO": "CRI",
     "boundaryType": "ADM2",
     "boundaryCanonical": "Unknown",
@@ -8,6 +8,6 @@
     "licenseDetail": null,
     "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
     "boundarySourceURL": "https://www.unsalb.org/data/cri",
-    "sourceDataUpdateDate": "2019-04-10",
+    "sourceDataUpdateDate": "2021-10-20",
     "boundarySource-1": "UN SALB"
 }

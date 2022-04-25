@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": 2019,
+    "boundaryISO": "SWZ",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "UN SALB Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "boundarySourceURL": "https://www.unsalb.org/data/swz",
+    "sourceDataUpdateDate": "2019-09-13",
+    "boundarySource-1": "UN SALB"
+}

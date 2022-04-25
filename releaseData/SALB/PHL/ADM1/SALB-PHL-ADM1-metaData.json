@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": 2017,
+    "boundaryISO": "PHL",
+    "boundaryType": "ADM1",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "UN SALB Data License",
+    "nameField": "ADM1NM",
+    "licenseDetail": null,
+    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "boundarySourceURL": "https://www.unsalb.org/data/phl",
+    "sourceDataUpdateDate": "2017-10-13",
+    "boundarySource-1": "UN SALB"
+}

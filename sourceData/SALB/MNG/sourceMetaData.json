@@ -1,10 +1,42 @@
 {
-    "input": "MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp",
+    "input": [
+        {
+            "path": "MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp",
+            "level": 0,
+            "name_field": null,
+            "dissolve": true,
+            "keep_fields": [
+                "ISO3CD"
+            ]
+        },
+        {
+            "path": "MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp",
+            "level": 1,
+            "name_field": "ADM1NM",
+            "dissolve": "ADM1NM",
+            "keep_fields": [
+                "ISO3CD",
+                "ADM1NM",
+                "ADM1CD"
+            ]
+        },
+        {
+            "path": "MNG_2002_01_01_SALB.zip/MNG_SALB_2002/SHP/BNDA_MNG.shp",
+            "level": 2,
+            "name_field": "ADM2NM",
+            "dissolve": "ADM2NM",
+            "keep_fields": [
+                "ISO3CD",
+                "ADM1NM",
+                "ADM2NM",
+                "ADM1CD",
+                "ADM2CD"
+            ]
+        }
+    ],
     "iso": "MNG",
     "year": 2019,
-    "level": 2,
     "type_field": null,
-    "name_field": "ADM2NM",
     "source": [
         "UN SALB"
     ],

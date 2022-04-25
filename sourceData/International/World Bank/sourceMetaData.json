@@ -1,0 +1,22 @@
+{
+    "input":[
+        {"path":"wb_countries_admin0_10m.zip/WB_countries_Admin0_10m/WB_countries_Admin0_10m.shp",
+        "level":0,
+        "iso_field":"ISO_A3",
+        "type":null,
+        "name_field":"WB_NAME",
+        "source_url":"https://datacatalog.worldbank.org/search/dataset/0038272",
+        "download_url":"https://datacatalog.worldbank.org/search/dataset/0038272"
+        }
+    ],
+    
+    "year":2020,
+    "collection_subset":"WorldBank",
+    
+    "source":"World Bank",
+    "source_updated":"19 March 2020",
+    "license":"Creative Commons Attribution 4.0",
+    "license_detail":null,
+    "license_url":"https://datacatalog.worldbank.org/search/dataset/0038272",
+    "note":"Data downloaded from the link named 'World Country Polygons - Very High Definition'."
+}

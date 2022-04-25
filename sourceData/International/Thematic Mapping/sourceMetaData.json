@@ -1,0 +1,23 @@
+{
+    "input":[
+        {"path":"TM_WORLD_BORDERS-0.3.zip/TM_WORLD_BORDERS-0.3.shp",
+        "level":0,
+        "iso_field":"ISO3",
+        "type":null,
+        "name_field":"NAME",
+        "source_url":"https://thematicmapping.org/downloads/world_borders.php",
+        "download_url":"https://thematicmapping.org/downloads/world_borders.php"
+        }
+    ],
+    
+    "year":2008,
+    "collection_subset":"ThematicMapping",
+    
+    "source":["ThematicMapping.org", "Bjørn Sandvik", "www.mappinghacks.com", "Sean Gillies", "Schuyler Erle"],
+    "source_updated":"30 July 2008",
+    "license":"Creative Commons Attribution-Share Alike License",
+    "license_detail":null,
+    "license_url":"https://thematicmapping.org/downloads/world_borders.php",
+
+    "encoding":"latin"
+}

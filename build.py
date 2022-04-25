@@ -2,26 +2,41 @@
 import iotools
 import os
 import json
-import warnings
+import logging
 import traceback
 import sys
 from datetime import datetime
 
 # params
-collections = ['GADM']
-isos = [] #['NOR','CHL','CAN','FRA','USA']
-replace = False
-write_meta = True
-write_stats = True
-write_data = True
+if os.getenv('INPUT_IS_GITHUB_ACTION', None):
+    # args from github actions
+    collections = os.environ['INPUT_COLLECTIONS'].split(',') if os.environ['INPUT_COLLECTIONS'] else []
+    isos = os.environ['INPUT_ISOS'].split(',') if os.environ['INPUT_ISOS'] else []
+    replace = os.environ['INPUT_REPLACE'].lower() in ('true', '1', 't')
+    write_meta = os.environ['INPUT_WRITE_META'].lower() in ('true', '1', 't')
+    write_stats = os.environ['INPUT_WRITE_STATS'].lower() in ('true', '1', 't')
+    write_data = os.environ['INPUT_WRITE_DATA'].lower() in ('true', '1', 't')
 
-# redirect to logfile
-logger = open('build_log.txt', mode='w', encoding='utf8', buffering=1)
-sys.stdout = logger
-sys.stderr = logger
+    # no need for logfile, github action keeps its own log
+    logger = None
+else:
+    # locally specified args
+    collections = ['WhosOnFirst']
+    isos = [] #['NOR','CHL','CAN','FRA','USA']
+    replace = True
+    write_meta = True
+    write_stats = True
+    write_data = True
+
+    # redirect to logfile
+    logger = open('build_log.txt', mode='w', encoding='utf8', buffering=1)
+    sys.stdout = logger
+    sys.stderr = logger
 
 # begin
+error_count = 0
 print('start time', datetime.now())
+print('input args', [collections,isos,replace,write_meta,write_stats,write_data])
 for dirpath,dirnames,filenames in os.walk('sourceData'):
     if 'sourceMetaData.json' in filenames:
         # load kwargs from meta file
@@ -77,7 +92,8 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
 
         # nest multiple inputs
         if 'input' not in kwargs:
-            warnings.warn("metadata file for '{}' doesn't have correct format, skipping".format(dirpath))
+            error_count += 1
+            logging.warning("metadata file for '{}' doesn't have correct format, skipping".format(dirpath))
             continue
         input_arg = kwargs.pop('input')
         if isinstance(input_arg, str):
@@ -85,7 +101,9 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
         elif isinstance(input_arg, list):
             inputs = input_arg
         else:
-            raise Exception('input arg must be either string or list of dicts')
+            error_count += 1
+            logging.warning("metadata file for '{}' contains an error, skipping (input arg must be either string or list of dicts)".format(dirpath))
+            continue
         # run one or more imports
         for input_kwargs in inputs:
             _kwargs = kwargs.copy()
@@ -97,8 +115,14 @@ for dirpath,dirnames,filenames in os.walk('sourceData'):
             try:
                 iotools.import_data(**_kwargs)
             except Exception as err:
-                warnings.warn("Error importing data for '{}': {}".format(dirpath, traceback.format_exc()))
+                error_count += 1
+                logging.warning("error importing data for '{}': {}".format(_kwargs['input_path'], traceback.format_exc()))
                 
 print('end time', datetime.now())
 
-logger.close()
+if error_count > 0:
+    print('build script encountered a total of {} errors'.format(error_count))
+    raise Exception('Build script encountered a total of {} errors'.format(error_count))
+
+if logger:
+    logger.close()

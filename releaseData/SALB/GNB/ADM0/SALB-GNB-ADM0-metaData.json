@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": 2021,
+    "boundaryISO": "GNB",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "UN SALB Data License",
+    "nameField": null,
+    "licenseDetail": null,
+    "licenseSource": "https://www.unsalb.org/sites/default/files/wysiwyg_uploads/docs_uploads/TermsOfUseSALB2021.pdf",
+    "boundarySourceURL": "https://www.unsalb.org/data/gnb",
+    "sourceDataUpdateDate": "2021-05-17",
+    "boundarySource-1": "UN SALB"
+}

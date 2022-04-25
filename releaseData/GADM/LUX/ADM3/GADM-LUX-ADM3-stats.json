@@ -1,8 +1,8 @@
 {
-    "boundaryCount": 116,
-    "statsArea": 2581.5542898741587,
-    "statsPerimeter": 2576.7253583217616,
-    "statsVertices": 14241,
-    "statsLineResolution": 180.93710823128725,
-    "statsVertexDensity": 5.526782260285302
+    "boundaryCount": 102,
+    "statsArea": 2581.5542968938307,
+    "statsPerimeter": 2421.256501820903,
+    "statsVertices": 13673,
+    "statsLineResolution": 177.0830470138889,
+    "statsVertexDensity": 5.647067954063205
 }

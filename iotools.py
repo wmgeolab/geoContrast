@@ -44,7 +44,7 @@ import os
 import json
 import re
 import csv
-import warnings
+import logging
 
 import shapefile as pyshp
 from zipfile import ZipFile, ZIP_DEFLATED
@@ -52,11 +52,11 @@ from zipfile import ZipFile, ZIP_DEFLATED
 # create iso lookup dict
 iso2_to_3 = {}
 filedir = os.path.dirname(__file__)
-with open(os.path.join(filedir, 'buildData/countries_codes_and_coordinates.csv'), encoding='utf8', newline='') as f:
+with open(os.path.join(filedir, 'buildData/ne_countries_iso_codes.csv'), encoding='utf8', newline='') as f:
     csvreader = csv.DictReader(f)
     for row in csvreader:
-        iso2 = row['Alpha-2 code'].strip().strip('"')
-        iso3 = row['Alpha-3 code'].strip().strip('"')
+        iso2 = row['iso2'].strip()
+        iso3 = row['iso3'].strip()
         iso2_to_3[iso2] = iso3
 
 def get_reader(path, encoding='utf8'):
@@ -117,8 +117,10 @@ def import_data(input_dir,
                 license=None,
                 license_detail=None,
                 license_url=None,
+                note=None,
                 
                 dissolve=False,
+                dissolve_buffer=None,
                 keep_fields=None,
                 drop_fields=None,
 
@@ -187,6 +189,7 @@ def import_data(input_dir,
 
         # define how to iterate isos
         if iso is not None:
+            # a single iso
             if len(iso) == 2:
                 if iso in iso2_to_3:
                     iso = iso2_to_3[iso]
@@ -199,6 +202,7 @@ def import_data(input_dir,
             def iter_country_recs():
                 yield iso, reader.records()
         else:
+            # isos defined by a field
             if iso_field is None:
                 raise Exception('Requires either iso, iso_path, or iso_field args')
 
@@ -224,19 +228,21 @@ def import_data(input_dir,
                         if iso in iso2_to_3:
                             iso = iso2_to_3[iso]
                         else:
-                            warnings.warn("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
+                            logging.warning("Skipping country iso '{}': unable to lookup 2-digit iso code.".format(iso))
                             continue
                     if len(iso) != 3 or not iso.isalpha():
-                        warnings.warn("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
+                        logging.warning("Skipping country iso '{}': iso value must consist of 3 alphabetic characters.".format(iso))
                         continue
                     yield iso, list(countryrecs)
 
         for iso, countryrecs in iter_country_recs():
             # define how to iterate levels
             if level is not None:
+                # a single level
                 def iter_level_recs():
                     yield level, countryrecs
             else:
+                # levels defined by a field
                 if level_field is None:
                     raise Exception('Requires either level, level_path, or level_field args')
 
@@ -246,21 +252,22 @@ def import_data(input_dir,
                     levels = sorted(levels)
 
                     # loop each level and get relevant features
-                    for level in levels:
+                    for _level in levels:
                         levelrecs = []
                         for rec in countryrecs:
-                            if rec[level_field] == level:
+                            if rec[level_field] == _level:
                                 levelrecs.append(rec)
-                        yield level, levelrecs
+                        yield _level, levelrecs
 
             # loop each level and return relevant features as geojson
-            for level,levelrecs in iter_level_recs():
+            for _level,levelrecs in iter_level_recs():
                 print('loading data') # this will be the most time consuming part (loading geometries)
                 countrylevelfeats = []
                 for rec in levelrecs:
                     props = rec.as_dict(date_strings=True)
                     if load_geometries is True:
-                        geoj = reader.shape(rec.oid).__geo_interface__
+                        shp = reader.shape(rec.oid)
+                        geoj = shp.__geo_interface__ if shp.shapeTypeName != 'NULL' else None
                         if geoj is None or not geoj['coordinates']:
                             # skip over null geometries or geometries with zero coords
                             continue
@@ -268,11 +275,11 @@ def import_data(input_dir,
                         geoj = None
                     feat = {'type':'Feature', 'properties':props, 'geometry':geoj}
                     countrylevelfeats.append(feat)
-                yield iso, level, countrylevelfeats
+                yield iso, _level, countrylevelfeats
 
 
-    def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None):
-        from shapely.geometry import asShape
+    def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None, dissolve_buffer=None):
+        from shapely.geometry import shape
         from shapely.ops import cascaded_union
         if isinstance(dissolve_field, str):
             key = lambda f: f['properties'][dissolve_field]
@@ -281,15 +288,17 @@ def import_data(input_dir,
         elif dissolve_field:
             key = lambda f: 'dummy'
         newfeats = []
+        dissolve_buffer = 1e-7 if dissolve_buffer is None else dissolve_buffer # default dissolve buffer is approx 1cm
         for val,group in itertools.groupby(sorted(feats, key=key), key=key):
             group = list(group)
             print('dissolving',val,len(group))
             # dissolve into one geometry
             if len(group) > 1:
-                geoms = [asShape(feat['geometry']) for feat in group]
-                geoms = [geom.buffer(1e-7) for geom in geoms] # fill in gaps of approx 10mm, topology will later snap together overlaps when quantizing to 100mm
+                geoms = [shape(feat['geometry']) for feat in group]
+                geoms = [geom.buffer(dissolve_buffer) for geom in geoms] # fill in gaps prior to merging to avoid nasty holes causing geometry invalidity
                 dissolved = cascaded_union(geoms)
-                # attempt to fix invalid result
+                dissolved = dissolved.buffer(-dissolve_buffer) # shrink back the buffer after gaps have been filled and merged
+                # attempt to fix any remaining invalid result
                 if not dissolved.is_valid:
                     dissolved = dissolved.buffer(0)
                 dissolved_geoj = dissolved.__geo_interface__
@@ -310,7 +319,9 @@ def import_data(input_dir,
         return newfeats
 
     # make dir
-    try: os.mkdir('{output}/{dataset}'.format(output=output_dir, dataset=collection))
+    try: os.mkdir('{output}'.format(output=output_dir))
+    except: pass
+    try: os.mkdir('{output}/{collection}'.format(output=output_dir, collection=collection))
     except: pass
 
     # prep source list
@@ -361,7 +372,7 @@ def import_data(input_dir,
 
             # dissolve if specified
             if (write_data is True or write_stats is True) and dissolve:
-                feats = dissolve_by(feats, dissolve, keep_fields, drop_fields)
+                feats = dissolve_by(feats, dissolve, keep_fields, drop_fields, dissolve_buffer)
                 print('dissolved to', len(feats), 'admin units')
 
             # check that name_field is correct
@@ -413,11 +424,27 @@ def import_data(input_dir,
                 topodata = json.dumps(topo)
 
                 # write topojson to zipfile
-                print('writing to file')
                 zip_path = '{output}/{collection}/{iso}/ADM{lvl}/{dataset}-{iso}-ADM{lvl}.topojson.zip'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
-                    filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
-                    archive.writestr(filename, topodata)
+                filename = '{dataset}-{iso}-ADM{lvl}.topojson'.format(output=output_dir, dataset=dataset, collection=collection, iso=iso, lvl=level)
+                # check if has changed
+                print('checking if data exists and has changed')
+                has_changed = False
+                if os.path.lexists(zip_path):
+                    with ZipFile(zip_path, mode='r') as archive:
+                        with archive.open(filename, mode='r') as fobj:
+                            # compare encoded topojson string with zipfile topojson string
+                            # note that python writes json strings as unicode escaped ascii, rather than utf8 encoded
+                            topodata_old = fobj.read().decode('ascii')
+                            assert (isinstance(topodata, str) and isinstance(topodata_old, str))
+                            if topodata != topodata_old:
+                                has_changed = True
+                else:
+                    has_changed = True
+                # write if changed
+                if has_changed:
+                    print('writing to file')
+                    with ZipFile(zip_path, mode='w', compression=ZIP_DEFLATED) as archive:
+                        archive.writestr(filename, topodata)
 
             # update metadata
             meta = {
@@ -434,6 +461,8 @@ def import_data(input_dir,
                     }
             for i,source in enumerate(sources):
                 meta['boundarySource-{}'.format(i+1)] = source
+            if note:
+                meta['note'] = note
 
             # write metadata to file
             if write_meta is True:
@@ -489,7 +518,7 @@ def calc_stats(feats):
     # unit count
     stats['boundaryCount'] = len(feats)
     # vertices, area, and perimiter
-    #from shapely.geometry import asShape
+    #from shapely.geometry import shape
     area = 0
     perim = 0
     verts = 0
@@ -498,7 +527,7 @@ def calc_stats(feats):
 
         # pyproj
         # pyproj shapely version
-        #geom = asShape(feat['geometry'])
+        #geom = shape(feat['geometry'])
         #geod = get_pyproj_geod()
         #_area, _perim = geod.geometry_area_perimeter(geom)
         # pyproj geojson version, much faster

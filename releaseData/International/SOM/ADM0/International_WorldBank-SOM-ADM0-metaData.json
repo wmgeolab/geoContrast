@@ -1,0 +1,14 @@
+{
+    "boundaryYearRepresented": 2020,
+    "boundaryISO": "SOM",
+    "boundaryType": "ADM0",
+    "boundaryCanonical": "Unknown",
+    "boundaryLicense": "Creative Commons Attribution 4.0",
+    "nameField": "WB_NAME",
+    "licenseDetail": null,
+    "licenseSource": "https://datacatalog.worldbank.org/search/dataset/0038272",
+    "boundarySourceURL": "https://datacatalog.worldbank.org/search/dataset/0038272",
+    "sourceDataUpdateDate": "19 March 2020",
+    "boundarySource-1": "World Bank",
+    "note": "Data downloaded from the link named 'World Country Polygons - Very High Definition'."
+}

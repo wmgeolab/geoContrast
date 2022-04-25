@@ -5,6 +5,18 @@
    "level": 0,
    "type": null,
    "name_field": "name"
+  },
+  {
+   "path": "MWI.zip/osm_MWI_3.shp",
+   "level": 1,
+   "type": null,
+   "name_field": "name"
+  },
+  {
+   "path": "MWI.zip/osm_MWI_4.shp",
+   "level": 2,
+   "type": null,
+   "name_field": "name"
   }
  ],
  "year": null,

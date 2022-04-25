@@ -1,0 +1,72 @@
+# This is a basic workflow that is manually triggered
+
+name: Update metadata table for all boundary sources
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on:
+  workflow_dispatch:
+    # Inputs the workflow accepts.
+    inputs:
+      update_gb:
+        description: 'Whether to update the metadata for wmgeolab/geoBoundaries (has to be retrieved externally, default is False)'
+        default: 'False'
+        required: false
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job named "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Each step runs a single command using the runners shell
+    steps:
+
+    - name: Inspect initial workspace
+      run: |
+        ls
+        env
+
+    - name: Install Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.7
+    
+    - name: Sparse checkout action
+      uses: snow-actions/sparse-checkout@v1.1.0
+      with: 
+        patterns: |
+          buildData
+          releaseData
+          topojson_simple
+          !*.zip
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run build script
+      run: |
+        echo "ls root"
+        ls
+        echo "ls buildData"
+        ls buildData
+        echo "ls releaseData"
+        ls releaseData
+        python releaseData/buildMetaData.py
+      env:
+        INPUT_IS_GITHUB_ACTION: True
+        INPUT_UPDATE_GB: ${{ github.event.inputs.update_gb }}
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        title: Update metadata table
+        body: |
+          This metadata update was run with the following options:
+          - **UPDATE_GB**: ${{ github.event.inputs.update_gb }}
+        delete-branch: true
+        branch-suffix: timestamp

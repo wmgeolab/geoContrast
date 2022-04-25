@@ -4,25 +4,22 @@ import json
 import csv
 import urllib.request
 import sys
-sys.path.append('..')
-import iotools
 import re
 from time import time
 
-UPDATE_GB = False
+# init working dir
+os.chdir(os.path.dirname(__file__))
+sys.path.append('..')
+import iotools
 
+# params
+if os.getenv('INPUT_GITHUB_ACTION', None):
+    UPDATE_GB = os.environ['INPUT_UPDATE_GB']
+else:
+    UPDATE_GB = False
+
+#Begin
 start = time()
-
-#Initialize workspace
-ws = {}
-try:
-    fdsfsfdsfsdf
-    ws['working'] = os.environ['GITHUB_WORKSPACE']
-    ws['logPath'] = os.path.expanduser("~") + "/tmp/log.txt"
-except:
-    ws['working'] = os.path.abspath("") # current folder ie releaseData
-    ws['logPath'] = "buildMetaData-log.txt" #os.path.expanduser("~") + "/tmp/log.txt"
-os.chdir(ws['working'])
 
 #Load in the ISO lookup table
 isoDetails = list(csv.DictReader(open("../buildData/iso_3166_1_alpha_3.csv", encoding="utf8")))
@@ -35,22 +32,25 @@ except:
     pass
 
 #Create output csv file with headers
-fieldnames = "boundaryCollection,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundarySource-3,boundarySource-4,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimeter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
+fieldnames = "boundaryCollection,boundaryName,boundaryISO,boundaryYearRepresented,boundaryType,boundaryCanonical,nameField,boundarySource-1,boundarySource-2,boundarySource-3,boundarySource-4,boundarySource-5,boundaryLicense,licenseDetail,licenseSource,boundarySourceURL,sourceDataUpdateDate,buildUpdateDate,Continent,UNSDG-region,UNSDG-subregion,worldBankIncomeGroup,apiURL,boundaryCount,boundaryYearSourceLag,statsArea,statsPerimeter,statsVertices,statsLineResolution,statsVertexDensity".split(',')
 wfob = open(gbContrastCSV, 'w', newline='', encoding='utf8')
 writer = csv.DictWriter(wfob, fieldnames=fieldnames)
 writer.writeheader()
 
 #Loop all metadata json files in releaseData
-for (dirpath, dirname, filenames) in os.walk(ws["working"]):
+for (dirpath, dirname, filenames) in os.walk(os.path.abspath("")):
 
     #Look for file metadata.json
     metaSearch = [x for x in filenames if x.endswith('metaData.json')]
-    if(len(metaSearch)==1):
-        print(metaSearch)
+    for metaFile in metaSearch:
+        print(metaFile)
 
         #Init row from file metadata.json
-        with open(dirpath + "/" + metaSearch[0], "r", encoding='utf8') as j:
+        with open(dirpath + "/" + metaFile, "r", encoding='utf8') as j:
             meta = json.load(j)
+
+        #Remove keys not in metadata table
+        meta.pop('note', None)
 
         #Add in boundary collection (ie the folder name that the boundary is organized into)
         reldirpath = dirpath.split('releaseData')[-1].strip('/').strip('\\')
@@ -80,13 +80,13 @@ for (dirpath, dirname, filenames) in os.walk(ws["working"]):
         #Add in apiURL
         #githubRoot = 'https://raw.githubusercontent.com/wmgeolab/geoContrast/main' # normal github files
         githubRoot = 'https://media.githubusercontent.com/media/wmgeolab/geoContrast/stable' # lfs github files
-        topoPath = dirpath + "/" + metaSearch[0].replace('-metaData.json', '.topojson.zip')
+        topoPath = dirpath + "/" + metaFile.replace('-metaData.json', '.topojson.zip')
         topoPath = topoPath.replace('\\','/')
         relTopoPath = topoPath[topoPath.find('releaseData'):]
         meta['apiURL'] =  githubRoot + '/' + relTopoPath
 
         #Add in geometry statistics
-        with open(dirpath + "/" + metaSearch[0].replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
+        with open(dirpath + "/" + metaFile.replace('metaData.json','stats.json'), "r", encoding='utf8') as j:
             stats = json.load(j)
             meta.update(stats)
 

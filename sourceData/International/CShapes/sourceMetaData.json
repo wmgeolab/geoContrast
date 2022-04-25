@@ -1,0 +1,22 @@
+{
+    "input":[
+        {"path":"CShapes-2.0-extracted.zip/CShapes-2.0.shp",
+        "level":0,
+        "iso_field":"iso3",
+        "type":null,
+        "name_field":"cntry_name",
+        "source_url":"https://icr.ethz.ch/data/cshapes/",
+        "download_url":"https://icr.ethz.ch/data/cshapes/"
+        }
+    ],
+    
+    "year":2020,
+    "collection_subset":"CShapes",
+    
+    "source":"CShapes 2.0",
+    "source_updated":"7 June 2020",
+    "license":"Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
+    "license_detail":null,
+    "license_url":"https://icr.ethz.ch/data/cshapes/",
+    "note":"ISO codes had to be added manually."
+}

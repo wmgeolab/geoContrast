@@ -1,0 +1,13 @@
+{
+    "boundaryYearRepresented": "Unknown",
+    "boundaryISO": "SAU",
+    "boundaryType": "ADM2",
+    "boundaryCanonical": "Distrito",
+    "boundaryLicense": "GADM License",
+    "nameField": "NAME_2",
+    "licenseDetail": "Ad hoc license; not recommended for most uses.",
+    "licenseSource": "https://gadm.org/license.html",
+    "boundarySourceURL": "https://gadm.org",
+    "sourceDataUpdateDate": "25 March 2022",
+    "boundarySource-1": "GADM v4.0.4"
+}
