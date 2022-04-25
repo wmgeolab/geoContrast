@@ -1,14 +1,36 @@
 {
-    "input":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
+    "input":[
+        {
+            "path":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
+            "level":0,
+            "type":null,
+            "dissolve":true,
+            "dissolve_buffer":1e-5,
+            "name_field":null,
+            "keep_fields":["FID"]
+        },
+        {
+            "path":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
+            "level":1,
+            "type":"Province",
+            "dissolve":"PROV_CODE",
+            "dissolve_buffer":1e-5,
+            "name_field":"PROVINCE",
+            "keep_fields":["FEATURE_TY","PROVINCE"]
+        },
+        {
+            "path":"GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.zip/GRID3_Zambia_-_Administrative_Boundaries_Districts_2020.shp",
+            "level":2,
+            "type":"District",
+            "name_field":"DISTRICT"
+        }
+    ],
     
     "iso":"ZMB",
-    "year":2020,
-    "level":2,
-    "type":"District",
-    "name_field":"DISTRICT",
+    "year":2022,
     
     "source":["GRID3", "Office of the Surveyor General, Local Government and Housing, Electoral Commission of Zambia, Central Statistical Office and the University of Zambia - Geography and Environmental Studies Department"],
-    "source_updated":"13 October 2020",
+    "source_updated":"March 22, 2022",
     "source_url":"https://data.grid3.org/datasets/GRID3::grid3-zambia-administrative-boundaries-districts-2020/about",
     "download_url":"https://data.grid3.org/datasets/GRID3::grid3-zambia-administrative-boundaries-districts-2020/about",
     "license":"Creative Commons Attribution 4.0 International (CC BY 4.0)",

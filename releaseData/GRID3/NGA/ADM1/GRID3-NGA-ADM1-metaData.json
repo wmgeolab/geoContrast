@@ -1,5 +1,5 @@
 {
-    "boundaryYearRepresented": 2020,
+    "boundaryYearRepresented": 2021,
     "boundaryISO": "NGA",
     "boundaryType": "ADM1",
     "boundaryCanonical": "State",
@@ -8,6 +8,6 @@
     "licenseDetail": null,
     "licenseSource": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
     "boundarySourceURL": "https://data.grid3.org/datasets/GRID3::grid3-nigeria-state-boundaries/about",
-    "sourceDataUpdateDate": "9 December 2020",
+    "sourceDataUpdateDate": "October 25, 2021",
     "boundarySource-1": "GRID3"
 }
