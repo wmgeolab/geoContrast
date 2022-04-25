@@ -120,6 +120,7 @@ def import_data(input_dir,
                 note=None,
                 
                 dissolve=False,
+                dissolve_buffer=None,
                 keep_fields=None,
                 drop_fields=None,
 
@@ -277,7 +278,7 @@ def import_data(input_dir,
                 yield iso, _level, countrylevelfeats
 
 
-    def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None):
+    def dissolve_by(feats, dissolve_field, keep_fields=None, drop_fields=None, dissolve_buffer=None):
         from shapely.geometry import shape
         from shapely.ops import cascaded_union
         if isinstance(dissolve_field, str):
@@ -287,15 +288,17 @@ def import_data(input_dir,
         elif dissolve_field:
             key = lambda f: 'dummy'
         newfeats = []
+        dissolve_buffer = 1e-7 if dissolve_buffer is None else dissolve_buffer # default dissolve buffer is approx 1cm
         for val,group in itertools.groupby(sorted(feats, key=key), key=key):
             group = list(group)
             print('dissolving',val,len(group))
             # dissolve into one geometry
             if len(group) > 1:
                 geoms = [shape(feat['geometry']) for feat in group]
-                geoms = [geom.buffer(1e-7) for geom in geoms] # fill in gaps of approx 10mm, topology will later snap together overlaps when quantizing to 100mm
+                geoms = [geom.buffer(dissolve_buffer) for geom in geoms] # fill in gaps prior to merging to avoid nasty holes causing geometry invalidity
                 dissolved = cascaded_union(geoms)
-                # attempt to fix invalid result
+                dissolved = dissolved.buffer(-dissolve_buffer) # shrink back the buffer after gaps have been filled and merged
+                # attempt to fix any remaining invalid result
                 if not dissolved.is_valid:
                     dissolved = dissolved.buffer(0)
                 dissolved_geoj = dissolved.__geo_interface__
@@ -369,7 +372,7 @@ def import_data(input_dir,
 
             # dissolve if specified
             if (write_data is True or write_stats is True) and dissolve:
-                feats = dissolve_by(feats, dissolve, keep_fields, drop_fields)
+                feats = dissolve_by(feats, dissolve, keep_fields, drop_fields, dissolve_buffer)
                 print('dissolved to', len(feats), 'admin units')
 
             # check that name_field is correct
