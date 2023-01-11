@@ -35,7 +35,7 @@ jobs:
         python-version: 3.7
     
     - name: Sparse checkout action
-      uses: snow-actions/sparse-checkout@v1.1.0
+      uses: snow-actions/sparse-checkout@v1.2.0
       with: 
         patterns: |
           buildData
