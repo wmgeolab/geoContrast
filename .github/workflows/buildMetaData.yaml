@@ -18,7 +18,7 @@ jobs:
   # This workflow contains a single job named "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     # Each step runs a single command using the runners shell
@@ -35,7 +35,7 @@ jobs:
         python-version: 3.7
     
     - name: Sparse checkout action
-      uses: snow-actions/sparse-checkout@v1.2.0
+      uses: snow-actions/sparse-checkout@v1.1.0
       with: 
         patterns: |
           buildData
